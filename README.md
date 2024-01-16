@@ -1,1 +1,1 @@
-# ayulockin.github.io
+Personal website documenting my works and interests.
