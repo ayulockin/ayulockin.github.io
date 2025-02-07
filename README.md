@@ -1,1 +1,1 @@
-Personal website documenting my works and interests.
+Personal website for documenting my works and interests.
