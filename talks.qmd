@@ -100,4 +100,4 @@ Learn how to efficiently fine-tune large language models using Parameter-Efficie
 
 ## Interested in Having Me Speak?
 
-If you're organizing a conference, workshop, or meetup related to machine learning, LLMs, or MLOps, I'd be happy to discuss speaking opportunities. Please [contact me](mailto:contact@example.com) with details about your event.
+If you're organizing a conference, workshop, or meetup related to machine learning, LLMs, or MLOps, I'd be happy to discuss speaking opportunities. Please [contact me](mailto:ayush.thakur@example.com) with details about your event.

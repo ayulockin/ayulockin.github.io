@@ -18,7 +18,6 @@ css: index.css
 
 ::: {.profile-badges}
 <span class="badge">Google Developer Expert</span>
-<span class="badge">TensorFlow Core</span>
 <span class="badge">Kaggle Notebooks Master</span>
 :::
 
@@ -39,6 +38,7 @@ When I'm not coding, I enjoy watching anime (Naruto is my all-time favorite!), s
 :::
 
 ::: {.profile-buttons}
+[Authoring](/authoring/){.btn-action .btn .btn-primary role="button"}
 [Read My Blog](/blog/){.btn-action-primary .btn-action .btn .btn-success role="button"}
 [View My Projects](/projects/){.btn-action .btn .btn-info role="button"}
 [Talks & Courses](/talks/){.btn-action .btn .btn-secondary role="button"}

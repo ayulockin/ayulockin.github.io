@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ayush Thakur">
-<meta name="dcterms.date" content="2024-02-20">
-<meta name="description" content="Learn how to systematically evaluate LLM performance using Weights &amp; Biases Sweeps">
+<meta name="dcterms.date" content="2023-12-12">
+<meta name="description" content="An overview of current approaches and challenges in LLM evaluation">
 
-<title>Ayush Thakur - A Practical Guide to LLM Evaluation</title>
+<title>Ayush Thakur - The State of LLM Evaluation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -136,6 +102,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../../authoring.html"> 
+<span class="menu-text">Authoring</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
@@ -164,24 +134,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#a-practical-guide-to-llm-evaluation" id="toc-a-practical-guide-to-llm-evaluation" class="nav-link active" data-scroll-target="#a-practical-guide-to-llm-evaluation">A Practical Guide to LLM Evaluation</a>
-  <ul class="collapse">
-  <li><a href="#why-llm-evaluation-is-challenging" id="toc-why-llm-evaluation-is-challenging" class="nav-link" data-scroll-target="#why-llm-evaluation-is-challenging">Why LLM Evaluation is Challenging</a></li>
-  <li><a href="#building-a-systematic-evaluation-framework" id="toc-building-a-systematic-evaluation-framework" class="nav-link" data-scroll-target="#building-a-systematic-evaluation-framework">Building a Systematic Evaluation Framework</a>
-  <ul class="collapse">
-  <li><a href="#clearly-defined-evaluation-dimensions" id="toc-clearly-defined-evaluation-dimensions" class="nav-link" data-scroll-target="#clearly-defined-evaluation-dimensions">1. Clearly Defined Evaluation Dimensions</a></li>
-  <li><a href="#reference-datasets" id="toc-reference-datasets" class="nav-link" data-scroll-target="#reference-datasets">2. Reference Datasets</a></li>
-  <li><a href="#evaluation-methods" id="toc-evaluation-methods" class="nav-link" data-scroll-target="#evaluation-methods">3. Evaluation Methods</a></li>
-  </ul></li>
-  <li><a href="#implementing-evaluation-with-weights-biases-sweeps" id="toc-implementing-evaluation-with-weights-biases-sweeps" class="nav-link" data-scroll-target="#implementing-evaluation-with-weights-biases-sweeps">Implementing Evaluation with Weights &amp; Biases Sweeps</a>
-  <ul class="collapse">
-  <li><a href="#setting-up-the-evaluation-framework" id="toc-setting-up-the-evaluation-framework" class="nav-link" data-scroll-target="#setting-up-the-evaluation-framework">Setting Up the Evaluation Framework</a></li>
-  <li><a href="#optimizing-with-wb-sweeps" id="toc-optimizing-with-wb-sweeps" class="nav-link" data-scroll-target="#optimizing-with-wb-sweeps">Optimizing with W&amp;B Sweeps</a></li>
-  </ul></li>
-  <li><a href="#case-study-math-problem-evaluation" id="toc-case-study-math-problem-evaluation" class="nav-link" data-scroll-target="#case-study-math-problem-evaluation">Case Study: Math Problem Evaluation</a></li>
-  <li><a href="#visualizing-and-interpreting-results" id="toc-visualizing-and-interpreting-results" class="nav-link" data-scroll-target="#visualizing-and-interpreting-results">Visualizing and Interpreting Results</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  </ul></li>
+  <li><a href="#the-state-of-llm-evaluation" id="toc-the-state-of-llm-evaluation" class="nav-link active" data-scroll-target="#the-state-of-llm-evaluation">The State of LLM Evaluation</a></li>
   </ul>
 </nav>
     </div>
@@ -190,18 +143,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">A Practical Guide to LLM Evaluation</h1>
+<h1 class="title">The State of LLM Evaluation</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">LLMs</div>
-    <div class="quarto-category">Evaluation</div>
-    <div class="quarto-category">MLOps</div>
-    <div class="quarto-category">Tutorials</div>
+    <div class="quarto-category">llm</div>
+    <div class="quarto-category">evaluation</div>
+    <div class="quarto-category">machine-learning</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Learn how to systematically evaluate LLM performance using Weights &amp; Biases Sweeps
+    An overview of current approaches and challenges in LLM evaluation
   </div>
 </div>
 
@@ -218,7 +170,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 20, 2024</p>
+      <p class="date">December 12, 2023</p>
     </div>
   </div>
   
@@ -230,217 +182,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="a-practical-guide-to-llm-evaluation" class="level1">
-<h1>A Practical Guide to LLM Evaluation</h1>
-<p>As Large Language Models (LLMs) become increasingly central to AI applications, robust evaluation becomes essential. It’s not enough to simply deploy an LLM and hope for the best – we need systematic ways to assess their performance across multiple dimensions.</p>
-<p>In this article, I’ll share a practical approach to LLM evaluation, drawing from my experience building evaluation pipelines with Weights &amp; Biases Sweeps.</p>
-<section id="why-llm-evaluation-is-challenging" class="level2">
-<h2 class="anchored" data-anchor-id="why-llm-evaluation-is-challenging">Why LLM Evaluation is Challenging</h2>
-<p>Unlike traditional ML models where metrics like accuracy or F1 score might suffice, LLMs present unique evaluation challenges:</p>
-<ol type="1">
-<li><strong>Multiple dimensions of quality</strong>: From factual accuracy to coherence to safety</li>
-<li><strong>Context sensitivity</strong>: Performance can vary dramatically across different topics and scenarios</li>
-<li><strong>Subjectivity</strong>: Many aspects of LLM outputs require human judgment</li>
-<li><strong>Rapid evolution</strong>: Evaluation frameworks need to keep pace with rapidly advancing capabilities</li>
-</ol>
-</section>
-<section id="building-a-systematic-evaluation-framework" class="level2">
-<h2 class="anchored" data-anchor-id="building-a-systematic-evaluation-framework">Building a Systematic Evaluation Framework</h2>
-<p>A comprehensive LLM evaluation framework should include:</p>
-<section id="clearly-defined-evaluation-dimensions" class="level3">
-<h3 class="anchored" data-anchor-id="clearly-defined-evaluation-dimensions">1. Clearly Defined Evaluation Dimensions</h3>
-<p>Some important dimensions to consider:</p>
-<ul>
-<li><strong>Factual accuracy</strong>: Does the LLM provide correct information?</li>
-<li><strong>Relevance</strong>: Does the response address the query appropriately?</li>
-<li><strong>Coherence</strong>: Is the response logically structured and consistent?</li>
-<li><strong>Conciseness</strong>: Does the response avoid unnecessary verbosity?</li>
-<li><strong>Safety</strong>: Does the model avoid harmful, unethical, or biased outputs?</li>
-<li><strong>Format adherence</strong>: Does the output follow requested formats?</li>
-</ul>
-</section>
-<section id="reference-datasets" class="level3">
-<h3 class="anchored" data-anchor-id="reference-datasets">2. Reference Datasets</h3>
-<p>For effective evaluation, you need appropriate datasets:</p>
-<ul>
-<li><strong>Benchmark datasets</strong>: Standard datasets like MMLU, HumanEval, etc., for comparative evaluation</li>
-<li><strong>Domain-specific datasets</strong>: Tailored to your application area</li>
-<li><strong>Adversarial examples</strong>: Test cases designed to probe specific weaknesses</li>
-<li><strong>Real-world examples</strong>: Actual queries from your target use case</li>
-</ul>
-</section>
-<section id="evaluation-methods" class="level3">
-<h3 class="anchored" data-anchor-id="evaluation-methods">3. Evaluation Methods</h3>
-<p>Different aspects of LLM performance require different evaluation strategies:</p>
-<section id="automated-evaluation" class="level4">
-<h4 class="anchored" data-anchor-id="automated-evaluation">Automated Evaluation</h4>
-<ul>
-<li><strong>Reference-based metrics</strong>: Compare against ground truth using metrics like BLEU, ROUGE, etc.</li>
-<li><strong>Model-based evaluation</strong>: Use another LLM (often a more powerful one) to evaluate outputs</li>
-<li><strong>Rule-based checkers</strong>: Verify specific constraints (e.g., format validation)</li>
-</ul>
-</section>
-<section id="human-evaluation" class="level4">
-<h4 class="anchored" data-anchor-id="human-evaluation">Human Evaluation</h4>
-<ul>
-<li><strong>Expert review</strong>: Domain experts assess specific aspects</li>
-<li><strong>Comparative ranking</strong>: Side-by-side comparison of different models</li>
-<li><strong>User feedback</strong>: Real-world user reactions and preferences</li>
-</ul>
-</section>
-</section>
-</section>
-<section id="implementing-evaluation-with-weights-biases-sweeps" class="level2">
-<h2 class="anchored" data-anchor-id="implementing-evaluation-with-weights-biases-sweeps">Implementing Evaluation with Weights &amp; Biases Sweeps</h2>
-<p>Let’s look at how we can implement systematic LLM evaluation using W&amp;B Sweeps.</p>
-<section id="setting-up-the-evaluation-framework" class="level3">
-<h3 class="anchored" data-anchor-id="setting-up-the-evaluation-framework">Setting Up the Evaluation Framework</h3>
-<p>Here’s a simplified approach from my <a href="https://github.com/ayulockin/llm-eval-sweep">llm-eval-sweep</a> repository:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wandb</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> wandb.sdk.data_types <span class="im">import</span> WeightsTable</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize W&amp;B run</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>run <span class="op">=</span> wandb.init(project<span class="op">=</span><span class="st">"llm-evaluation"</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a simple dataset for QA evaluation</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>qa_pairs <span class="op">=</span> [</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"question"</span>: <span class="st">"What is the capital of France?"</span>, <span class="st">"reference"</span>: <span class="st">"Paris"</span>},</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"question"</span>: <span class="st">"Who wrote Romeo and Juliet?"</span>, <span class="st">"reference"</span>: <span class="st">"William Shakespeare"</span>},</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># More examples...</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Define LLM function (could be OpenAI, Anthropic, or any other provider)</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_llm_response(question, temperature, max_tokens):</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Implementation depends on your LLM provider</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Sample response"</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Track model outputs and evaluations</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>eval_table <span class="op">=</span> wandb.Table(columns<span class="op">=</span>[<span class="st">"question"</span>, <span class="st">"reference"</span>, <span class="st">"response"</span>, </span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>                                 <span class="st">"accuracy_score"</span>, <span class="st">"relevance_score"</span>])</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate scores using another LLM as judge</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluate_response(question, reference, response):</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Implementation of LLM-as-judge</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {<span class="st">"accuracy"</span>: <span class="fl">0.85</span>, <span class="st">"relevance"</span>: <span class="fl">0.9</span>}</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Run evaluation for each example</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> qa <span class="kw">in</span> qa_pairs:</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> get_llm_response(</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        qa[<span class="st">"question"</span>], </span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>        temperature<span class="op">=</span><span class="fl">0.7</span>, </span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>        max_tokens<span class="op">=</span><span class="dv">100</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    scores <span class="op">=</span> evaluate_response(qa[<span class="st">"question"</span>], qa[<span class="st">"reference"</span>], response)</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    eval_table.add_data(</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>        qa[<span class="st">"question"</span>],</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>        qa[<span class="st">"reference"</span>],</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>        response,</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>        scores[<span class="st">"accuracy"</span>],</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>        scores[<span class="st">"relevance"</span>]</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="co"># Log the evaluation results</span></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>wandb.log({<span class="st">"evaluations"</span>: eval_table})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="optimizing-with-wb-sweeps" class="level3">
-<h3 class="anchored" data-anchor-id="optimizing-with-wb-sweeps">Optimizing with W&amp;B Sweeps</h3>
-<p>The real power comes when we use Sweeps to systematically explore different prompt strategies and model parameters:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>sweep_configuration <span class="op">=</span> {</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"method"</span>: <span class="st">"grid"</span>,</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"parameters"</span>: {</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        <span class="st">"temperature"</span>: {<span class="st">"values"</span>: [<span class="fl">0.0</span>, <span class="fl">0.3</span>, <span class="fl">0.7</span>, <span class="fl">1.0</span>]},</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        <span class="st">"prompt_template"</span>: {</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>            <span class="st">"values"</span>: [</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>                <span class="st">"Answer the following question: </span><span class="sc">{question}</span><span class="st">"</span>,</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>                <span class="st">"Given the question '</span><span class="sc">{question}</span><span class="st">', provide a concise answer."</span>,</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>                <span class="st">"Answer this question accurately and briefly: </span><span class="sc">{question}</span><span class="st">"</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>            ]</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        },</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>        <span class="st">"max_tokens"</span>: {<span class="st">"values"</span>: [<span class="dv">50</span>, <span class="dv">100</span>, <span class="dv">200</span>]}</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>sweep_id <span class="op">=</span> wandb.sweep(sweep_configuration, project<span class="op">=</span><span class="st">"llm-evaluation"</span>)</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> sweep_function():</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    run <span class="op">=</span> wandb.init()</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get sweep parameters</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    temperature <span class="op">=</span> wandb.config.temperature</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    prompt_template <span class="op">=</span> wandb.config.prompt_template</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    max_tokens <span class="op">=</span> wandb.config.max_tokens</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Run evaluation with these parameters</span></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ... similar to previous code, but using sweep parameters</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>wandb.agent(sweep_id, function<span class="op">=</span>sweep_function)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This approach allows us to systematically explore the impact of different parameters on model performance, and visualize the results in the W&amp;B UI.</p>
-</section>
-</section>
-<section id="case-study-math-problem-evaluation" class="level2">
-<h2 class="anchored" data-anchor-id="case-study-math-problem-evaluation">Case Study: Math Problem Evaluation</h2>
-<p>One interesting application of this approach is evaluating LLM performance on mathematical problems.</p>
-<p>For mathematical problems, we might define specialized evaluation dimensions:</p>
-<ol type="1">
-<li><strong>Correctness of final answer</strong></li>
-<li><strong>Validity of the solution approach</strong></li>
-<li><strong>Step-by-step reasoning quality</strong></li>
-</ol>
-<p>Here’s how we might adapt our evaluation framework:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>math_problems <span class="op">=</span> [</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    {</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="st">"question"</span>: <span class="st">"Solve for x: 2x + 5 = 15"</span>,</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        <span class="st">"reference_answer"</span>: <span class="st">"x = 5"</span>,</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        <span class="st">"reference_solution"</span>: <span class="st">"2x + 5 = 15</span><span class="ch">\n</span><span class="st">2x = 10</span><span class="ch">\n</span><span class="st">x = 5"</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    },</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># More problems...</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Define specialized math evaluation</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluate_math_solution(problem, reference_answer, reference_solution, response):</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract final answer from the response</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Analyze solution approach</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Score step-by-step reasoning</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>        <span class="st">"answer_correctness"</span>: <span class="fl">1.0</span>,  <span class="co"># Binary or graded</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>        <span class="st">"approach_validity"</span>: <span class="fl">0.9</span>,   <span class="co"># How valid was the solution approach</span></span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>        <span class="st">"reasoning_quality"</span>: <span class="fl">0.8</span>    <span class="co"># Quality of intermediate steps</span></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="visualizing-and-interpreting-results" class="level2">
-<h2 class="anchored" data-anchor-id="visualizing-and-interpreting-results">Visualizing and Interpreting Results</h2>
-<p>After running our evaluations, W&amp;B gives us powerful visualization capabilities:</p>
-<ol type="1">
-<li><strong>Parallel coordinates plots</strong>: See how different parameters affect various metrics</li>
-<li><strong>Scatter plots</strong>: Identify relationships between different evaluation dimensions</li>
-<li><strong>Tables with rich media</strong>: Examine individual examples with detailed scoring</li>
-</ol>
-<p>These visualizations help identify:</p>
-<ul>
-<li><strong>Patterns of failure</strong>: Common scenarios where the model struggles</li>
-<li><strong>Parameter sensitivity</strong>: How temperature, prompt structure, etc. affect performance</li>
-<li><strong>Trade-offs</strong>: Where improving one metric might harm another</li>
-</ul>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Effective LLM evaluation requires a systematic approach that addresses multiple dimensions of performance. By using tools like W&amp;B Sweeps, we can:</p>
-<ol type="1">
-<li>Define clear evaluation criteria</li>
-<li>Test across diverse examples</li>
-<li>Systematically explore different parameters</li>
-<li>Visualize and analyze results</li>
-</ol>
-<p>This approach not only helps in selecting the right models and parameters but also in identifying specific weaknesses that need addressing.</p>
-<p>Remember that evaluation is not a one-time activity but an ongoing process. As your use cases evolve and models improve, your evaluation framework should evolve too.</p>
-<p>If you’re interested in exploring this topic further, check out my <a href="https://github.com/ayulockin/llm-eval-sweep">llm-eval-sweep</a> repository for more examples and code samples.</p>
-<hr>
-<p><em>What aspects of LLM evaluation do you find most challenging? I’d love to hear about your experiences in the comments!</em></p>
+<section id="the-state-of-llm-evaluation" class="level1">
+<h1>The State of LLM Evaluation</h1>
+<p><em>Content coming soon!</em></p>
+<p>Check out my repository for more information on LLM evaluation approaches: <a href="https://github.com/ayulockin/llm-eval-sweep">LLM Evaluation Strategies</a></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
