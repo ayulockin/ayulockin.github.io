@@ -168,8 +168,8 @@
     "text": "Hyperparameter Optimization with Weights & Biases Sweeps\nMultimodal Few-Shot Learning with Frozen Language Models\n\n\n\n\n\nIntroduction to Image Inpainting with Deep Learning (joint work with Sayak Paul)\nUnderstanding the Effectiveness of Ensembles in Deep Learning (joint work with Sayak Paul)\nUnsupervised Visual Representation Learning with SwAV (joint work with Sayak Paul)\nBenchmarking the 🤗 Transformers for Tensorflow 2\nVisualize Class Activation Maps for Image Classification Models\nReproducible Models with W&B\nKeras XLA Benchmarks (in collaboration with Soumik Rakshit and Sayak Paul)\nVisualize Models in TensorBoard with Weights & Biases\nVisualizing Model Performance with W&B\nBuilding LLM Evaluation Frameworks\nMLOps for Computer Vision Systems"
   },
   {
-    "objectID": "authoring.html#medium",
-    "href": "authoring.html#medium",
+    "objectID": "authoring.html#medium-articles",
+    "href": "authoring.html#medium-articles",
     "title": "Authoring",
     "section": "",
     "text": "I regularly publish technical articles on Medium, covering various aspects of machine learning, deep learning, and MLOps:\n\nBuilding Robust LLM Applications\nThe State of LLM Evaluation\nMachine Learning System Design: A Comprehensive Approach\nGradient Amplification Attack: Circumventing Defenses Against Backdoor Attacks\nTraining with Mixed Precision in TensorFlow 2.0"

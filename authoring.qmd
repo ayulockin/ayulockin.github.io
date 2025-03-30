@@ -29,7 +29,7 @@ Below are the blogs, articles, and tutorials I have written on Machine Learning,
 * [Building LLM Evaluation Frameworks](https://wandb.ai/ayush-thakur/llm-eval-sweep/reports/Evaluating-LLMs--Vmlldzo1Mjk0NDA2){target="_blank"}
 * [MLOps for Computer Vision Systems](https://wandb.ai/ayush-thakur/cv-mlops/reports/MLOps-Pipeline-for-Computer-Vision--Vmlldzo0MzE4Nzc){target="_blank"}
 
-## Medium
+## Medium Articles
 
 I regularly publish technical articles on Medium, covering various aspects of machine learning, deep learning, and MLOps:
 
