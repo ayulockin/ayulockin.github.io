@@ -1,0 +1,252 @@
+/*-- scss:defaults --*/
+
+/*-- scss:rules --*/
+
+/* General styling */
+:root {
+  --accent-color: #0A6EBD;
+  --secondary-color: #45CFDD;
+  --tertiary-color: #F9F871;
+  --bg-light: #f8f9fa;
+  --text-dark: #333;
+  --text-light: #666;
+  --card-text: #333;
+  --border-radius: 8px;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-md);
+}
+
+/* Profile section */
+.profile-section {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  align-items: flex-start;
+}
+
+.profile-image {
+  flex: 0 0 280px;
+}
+
+.profile-image img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-content {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+}
+
+.profile-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.profile-badges {
+  margin-bottom: var(--spacing-md);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+.profile-bio {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.profile-links {
+  margin-bottom: var(--spacing-md);
+  font-size: 1rem;
+}
+
+.profile-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.profile-buttons .btn {
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Highlights section */
+.highlights-section {
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-heading {
+  font-size: 1.6rem;
+  margin-bottom: var(--spacing-md);
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background-color: var(--accent-color);
+}
+
+.highlights-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.highlight-card {
+  padding: var(--spacing-md);
+  background-color: var(--bg-light);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: var(--card-text);
+  font-size: 0.9rem;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-card h3 {
+  margin-top: 0;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Expertise section */
+.expertise-section {
+  margin-bottom: var(--spacing-lg);
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.expertise-item {
+  padding: var(--spacing-md);
+  background-color: var(--bg-light);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid var(--accent-color);
+  transition: transform 0.3s ease;
+  color: var(--card-text);
+  font-size: 0.9rem;
+}
+
+.expertise-item:hover {
+  transform: translateY(-5px);
+}
+
+.expertise-item h4 {
+  margin-top: 0;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Courses section */
+.courses-section {
+  background-color: var(--bg-light);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-lg);
+  color: var(--card-text);
+  font-size: 0.9rem;
+}
+
+.explore-link {
+  display: inline-block;
+  margin-top: var(--spacing-sm);
+  font-weight: 600;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+/* Dark mode adjustments */
+[data-bs-theme="dark"] {
+  --bg-light: #343a40;
+  --text-light: #adb5bd;
+  --card-text: #e9ecef;
+}
+
+[data-bs-theme="dark"] .highlight-card,
+[data-bs-theme="dark"] .expertise-item,
+[data-bs-theme="dark"] .courses-section {
+  color: var(--card-text);
+}
+
+[data-bs-theme="dark"] .highlight-card h3,
+[data-bs-theme="dark"] .expertise-item h4 {
+  color: #45CFDD; /* Brighter color for better contrast in dark mode */
+}
+
+[data-bs-theme="dark"] .explore-link {
+  color: #45CFDD; /* Brighter link color in dark mode */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-image {
+    flex: 0 0 220px;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .section-heading::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .profile-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .highlights-container,
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+} 

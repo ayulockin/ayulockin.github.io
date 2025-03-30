@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ayush Thakur - Talks &amp; Courses</title>
+<title>Ayush Thakur - Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,10 +70,68 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="styles.css">
-</head>
+    const options = {
+      valueNames: ['listing-image','listing-date','listing-title','listing-description','listing-reading-time','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+<link rel="alternate" type="application/rss+xml" title="Ayush Thakur" href="index.xml" data-external="1"></head>
 
 <body class="nav-fixed">
 
@@ -80,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Ayush Thakur</span>
     </a>
   </div>
@@ -91,27 +151,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./authoring.html"> 
+    <a class="nav-link" href="../authoring.html"> 
 <span class="menu-text">Authoring</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog/index.html"> 
+    <a class="nav-link active" href="../blog/index.html" aria-current="page"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./talks.html" aria-current="page"> 
+    <a class="nav-link" href="../talks.html"> 
 <span class="menu-text">Talks &amp; Courses</span></a>
   </li>  
 </ul>
@@ -127,30 +187,15 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#courses" id="toc-courses" class="nav-link active" data-scroll-target="#courses">Courses</a></li>
-  <li><a href="#conference-talks-workshops" id="toc-conference-talks-workshops" class="nav-link" data-scroll-target="#conference-talks-workshops">Conference Talks &amp; Workshops</a>
-  <ul class="collapse">
-  <li><a href="#advanced-rag-techniques-for-production-systems" id="toc-advanced-rag-techniques-for-production-systems" class="nav-link" data-scroll-target="#advanced-rag-techniques-for-production-systems">“Advanced RAG Techniques for Production Systems”</a></li>
-  <li><a href="#evaluating-and-improving-llm-performance" id="toc-evaluating-and-improving-llm-performance" class="nav-link" data-scroll-target="#evaluating-and-improving-llm-performance">“Evaluating and Improving LLM Performance”</a></li>
-  <li><a href="#mlops-for-computer-vision-systems" id="toc-mlops-for-computer-vision-systems" class="nav-link" data-scroll-target="#mlops-for-computer-vision-systems">“MLOps for Computer Vision Systems”</a></li>
-  </ul></li>
-  <li><a href="#tutorial-videos" id="toc-tutorial-videos" class="nav-link" data-scroll-target="#tutorial-videos">Tutorial Videos</a></li>
-  <li><a href="#upcoming-events" id="toc-upcoming-events" class="nav-link" data-scroll-target="#upcoming-events">Upcoming Events</a></li>
-  <li><a href="#interested-in-having-me-speak" id="toc-interested-in-having-me-speak" class="nav-link" data-scroll-target="#interested-in-having-me-speak">Interested in Having Me Speak?</a></li>
-  </ul>
-</nav>
-    </div>
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="evaluation">evaluation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="llm">llm <span class="quarto-category-count">(2)</span></div><div class="category" data-category="machine-learning">machine-learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rag">rag <span class="quarto-category-count">(1)</span></div><div class="category" data-category="techniques">techniques <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Talks &amp; Courses</h1>
-<p class="subtitle lead">My presentations, workshops, and educational content</p>
+<h1 class="title">Blog</h1>
+<p class="subtitle lead">Thoughts, tutorials, and insights on machine learning, LLMs, and MLOps</p>
 </div>
 
 
@@ -167,76 +212,120 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="courses" class="level2">
-<h2 class="anchored" data-anchor-id="courses">Courses</h2>
-<div class="grid">
-<section id="rag-from-poc-to-production" class="level3 g-col-12 g-col-md-6 card p-4 m-2">
-<h3 class="anchored" data-anchor-id="rag-from-poc-to-production">RAG++: From POC to Production</h3>
-<p>This comprehensive course covers everything you need to know about Retrieval Augmented Generation, from basic concepts to production-ready implementations. Learn how to enhance LLMs with external knowledge sources effectively.</p>
-<p><strong>Topics covered:</strong> - RAG fundamentals and architecture - Advanced retrieval techniques - Context processing and optimization - Evaluation and monitoring - Deployment considerations</p>
-<p><a href="https://wandb.ai">Course Link</a> | 2023</p>
-</section>
-<section id="training-and-fine-tuning-large-language-models-llms" class="level3 g-col-12 g-col-md-6 card p-4 m-2">
-<h3 class="anchored" data-anchor-id="training-and-fine-tuning-large-language-models-llms">Training and Fine-tuning Large Language Models (LLMs)</h3>
-<p>A deep dive into the world of LLM fine-tuning, teaching you how to adapt foundation models to your specific use cases. The course covers various techniques from parameter-efficient methods to full fine-tuning approaches.</p>
-<p><strong>Topics covered:</strong> - Understanding LLM architectures - Fine-tuning methods (LoRA, QLoRA, full fine-tuning) - Data preparation and preprocessing - Evaluation and benchmarking - Deployment and serving</p>
-<p><a href="https://wandb.ai">Course Link</a> | 2023</p>
-</section>
+<p>Welcome to my blog where I share my thoughts, experiences, and tutorials on machine learning, LLMs, and MLOps. I cover topics ranging from technical deep dives to practical implementation guides, with a focus on making complex concepts accessible.</p>
+<p>If you’re interested in specific topics, use the filters above to narrow down the posts by category, or use the search function to find exactly what you’re looking for.</p>
+<p>Feel free to share these posts and reach out with questions or feedback. I’m always happy to engage with the community!</p>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-</section>
-<section id="conference-talks-workshops" class="level2">
-<h2 class="anchored" data-anchor-id="conference-talks-workshops">Conference Talks &amp; Workshops</h2>
-<section id="advanced-rag-techniques-for-production-systems" class="level3 card mb-4">
-<h3 class="anchored" data-anchor-id="advanced-rag-techniques-for-production-systems">“Advanced RAG Techniques for Production Systems”</h3>
-<p><strong>NeurIPS Workshop</strong> | December 2023</p>
-<p>A comprehensive overview of production-grade RAG systems, covering advanced techniques like reranking, query transformation, and modular architectures. The talk included live demonstrations of performance improvements from each technique.</p>
-</section>
-<section id="evaluating-and-improving-llm-performance" class="level3 card mb-4">
-<h3 class="anchored" data-anchor-id="evaluating-and-improving-llm-performance">“Evaluating and Improving LLM Performance”</h3>
-<p><strong>PyData Global</strong> | November 2023</p>
-<p>This workshop provided attendees with a framework for systematically evaluating LLM performance across various dimensions, along with strategies for addressing common weaknesses. Participants learned how to use Weights &amp; Biases to track experiments and improvements.</p>
-</section>
-<section id="mlops-for-computer-vision-systems" class="level3 card mb-4">
-<h3 class="anchored" data-anchor-id="mlops-for-computer-vision-systems">“MLOps for Computer Vision Systems”</h3>
-<p><strong>TensorFlow Meetup</strong> | May 2022</p>
-<p>As a Google Developer Expert in TensorFlow, I presented best practices for operationalizing computer vision models, from experiment tracking to deployment. The talk showcased how Weights &amp; Biases can streamline the ML lifecycle.</p>
-</section>
-</section>
-<section id="tutorial-videos" class="level2">
-<h2 class="anchored" data-anchor-id="tutorial-videos">Tutorial Videos</h2>
-<div class="grid">
-<section id="understanding-loss-landscapes" class="level3 g-col-12 g-col-md-4 card p-3 m-2">
-<h3 class="anchored" data-anchor-id="understanding-loss-landscapes">Understanding Loss Landscapes</h3>
-<p>An exploration of how loss landscapes impact model performance and why ensemble methods work well.</p>
-<p><a href="https://youtube.com">Watch Video</a> | 25 minutes</p>
-</section>
-<section id="building-a-rag-system-from-scratch" class="level3 g-col-12 g-col-md-4 card p-3 m-2">
-<h3 class="anchored" data-anchor-id="building-a-rag-system-from-scratch">Building a RAG System from Scratch</h3>
-<p>Step-by-step tutorial on implementing a basic RAG system using open-source tools.</p>
-<p><a href="https://youtube.com">Watch Video</a> | 35 minutes</p>
-</section>
-<section id="fine-tuning-llms-with-lora" class="level3 g-col-12 g-col-md-4 card p-3 m-2">
-<h3 class="anchored" data-anchor-id="fine-tuning-llms-with-lora">Fine-tuning LLMs with LoRA</h3>
-<p>Learn how to efficiently fine-tune large language models using Parameter-Efficient Fine-Tuning (PEFT) methods.</p>
-<p><a href="https://youtube.com">Watch Video</a> | 40 minutes</p>
-</section>
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="llm,evaluation,machine-learning" data-listing-date-sort="1702319400000" data-listing-file-modified-sort="1743334939070" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
+<div class="thumbnail">
+<p><a href="../blog/posts/llm-evaluation.html" class="no-external"></a></p><a href="../blog/posts/llm-evaluation.html" class="no-external">
+<p><img src="../blog/posts/images/llm-eval-cover.jpg" class="thumbnail-image"></p>
+</a><p><a href="../blog/posts/llm-evaluation.html" class="no-external"></a></p>
 </div>
-</section>
-<section id="upcoming-events" class="level2">
-<h2 class="anchored" data-anchor-id="upcoming-events">Upcoming Events</h2>
-<ul>
-<li><strong>“LLM Systems: From Prototype to Production”</strong> - ML Summit | June 2024</li>
-<li><strong>“Evaluating Hallucinations in LLMs”</strong> - AI Conference | August 2024</li>
-</ul>
-</section>
-<section id="interested-in-having-me-speak" class="level2">
-<h2 class="anchored" data-anchor-id="interested-in-having-me-speak">Interested in Having Me Speak?</h2>
-<p>If you’re organizing a conference, workshop, or meetup related to machine learning, LLMs, or MLOps, I’d be happy to discuss speaking opportunities. Please <a href="mailto:ayush.thakur@example.com">contact me</a> with details about your event.</p>
-
-
-</section>
-
-</main> <!-- /main -->
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../blog/posts/llm-evaluation.html" class="no-external">The State of LLM Evaluation</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../blog/posts/llm-evaluation.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('llm'); return false;">
+llm
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('evaluation'); return false;">
+evaluation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('machine-learning'); return false;">
+machine-learning
+</div>
+</div>
+<div class="listing-description">
+<a href="../blog/posts/llm-evaluation.html" class="no-external">An overview of current approaches and challenges in LLM evaluation</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../blog/posts/llm-evaluation.html" class="no-external">
+<div class="listing-date">
+Dec 12, 2023
+</div>
+<div class="listing-reading-time">
+1 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="llm,rag,techniques" data-listing-date-sort="1701109800000" data-listing-file-modified-sort="1743339187552" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+<div class="thumbnail">
+<p><a href="../blog/posts/rag-techniques-overview.html" class="no-external"></a></p><a href="../blog/posts/rag-techniques-overview.html" class="no-external">
+<p><img src="../blog/posts/images/rag-cover.jpg" class="thumbnail-image"></p>
+</a><p><a href="../blog/posts/rag-techniques-overview.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../blog/posts/rag-techniques-overview.html" class="no-external">RAG Techniques: From Naive to Advanced</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../blog/posts/rag-techniques-overview.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('llm'); return false;">
+llm
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('rag'); return false;">
+rag
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('techniques'); return false;">
+techniques
+</div>
+</div>
+<div class="listing-description">
+<a href="../blog/posts/rag-techniques-overview.html" class="no-external">An overview of Retrieval Augmented Generation (RAG) techniques for enhancing LLM responses with external knowledge</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../blog/posts/rag-techniques-overview.html" class="no-external">
+<div class="listing-date">
+Nov 28, 2023
+</div>
+<div class="listing-reading-time">
+1 min
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
