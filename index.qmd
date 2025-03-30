@@ -5,6 +5,10 @@ toc: false
 css: index.css
 ---
 
+::: {.alert .alert-info .mb-4 style="font-size: 0.9rem;"}
+**Note:** This website was created using [Cursor](https://cursor.sh/){target="_blank"} and [Claude 3.7 Sonnet](https://anthropic.com/claude){target="_blank"}. It's currently a work in progress and may contain errors or inaccuracies. I apologize for any incorrect attributions or information. I'm continuously improving the site to ensure everything is accurate and up-to-date.
+:::
+
 ::: {.home-container}
 ::: {.profile-section}
 ::: {.profile-image}

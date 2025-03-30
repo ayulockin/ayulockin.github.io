@@ -25,35 +25,35 @@
     "href": "index.html",
     "title": "Ayush Thakur",
     "section": "",
-    "text": "Google Developer Expert Kaggle Notebooks Master\n\n\nHello! I’m a Machine Learning Engineer specializing in LLM applications, model evaluation, and MLOps. My work focuses on building robust ML pipelines, evaluating LLM systems, and developing tools for the open-source community.\nAt Weights & Biases, I develop MLOps solutions for popular repositories like Keras, OpenMMLab, and Meta. I’m also a Google Developer Expert in Machine Learning and a Kaggle Notebooks Master.\nWhen I’m not coding, I enjoy watching anime (Naruto is my all-time favorite!), sharing knowledge through technical articles, and collaborating on interesting ML projects.\n\n\nGitHub | Twitter | LinkedIn | Kaggle | W&B\n\n\nAuthoring Read My Blog View My Projects Talks & Courses\n\n\n\n\n\n\n\n\n\nA comprehensive guide to Retrieval Augmented Generation techniques for enhancing LLMs with external knowledge sources.\n\n\n\nA systematic approach to evaluating LLM performance using W&B Sweeps.\n\n\n\nTensorFlow implementation of self-supervised visual representation learning through contrasting cluster assignments.\n\n\n\n\n\n\n\n\nBuilding, evaluating, and optimizing LLM-based applications.\n\n\n\nImplementing retrieval-augmented generation for knowledge-intensive applications.\n\n\n\nDeveloping robust ML pipelines and infrastructure for continuous delivery.\n\n\n\nImplementing and optimizing visual recognition systems.\n\n\n\nCreating accessible educational content on ML topics.\n\n\n\nSystematically assessing ML model performance across dimensions.\n\n\n\n\n\nI’ve created comprehensive courses on: - RAG++: From POC to Production - Training and Fine-tuning Large Language Models (LLMs)\nExplore All Courses & Talks"
+    "text": "Note: This website was created using Cursor and Claude 3.7 Sonnet. It’s currently a work in progress and may contain errors or inaccuracies. I apologize for any incorrect attributions or information. I’m continuously improving the site to ensure everything is accurate and up-to-date."
   },
   {
     "objectID": "index.html#machine-learning-engineer-at-weights-biases",
     "href": "index.html#machine-learning-engineer-at-weights-biases",
     "title": "Ayush Thakur",
-    "section": "",
-    "text": "Google Developer Expert Kaggle Notebooks Master\n\n\nHello! I’m a Machine Learning Engineer specializing in LLM applications, model evaluation, and MLOps. My work focuses on building robust ML pipelines, evaluating LLM systems, and developing tools for the open-source community.\nAt Weights & Biases, I develop MLOps solutions for popular repositories like Keras, OpenMMLab, and Meta. I’m also a Google Developer Expert in Machine Learning and a Kaggle Notebooks Master.\nWhen I’m not coding, I enjoy watching anime (Naruto is my all-time favorite!), sharing knowledge through technical articles, and collaborating on interesting ML projects.\n\n\nGitHub | Twitter | LinkedIn | Kaggle | W&B\n\n\nAuthoring Read My Blog View My Projects Talks & Courses"
+    "section": "Machine Learning Engineer at Weights & Biases",
+    "text": "Machine Learning Engineer at Weights & Biases\n\nGoogle Developer Expert Kaggle Notebooks Master\n\n\nHello! I’m a Machine Learning Engineer specializing in LLM applications, model evaluation, and MLOps. My work focuses on building robust ML pipelines, evaluating LLM systems, and developing tools for the open-source community.\nAt Weights & Biases, I develop MLOps solutions for popular repositories like Keras, OpenMMLab, and Meta. I’m also a Google Developer Expert in Machine Learning and a Kaggle Notebooks Master.\nWhen I’m not coding, I enjoy watching anime (Naruto is my all-time favorite!), sharing knowledge through technical articles, and collaborating on interesting ML projects.\n\n\nGitHub | Twitter | LinkedIn | Kaggle | W&B\n\n\nAuthoring Read My Blog View My Projects Talks & Courses"
   },
   {
     "objectID": "index.html#featured-work",
     "href": "index.html#featured-work",
     "title": "Ayush Thakur",
-    "section": "",
-    "text": "A comprehensive guide to Retrieval Augmented Generation techniques for enhancing LLMs with external knowledge sources.\n\n\n\nA systematic approach to evaluating LLM performance using W&B Sweeps.\n\n\n\nTensorFlow implementation of self-supervised visual representation learning through contrasting cluster assignments."
+    "section": "Featured Work",
+    "text": "Featured Work\n\n\nRAG Techniques: From Naive to Advanced\nA comprehensive guide to Retrieval Augmented Generation techniques for enhancing LLMs with external knowledge sources.\n\n\nLLM Evaluation Framework\nA systematic approach to evaluating LLM performance using W&B Sweeps.\n\n\nSwAV-TF\nTensorFlow implementation of self-supervised visual representation learning through contrasting cluster assignments."
   },
   {
     "objectID": "index.html#areas-of-expertise",
     "href": "index.html#areas-of-expertise",
     "title": "Ayush Thakur",
-    "section": "",
-    "text": "Building, evaluating, and optimizing LLM-based applications.\n\n\n\nImplementing retrieval-augmented generation for knowledge-intensive applications.\n\n\n\nDeveloping robust ML pipelines and infrastructure for continuous delivery.\n\n\n\nImplementing and optimizing visual recognition systems.\n\n\n\nCreating accessible educational content on ML topics.\n\n\n\nSystematically assessing ML model performance across dimensions."
+    "section": "Areas of Expertise",
+    "text": "Areas of Expertise\n\n\nLLM Applications\nBuilding, evaluating, and optimizing LLM-based applications.\n\n\nRAG Systems\nImplementing retrieval-augmented generation for knowledge-intensive applications.\n\n\nMLOps\nDeveloping robust ML pipelines and infrastructure for continuous delivery.\n\n\nComputer Vision\nImplementing and optimizing visual recognition systems.\n\n\nTechnical Writing\nCreating accessible educational content on ML topics.\n\n\nModel Evaluation\nSystematically assessing ML model performance across dimensions."
   },
   {
     "objectID": "index.html#courses-education",
     "href": "index.html#courses-education",
     "title": "Ayush Thakur",
-    "section": "",
-    "text": "I’ve created comprehensive courses on: - RAG++: From POC to Production - Training and Fine-tuning Large Language Models (LLMs)\nExplore All Courses & Talks"
+    "section": "Courses & Education",
+    "text": "Courses & Education\nI’ve created comprehensive courses on: - RAG++: From POC to Production - Training and Fine-tuning Large Language Models (LLMs)\nExplore All Courses & Talks"
   },
   {
     "objectID": "projects/llm-eval-sweep.html",
