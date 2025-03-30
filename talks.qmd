@@ -1,0 +1,103 @@
+---
+title: "Talks & Courses"
+subtitle: "My presentations, workshops, and educational content"
+page-layout: full
+---
+
+## Courses
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6 .card .p-4 .m-2}
+### RAG++: From POC to Production
+
+This comprehensive course covers everything you need to know about Retrieval Augmented Generation, from basic concepts to production-ready implementations. Learn how to enhance LLMs with external knowledge sources effectively.
+
+**Topics covered:**
+- RAG fundamentals and architecture
+- Advanced retrieval techniques
+- Context processing and optimization
+- Evaluation and monitoring
+- Deployment considerations
+
+[Course Link](https://wandb.ai) | 2023
+:::
+
+::: {.g-col-12 .g-col-md-6 .card .p-4 .m-2}
+### Training and Fine-tuning Large Language Models (LLMs)
+
+A deep dive into the world of LLM fine-tuning, teaching you how to adapt foundation models to your specific use cases. The course covers various techniques from parameter-efficient methods to full fine-tuning approaches.
+
+**Topics covered:**
+- Understanding LLM architectures
+- Fine-tuning methods (LoRA, QLoRA, full fine-tuning)
+- Data preparation and preprocessing
+- Evaluation and benchmarking
+- Deployment and serving
+
+[Course Link](https://wandb.ai) | 2023
+:::
+
+:::
+
+## Conference Talks & Workshops
+
+::: {.card .mb-4}
+### "Advanced RAG Techniques for Production Systems"
+**NeurIPS Workshop** | December 2023
+
+A comprehensive overview of production-grade RAG systems, covering advanced techniques like reranking, query transformation, and modular architectures. The talk included live demonstrations of performance improvements from each technique.
+
+:::
+
+::: {.card .mb-4}
+### "Evaluating and Improving LLM Performance"
+**PyData Global** | November 2023
+
+This workshop provided attendees with a framework for systematically evaluating LLM performance across various dimensions, along with strategies for addressing common weaknesses. Participants learned how to use Weights & Biases to track experiments and improvements.
+
+:::
+
+::: {.card .mb-4}
+### "MLOps for Computer Vision Systems"
+**TensorFlow Meetup** | May 2022
+
+As a Google Developer Expert in TensorFlow, I presented best practices for operationalizing computer vision models, from experiment tracking to deployment. The talk showcased how Weights & Biases can streamline the ML lifecycle.
+
+:::
+
+## Tutorial Videos
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4 .card .p-3 .m-2}
+### Understanding Loss Landscapes
+An exploration of how loss landscapes impact model performance and why ensemble methods work well.
+
+[Watch Video](https://youtube.com) | 25 minutes
+:::
+
+::: {.g-col-12 .g-col-md-4 .card .p-3 .m-2}
+### Building a RAG System from Scratch
+Step-by-step tutorial on implementing a basic RAG system using open-source tools.
+
+[Watch Video](https://youtube.com) | 35 minutes
+:::
+
+::: {.g-col-12 .g-col-md-4 .card .p-3 .m-2}
+### Fine-tuning LLMs with LoRA
+Learn how to efficiently fine-tune large language models using Parameter-Efficient Fine-Tuning (PEFT) methods.
+
+[Watch Video](https://youtube.com) | 40 minutes
+:::
+
+:::
+
+## Upcoming Events
+
+- **"LLM Systems: From Prototype to Production"** - ML Summit | June 2024
+- **"Evaluating Hallucinations in LLMs"** - AI Conference | August 2024
+
+## Interested in Having Me Speak?
+
+If you're organizing a conference, workshop, or meetup related to machine learning, LLMs, or MLOps, I'd be happy to discuss speaking opportunities. Please [contact me](mailto:contact@example.com) with details about your event.

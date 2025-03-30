@@ -1,0 +1,73 @@
+---
+title: "About Me"
+image: profile.jpg
+about:
+  template: trestles
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://x.com/ayushthakur0
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/ayush-thakur-731914149/
+    - icon: github
+      text: Github
+      href: https://github.com/ayulockin
+    - icon: kaggle
+      text: Kaggle
+      href: https://www.kaggle.com/ayuraj
+    - icon: globe
+      text: Weights & Biases
+      href: https://wandb.ai/ayush-thakur
+---
+
+## Hello, I'm Ayush Thakur 👋
+
+I'm a Machine Learning Engineer at [Weights & Biases](https://wandb.ai/), focusing on building LLM applications, LLM system evaluations, and developing MLOps pipelines for open-source repositories.
+
+### Professional Experience
+
+**Machine Learning Engineer** | Weights & Biases  
+*2020 - Present*
+
+- Develop MLOps pipelines for popular open-source repositories including Keras, OpenMMLab, and Meta repositories
+- Build and evaluate LLM applications and systems
+- Create technical content and educational materials on deep learning, MLOps, and LLMs
+- Contribute to the W&B platform's machine learning tools and features
+
+### Certifications & Recognition
+
+- **Google Developer Expert** in Machine Learning (TensorFlow Core) *(Aug 2022 - Present)*
+- **Kaggle Notebooks Master** - Created numerous popular notebooks demonstrating Weights & Biases integration
+
+### Skills
+
+- **Programming Languages**: Python, TensorFlow, PyTorch
+- **ML/DL Domains**: LLMs, Computer Vision, MLOps, RAG systems
+- **Tools & Platforms**: Weights & Biases, Keras, HuggingFace, OpenMMLab
+- **Areas of Expertise**: 
+  - LLM application development and system evaluations
+  - Building and optimizing MLOps pipelines
+  - Technical content creation
+  - Deep learning model implementations
+
+### Education
+
+**Bachelor of Engineering** | Netaji Subhash Engineering College  
+*2016 - 2020*
+
+### Community Involvement
+
+- **Google Developer Group** - Volunteer *(Nov 2018 - Nov 2019)*
+- **Robonix 2018** - Assistant Head for Line Follower competition *(Feb 2018 - Mar 2018)*
+
+### Courses Created
+
+- **RAG++: From POC to Production**
+- **Training and Fine-tuning Large Language Models (LLMs)**
+
+### Personal Interests
+
+I'm passionate about open-source collaboration and enjoy discussing innovative ML approaches. In my free time, I love watching anime (Naruto is my all-time favorite, One Piece is love, and Solo Leveling is 🔥).
+
+Feel free to reach out to me on [Twitter](https://x.com/ayushthakur0) or [LinkedIn](https://www.linkedin.com/in/ayush-thakur-731914149/) for collaborations or discussions! 

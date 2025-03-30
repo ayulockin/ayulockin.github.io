@@ -1,0 +1,115 @@
+---
+title: "LLM Evaluation with W&B Sweeps"
+description: "A repository demonstrating systematic LLM evaluation strategies using Weights & Biases"
+author: "Ayush Thakur"
+date: "2023-11-05"
+categories: [LLMs, Evaluation, MLOps, Weights & Biases]
+image: "https://github.com/ayulockin/llm-eval-sweep/raw/main/assets/sweep_results.png"
+---
+
+# LLM Evaluation with Weights & Biases Sweeps
+
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/ayulockin/llm-eval-sweep)
+
+## Project Overview
+
+This project demonstrates systematic approaches to evaluating Large Language Models (LLMs) using Weights & Biases Sweeps. It provides practical examples of how to set up comprehensive evaluation pipelines for different types of LLM tasks.
+
+## Key Features
+
+1. **QA Evaluation**: Framework for evaluating question-answering performance
+2. **Mathematical Reasoning**: Specialized evaluation for mathematical problem solving
+3. **Parameter Optimization**: Using W&B Sweeps to find optimal prompting strategies
+4. **Visualization**: Rich visual analytics for interpreting results
+
+## Implementation Details
+
+The repository implements several evaluation strategies:
+
+### LLM-as-Judge Evaluation
+
+One of the most powerful approaches is using another LLM (typically a more capable one) to evaluate the responses of the target LLM:
+
+```python
+def evaluate_with_llm_judge(question, reference_answer, model_response):
+    """
+    Uses a judge LLM to evaluate the quality of a model response
+    compared to a reference answer.
+    """
+    judge_prompt = f"""
+    Question: {question}
+    Reference Answer: {reference_answer}
+    Model Response: {model_response}
+    
+    Evaluate the model response on the following criteria on a scale of 1-10:
+    1. Accuracy: How factually correct is the response?
+    2. Completeness: How complete is the response?
+    3. Relevance: How relevant is the response to the question?
+    
+    For each criterion, provide a score and a brief explanation.
+    Finally, provide an overall score.
+    """
+    
+    # Call the judge LLM
+    evaluation = judge_llm(judge_prompt)
+    
+    # Parse the scores from the evaluation
+    # Implementation depends on the structure of the judge's response
+    
+    return parsed_scores
+```
+
+### Sweep Configuration
+
+The project uses W&B Sweeps to systematically explore different parameters:
+
+```python
+sweep_config = {
+    "method": "grid",
+    "metric": {"name": "average_accuracy", "goal": "maximize"},
+    "parameters": {
+        "temperature": {"values": [0.0, 0.3, 0.7, 1.0]},
+        "prompt_strategy": {"values": ["direct", "cot", "few_shot"]},
+        "max_tokens": {"values": [100, 200, 500]},
+    }
+}
+```
+
+This allows exploration of how different combinations of temperature, prompting strategies, and token limits affect the model's performance.
+
+## Results and Insights
+
+The repository includes visualizations of sweep results, demonstrating how different parameters affect various performance metrics:
+
+- **Temperature Impact**: Lower temperatures generally improved factual accuracy but sometimes at the cost of completeness
+- **Prompt Strategies**: Chain-of-Thought prompting significantly improved mathematical reasoning tasks
+- **Parameter Interaction**: Complex interactions between parameters highlighted the importance of systematic sweeps rather than one-at-a-time optimization
+
+## Practical Applications
+
+This evaluation framework can be applied to:
+
+1. **Model Selection**: Comparing different LLMs for specific use cases
+2. **Prompt Engineering**: Finding optimal prompting strategies
+3. **Fine-tuning Decisions**: Determining whether fine-tuning would benefit specific tasks
+4. **Application Development**: Building more robust LLM-powered applications
+
+## Future Work
+
+Ongoing and planned improvements include:
+
+- Adding support for more diverse evaluation tasks
+- Implementing automated evaluation for creative and open-ended generation
+- Integrating human feedback into the evaluation pipeline
+- Exploring adaptive evaluation strategies that adjust to model strengths and weaknesses
+
+## Get Started
+
+To use this framework for your own LLM evaluation:
+
+1. Clone the repository: `git clone https://github.com/ayulockin/llm-eval-sweep.git`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Configure your W&B credentials
+4. Run example evaluations: `python qa_full_sweeps.py`
+
+For more details, check out the [GitHub repository](https://github.com/ayulockin/llm-eval-sweep). 

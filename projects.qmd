@@ -1,0 +1,86 @@
+---
+title: "Projects"
+subtitle: "A selection of my notable open-source projects and contributions"
+listing:
+  contents: projects
+  sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields: [image, date, title, description, categories]
+  feed: true
+page-layout: full
+---
+
+## Featured Projects
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+### [SwAV-TF](https://github.com/ayulockin/SwAV-TF)
+**TensorFlow implementation of "Unsupervised Learning of Visual Features by Contrasting Cluster Assignments"**
+
+This project provides a TensorFlow implementation of the SwAV (Swapping Assignments between Views) algorithm for self-supervised visual representation learning. The implementation allows for efficient contrastive learning by contrasting cluster assignments between different views of the same image.
+
+*Technologies: TensorFlow, Contrastive Learning, Computer Vision*
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### [LossLandscape](https://github.com/ayulockin/LossLandscape)
+**Exploring the ideas from "Deep Ensembles: A Loss Landscape Perspective"**
+
+This repository explores the concepts presented in the paper "Deep Ensembles: A Loss Landscape Perspective." It visualizes loss landscapes to understand why deep ensembles work better than other methods for uncertainty estimation and how they relate to the geometry of loss functions.
+
+*Technologies: TensorFlow, Deep Learning, Uncertainty Estimation*
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### [neurips-llm-efficiency-challenge](https://github.com/ayulockin/neurips-llm-efficiency-challenge)
+**Starter pack for NeurIPS LLM Efficiency Challenge 2023**
+
+This repository provides a starter kit for participants in the NeurIPS LLM Efficiency Challenge 2023. It includes code and resources to help competitors optimize LLMs for better efficiency while maintaining performance.
+
+*Technologies: PyTorch, LLMs, Model Optimization*
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### [deepimageinpainting](https://github.com/ayulockin/deepimageinpainting)
+**Deep Image Inpainting using UNET-like Vanilla Autoencoder and Partial Convolution based Autoencoder**
+
+This project implements image inpainting techniques using two different approaches: a UNET-like Vanilla Autoencoder and a Partial Convolution based Autoencoder. It enables filling in missing or corrupted parts of images with plausible content.
+
+*Technologies: PyTorch, Computer Vision, Image Generation*
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### [llm-eval-sweep](https://github.com/ayulockin/llm-eval-sweep)
+**LLM Evaluation Strategies with W&B Sweeps**
+
+A repository showcasing various LLM evaluation strategies and leveraging Weights & Biases Sweeps to optimize LLM systems. It provides practical demonstrations of how to evaluate and improve LLM performance systematically.
+
+*Technologies: PyTorch, Weights & Biases, LLMs, Evaluation*
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### [RAG Techniques](https://wandb.ai/site/articles/rag-techniques/)
+**Comprehensive Article on RAG: From naive to advanced**
+
+An in-depth article exploring Retrieval Augmented Generation (RAG) techniques, covering basic implementations to advanced strategies. This resource helps developers understand how to enhance LLMs with external knowledge effectively.
+
+*Technologies: LLMs, RAG, Information Retrieval*
+:::
+
+:::
+
+## Open Source Contributions
+
+I actively contribute to various open-source projects, focusing on machine learning tools and libraries. Some of my contributions include:
+
+- **Keras**: Implementing MLOps pipelines and enhancements
+- **OpenMMLab repositories**: Building and optimizing workflows
+- **Meta repositories**: Contributing to machine learning infrastructure
+
+## Looking to Collaborate?
+
+I'm always interested in collaborating on machine learning projects, especially in computer vision (except face detection). If you have an interesting project idea or want to collaborate, feel free to reach out to me on [Twitter](https://x.com/ayushthakur0) or [GitHub](https://github.com/ayulockin). 

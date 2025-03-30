@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ayush Thakur - About Me</title>
+<title>Ayush Thakur - Projects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,9 +30,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -67,10 +70,68 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-date','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
-</head>
+<link rel="alternate" type="application/rss+xml" title="Ayush Thakur" href="projects.xml" data-external="1"></head>
 
 <body class="nav-fixed">
 
@@ -94,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -102,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link active" href="./projects.html" aria-current="page"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -124,123 +185,160 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
+   
   <ul>
-  <li><a href="#hello-im-ayush-thakur" id="toc-hello-im-ayush-thakur" class="nav-link active" data-scroll-target="#hello-im-ayush-thakur">Hello, I’m Ayush Thakur 👋</a>
-  <ul class="collapse">
-  <li><a href="#professional-experience" id="toc-professional-experience" class="nav-link" data-scroll-target="#professional-experience">Professional Experience</a></li>
-  <li><a href="#certifications-recognition" id="toc-certifications-recognition" class="nav-link" data-scroll-target="#certifications-recognition">Certifications &amp; Recognition</a></li>
-  <li><a href="#skills" id="toc-skills" class="nav-link" data-scroll-target="#skills">Skills</a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
-  <li><a href="#community-involvement" id="toc-community-involvement" class="nav-link" data-scroll-target="#community-involvement">Community Involvement</a></li>
-  <li><a href="#courses-created" id="toc-courses-created" class="nav-link" data-scroll-target="#courses-created">Courses Created</a></li>
-  <li><a href="#personal-interests" id="toc-personal-interests" class="nav-link" data-scroll-target="#personal-interests">Personal Interests</a></li>
-  </ul></li>
+  <li><a href="#featured-projects" id="toc-featured-projects" class="nav-link active" data-scroll-target="#featured-projects">Featured Projects</a></li>
+  <li><a href="#open-source-contributions" id="toc-open-source-contributions" class="nav-link" data-scroll-target="#open-source-contributions">Open Source Contributions</a></li>
+  <li><a href="#looking-to-collaborate" id="toc-looking-to-collaborate" class="nav-link" data-scroll-target="#looking-to-collaborate">Looking to Collaborate?</a></li>
   </ul>
 </nav>
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Evaluation">Evaluation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="LLMs">LLMs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="MLOps">MLOps <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Weights &amp; Biases">Weights &amp; Biases <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<div class="quarto-about-trestles content column-page-left">
-  <div class="about-entity">
-    <img src="profile.jpg" class="about-image
-  rounded " style="width: 20em;">
+<main class="content column-page-left" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About Me</h1>
+<h1 class="title">Projects</h1>
+<p class="subtitle lead">A selection of my notable open-source projects and contributions</p>
 </div>
+
+
+
 <div class="quarto-title-meta column-page-left">
+
+    
+  
+    
   </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://x.com/ayushthakur0" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">Twitter</span>
-  </a>
-  <a href="https://www.linkedin.com/in/ayush-thakur-731914149/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/ayulockin" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="https://www.kaggle.com/ayuraj" class="about-link" rel="" target="">
-    <i class="bi bi-kaggle"></i>
-     <span class="about-link-text">Kaggle</span>
-  </a>
-  <a href="https://wandb.ai/ayush-thakur" class="about-link" rel="" target="">
-    <i class="bi bi-globe"></i>
-     <span class="about-link-text">Weights &amp; Biases</span>
-  </a>
+
+
+<section id="featured-projects" class="level2">
+<h2 class="anchored" data-anchor-id="featured-projects">Featured Projects</h2>
+<div class="grid">
+<section id="swav-tf" class="level3 g-col-12 g-col-md-6">
+<h3 class="anchored" data-anchor-id="swav-tf"><a href="https://github.com/ayulockin/SwAV-TF">SwAV-TF</a></h3>
+<p><strong>TensorFlow implementation of “Unsupervised Learning of Visual Features by Contrasting Cluster Assignments”</strong></p>
+<p>This project provides a TensorFlow implementation of the SwAV (Swapping Assignments between Views) algorithm for self-supervised visual representation learning. The implementation allows for efficient contrastive learning by contrasting cluster assignments between different views of the same image.</p>
+<p><em>Technologies: TensorFlow, Contrastive Learning, Computer Vision</em></p>
+</section>
+<section id="losslandscape" class="level3 g-col-12 g-col-md-6">
+<h3 class="anchored" data-anchor-id="losslandscape"><a href="https://github.com/ayulockin/LossLandscape">LossLandscape</a></h3>
+<p><strong>Exploring the ideas from “Deep Ensembles: A Loss Landscape Perspective”</strong></p>
+<p>This repository explores the concepts presented in the paper “Deep Ensembles: A Loss Landscape Perspective.” It visualizes loss landscapes to understand why deep ensembles work better than other methods for uncertainty estimation and how they relate to the geometry of loss functions.</p>
+<p><em>Technologies: TensorFlow, Deep Learning, Uncertainty Estimation</em></p>
+</section>
+<section id="neurips-llm-efficiency-challenge" class="level3 g-col-12 g-col-md-6">
+<h3 class="anchored" data-anchor-id="neurips-llm-efficiency-challenge"><a href="https://github.com/ayulockin/neurips-llm-efficiency-challenge">neurips-llm-efficiency-challenge</a></h3>
+<p><strong>Starter pack for NeurIPS LLM Efficiency Challenge 2023</strong></p>
+<p>This repository provides a starter kit for participants in the NeurIPS LLM Efficiency Challenge 2023. It includes code and resources to help competitors optimize LLMs for better efficiency while maintaining performance.</p>
+<p><em>Technologies: PyTorch, LLMs, Model Optimization</em></p>
+</section>
+<section id="deepimageinpainting" class="level3 g-col-12 g-col-md-6">
+<h3 class="anchored" data-anchor-id="deepimageinpainting"><a href="https://github.com/ayulockin/deepimageinpainting">deepimageinpainting</a></h3>
+<p><strong>Deep Image Inpainting using UNET-like Vanilla Autoencoder and Partial Convolution based Autoencoder</strong></p>
+<p>This project implements image inpainting techniques using two different approaches: a UNET-like Vanilla Autoencoder and a Partial Convolution based Autoencoder. It enables filling in missing or corrupted parts of images with plausible content.</p>
+<p><em>Technologies: PyTorch, Computer Vision, Image Generation</em></p>
+</section>
+<section id="llm-eval-sweep" class="level3 g-col-12 g-col-md-6">
+<h3 class="anchored" data-anchor-id="llm-eval-sweep"><a href="https://github.com/ayulockin/llm-eval-sweep">llm-eval-sweep</a></h3>
+<p><strong>LLM Evaluation Strategies with W&amp;B Sweeps</strong></p>
+<p>A repository showcasing various LLM evaluation strategies and leveraging Weights &amp; Biases Sweeps to optimize LLM systems. It provides practical demonstrations of how to evaluate and improve LLM performance systematically.</p>
+<p><em>Technologies: PyTorch, Weights &amp; Biases, LLMs, Evaluation</em></p>
+</section>
+<section id="rag-techniques" class="level3 g-col-12 g-col-md-6">
+<h3 class="anchored" data-anchor-id="rag-techniques"><a href="https://wandb.ai/site/articles/rag-techniques/">RAG Techniques</a></h3>
+<p><strong>Comprehensive Article on RAG: From naive to advanced</strong></p>
+<p>An in-depth article exploring Retrieval Augmented Generation (RAG) techniques, covering basic implementations to advanced strategies. This resource helps developers understand how to enhance LLMs with external knowledge effectively.</p>
+<p><em>Technologies: LLMs, RAG, Information Retrieval</em></p>
+</section>
 </div>
+</section>
+<section id="open-source-contributions" class="level2">
+<h2 class="anchored" data-anchor-id="open-source-contributions">Open Source Contributions</h2>
+<p>I actively contribute to various open-source projects, focusing on machine learning tools and libraries. Some of my contributions include:</p>
+<ul>
+<li><strong>Keras</strong>: Implementing MLOps pipelines and enhancements</li>
+<li><strong>OpenMMLab repositories</strong>: Building and optimizing workflows</li>
+<li><strong>Meta repositories</strong>: Contributing to machine learning infrastructure</li>
+</ul>
+</section>
+<section id="looking-to-collaborate" class="level2">
+<h2 class="anchored" data-anchor-id="looking-to-collaborate">Looking to Collaborate?</h2>
+<p>I’m always interested in collaborating on machine learning projects, especially in computer vision (except face detection). If you have an interesting project idea or want to collaborate, feel free to reach out to me on <a href="https://x.com/ayushthakur0">Twitter</a> or <a href="https://github.com/ayulockin">GitHub</a>.</p>
+
+
+
+</section>
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+     </select>
   </div>
-  <div class="about-contents"><main class="content column-page-left" id="quarto-document-content">
-
-<section id="hello-im-ayush-thakur" class="level2">
-<h2 data-anchor-id="hello-im-ayush-thakur">Hello, I’m Ayush Thakur 👋</h2>
-<p>I’m a Machine Learning Engineer at <a href="https://wandb.ai/">Weights &amp; Biases</a>, focusing on building LLM applications, LLM system evaluations, and developing MLOps pipelines for open-source repositories.</p>
-<section id="professional-experience" class="level3">
-<h3 data-anchor-id="professional-experience">Professional Experience</h3>
-<p><strong>Machine Learning Engineer</strong> | Weights &amp; Biases<br>
-<em>2020 - Present</em></p>
-<ul>
-<li>Develop MLOps pipelines for popular open-source repositories including Keras, OpenMMLab, and Meta repositories</li>
-<li>Build and evaluate LLM applications and systems</li>
-<li>Create technical content and educational materials on deep learning, MLOps, and LLMs</li>
-<li>Contribute to the W&amp;B platform’s machine learning tools and features</li>
-</ul>
-</section>
-<section id="certifications-recognition" class="level3">
-<h3 data-anchor-id="certifications-recognition">Certifications &amp; Recognition</h3>
-<ul>
-<li><strong>Google Developer Expert</strong> in Machine Learning (TensorFlow Core) <em>(Aug 2022 - Present)</em></li>
-<li><strong>Kaggle Notebooks Master</strong> - Created numerous popular notebooks demonstrating Weights &amp; Biases integration</li>
-</ul>
-</section>
-<section id="skills" class="level3">
-<h3 data-anchor-id="skills">Skills</h3>
-<ul>
-<li><strong>Programming Languages</strong>: Python, TensorFlow, PyTorch</li>
-<li><strong>ML/DL Domains</strong>: LLMs, Computer Vision, MLOps, RAG systems</li>
-<li><strong>Tools &amp; Platforms</strong>: Weights &amp; Biases, Keras, HuggingFace, OpenMMLab</li>
-<li><strong>Areas of Expertise</strong>:
-<ul>
-<li>LLM application development and system evaluations</li>
-<li>Building and optimizing MLOps pipelines</li>
-<li>Technical content creation</li>
-<li>Deep learning model implementations</li>
-</ul></li>
-</ul>
-</section>
-<section id="education" class="level3">
-<h3 data-anchor-id="education">Education</h3>
-<p><strong>Bachelor of Engineering</strong> | Netaji Subhash Engineering College<br>
-<em>2016 - 2020</em></p>
-</section>
-<section id="community-involvement" class="level3">
-<h3 data-anchor-id="community-involvement">Community Involvement</h3>
-<ul>
-<li><strong>Google Developer Group</strong> - Volunteer <em>(Nov 2018 - Nov 2019)</em></li>
-<li><strong>Robonix 2018</strong> - Assistant Head for Line Follower competition <em>(Feb 2018 - Mar 2018)</em></li>
-</ul>
-</section>
-<section id="courses-created" class="level3">
-<h3 data-anchor-id="courses-created">Courses Created</h3>
-<ul>
-<li><strong>RAG++: From POC to Production</strong></li>
-<li><strong>Training and Fine-tuning Large Language Models (LLMs)</strong></li>
-</ul>
-</section>
-<section id="personal-interests" class="level3">
-<h3 data-anchor-id="personal-interests">Personal Interests</h3>
-<p>I’m passionate about open-source collaboration and enjoy discussing innovative ML approaches. In my free time, I love watching anime (Naruto is my all-time favorite, One Piece is love, and Solo Leveling is 🔥).</p>
-<p>Feel free to reach out to me on <a href="https://x.com/ayushthakur0">Twitter</a> or <a href="https://www.linkedin.com/in/ayush-thakur-731914149/">LinkedIn</a> for collaborations or discussions!</p>
-
-
-</section>
-</section>
-</main></div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
- <!-- /main -->
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="LLMs,Evaluation,MLOps,Weights &amp; Biases" data-listing-date-sort="1699122600000" data-listing-file-modified-sort="1743325570144" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="559">
+<a href="./projects/llm-eval-sweep.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="https://github.com/ayulockin/llm-eval-sweep/raw/main/assets/sweep_results.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+LLM Evaluation with W&amp;B Sweeps
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
+LLMs
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Evaluation'); return false;">
+Evaluation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('MLOps'); return false;">
+MLOps
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Weights &amp; Biases'); return false;">
+Weights &amp; Biases
+</div>
+</div>
+<div class="card-text listing-description">
+A repository demonstrating systematic LLM evaluation strategies using Weights &amp; Biases
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Nov 5, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -405,6 +503,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

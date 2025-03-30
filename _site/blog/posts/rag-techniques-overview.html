@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Ayush Thakur">
+<meta name="dcterms.date" content="2023-12-15">
+<meta name="description" content="A comprehensive guide to Retrieval Augmented Generation techniques and implementation strategies">
 
-<title>Ayush Thakur - About Me</title>
+<title>Ayush Thakur - RAG Techniques: From Naive to Advanced</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +23,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -79,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Ayush Thakur</span>
     </a>
   </div>
@@ -90,23 +128,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog/index.html"> 
+    <a class="nav-link" href="../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./talks.html"> 
+    <a class="nav-link" href="../../talks.html"> 
 <span class="menu-text">Talks &amp; Courses</span></a>
   </li>  
 </ul>
@@ -124,123 +162,201 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
+   
   <ul>
-  <li><a href="#hello-im-ayush-thakur" id="toc-hello-im-ayush-thakur" class="nav-link active" data-scroll-target="#hello-im-ayush-thakur">Hello, I’m Ayush Thakur 👋</a>
+  <li><a href="#rag-techniques-from-naive-to-advanced" id="toc-rag-techniques-from-naive-to-advanced" class="nav-link active" data-scroll-target="#rag-techniques-from-naive-to-advanced">RAG Techniques: From Naive to Advanced</a>
   <ul class="collapse">
-  <li><a href="#professional-experience" id="toc-professional-experience" class="nav-link" data-scroll-target="#professional-experience">Professional Experience</a></li>
-  <li><a href="#certifications-recognition" id="toc-certifications-recognition" class="nav-link" data-scroll-target="#certifications-recognition">Certifications &amp; Recognition</a></li>
-  <li><a href="#skills" id="toc-skills" class="nav-link" data-scroll-target="#skills">Skills</a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
-  <li><a href="#community-involvement" id="toc-community-involvement" class="nav-link" data-scroll-target="#community-involvement">Community Involvement</a></li>
-  <li><a href="#courses-created" id="toc-courses-created" class="nav-link" data-scroll-target="#courses-created">Courses Created</a></li>
-  <li><a href="#personal-interests" id="toc-personal-interests" class="nav-link" data-scroll-target="#personal-interests">Personal Interests</a></li>
+  <li><a href="#what-is-rag" id="toc-what-is-rag" class="nav-link" data-scroll-target="#what-is-rag">What is RAG?</a></li>
+  <li><a href="#basic-rag-implementation" id="toc-basic-rag-implementation" class="nav-link" data-scroll-target="#basic-rag-implementation">Basic RAG Implementation</a></li>
+  <li><a href="#advanced-rag-techniques" id="toc-advanced-rag-techniques" class="nav-link" data-scroll-target="#advanced-rag-techniques">Advanced RAG Techniques</a>
+  <ul class="collapse">
+  <li><a href="#query-transformation" id="toc-query-transformation" class="nav-link" data-scroll-target="#query-transformation">Query Transformation</a></li>
+  <li><a href="#reranking" id="toc-reranking" class="nav-link" data-scroll-target="#reranking">Reranking</a></li>
+  <li><a href="#context-selection" id="toc-context-selection" class="nav-link" data-scroll-target="#context-selection">Context Selection</a></li>
+  <li><a href="#hierarchical-rag" id="toc-hierarchical-rag" class="nav-link" data-scroll-target="#hierarchical-rag">Hierarchical RAG</a></li>
+  </ul></li>
+  <li><a href="#modular-rag-framework" id="toc-modular-rag-framework" class="nav-link" data-scroll-target="#modular-rag-framework">Modular RAG Framework</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<div class="quarto-about-trestles content column-page-left">
-  <div class="about-entity">
-    <img src="profile.jpg" class="about-image
-  rounded " style="width: 20em;">
+<main class="content column-page-left" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About Me</h1>
+<h1 class="title">RAG Techniques: From Naive to Advanced</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">LLMs</div>
+    <div class="quarto-category">RAG</div>
+    <div class="quarto-category">Machine Learning</div>
+    <div class="quarto-category">Tutorials</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    A comprehensive guide to Retrieval Augmented Generation techniques and implementation strategies
+  </div>
 </div>
+
+
 <div class="quarto-title-meta column-page-left">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ayush Thakur </p>
+          </div>
   </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 15, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://x.com/ayushthakur0" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">Twitter</span>
-  </a>
-  <a href="https://www.linkedin.com/in/ayush-thakur-731914149/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/ayulockin" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="https://www.kaggle.com/ayuraj" class="about-link" rel="" target="">
-    <i class="bi bi-kaggle"></i>
-     <span class="about-link-text">Kaggle</span>
-  </a>
-  <a href="https://wandb.ai/ayush-thakur" class="about-link" rel="" target="">
-    <i class="bi bi-globe"></i>
-     <span class="about-link-text">Weights &amp; Biases</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content column-page-left" id="quarto-document-content">
-
-<section id="hello-im-ayush-thakur" class="level2">
-<h2 data-anchor-id="hello-im-ayush-thakur">Hello, I’m Ayush Thakur 👋</h2>
-<p>I’m a Machine Learning Engineer at <a href="https://wandb.ai/">Weights &amp; Biases</a>, focusing on building LLM applications, LLM system evaluations, and developing MLOps pipelines for open-source repositories.</p>
-<section id="professional-experience" class="level3">
-<h3 data-anchor-id="professional-experience">Professional Experience</h3>
-<p><strong>Machine Learning Engineer</strong> | Weights &amp; Biases<br>
-<em>2020 - Present</em></p>
-<ul>
-<li>Develop MLOps pipelines for popular open-source repositories including Keras, OpenMMLab, and Meta repositories</li>
-<li>Build and evaluate LLM applications and systems</li>
-<li>Create technical content and educational materials on deep learning, MLOps, and LLMs</li>
-<li>Contribute to the W&amp;B platform’s machine learning tools and features</li>
-</ul>
-</section>
-<section id="certifications-recognition" class="level3">
-<h3 data-anchor-id="certifications-recognition">Certifications &amp; Recognition</h3>
-<ul>
-<li><strong>Google Developer Expert</strong> in Machine Learning (TensorFlow Core) <em>(Aug 2022 - Present)</em></li>
-<li><strong>Kaggle Notebooks Master</strong> - Created numerous popular notebooks demonstrating Weights &amp; Biases integration</li>
-</ul>
-</section>
-<section id="skills" class="level3">
-<h3 data-anchor-id="skills">Skills</h3>
-<ul>
-<li><strong>Programming Languages</strong>: Python, TensorFlow, PyTorch</li>
-<li><strong>ML/DL Domains</strong>: LLMs, Computer Vision, MLOps, RAG systems</li>
-<li><strong>Tools &amp; Platforms</strong>: Weights &amp; Biases, Keras, HuggingFace, OpenMMLab</li>
-<li><strong>Areas of Expertise</strong>:
-<ul>
-<li>LLM application development and system evaluations</li>
-<li>Building and optimizing MLOps pipelines</li>
-<li>Technical content creation</li>
-<li>Deep learning model implementations</li>
-</ul></li>
-</ul>
-</section>
-<section id="education" class="level3">
-<h3 data-anchor-id="education">Education</h3>
-<p><strong>Bachelor of Engineering</strong> | Netaji Subhash Engineering College<br>
-<em>2016 - 2020</em></p>
-</section>
-<section id="community-involvement" class="level3">
-<h3 data-anchor-id="community-involvement">Community Involvement</h3>
-<ul>
-<li><strong>Google Developer Group</strong> - Volunteer <em>(Nov 2018 - Nov 2019)</em></li>
-<li><strong>Robonix 2018</strong> - Assistant Head for Line Follower competition <em>(Feb 2018 - Mar 2018)</em></li>
-</ul>
-</section>
-<section id="courses-created" class="level3">
-<h3 data-anchor-id="courses-created">Courses Created</h3>
-<ul>
-<li><strong>RAG++: From POC to Production</strong></li>
-<li><strong>Training and Fine-tuning Large Language Models (LLMs)</strong></li>
-</ul>
-</section>
-<section id="personal-interests" class="level3">
-<h3 data-anchor-id="personal-interests">Personal Interests</h3>
-<p>I’m passionate about open-source collaboration and enjoy discussing innovative ML approaches. In my free time, I love watching anime (Naruto is my all-time favorite, One Piece is love, and Solo Leveling is 🔥).</p>
-<p>Feel free to reach out to me on <a href="https://x.com/ayushthakur0">Twitter</a> or <a href="https://www.linkedin.com/in/ayush-thakur-731914149/">LinkedIn</a> for collaborations or discussions!</p>
 
 
+<section id="rag-techniques-from-naive-to-advanced" class="level1">
+<h1>RAG Techniques: From Naive to Advanced</h1>
+<p>Imagine you’re demoing your company’s new AI chatbot to a potential client. You ask it about their latest product, the one they’ve been working on for months, and what does it return? Information from two years ago about a product they don’t even sell anymore. Frustrating, right?</p>
+<p>This is a good example of what retrieval augmented generation (RAG) prevents. It gives LLMs access to content not included in their training data, either because it could not access it, did not access it, or if it was created after the LLMs training date.</p>
+<p>In this article, we’ll explore retrieval augmented generation and common RAG techniques to enhance your LLM applications.</p>
+<section id="what-is-rag" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-rag">What is RAG?</h2>
+<p>Retrieval Augmented Generation (RAG) is a technique that combines the power of large language models with the ability to retrieve information from external sources. Rather than relying solely on the knowledge encoded in an LLM’s parameters, RAG allows models to access and reference specific information from a knowledge base.</p>
+<p>The basic RAG pipeline consists of three main components:</p>
+<ol type="1">
+<li><strong>Retriever</strong>: Fetches relevant documents from a knowledge base</li>
+<li><strong>Generator</strong>: Uses the retrieved documents as context to generate responses</li>
+<li><strong>Knowledge Base</strong>: A collection of documents or information sources</li>
+</ol>
+</section>
+<section id="basic-rag-implementation" class="level2">
+<h2 class="anchored" data-anchor-id="basic-rag-implementation">Basic RAG Implementation</h2>
+<p>The simplest RAG implementation follows these steps:</p>
+<ol type="1">
+<li>Convert your documents into embeddings and store them in a vector database</li>
+<li>When a query comes in, embed it using the same model</li>
+<li>Retrieve the most similar documents based on vector similarity</li>
+<li>Feed the retrieved documents as context to the LLM along with the user query</li>
+<li>Generate a response based on the provided context</li>
+</ol>
+<p>Here’s a simplified pseudocode:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Index documents</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> document <span class="kw">in</span> documents:</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    embedding <span class="op">=</span> embedding_model.encode(document)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    vector_db.add(document, embedding)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Query</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>query_embedding <span class="op">=</span> embedding_model.encode(user_query)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>similar_docs <span class="op">=</span> vector_db.search(query_embedding, top_k<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate response</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>context <span class="op">=</span> <span class="st">"</span><span class="ch">\n</span><span class="st">"</span>.join(similar_docs)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>prompt <span class="op">=</span> <span class="ss">f"""Answer the question based on the context below:</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">Context: </span><span class="sc">{</span>context<span class="sc">}</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">Question: </span><span class="sc">{</span>user_query<span class="sc">}</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">Answer:"""</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> llm.generate(prompt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="advanced-rag-techniques" class="level2">
+<h2 class="anchored" data-anchor-id="advanced-rag-techniques">Advanced RAG Techniques</h2>
+<p>While basic RAG works well for simple use cases, there are several ways to enhance its performance:</p>
+<section id="query-transformation" class="level3">
+<h3 class="anchored" data-anchor-id="query-transformation">Query Transformation</h3>
+<p>One issue with basic RAG is that user queries might not match the exact wording in your documents, leading to poor retrieval. Query transformation addresses this by:</p>
+<ol type="1">
+<li><strong>Expanding</strong> the query with related terms</li>
+<li><strong>Reformulating</strong> the query to better match document content</li>
+<li><strong>Breaking down</strong> complex queries into simpler sub-queries</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instead of directly using the user query</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>expanded_query <span class="op">=</span> llm.generate(<span class="ss">f"""</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ss">Expand the following query with additional relevant terms:</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ss">Query: </span><span class="sc">{</span>user_query<span class="sc">}</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ss">Expanded query:"""</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Or rewrite it</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>rewritten_query <span class="op">=</span> llm.generate(<span class="ss">f"""</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="ss">Rewrite the following query to better match document content:</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="ss">Query: </span><span class="sc">{</span>user_query<span class="sc">}</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="ss">Rewritten query:"""</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="reranking" class="level3">
+<h3 class="anchored" data-anchor-id="reranking">Reranking</h3>
+<p>Reranking is one of the most effective ways to boost RAG performance. It works by:</p>
+<ol type="1">
+<li>Using a fast but less accurate retriever (bi-encoder) to get top-k results</li>
+<li>Applying a more powerful but slower model (cross-encoder) to rerank these initial results</li>
+</ol>
+<p>This gives us the best of both worlds: the speed of approximate retrieval and the accuracy of precise comparison.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># First retrieval phase - fast but approximate</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>initial_results <span class="op">=</span> vector_db.search(query_embedding, top_k<span class="op">=</span><span class="dv">50</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Second reranking phase - slower but more accurate</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>reranked_results <span class="op">=</span> []</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> doc <span class="kw">in</span> initial_results:</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    score <span class="op">=</span> cross_encoder_model.score(user_query, doc)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    reranked_results.append((doc, score))</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Sort by score and take top results</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>final_results <span class="op">=</span> <span class="bu">sorted</span>(reranked_results, key<span class="op">=</span><span class="kw">lambda</span> x: x[<span class="dv">1</span>], reverse<span class="op">=</span><span class="va">True</span>)[:<span class="dv">10</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="context-selection" class="level3">
+<h3 class="anchored" data-anchor-id="context-selection">Context Selection</h3>
+<p>Another challenge in RAG is that too much context can overwhelm the LLM. Techniques for better context selection include:</p>
+<ol type="1">
+<li><strong>LLM-based pruning</strong>: Use a smaller model to identify and remove irrelevant chunks</li>
+<li><strong>LLMLingua</strong>: Compress prompts by removing low-information tokens</li>
+<li><strong>Self-critique</strong>: Let the LLM assess the relevance of each chunk before final generation</li>
+</ol>
+</section>
+<section id="hierarchical-rag" class="level3">
+<h3 class="anchored" data-anchor-id="hierarchical-rag">Hierarchical RAG</h3>
+<p>For large document collections, hierarchical indexing can be more efficient:</p>
+<ol type="1">
+<li>Create a summary index with document-level embeddings</li>
+<li>Maintain a separate, more granular chunk-level index</li>
+<li>First search the summary index to identify relevant documents</li>
+<li>Then search only the chunks from those documents</li>
+</ol>
+<p>This two-step approach reduces the search space and improves retrieval efficiency.</p>
 </section>
 </section>
-</main></div>
-</div>
- <!-- /main -->
+<section id="modular-rag-framework" class="level2">
+<h2 class="anchored" data-anchor-id="modular-rag-framework">Modular RAG Framework</h2>
+<p>Rather than thinking of RAG as a fixed pipeline, consider it a modular framework where each component can be optimized independently:</p>
+<ul>
+<li><strong>Enhanced Search</strong>: Search across various data sources simultaneously</li>
+<li><strong>RAG Fusion</strong>: Use multiple query strategies and combine results</li>
+<li><strong>Memory Integration</strong>: Let the LLM guide retrieval based on conversation history</li>
+<li><strong>Smart Routing</strong>: Direct queries to the most appropriate data sources</li>
+<li><strong>Task Adapter</strong>: Tailor RAG for specific downstream tasks</li>
+</ul>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>RAG is a powerful technique that can significantly enhance the capabilities of LLMs by grounding them with external knowledge. By implementing advanced RAG techniques such as query transformation, reranking, and context selection, you can build more accurate, relevant, and efficient AI systems.</p>
+<p>The field is rapidly evolving, with new approaches emerging regularly. In future articles, we’ll explore adaptive RAG, multimodal RAG, and graph-based RAG systems in more detail.</p>
+<hr>
+<p><em>This article is based on my more comprehensive guide on <a href="https://wandb.ai/site/articles/rag-techniques/">Weights &amp; Biases</a>.</em></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -405,6 +521,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

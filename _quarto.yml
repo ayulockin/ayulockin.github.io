@@ -3,19 +3,39 @@ project:
 
 website:
   title: "Ayush Thakur"
+  site-url: "https://ayusht.dev"
+  description: "Machine Learning Engineer & Google Developer Expert"
   navbar:
+    background: primary
+    search: true
     left:
       - href: index.qmd
         text: Home
+      - href: about.qmd
+        text: About
+      - href: blog/index.qmd
+        text: Blog
+      - href: projects.qmd
+        text: Projects
       - href: talks.qmd
-        text: Talks
-      - href: blogs.qmd
-        text: Blogs
+        text: Talks & Courses
+  page-footer:
+    center: 
+      - text: "© 2023 Ayush Thakur. Built with [Quarto](https://quarto.org/)."
+    right:
+      - icon: twitter
+        href: https://x.com/ayushthakur0
+      - icon: github
+        href: https://github.com/ayulockin
+      - icon: linkedin
+        href: https://www.linkedin.com/in/ayush-thakur-731914149/
 
 format:
   html:
     theme:
-      light: minty
-      dark: minty
+      light: [flatly, styles.css]
+      dark: [darkly, styles.css]
     css: styles.css
     toc: true
+    highlight-style: github
+    page-layout: full
