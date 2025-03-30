@@ -9,6 +9,4 @@ description: "An overview of Retrieval Augmented Generation (RAG) techniques for
 
 # RAG Techniques: From Naive to Advanced
 
-*Content coming soon!*
-
-Check out my full article about this topic on Weights & Biases: [RAG Techniques: From Naive to Advanced](https://wandb.ai/site/articles/rag-techniques/) 
+*Content coming soon!* 

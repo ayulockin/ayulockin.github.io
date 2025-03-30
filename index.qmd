@@ -14,7 +14,7 @@ css: index.css
 ::: {.profile-content}
 # Ayush Thakur {.profile-name}
 
-## Machine Learning Engineer at [Weights & Biases](https://wandb.ai/) {.profile-title}
+## Machine Learning Engineer at [Weights & Biases](https://wandb.ai/){target="_blank"} {.profile-title}
 
 ::: {.profile-badges}
 <span class="badge">Google Developer Expert</span>
@@ -30,18 +30,18 @@ When I'm not coding, I enjoy watching anime (Naruto is my all-time favorite!), s
 :::
 
 ::: {.profile-links}
-[GitHub](https://github.com/ayulockin) | 
-[Twitter](https://x.com/ayushthakur0) | 
-[LinkedIn](https://www.linkedin.com/in/ayush-thakur-731914149/) | 
-[Kaggle](https://www.kaggle.com/ayuraj) | 
-[W&B](https://wandb.ai/ayush-thakur)
+[GitHub](https://github.com/ayulockin){target="_blank"} | 
+[Twitter](https://x.com/ayushthakur0){target="_blank"} | 
+[LinkedIn](https://www.linkedin.com/in/ayush-thakur-731914149/){target="_blank"} | 
+[Kaggle](https://www.kaggle.com/ayuraj){target="_blank"} | 
+[W&B](https://wandb.ai/ayush-thakur){target="_blank"}
 :::
 
 ::: {.profile-buttons}
-[Authoring](/authoring/){.btn-action .btn .btn-primary role="button"}
-[Read My Blog](/blog/){.btn-action-primary .btn-action .btn .btn-success role="button"}
-[View My Projects](/projects/){.btn-action .btn .btn-info role="button"}
-[Talks & Courses](/talks/){.btn-action .btn .btn-secondary role="button"}
+[Authoring](/authoring/){.btn-action .btn .btn-primary role="button" target="_blank"}
+[Read My Blog](/blog/){.btn-action-primary .btn-action .btn .btn-success role="button" target="_blank"}
+[View My Projects](/projects/){.btn-action .btn .btn-info role="button" target="_blank"}
+[Talks & Courses](/talks/){.btn-action .btn .btn-secondary role="button" target="_blank"}
 :::
 :::
 :::
@@ -51,17 +51,17 @@ When I'm not coding, I enjoy watching anime (Naruto is my all-time favorite!), s
 
 ::: {.highlights-container}
 ::: {.highlight-card}
-### [RAG Techniques: From Naive to Advanced](https://wandb.ai/site/articles/rag-techniques/)
+### [RAG Techniques: From Naive to Advanced](https://wandb.ai/site/articles/rag-techniques/){target="_blank"}
 A comprehensive guide to Retrieval Augmented Generation techniques for enhancing LLMs with external knowledge sources.
 :::
 
 ::: {.highlight-card}
-### [LLM Evaluation Framework](https://github.com/ayulockin/llm-eval-sweep)
+### [LLM Evaluation Framework](https://github.com/ayulockin/llm-eval-sweep){target="_blank"}
 A systematic approach to evaluating LLM performance using W&B Sweeps.
 :::
 
 ::: {.highlight-card}
-### [SwAV-TF](https://github.com/ayulockin/SwAV-TF)
+### [SwAV-TF](https://github.com/ayulockin/SwAV-TF){target="_blank"}
 TensorFlow implementation of self-supervised visual representation learning through contrasting cluster assignments.
 :::
 :::
@@ -110,7 +110,7 @@ I've created comprehensive courses on:
 - **RAG++: From POC to Production**
 - **Training and Fine-tuning Large Language Models (LLMs)**
 
-[Explore All Courses & Talks](/talks/){.explore-link}
+[Explore All Courses & Talks](/talks/){.explore-link target="_blank"}
 :::
 :::
 
