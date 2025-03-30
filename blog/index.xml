@@ -6,17 +6,16 @@
       version="2.0">
 <channel>
 <title>Ayush Thakur</title>
-<link>https://ayusht.dev/blog/</link>
+<link>https://ayusht.dev/blog/index.html</link>
 <atom:link href="https://ayusht.dev/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>Machine Learning Engineer &amp; Google Developer Expert</description>
-<generator>quarto-1.4.543</generator>
-<lastBuildDate>Mon, 11 Dec 2023 18:30:00 GMT</lastBuildDate>
+<generator>quarto-1.3.450</generator>
+<lastBuildDate>Tue, 12 Dec 2023 00:00:00 GMT</lastBuildDate>
 <item>
   <title>The State of LLM Evaluation</title>
   <dc:creator>Ayush Thakur</dc:creator>
   <link>https://ayusht.dev/blog/posts/llm-evaluation.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -33,7 +32,7 @@
   <category>evaluation</category>
   <category>machine-learning</category>
   <guid>https://ayusht.dev/blog/posts/llm-evaluation.html</guid>
-  <pubDate>Mon, 11 Dec 2023 18:30:00 GMT</pubDate>
+  <pubDate>Tue, 12 Dec 2023 00:00:00 GMT</pubDate>
   <media:content url="https://ayusht.dev/blog/posts/images/llm-eval-cover.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -41,7 +40,6 @@
   <dc:creator>Ayush Thakur</dc:creator>
   <link>https://ayusht.dev/blog/posts/rag-techniques-overview.html</link>
   <description><![CDATA[ 
-
 
 
 
@@ -57,7 +55,7 @@
   <category>rag</category>
   <category>techniques</category>
   <guid>https://ayusht.dev/blog/posts/rag-techniques-overview.html</guid>
-  <pubDate>Mon, 27 Nov 2023 18:30:00 GMT</pubDate>
+  <pubDate>Tue, 28 Nov 2023 00:00:00 GMT</pubDate>
   <media:content url="https://ayusht.dev/blog/posts/images/rag-cover.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
