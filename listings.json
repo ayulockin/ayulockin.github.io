@@ -1,15 +1,15 @@
 [
   {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/llm-eval-sweep.html"
+    ]
+  },
+  {
     "listing": "/blog/index.html",
     "items": [
       "/blog/posts/llm-evaluation.html",
       "/blog/posts/rag-techniques-overview.html"
-    ]
-  },
-  {
-    "listing": "/projects.html",
-    "items": [
-      "/projects/llm-eval-sweep.html"
     ]
   }
 ]
