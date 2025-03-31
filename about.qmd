@@ -23,22 +23,26 @@ about:
 
 ## Hello, I'm Ayush Thakur 👋
 
-I'm a Machine Learning Engineer at [Weights & Biases](https://wandb.ai/), focusing on building LLM applications, LLM system evaluations, and developing MLOps pipelines for open-source repositories.
+I currently work as aMachine Learning Engineer at [Weights & Biases](https://wandb.ai/), focusing on building integrations, LLM applications, LLM system evaluations, educational content and more. The crux of my work is to grow our usebase and have played a crucial role in doing so. As one of the earliest hire in the growth team, I have been involved with multiple key integrations, initiatives, projects, and more.
 
 ### Professional Experience
 
 **Machine Learning Engineer** | Weights & Biases  
 *2020 - Present*
 
-- Develop MLOps pipelines for popular open-source repositories including Keras, OpenMMLab, and Meta repositories
-- Build and evaluate LLM applications and systems
-- Create technical content and educational materials on deep learning, MLOps, and LLMs
-- Contribute to the W&B platform's machine learning tools and features
+- Written multiple blog posts and tutorials on Deep Learning, MLOps, RAG, Evaluation and more. Check them out [here](/authoring/){target="_blank"}.
+- Reproduced research papers and wrote about them. Check them out [here](/authoring/){target="_blank"}.
+- Develop MLOps pipelines for popular open-source repositories/frameworks/orgs like Keras, OpenMMLab, Meta, XGBoost, and more.
+- Develop LLMOps integrations with LLM providers like OpenAI, Cohere, CrewAI, and more.
+- Built and evaluated [wandbot](https://github.com/wandb/wandbot), a Q&A RAG based chatbot.
+- Created [courses](/authoring/){target="_blank"} on LLM applications and MLOps.
+- Lead the AI team in India and lead the OS integration efforts.
+- Created and built our Kaggle Ambassador program. Became a Kaggle Notebooks Master in the process.
 
 ### Certifications & Recognition
 
 - **Google Developer Expert** in Machine Learning (TensorFlow Core) *(Aug 2022 - Present)*
-- **Kaggle Notebooks Master** - Created numerous popular notebooks demonstrating Weights & Biases integration
+- **Kaggle Notebooks Master** - Created numerous popular notebooks for competitions.
 
 ### Skills
 
@@ -53,7 +57,7 @@ I'm a Machine Learning Engineer at [Weights & Biases](https://wandb.ai/), focusi
 
 ### Education
 
-**Bachelor of Engineering** | Netaji Subhash Engineering College  
+**Bachelor of Engineering** in Electronics and Communication Engineering | Netaji Subhash Engineering College  
 *2016 - 2020*
 
 ### Community Involvement
