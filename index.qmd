@@ -26,9 +26,13 @@ css: index.css
 :::
 
 ::: {.profile-bio}
-Hello! I'm a Machine Learning Engineer specializing in LLM applications, model evaluation, and MLOps. My work focuses on building robust ML pipelines, evaluating LLM systems, and developing tools for the open-source community.
+Hello! I'm a Machine Learning Engineer specializing in LLM applications, model evaluation, and MLOps. I lead the AI team in India and lead the OS integration efforts. My work focuses on baking MLOps pipelines for open-source repositories, building W&B Weave enabled tracing and monitoring, evaluating LLM systems, and developing educational content for the open-source community. Most of my work can be found in the [Authoring](/authoring/){target="_blank"} section.
 
-At Weights & Biases, I develop MLOps solutions for popular repositories like Keras, OpenMMLab, and Meta. I'm also a Google Developer Expert in Machine Learning and a Kaggle Notebooks Master.
+I have developed MLOps solutions for popular repositories like Keras, OpenMMLab, few from Meta and more. I have also built integrations with OpenAI (fine-tuning and chat completions), Cohere, CrewAI and more.
+
+These days I am exploring agents and MCPs. 
+
+I'm also a Google Developer Expert in Machine Learning and a Kaggle Notebooks Master.
 
 When I'm not coding, I enjoy watching anime (Naruto is my all-time favorite!), sharing knowledge through technical articles, and collaborating on interesting ML projects.
 :::

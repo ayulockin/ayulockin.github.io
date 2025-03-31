@@ -13,7 +13,7 @@ about:
     - icon: github
       text: Github
       href: https://github.com/ayulockin
-    - icon: kaggle
+    - icon: globe
       text: Kaggle
       href: https://www.kaggle.com/ayuraj
     - icon: globe
