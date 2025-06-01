@@ -5,39 +5,43 @@ toc: false
 css: index.css
 ---
 
-::: {.main-content}
+<div class="main-content">
 
-::: {.profile-container}
-::: {.profile-image}
+<div class="profile-container">
+<div class="profile-image">
 ![](profile.jpg)
-:::
+</div>
 
-::: {.profile-text}
-Hi there 👋 I am Ayush Thakur. I work as a Machine Learning Engineer at [Weights & Biases](https://wandb.ai/) specializing in LLM applications, model evaluation, and MLOps. I lead the AI team in India and the OS integration efforts. Know more about me from [here](/about/).
+<div class="profile-text">
+Hello! I'm an engineer by choice and heart and I love solving problems. I am not married to any school of engineering and love learning about varying technologies. I am also an active learner of biology and physics.
 
-I develop MLOps solutions for popular repositories like [Keras](https://keras.io/), [OpenMMLab](https://openmmlab.com/), and others from Meta. I've also built integrations with [OpenAI](https://openai.com/) (fine-tuning and chat completions), [Cohere](https://cohere.ai/), [CrewAI](https://www.crewai.com/) and more.
+I have a **background in Electronics and Communication Engineering**. I haven't pursued electronics in a while now in pursuit of ML but in past life have actively built autonomous robots. I feel equipped now to merge both domains of engineering to solve "big" problems.
 
-My external articles and other work are listed [here](/authoring/). A detailed account of my projects can be found [here](/projects/).
+Professionally, I am an **AI Engineer at Weights and Biases (by CoreWeave)**. I lead our open source integration efforts primarily. These integrations make it easy for you ML practitioners to get an MLOps stack. Currently I am specializing in building LLM applications and doing model evaluations. But over the span of 5 years at W&B, I have worn multiple hats -- like leading our Kaggle initiatives, building our most popular courses, and a ton loads of reports that SEO really well. Overall, the technical efforts have contributed to a successful merger of W&B with CoreWeave and I have big plans.
 
-These days I am exploring agents and MCPs.
+I am also a **Google Developer Expert** in Machine Learning and a **Kaggle Master** (notebook).
 
-I'm a **Google Developer Expert** in Machine Learning and a **Kaggle Notebooks Master**. When I'm not coding, I enjoy watching anime (Naruto is my all-time favorite!) and sharing knowledge through technical articles.
+When I'm not coding, I enjoy watching anime (Naruto is my all-time favorite!) and sharing knowledge through technical articles. I have started with 3D printing as well. Stay tuned!
 
-[GitHub](https://github.com/ayulockin) | [Twitter](https://x.com/ayushthakur0) | [LinkedIn](https://www.linkedin.com/in/ayush-thakur-731914149/) | [Kaggle](https://www.kaggle.com/ayuraj) | [W&B](https://wandb.ai/ayush-thakur)
-:::
-:::
+Know more about me from [here](about.html). My external articles and other work are listed [here](authoring.html). A detailed account of my projects can be found [here](projects.html).
+
+<div class="social-links">
+[<i class="bi bi-github"></i>](https://github.com/ayulockin) [<i class="bi bi-twitter"></i>](https://x.com/ayushthakur0) [<i class="bi bi-linkedin"></i>](https://www.linkedin.com/in/ayush-thakur-731914149/) [<i class="bi bi-bar-chart"></i>](https://www.kaggle.com/ayuraj) [<i class="bi bi-briefcase"></i>](https://wandb.ai/ayush-thakur)
+</div>
+</div>
+</div>
 
 ## News
 
 * New work on RAG evaluation: [RAG Techniques: From Naive to Advanced](https://wandb.ai/site/articles/rag-techniques/) - a comprehensive guide to Retrieval Augmented Generation techniques.
 * New work: [LLM Evaluation Framework](https://github.com/ayulockin/llm-eval-sweep) with systematic evaluation approaches using W&B Sweeps.
 * New work: [Building MLOps pipelines for Keras](https://keras.io/) integration with comprehensive monitoring and tracking capabilities.
-* Gave a course on **RAG++: From POC to Production** covering practical implementation strategies. Find the materials [here](/authoring/).
+* Gave a course on **RAG++: From POC to Production** covering practical implementation strategies. Find the materials [here](authoring.html).
 * Open-sourced [SwAV-TF](https://github.com/ayulockin/SwAV-TF), a TensorFlow implementation of self-supervised visual representation learning.
 
 To know more about my projects, please refer to [my GitHub profile](https://github.com/ayulockin).
 
-Apart from the work [here](/authoring/), I try to contribute to other platforms in the form of writing and open-source contributions. Please refer [here](/authoring/) for more details.
+Apart from the work [here](authoring.html), I try to contribute to other platforms in the form of writing and open-source contributions. Please refer [here](authoring.html) for more details.
 
-:::
+</div>
 
