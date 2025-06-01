@@ -5,10 +5,6 @@ toc: false
 css: index.css
 ---
 
-::: {.alert .alert-info .mb-4 style="font-size: 0.9rem;"}
-**Note:** This website was created using [Cursor](https://cursor.sh/){target="_blank"} and [Claude 3.7 Sonnet](https://anthropic.com/claude){target="_blank"}. It's currently a work in progress and may contain errors or inaccuracies. I apologize for any incorrect attributions or information. I'm continuously improving the site to ensure everything is accurate and up-to-date.
-:::
-
 ::: {.home-container}
 ::: {.profile-section}
 ::: {.profile-image}
@@ -26,15 +22,11 @@ css: index.css
 :::
 
 ::: {.profile-bio}
-Hello! I'm a Machine Learning Engineer specializing in LLM applications, model evaluation, and MLOps. I lead the AI team in India and lead the OS integration efforts. My work focuses on baking MLOps pipelines for open-source repositories, building W&B Weave enabled tracing and monitoring, evaluating LLM systems, and developing educational content for the open-source community. Most of my work can be found in the [Authoring](/authoring/){target="_blank"} section.
+Hello! I'm a Machine Learning Engineer specializing in LLM applications, model evaluation, and MLOps. I lead the AI team in India and the OS integration efforts at W&B. My work focuses on building MLOps pipelines for open-source repositories, developing LLM integrations with providers like OpenAI and Cohere, and creating educational content.
 
-I have developed MLOps solutions for popular repositories like Keras, OpenMMLab, few from Meta and more. I have also built integrations with OpenAI (fine-tuning and chat completions), Cohere, CrewAI and more.
+I've built integrations for popular repositories like Keras, OpenMMLab, and Meta. I've also developed comprehensive courses on RAG systems and LLM fine-tuning.
 
-These days I am exploring agents and MCPs. 
-
-I'm also a Google Developer Expert in Machine Learning and a Kaggle Notebooks Master.
-
-When I'm not coding, I enjoy watching anime (Naruto is my all-time favorite!), sharing knowledge through technical articles, and collaborating on interesting ML projects.
+Currently exploring agents and MCPs. When I'm not coding, I enjoy watching anime (Naruto is my all-time favorite!) and sharing knowledge through technical articles.
 :::
 
 ::: {.profile-links}
@@ -46,10 +38,8 @@ When I'm not coding, I enjoy watching anime (Naruto is my all-time favorite!), s
 :::
 
 ::: {.profile-buttons}
-[Authoring](/authoring/){.btn-action .btn .btn-primary role="button" target="_blank"}
-[Read My Blog](/blog/){.btn-action-primary .btn-action .btn .btn-success role="button" target="_blank"}
-[View My Projects](/projects/){.btn-action .btn .btn-info role="button" target="_blank"}
-[Talks & Courses](/talks/){.btn-action .btn .btn-secondary role="button" target="_blank"}
+[View My Work](/authoring/){.btn .btn-primary role="button" target="_blank"}
+[My Projects](/projects/){.btn .btn-secondary role="button" target="_blank"}
 :::
 :::
 :::
@@ -81,32 +71,22 @@ TensorFlow implementation of self-supervised visual representation learning thro
 ::: {.expertise-grid}
 ::: {.expertise-item}
 #### LLM Applications
-Building, evaluating, and optimizing LLM-based applications.
+Building, evaluating, and optimizing LLM-based applications with a focus on RAG systems and model evaluation.
 :::
 
 ::: {.expertise-item}
-#### RAG Systems
-Implementing retrieval-augmented generation for knowledge-intensive applications.
+#### MLOps & Integrations
+Developing robust ML pipelines and infrastructure for popular open-source repositories and frameworks.
 :::
 
 ::: {.expertise-item}
-#### MLOps
-Developing robust ML pipelines and infrastructure for continuous delivery.
+#### Technical Content
+Creating accessible educational content on ML topics, including comprehensive courses and tutorials.
 :::
 
 ::: {.expertise-item}
-#### Computer Vision
-Implementing and optimizing visual recognition systems.
-:::
-
-::: {.expertise-item}
-#### Technical Writing
-Creating accessible educational content on ML topics.
-:::
-
-::: {.expertise-item}
-#### Model Evaluation
-Systematically assessing ML model performance across dimensions.
+#### Open Source
+Contributing to major ML libraries and building integrations with leading AI providers.
 :::
 :::
 :::

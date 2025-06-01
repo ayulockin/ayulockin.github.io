@@ -12,13 +12,9 @@ website:
       - href: about.qmd
         text: About
       - href: authoring.qmd
-        text: Authoring
-      - href: blog/index.qmd
-        text: Blog
+        text: Work
       - href: projects.qmd
         text: Projects
-      - href: talks.qmd
-        text: Talks & Courses
     right:
       - icon: twitter
         href: https://x.com/ayushthakur0
@@ -28,7 +24,7 @@ website:
         href: https://www.linkedin.com/in/ayush-thakur-731914149/
   page-footer:
     center: 
-      - text: "© 2023 Ayush Thakur. Built with [Quarto](https://quarto.org/)."
+      - text: "© 2024 Ayush Thakur. Built with [Quarto](https://quarto.org/)."
 
 format:
   html:
@@ -39,4 +35,4 @@ format:
     toc: true
     highlight-style: github
     page-layout: full
-    prefer-dark: true
+    prefer-dark: false
