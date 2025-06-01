@@ -1,5 +1,103 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ayush Thakur",
+    "section": "",
+    "text": "Google Developer Expert Kaggle Notebooks Master\n\n\nHello! I’m a Machine Learning Engineer specializing in LLM applications, model evaluation, and MLOps. I lead the AI team in India and the OS integration efforts at W&B. My work focuses on building MLOps pipelines for open-source repositories, developing LLM integrations with providers like OpenAI and Cohere, and creating educational content.\nI’ve built integrations for popular repositories like Keras, OpenMMLab, and Meta. I’ve also developed comprehensive courses on RAG systems and LLM fine-tuning.\nCurrently exploring agents and MCPs. When I’m not coding, I enjoy watching anime (Naruto is my all-time favorite!) and sharing knowledge through technical articles.\n\n\nGitHub | Twitter | LinkedIn | Kaggle | W&B\n\n\nView My Work My Projects\n\n\n\n\n\n\n\n\n\nA comprehensive guide to Retrieval Augmented Generation techniques for enhancing LLMs with external knowledge sources.\n\n\n\nA systematic approach to evaluating LLM performance using W&B Sweeps.\n\n\n\nTensorFlow implementation of self-supervised visual representation learning through contrasting cluster assignments.\n\n\n\n\n\n\n\n\nBuilding, evaluating, and optimizing LLM-based applications with a focus on RAG systems and model evaluation.\n\n\n\nDeveloping robust ML pipelines and infrastructure for popular open-source repositories and frameworks.\n\n\n\nCreating accessible educational content on ML topics, including comprehensive courses and tutorials.\n\n\n\nContributing to major ML libraries and building integrations with leading AI providers.\n\n\n\n\n\nI’ve created comprehensive courses on: - RAG++: From POC to Production - Training and Fine-tuning Large Language Models (LLMs)\nExplore All Courses & Talks"
+  },
+  {
+    "objectID": "index.html#machine-learning-engineer-at-weights-biases",
+    "href": "index.html#machine-learning-engineer-at-weights-biases",
+    "title": "Ayush Thakur",
+    "section": "",
+    "text": "Google Developer Expert Kaggle Notebooks Master\n\n\nHello! I’m a Machine Learning Engineer specializing in LLM applications, model evaluation, and MLOps. I lead the AI team in India and the OS integration efforts at W&B. My work focuses on building MLOps pipelines for open-source repositories, developing LLM integrations with providers like OpenAI and Cohere, and creating educational content.\nI’ve built integrations for popular repositories like Keras, OpenMMLab, and Meta. I’ve also developed comprehensive courses on RAG systems and LLM fine-tuning.\nCurrently exploring agents and MCPs. When I’m not coding, I enjoy watching anime (Naruto is my all-time favorite!) and sharing knowledge through technical articles.\n\n\nGitHub | Twitter | LinkedIn | Kaggle | W&B\n\n\nView My Work My Projects"
+  },
+  {
+    "objectID": "index.html#featured-work",
+    "href": "index.html#featured-work",
+    "title": "Ayush Thakur",
+    "section": "",
+    "text": "A comprehensive guide to Retrieval Augmented Generation techniques for enhancing LLMs with external knowledge sources.\n\n\n\nA systematic approach to evaluating LLM performance using W&B Sweeps.\n\n\n\nTensorFlow implementation of self-supervised visual representation learning through contrasting cluster assignments."
+  },
+  {
+    "objectID": "index.html#areas-of-expertise",
+    "href": "index.html#areas-of-expertise",
+    "title": "Ayush Thakur",
+    "section": "",
+    "text": "Building, evaluating, and optimizing LLM-based applications with a focus on RAG systems and model evaluation.\n\n\n\nDeveloping robust ML pipelines and infrastructure for popular open-source repositories and frameworks.\n\n\n\nCreating accessible educational content on ML topics, including comprehensive courses and tutorials.\n\n\n\nContributing to major ML libraries and building integrations with leading AI providers."
+  },
+  {
+    "objectID": "index.html#courses-education",
+    "href": "index.html#courses-education",
+    "title": "Ayush Thakur",
+    "section": "",
+    "text": "I’ve created comprehensive courses on: - RAG++: From POC to Production - Training and Fine-tuning Large Language Models (LLMs)\nExplore All Courses & Talks"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "I currently work as aMachine Learning Engineer at Weights & Biases, focusing on building integrations, LLM applications, LLM system evaluations, educational content and more. The crux of my work is to grow our usebase and have played a crucial role in doing so. As one of the earliest hire in the growth team, I have been involved with multiple key integrations, initiatives, projects, and more.\n\n\nMachine Learning Engineer | Weights & Biases\n2020 - Present\n\nWritten multiple blog posts and tutorials on Deep Learning, MLOps, RAG, Evaluation and more. Check them out here.\nReproduced research papers and wrote about them. Check them out here.\nDevelop MLOps pipelines for popular open-source repositories/frameworks/orgs like Keras, OpenMMLab, Meta, XGBoost, and more.\nDevelop LLMOps integrations with LLM providers like OpenAI, Cohere, CrewAI, and more.\nBuilt and evaluated wandbot, a Q&A RAG based chatbot.\nCreated courses on LLM applications and MLOps.\nLead the AI team in India and lead the OS integration efforts.\nCreated and built our Kaggle Ambassador program. Became a Kaggle Notebooks Master in the process.\n\n\n\n\n\nGoogle Developer Expert in Machine Learning (TensorFlow Core) (Aug 2022 - Present)\nKaggle Notebooks Master - Created numerous popular notebooks for competitions.\n\n\n\n\n\nProgramming Languages: Python, TensorFlow, PyTorch\nML/DL Domains: LLMs, Computer Vision, MLOps, RAG systems\nTools & Platforms: Weights & Biases, Keras, HuggingFace, OpenMMLab\nAreas of Expertise:\n\nLLM application development and system evaluations\nBuilding and optimizing MLOps pipelines\nTechnical content creation\nDeep learning model implementations\n\n\n\n\n\nBachelor of Engineering in Electronics and Communication Engineering | Netaji Subhash Engineering College\n2016 - 2020\n\n\n\n\nGoogle Developer Group - Volunteer (Nov 2018 - Nov 2019)\nRobonix 2018 - Assistant Head for Line Follower competition (Feb 2018 - Mar 2018)\n\n\n\n\n\nRAG++: From POC to Production\nTraining and Fine-tuning Large Language Models (LLMs)\n\n\n\n\nI’m passionate about open-source collaboration and enjoy discussing innovative ML approaches. In my free time, I love watching anime (Naruto is my all-time favorite, One Piece is love, and Solo Leveling is 🔥).\nFeel free to reach out to me on Twitter or LinkedIn for collaborations or discussions!"
+  },
+  {
+    "objectID": "about.html#hello-im-ayush-thakur",
+    "href": "about.html#hello-im-ayush-thakur",
+    "title": "About Me",
+    "section": "",
+    "text": "I currently work as aMachine Learning Engineer at Weights & Biases, focusing on building integrations, LLM applications, LLM system evaluations, educational content and more. The crux of my work is to grow our usebase and have played a crucial role in doing so. As one of the earliest hire in the growth team, I have been involved with multiple key integrations, initiatives, projects, and more.\n\n\nMachine Learning Engineer | Weights & Biases\n2020 - Present\n\nWritten multiple blog posts and tutorials on Deep Learning, MLOps, RAG, Evaluation and more. Check them out here.\nReproduced research papers and wrote about them. Check them out here.\nDevelop MLOps pipelines for popular open-source repositories/frameworks/orgs like Keras, OpenMMLab, Meta, XGBoost, and more.\nDevelop LLMOps integrations with LLM providers like OpenAI, Cohere, CrewAI, and more.\nBuilt and evaluated wandbot, a Q&A RAG based chatbot.\nCreated courses on LLM applications and MLOps.\nLead the AI team in India and lead the OS integration efforts.\nCreated and built our Kaggle Ambassador program. Became a Kaggle Notebooks Master in the process.\n\n\n\n\n\nGoogle Developer Expert in Machine Learning (TensorFlow Core) (Aug 2022 - Present)\nKaggle Notebooks Master - Created numerous popular notebooks for competitions.\n\n\n\n\n\nProgramming Languages: Python, TensorFlow, PyTorch\nML/DL Domains: LLMs, Computer Vision, MLOps, RAG systems\nTools & Platforms: Weights & Biases, Keras, HuggingFace, OpenMMLab\nAreas of Expertise:\n\nLLM application development and system evaluations\nBuilding and optimizing MLOps pipelines\nTechnical content creation\nDeep learning model implementations\n\n\n\n\n\nBachelor of Engineering in Electronics and Communication Engineering | Netaji Subhash Engineering College\n2016 - 2020\n\n\n\n\nGoogle Developer Group - Volunteer (Nov 2018 - Nov 2019)\nRobonix 2018 - Assistant Head for Line Follower competition (Feb 2018 - Mar 2018)\n\n\n\n\n\nRAG++: From POC to Production\nTraining and Fine-tuning Large Language Models (LLMs)\n\n\n\n\nI’m passionate about open-source collaboration and enjoy discussing innovative ML approaches. In my free time, I love watching anime (Naruto is my all-time favorite, One Piece is love, and Solo Leveling is 🔥).\nFeel free to reach out to me on Twitter or LinkedIn for collaborations or discussions!"
+  },
+  {
+    "objectID": "blog/posts/rag-techniques-overview.html",
+    "href": "blog/posts/rag-techniques-overview.html",
+    "title": "RAG Techniques: From Naive to Advanced",
+    "section": "",
+    "text": "RAG Techniques: From Naive to Advanced\nContent coming soon!"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Welcome to my blog where I share my thoughts, experiences, and tutorials on machine learning, LLMs, and MLOps. I cover topics ranging from technical deep dives to practical implementation guides, with a focus on making complex concepts accessible.\nIf you’re interested in specific topics, use the filters above to narrow down the posts by category, or use the search function to find exactly what you’re looking for.\nFeel free to share these posts and reach out with questions or feedback. I’m always happy to engage with the community!\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nThe State of LLM Evaluation\n\n\n\n\n\n\n\nllm\n\n\nevaluation\n\n\nmachine-learning\n\n\n\n\nAn overview of current approaches and challenges in LLM evaluation\n\n\n\n\n\n\nDec 12, 2023\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nRAG Techniques: From Naive to Advanced\n\n\n\n\n\n\n\nllm\n\n\nrag\n\n\ntechniques\n\n\n\n\nAn overview of Retrieval Augmented Generation (RAG) techniques for enhancing LLM responses with external knowledge\n\n\n\n\n\n\nNov 28, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/posts/llm-evaluation.html",
+    "href": "blog/posts/llm-evaluation.html",
+    "title": "The State of LLM Evaluation",
+    "section": "",
+    "text": "The State of LLM Evaluation\nContent coming soon!\nCheck out my repository for more information on LLM evaluation approaches: LLM Evaluation Strategies"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "TensorFlow implementation of “Unsupervised Learning of Visual Features by Contrasting Cluster Assignments”\nThis project provides a TensorFlow implementation of the SwAV (Swapping Assignments between Views) algorithm for self-supervised visual representation learning. The implementation allows for efficient contrastive learning by contrasting cluster assignments between different views of the same image.\nTechnologies: TensorFlow, Contrastive Learning, Computer Vision\n\n\n\nExploring the ideas from “Deep Ensembles: A Loss Landscape Perspective”\nThis repository explores the concepts presented in the paper “Deep Ensembles: A Loss Landscape Perspective.” It visualizes loss landscapes to understand why deep ensembles work better than other methods for uncertainty estimation and how they relate to the geometry of loss functions.\nTechnologies: TensorFlow, Deep Learning, Uncertainty Estimation\n\n\n\nStarter pack for NeurIPS LLM Efficiency Challenge 2023\nThis repository provides a starter kit for participants in the NeurIPS LLM Efficiency Challenge 2023. It includes code and resources to help competitors optimize LLMs for better efficiency while maintaining performance.\nTechnologies: PyTorch, LLMs, Model Optimization\n\n\n\nDeep Image Inpainting using UNET-like Vanilla Autoencoder and Partial Convolution based Autoencoder\nThis project implements image inpainting techniques using two different approaches: a UNET-like Vanilla Autoencoder and a Partial Convolution based Autoencoder. It enables filling in missing or corrupted parts of images with plausible content.\nTechnologies: PyTorch, Computer Vision, Image Generation\n\n\n\nLLM Evaluation Strategies with W&B Sweeps\nA repository showcasing various LLM evaluation strategies and leveraging Weights & Biases Sweeps to optimize LLM systems. It provides practical demonstrations of how to evaluate and improve LLM performance systematically.\nTechnologies: PyTorch, Weights & Biases, LLMs, Evaluation\n\n\n\nComprehensive Article on RAG: From naive to advanced\nAn in-depth article exploring Retrieval Augmented Generation (RAG) techniques, covering basic implementations to advanced strategies. This resource helps developers understand how to enhance LLMs with external knowledge effectively.\nTechnologies: LLMs, RAG, Information Retrieval"
+  },
+  {
+    "objectID": "projects.html#featured-projects",
+    "href": "projects.html#featured-projects",
+    "title": "Projects",
+    "section": "",
+    "text": "TensorFlow implementation of “Unsupervised Learning of Visual Features by Contrasting Cluster Assignments”\nThis project provides a TensorFlow implementation of the SwAV (Swapping Assignments between Views) algorithm for self-supervised visual representation learning. The implementation allows for efficient contrastive learning by contrasting cluster assignments between different views of the same image.\nTechnologies: TensorFlow, Contrastive Learning, Computer Vision\n\n\n\nExploring the ideas from “Deep Ensembles: A Loss Landscape Perspective”\nThis repository explores the concepts presented in the paper “Deep Ensembles: A Loss Landscape Perspective.” It visualizes loss landscapes to understand why deep ensembles work better than other methods for uncertainty estimation and how they relate to the geometry of loss functions.\nTechnologies: TensorFlow, Deep Learning, Uncertainty Estimation\n\n\n\nStarter pack for NeurIPS LLM Efficiency Challenge 2023\nThis repository provides a starter kit for participants in the NeurIPS LLM Efficiency Challenge 2023. It includes code and resources to help competitors optimize LLMs for better efficiency while maintaining performance.\nTechnologies: PyTorch, LLMs, Model Optimization\n\n\n\nDeep Image Inpainting using UNET-like Vanilla Autoencoder and Partial Convolution based Autoencoder\nThis project implements image inpainting techniques using two different approaches: a UNET-like Vanilla Autoencoder and a Partial Convolution based Autoencoder. It enables filling in missing or corrupted parts of images with plausible content.\nTechnologies: PyTorch, Computer Vision, Image Generation\n\n\n\nLLM Evaluation Strategies with W&B Sweeps\nA repository showcasing various LLM evaluation strategies and leveraging Weights & Biases Sweeps to optimize LLM systems. It provides practical demonstrations of how to evaluate and improve LLM performance systematically.\nTechnologies: PyTorch, Weights & Biases, LLMs, Evaluation\n\n\n\nComprehensive Article on RAG: From naive to advanced\nAn in-depth article exploring Retrieval Augmented Generation (RAG) techniques, covering basic implementations to advanced strategies. This resource helps developers understand how to enhance LLMs with external knowledge effectively.\nTechnologies: LLMs, RAG, Information Retrieval"
+  },
+  {
+    "objectID": "projects.html#open-source-contributions",
+    "href": "projects.html#open-source-contributions",
+    "title": "Projects",
+    "section": "Open Source Contributions",
+    "text": "Open Source Contributions\nI actively contribute to various open-source projects, focusing on machine learning tools and libraries. Some of my contributions include:\n\nKeras: Implementing MLOps pipelines and enhancements\nOpenMMLab repositories: Building and optimizing workflows\nMeta repositories: Contributing to machine learning infrastructure"
+  },
+  {
+    "objectID": "projects.html#looking-to-collaborate",
+    "href": "projects.html#looking-to-collaborate",
+    "title": "Projects",
+    "section": "Looking to Collaborate?",
+    "text": "Looking to Collaborate?\nI’m always interested in collaborating on machine learning projects, especially in computer vision (except face detection). If you have an interesting project idea or want to collaborate, feel free to reach out to me on Twitter or GitHub."
+  },
+  {
     "objectID": "projects/llm-eval-sweep.html",
     "href": "projects/llm-eval-sweep.html",
     "title": "LLM Evaluation with W&B Sweeps",
@@ -56,83 +154,6 @@
     "text": "To use this framework for your own LLM evaluation:\n\nClone the repository: git clone https://github.com/ayulockin/llm-eval-sweep.git\nInstall dependencies: pip install -r requirements.txt\nConfigure your W&B credentials\nRun example evaluations: python qa_full_sweeps.py\n\nFor more details, check out the GitHub repository."
   },
   {
-    "objectID": "blog/posts/llm-evaluation.html",
-    "href": "blog/posts/llm-evaluation.html",
-    "title": "The State of LLM Evaluation",
-    "section": "",
-    "text": "The State of LLM Evaluation\nContent coming soon!\nCheck out my repository for more information on LLM evaluation approaches: LLM Evaluation Strategies"
-  },
-  {
-    "objectID": "talks.html",
-    "href": "talks.html",
-    "title": "Talks & Courses",
-    "section": "",
-    "text": "Course Image\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, eget consectetur nisi nisl consectetur nisi.\nCourse Link | 2023\n\n\n\n\n\n\nCourse Image\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, eget consectetur nisi nisl consectetur nisi.\nCourse Link | 2023\n\n\n\n\n\n\nCourse Image\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, eget consectetur nisi nisl consectetur nisi.\nCourse Link | 2023"
-  },
-  {
-    "objectID": "talks.html#courses",
-    "href": "talks.html#courses",
-    "title": "Talks & Courses",
-    "section": "",
-    "text": "Course Image\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, eget consectetur nisi nisl consectetur nisi.\nCourse Link | 2023\n\n\n\n\n\n\nCourse Image\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, eget consectetur nisi nisl consectetur nisi.\nCourse Link | 2023\n\n\n\n\n\n\nCourse Image\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, eget consectetur nisi nisl consectetur nisi.\nCourse Link | 2023"
-  },
-  {
-    "objectID": "talks.html#talks",
-    "href": "talks.html#talks",
-    "title": "Talks & Courses",
-    "section": "Talks",
-    "text": "Talks\n\n\n\nTitle\nEvent\nSlides\nRecording\n\n\n\n\nExample Talk\nConference Name\nSlides\nYouTube"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
-    "section": "",
-    "text": "I currently work as aMachine Learning Engineer at Weights & Biases, focusing on building integrations, LLM applications, LLM system evaluations, educational content and more. The crux of my work is to grow our usebase and have played a crucial role in doing so. As one of the earliest hire in the growth team, I have been involved with multiple key integrations, initiatives, projects, and more.\n\n\nMachine Learning Engineer | Weights & Biases\n2020 - Present\n\nWritten multiple blog posts and tutorials on Deep Learning, MLOps, RAG, Evaluation and more. Check them out here.\nReproduced research papers and wrote about them. Check them out here.\nDevelop MLOps pipelines for popular open-source repositories/frameworks/orgs like Keras, OpenMMLab, Meta, XGBoost, and more.\nDevelop LLMOps integrations with LLM providers like OpenAI, Cohere, CrewAI, and more.\nBuilt and evaluated wandbot, a Q&A RAG based chatbot.\nCreated courses on LLM applications and MLOps.\nLead the AI team in India and lead the OS integration efforts.\nCreated and built our Kaggle Ambassador program. Became a Kaggle Notebooks Master in the process.\n\n\n\n\n\nGoogle Developer Expert in Machine Learning (TensorFlow Core) (Aug 2022 - Present)\nKaggle Notebooks Master - Created numerous popular notebooks for competitions.\n\n\n\n\n\nProgramming Languages: Python, TensorFlow, PyTorch\nML/DL Domains: LLMs, Computer Vision, MLOps, RAG systems\nTools & Platforms: Weights & Biases, Keras, HuggingFace, OpenMMLab\nAreas of Expertise:\n\nLLM application development and system evaluations\nBuilding and optimizing MLOps pipelines\nTechnical content creation\nDeep learning model implementations\n\n\n\n\n\nBachelor of Engineering in Electronics and Communication Engineering | Netaji Subhash Engineering College\n2016 - 2020\n\n\n\n\nGoogle Developer Group - Volunteer (Nov 2018 - Nov 2019)\nRobonix 2018 - Assistant Head for Line Follower competition (Feb 2018 - Mar 2018)\n\n\n\n\n\nRAG++: From POC to Production\nTraining and Fine-tuning Large Language Models (LLMs)\n\n\n\n\nI’m passionate about open-source collaboration and enjoy discussing innovative ML approaches. In my free time, I love watching anime (Naruto is my all-time favorite, One Piece is love, and Solo Leveling is 🔥).\nFeel free to reach out to me on Twitter or LinkedIn for collaborations or discussions!"
-  },
-  {
-    "objectID": "about.html#hello-im-ayush-thakur",
-    "href": "about.html#hello-im-ayush-thakur",
-    "title": "About Me",
-    "section": "",
-    "text": "I currently work as aMachine Learning Engineer at Weights & Biases, focusing on building integrations, LLM applications, LLM system evaluations, educational content and more. The crux of my work is to grow our usebase and have played a crucial role in doing so. As one of the earliest hire in the growth team, I have been involved with multiple key integrations, initiatives, projects, and more.\n\n\nMachine Learning Engineer | Weights & Biases\n2020 - Present\n\nWritten multiple blog posts and tutorials on Deep Learning, MLOps, RAG, Evaluation and more. Check them out here.\nReproduced research papers and wrote about them. Check them out here.\nDevelop MLOps pipelines for popular open-source repositories/frameworks/orgs like Keras, OpenMMLab, Meta, XGBoost, and more.\nDevelop LLMOps integrations with LLM providers like OpenAI, Cohere, CrewAI, and more.\nBuilt and evaluated wandbot, a Q&A RAG based chatbot.\nCreated courses on LLM applications and MLOps.\nLead the AI team in India and lead the OS integration efforts.\nCreated and built our Kaggle Ambassador program. Became a Kaggle Notebooks Master in the process.\n\n\n\n\n\nGoogle Developer Expert in Machine Learning (TensorFlow Core) (Aug 2022 - Present)\nKaggle Notebooks Master - Created numerous popular notebooks for competitions.\n\n\n\n\n\nProgramming Languages: Python, TensorFlow, PyTorch\nML/DL Domains: LLMs, Computer Vision, MLOps, RAG systems\nTools & Platforms: Weights & Biases, Keras, HuggingFace, OpenMMLab\nAreas of Expertise:\n\nLLM application development and system evaluations\nBuilding and optimizing MLOps pipelines\nTechnical content creation\nDeep learning model implementations\n\n\n\n\n\nBachelor of Engineering in Electronics and Communication Engineering | Netaji Subhash Engineering College\n2016 - 2020\n\n\n\n\nGoogle Developer Group - Volunteer (Nov 2018 - Nov 2019)\nRobonix 2018 - Assistant Head for Line Follower competition (Feb 2018 - Mar 2018)\n\n\n\n\n\nRAG++: From POC to Production\nTraining and Fine-tuning Large Language Models (LLMs)\n\n\n\n\nI’m passionate about open-source collaboration and enjoy discussing innovative ML approaches. In my free time, I love watching anime (Naruto is my all-time favorite, One Piece is love, and Solo Leveling is 🔥).\nFeel free to reach out to me on Twitter or LinkedIn for collaborations or discussions!"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Ayush Thakur",
-    "section": "",
-    "text": "Note: This website was created using Cursor and Claude 3.7 Sonnet. It’s currently a work in progress and may contain errors or inaccuracies. I apologize for any incorrect attributions or information. I’m continuously improving the site to ensure everything is accurate and up-to-date."
-  },
-  {
-    "objectID": "index.html#machine-learning-engineer-at-weights-biases",
-    "href": "index.html#machine-learning-engineer-at-weights-biases",
-    "title": "Ayush Thakur",
-    "section": "Machine Learning Engineer at Weights & Biases",
-    "text": "Machine Learning Engineer at Weights & Biases\n\nGoogle Developer Expert Kaggle Notebooks Master\n\n\nHello! I’m a Machine Learning Engineer specializing in LLM applications, model evaluation, and MLOps. I lead the AI team in India and lead the OS integration efforts. My work focuses on baking MLOps pipelines for open-source repositories, building W&B Weave enabled tracing and monitoring, evaluating LLM systems, and developing educational content for the open-source community. Most of my work can be found in the Authoring section.\nI have developed MLOps solutions for popular repositories like Keras, OpenMMLab, few from Meta and more. I have also built integrations with OpenAI (fine-tuning and chat completions), Cohere, CrewAI and more.\nThese days I am exploring agents and MCPs.\nI’m also a Google Developer Expert in Machine Learning and a Kaggle Notebooks Master.\nWhen I’m not coding, I enjoy watching anime (Naruto is my all-time favorite!), sharing knowledge through technical articles, and collaborating on interesting ML projects.\n\n\nGitHub | Twitter | LinkedIn | Kaggle | W&B\n\n\nAuthoring Read My Blog View My Projects Talks & Courses"
-  },
-  {
-    "objectID": "index.html#featured-work",
-    "href": "index.html#featured-work",
-    "title": "Ayush Thakur",
-    "section": "Featured Work",
-    "text": "Featured Work\n\n\nRAG Techniques: From Naive to Advanced\nA comprehensive guide to Retrieval Augmented Generation techniques for enhancing LLMs with external knowledge sources.\n\n\nLLM Evaluation Framework\nA systematic approach to evaluating LLM performance using W&B Sweeps.\n\n\nSwAV-TF\nTensorFlow implementation of self-supervised visual representation learning through contrasting cluster assignments."
-  },
-  {
-    "objectID": "index.html#areas-of-expertise",
-    "href": "index.html#areas-of-expertise",
-    "title": "Ayush Thakur",
-    "section": "Areas of Expertise",
-    "text": "Areas of Expertise\n\n\nLLM Applications\nBuilding, evaluating, and optimizing LLM-based applications.\n\n\nRAG Systems\nImplementing retrieval-augmented generation for knowledge-intensive applications.\n\n\nMLOps\nDeveloping robust ML pipelines and infrastructure for continuous delivery.\n\n\nComputer Vision\nImplementing and optimizing visual recognition systems.\n\n\nTechnical Writing\nCreating accessible educational content on ML topics.\n\n\nModel Evaluation\nSystematically assessing ML model performance across dimensions."
-  },
-  {
-    "objectID": "index.html#courses-education",
-    "href": "index.html#courses-education",
-    "title": "Ayush Thakur",
-    "section": "Courses & Education",
-    "text": "Courses & Education\nI’ve created comprehensive courses on: - RAG++: From POC to Production - Training and Fine-tuning Large Language Models (LLMs)\nExplore All Courses & Talks"
-  },
-  {
     "objectID": "authoring.html",
     "href": "authoring.html",
     "title": "Authoring",
@@ -166,47 +187,5 @@
     "title": "Authoring",
     "section": "",
     "text": "I enjoy collaborating with other practitioners in the field:\n\nOpen Source Contributions: I build MLOps pipelines for popular repositories like Keras, OpenMMLab, and Meta\nTechnical Reviews: I provide technical reviews for ML/DL content published by various platforms"
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Welcome to my blog where I share my thoughts, experiences, and tutorials on machine learning, LLMs, and MLOps. I cover topics ranging from technical deep dives to practical implementation guides, with a focus on making complex concepts accessible.\nIf you’re interested in specific topics, use the filters above to narrow down the posts by category, or use the search function to find exactly what you’re looking for.\nFeel free to share these posts and reach out with questions or feedback. I’m always happy to engage with the community!\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nThe State of LLM Evaluation\n\n\n\n\n\n\n\nllm\n\n\nevaluation\n\n\nmachine-learning\n\n\n\n\nAn overview of current approaches and challenges in LLM evaluation\n\n\n\n\n\n\nDec 12, 2023\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nRAG Techniques: From Naive to Advanced\n\n\n\n\n\n\n\nllm\n\n\nrag\n\n\ntechniques\n\n\n\n\nAn overview of Retrieval Augmented Generation (RAG) techniques for enhancing LLM responses with external knowledge\n\n\n\n\n\n\nNov 28, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "blog/posts/rag-techniques-overview.html",
-    "href": "blog/posts/rag-techniques-overview.html",
-    "title": "RAG Techniques: From Naive to Advanced",
-    "section": "",
-    "text": "RAG Techniques: From Naive to Advanced\nContent coming soon!"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "TensorFlow implementation of “Unsupervised Learning of Visual Features by Contrasting Cluster Assignments”\nThis project provides a TensorFlow implementation of the SwAV (Swapping Assignments between Views) algorithm for self-supervised visual representation learning. The implementation allows for efficient contrastive learning by contrasting cluster assignments between different views of the same image.\nTechnologies: TensorFlow, Contrastive Learning, Computer Vision\n\n\n\nExploring the ideas from “Deep Ensembles: A Loss Landscape Perspective”\nThis repository explores the concepts presented in the paper “Deep Ensembles: A Loss Landscape Perspective.” It visualizes loss landscapes to understand why deep ensembles work better than other methods for uncertainty estimation and how they relate to the geometry of loss functions.\nTechnologies: TensorFlow, Deep Learning, Uncertainty Estimation\n\n\n\nStarter pack for NeurIPS LLM Efficiency Challenge 2023\nThis repository provides a starter kit for participants in the NeurIPS LLM Efficiency Challenge 2023. It includes code and resources to help competitors optimize LLMs for better efficiency while maintaining performance.\nTechnologies: PyTorch, LLMs, Model Optimization\n\n\n\nDeep Image Inpainting using UNET-like Vanilla Autoencoder and Partial Convolution based Autoencoder\nThis project implements image inpainting techniques using two different approaches: a UNET-like Vanilla Autoencoder and a Partial Convolution based Autoencoder. It enables filling in missing or corrupted parts of images with plausible content.\nTechnologies: PyTorch, Computer Vision, Image Generation\n\n\n\nLLM Evaluation Strategies with W&B Sweeps\nA repository showcasing various LLM evaluation strategies and leveraging Weights & Biases Sweeps to optimize LLM systems. It provides practical demonstrations of how to evaluate and improve LLM performance systematically.\nTechnologies: PyTorch, Weights & Biases, LLMs, Evaluation\n\n\n\nComprehensive Article on RAG: From naive to advanced\nAn in-depth article exploring Retrieval Augmented Generation (RAG) techniques, covering basic implementations to advanced strategies. This resource helps developers understand how to enhance LLMs with external knowledge effectively.\nTechnologies: LLMs, RAG, Information Retrieval"
-  },
-  {
-    "objectID": "projects.html#featured-projects",
-    "href": "projects.html#featured-projects",
-    "title": "Projects",
-    "section": "",
-    "text": "TensorFlow implementation of “Unsupervised Learning of Visual Features by Contrasting Cluster Assignments”\nThis project provides a TensorFlow implementation of the SwAV (Swapping Assignments between Views) algorithm for self-supervised visual representation learning. The implementation allows for efficient contrastive learning by contrasting cluster assignments between different views of the same image.\nTechnologies: TensorFlow, Contrastive Learning, Computer Vision\n\n\n\nExploring the ideas from “Deep Ensembles: A Loss Landscape Perspective”\nThis repository explores the concepts presented in the paper “Deep Ensembles: A Loss Landscape Perspective.” It visualizes loss landscapes to understand why deep ensembles work better than other methods for uncertainty estimation and how they relate to the geometry of loss functions.\nTechnologies: TensorFlow, Deep Learning, Uncertainty Estimation\n\n\n\nStarter pack for NeurIPS LLM Efficiency Challenge 2023\nThis repository provides a starter kit for participants in the NeurIPS LLM Efficiency Challenge 2023. It includes code and resources to help competitors optimize LLMs for better efficiency while maintaining performance.\nTechnologies: PyTorch, LLMs, Model Optimization\n\n\n\nDeep Image Inpainting using UNET-like Vanilla Autoencoder and Partial Convolution based Autoencoder\nThis project implements image inpainting techniques using two different approaches: a UNET-like Vanilla Autoencoder and a Partial Convolution based Autoencoder. It enables filling in missing or corrupted parts of images with plausible content.\nTechnologies: PyTorch, Computer Vision, Image Generation\n\n\n\nLLM Evaluation Strategies with W&B Sweeps\nA repository showcasing various LLM evaluation strategies and leveraging Weights & Biases Sweeps to optimize LLM systems. It provides practical demonstrations of how to evaluate and improve LLM performance systematically.\nTechnologies: PyTorch, Weights & Biases, LLMs, Evaluation\n\n\n\nComprehensive Article on RAG: From naive to advanced\nAn in-depth article exploring Retrieval Augmented Generation (RAG) techniques, covering basic implementations to advanced strategies. This resource helps developers understand how to enhance LLMs with external knowledge effectively.\nTechnologies: LLMs, RAG, Information Retrieval"
-  },
-  {
-    "objectID": "projects.html#open-source-contributions",
-    "href": "projects.html#open-source-contributions",
-    "title": "Projects",
-    "section": "Open Source Contributions",
-    "text": "Open Source Contributions\nI actively contribute to various open-source projects, focusing on machine learning tools and libraries. Some of my contributions include:\n\nKeras: Implementing MLOps pipelines and enhancements\nOpenMMLab repositories: Building and optimizing workflows\nMeta repositories: Contributing to machine learning infrastructure"
-  },
-  {
-    "objectID": "projects.html#looking-to-collaborate",
-    "href": "projects.html#looking-to-collaborate",
-    "title": "Projects",
-    "section": "Looking to Collaborate?",
-    "text": "Looking to Collaborate?\nI’m always interested in collaborating on machine learning projects, especially in computer vision (except face detection). If you have an interesting project idea or want to collaborate, feel free to reach out to me on Twitter or GitHub."
   }
 ]
