@@ -5,100 +5,39 @@ toc: false
 css: index.css
 ---
 
-::: {.home-container}
-::: {.profile-section}
+::: {.main-content}
+
+::: {.profile-container}
 ::: {.profile-image}
 ![](profile.jpg)
 :::
 
-::: {.profile-content}
-# Ayush Thakur {.profile-name}
+::: {.profile-text}
+Hi there 👋 I am Ayush Thakur. I work as a Machine Learning Engineer at [Weights & Biases](https://wandb.ai/) specializing in LLM applications, model evaluation, and MLOps. I lead the AI team in India and the OS integration efforts. Know more about me from [here](/about/).
 
-## Machine Learning Engineer at [Weights & Biases](https://wandb.ai/){target="_blank"} {.profile-title}
+I develop MLOps solutions for popular repositories like [Keras](https://keras.io/), [OpenMMLab](https://openmmlab.com/), and others from Meta. I've also built integrations with [OpenAI](https://openai.com/) (fine-tuning and chat completions), [Cohere](https://cohere.ai/), [CrewAI](https://www.crewai.com/) and more.
 
-::: {.profile-badges}
-<span class="badge">Google Developer Expert</span>
-<span class="badge">Kaggle Notebooks Master</span>
-:::
+My external articles and other work are listed [here](/authoring/). A detailed account of my projects can be found [here](/projects/).
 
-::: {.profile-bio}
-Hello! I'm a Machine Learning Engineer specializing in LLM applications, model evaluation, and MLOps. I lead the AI team in India and the OS integration efforts at W&B. My work focuses on building MLOps pipelines for open-source repositories, developing LLM integrations with providers like OpenAI and Cohere, and creating educational content.
+These days I am exploring agents and MCPs.
 
-I've built integrations for popular repositories like Keras, OpenMMLab, and Meta. I've also developed comprehensive courses on RAG systems and LLM fine-tuning.
+I'm a **Google Developer Expert** in Machine Learning and a **Kaggle Notebooks Master**. When I'm not coding, I enjoy watching anime (Naruto is my all-time favorite!) and sharing knowledge through technical articles.
 
-Currently exploring agents and MCPs. When I'm not coding, I enjoy watching anime (Naruto is my all-time favorite!) and sharing knowledge through technical articles.
-:::
-
-::: {.profile-links}
-[GitHub](https://github.com/ayulockin){target="_blank"} | 
-[Twitter](https://x.com/ayushthakur0){target="_blank"} | 
-[LinkedIn](https://www.linkedin.com/in/ayush-thakur-731914149/){target="_blank"} | 
-[Kaggle](https://www.kaggle.com/ayuraj){target="_blank"} | 
-[W&B](https://wandb.ai/ayush-thakur){target="_blank"}
-:::
-
-::: {.profile-buttons}
-[View My Work](/authoring/){.btn .btn-primary role="button" target="_blank"}
-[My Projects](/projects/){.btn .btn-secondary role="button" target="_blank"}
-:::
+[GitHub](https://github.com/ayulockin) | [Twitter](https://x.com/ayushthakur0) | [LinkedIn](https://www.linkedin.com/in/ayush-thakur-731914149/) | [Kaggle](https://www.kaggle.com/ayuraj) | [W&B](https://wandb.ai/ayush-thakur)
 :::
 :::
 
-::: {.highlights-section}
-## Featured Work {.section-heading}
+## News
 
-::: {.highlights-container}
-::: {.highlight-card}
-### [RAG Techniques: From Naive to Advanced](https://wandb.ai/site/articles/rag-techniques/){target="_blank"}
-A comprehensive guide to Retrieval Augmented Generation techniques for enhancing LLMs with external knowledge sources.
-:::
+* New work on RAG evaluation: [RAG Techniques: From Naive to Advanced](https://wandb.ai/site/articles/rag-techniques/) - a comprehensive guide to Retrieval Augmented Generation techniques.
+* New work: [LLM Evaluation Framework](https://github.com/ayulockin/llm-eval-sweep) with systematic evaluation approaches using W&B Sweeps.
+* New work: [Building MLOps pipelines for Keras](https://keras.io/) integration with comprehensive monitoring and tracking capabilities.
+* Gave a course on **RAG++: From POC to Production** covering practical implementation strategies. Find the materials [here](/authoring/).
+* Open-sourced [SwAV-TF](https://github.com/ayulockin/SwAV-TF), a TensorFlow implementation of self-supervised visual representation learning.
 
-::: {.highlight-card}
-### [LLM Evaluation Framework](https://github.com/ayulockin/llm-eval-sweep){target="_blank"}
-A systematic approach to evaluating LLM performance using W&B Sweeps.
-:::
+To know more about my projects, please refer to [my GitHub profile](https://github.com/ayulockin).
 
-::: {.highlight-card}
-### [SwAV-TF](https://github.com/ayulockin/SwAV-TF){target="_blank"}
-TensorFlow implementation of self-supervised visual representation learning through contrasting cluster assignments.
-:::
-:::
-:::
+Apart from the work [here](/authoring/), I try to contribute to other platforms in the form of writing and open-source contributions. Please refer [here](/authoring/) for more details.
 
-::: {.expertise-section}
-## Areas of Expertise {.section-heading}
-
-::: {.expertise-grid}
-::: {.expertise-item}
-#### LLM Applications
-Building, evaluating, and optimizing LLM-based applications with a focus on RAG systems and model evaluation.
-:::
-
-::: {.expertise-item}
-#### MLOps & Integrations
-Developing robust ML pipelines and infrastructure for popular open-source repositories and frameworks.
-:::
-
-::: {.expertise-item}
-#### Technical Content
-Creating accessible educational content on ML topics, including comprehensive courses and tutorials.
-:::
-
-::: {.expertise-item}
-#### Open Source
-Contributing to major ML libraries and building integrations with leading AI providers.
-:::
-:::
-:::
-
-::: {.courses-section}
-## Courses & Education {.section-heading}
-
-I've created comprehensive courses on:
-- **RAG++: From POC to Production**
-- **Training and Fine-tuning Large Language Models (LLMs)**
-
-[Explore All Courses & Talks](/talks/){.explore-link target="_blank"}
-:::
 :::
 
