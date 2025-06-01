@@ -4,35 +4,14 @@
     "href": "index.html",
     "title": "Ayush Thakur",
     "section": "",
-    "text": "Google Developer Expert Kaggle Notebooks Master\n\n\nHello! I’m a Machine Learning Engineer specializing in LLM applications, model evaluation, and MLOps. I lead the AI team in India and the OS integration efforts at W&B. My work focuses on building MLOps pipelines for open-source repositories, developing LLM integrations with providers like OpenAI and Cohere, and creating educational content.\nI’ve built integrations for popular repositories like Keras, OpenMMLab, and Meta. I’ve also developed comprehensive courses on RAG systems and LLM fine-tuning.\nCurrently exploring agents and MCPs. When I’m not coding, I enjoy watching anime (Naruto is my all-time favorite!) and sharing knowledge through technical articles.\n\n\nGitHub | Twitter | LinkedIn | Kaggle | W&B\n\n\nView My Work My Projects\n\n\n\n\n\n\n\n\n\nA comprehensive guide to Retrieval Augmented Generation techniques for enhancing LLMs with external knowledge sources.\n\n\n\nA systematic approach to evaluating LLM performance using W&B Sweeps.\n\n\n\nTensorFlow implementation of self-supervised visual representation learning through contrasting cluster assignments.\n\n\n\n\n\n\n\n\nBuilding, evaluating, and optimizing LLM-based applications with a focus on RAG systems and model evaluation.\n\n\n\nDeveloping robust ML pipelines and infrastructure for popular open-source repositories and frameworks.\n\n\n\nCreating accessible educational content on ML topics, including comprehensive courses and tutorials.\n\n\n\nContributing to major ML libraries and building integrations with leading AI providers.\n\n\n\n\n\nI’ve created comprehensive courses on: - RAG++: From POC to Production - Training and Fine-tuning Large Language Models (LLMs)\nExplore All Courses & Talks"
+    "text": "Hi there 👋 I am Ayush Thakur. I work as a Machine Learning Engineer at Weights & Biases specializing in LLM applications, model evaluation, and MLOps. I lead the AI team in India and the OS integration efforts. Know more about me from here.\nI develop MLOps solutions for popular repositories like Keras, OpenMMLab, and others from Meta. I’ve also built integrations with OpenAI (fine-tuning and chat completions), Cohere, CrewAI and more.\nMy external articles and other work are listed here. A detailed account of my projects can be found here.\nThese days I am exploring agents and MCPs.\nI’m a Google Developer Expert in Machine Learning and a Kaggle Notebooks Master. When I’m not coding, I enjoy watching anime (Naruto is my all-time favorite!) and sharing knowledge through technical articles.\nGitHub | Twitter | LinkedIn | Kaggle | W&B\n\n\n\n\n\nNew work on RAG evaluation: RAG Techniques: From Naive to Advanced - a comprehensive guide to Retrieval Augmented Generation techniques.\nNew work: LLM Evaluation Framework with systematic evaluation approaches using W&B Sweeps.\nNew work: Building MLOps pipelines for Keras integration with comprehensive monitoring and tracking capabilities.\nGave a course on RAG++: From POC to Production covering practical implementation strategies. Find the materials here.\nOpen-sourced SwAV-TF, a TensorFlow implementation of self-supervised visual representation learning.\n\nTo know more about my projects, please refer to my GitHub profile.\nApart from the work here, I try to contribute to other platforms in the form of writing and open-source contributions. Please refer here for more details."
   },
   {
-    "objectID": "index.html#machine-learning-engineer-at-weights-biases",
-    "href": "index.html#machine-learning-engineer-at-weights-biases",
+    "objectID": "index.html#news",
+    "href": "index.html#news",
     "title": "Ayush Thakur",
     "section": "",
-    "text": "Google Developer Expert Kaggle Notebooks Master\n\n\nHello! I’m a Machine Learning Engineer specializing in LLM applications, model evaluation, and MLOps. I lead the AI team in India and the OS integration efforts at W&B. My work focuses on building MLOps pipelines for open-source repositories, developing LLM integrations with providers like OpenAI and Cohere, and creating educational content.\nI’ve built integrations for popular repositories like Keras, OpenMMLab, and Meta. I’ve also developed comprehensive courses on RAG systems and LLM fine-tuning.\nCurrently exploring agents and MCPs. When I’m not coding, I enjoy watching anime (Naruto is my all-time favorite!) and sharing knowledge through technical articles.\n\n\nGitHub | Twitter | LinkedIn | Kaggle | W&B\n\n\nView My Work My Projects"
-  },
-  {
-    "objectID": "index.html#featured-work",
-    "href": "index.html#featured-work",
-    "title": "Ayush Thakur",
-    "section": "",
-    "text": "A comprehensive guide to Retrieval Augmented Generation techniques for enhancing LLMs with external knowledge sources.\n\n\n\nA systematic approach to evaluating LLM performance using W&B Sweeps.\n\n\n\nTensorFlow implementation of self-supervised visual representation learning through contrasting cluster assignments."
-  },
-  {
-    "objectID": "index.html#areas-of-expertise",
-    "href": "index.html#areas-of-expertise",
-    "title": "Ayush Thakur",
-    "section": "",
-    "text": "Building, evaluating, and optimizing LLM-based applications with a focus on RAG systems and model evaluation.\n\n\n\nDeveloping robust ML pipelines and infrastructure for popular open-source repositories and frameworks.\n\n\n\nCreating accessible educational content on ML topics, including comprehensive courses and tutorials.\n\n\n\nContributing to major ML libraries and building integrations with leading AI providers."
-  },
-  {
-    "objectID": "index.html#courses-education",
-    "href": "index.html#courses-education",
-    "title": "Ayush Thakur",
-    "section": "",
-    "text": "I’ve created comprehensive courses on: - RAG++: From POC to Production - Training and Fine-tuning Large Language Models (LLMs)\nExplore All Courses & Talks"
+    "text": "New work on RAG evaluation: RAG Techniques: From Naive to Advanced - a comprehensive guide to Retrieval Augmented Generation techniques.\nNew work: LLM Evaluation Framework with systematic evaluation approaches using W&B Sweeps.\nNew work: Building MLOps pipelines for Keras integration with comprehensive monitoring and tracking capabilities.\nGave a course on RAG++: From POC to Production covering practical implementation strategies. Find the materials here.\nOpen-sourced SwAV-TF, a TensorFlow implementation of self-supervised visual representation learning.\n\nTo know more about my projects, please refer to my GitHub profile.\nApart from the work here, I try to contribute to other platforms in the form of writing and open-source contributions. Please refer here for more details."
   },
   {
     "objectID": "about.html",
