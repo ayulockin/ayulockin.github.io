@@ -10,6 +10,7 @@ css: index.css
 <div class="profile-container">
 <div class="profile-image">
 ![](profile.jpg)
+![](linefollower.png)
 </div>
 
 <div class="profile-text">

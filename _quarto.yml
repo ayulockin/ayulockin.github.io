@@ -31,6 +31,7 @@ format:
     theme:
       light: flatly
       dark: darkly
+    theme-toggle: true
     css: styles.css
     toc: true
     highlight-style: github
