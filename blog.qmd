@@ -1,13 +1,12 @@
 ---
 title: "Blog"
 page-layout: full
-listing:
-  contents: blog/posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
 ---
 
-This is where I share my thoughts, learnings, and insights on machine learning, AI, and engineering. 
+Coming soon! This is where I'll share my thoughts, learnings, and insights on machine learning, AI, and engineering.
+
+Stay tuned for posts on:
+- Technical deep-dives into ML/AI topics
+- Career insights and lessons learned
+- Tools and techniques I find useful
+- Thoughts on the future of technology 
