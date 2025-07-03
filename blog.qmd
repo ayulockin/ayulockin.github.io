@@ -1,0 +1,13 @@
+---
+title: "Blog"
+page-layout: full
+listing:
+  contents: blog/posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+---
+
+This is where I share my thoughts, learnings, and insights on machine learning, AI, and engineering. 

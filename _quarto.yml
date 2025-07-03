@@ -9,12 +9,12 @@ website:
     background: primary
     search: true
     left:
+      - href: index.qmd
+        text: Home
       - href: about.qmd
         text: About
-      - href: authoring.qmd
-        text: Work
-      - href: projects.qmd
-        text: Projects
+      - href: blog.qmd
+        text: Blog
     right:
       - icon: twitter
         href: https://x.com/ayushthakur0
@@ -31,7 +31,6 @@ format:
     theme:
       light: flatly
       dark: darkly
-    theme-toggle: true
     css: styles.css
     toc: true
     highlight-style: github
