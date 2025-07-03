@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ayush Thakur">
-<meta name="dcterms.date" content="2023-11-05">
-<meta name="description" content="A repository demonstrating systematic LLM evaluation strategies using Weights &amp; Biases">
+<meta name="dcterms.date" content="2024-01-01">
+<meta name="description" content="Welcome to my personal blog where I share thoughts on AI, ML, and engineering.">
 
-<title>Ayush Thakur - LLM Evaluation with W&amp;B Sweeps</title>
+<title>Ayush Thakur - Welcome to My Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,61 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -100,7 +66,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -110,7 +76,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Ayush Thakur</span>
     </a>
   </div>
@@ -121,16 +87,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html" rel="" target="">
+    <a class="nav-link" href="../../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../authoring.html" rel="" target="">
- <span class="menu-text">Work</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../projects.html" rel="" target="">
- <span class="menu-text">Projects</span></a>
+    <a class="nav-link" href="../../../blog.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -166,19 +132,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#llm-evaluation-with-weights-biases-sweeps" id="toc-llm-evaluation-with-weights-biases-sweeps" class="nav-link active" data-scroll-target="#llm-evaluation-with-weights-biases-sweeps">LLM Evaluation with Weights &amp; Biases Sweeps</a>
+  <li><a href="#welcome-to-my-blog" id="toc-welcome-to-my-blog" class="nav-link active" data-scroll-target="#welcome-to-my-blog">Welcome to My Blog</a>
   <ul class="collapse">
-  <li><a href="#project-overview" id="toc-project-overview" class="nav-link" data-scroll-target="#project-overview">Project Overview</a></li>
-  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
-  <li><a href="#implementation-details" id="toc-implementation-details" class="nav-link" data-scroll-target="#implementation-details">Implementation Details</a>
-  <ul class="collapse">
-  <li><a href="#llm-as-judge-evaluation" id="toc-llm-as-judge-evaluation" class="nav-link" data-scroll-target="#llm-as-judge-evaluation">LLM-as-Judge Evaluation</a></li>
-  <li><a href="#sweep-configuration" id="toc-sweep-configuration" class="nav-link" data-scroll-target="#sweep-configuration">Sweep Configuration</a></li>
-  </ul></li>
-  <li><a href="#results-and-insights" id="toc-results-and-insights" class="nav-link" data-scroll-target="#results-and-insights">Results and Insights</a></li>
-  <li><a href="#practical-applications" id="toc-practical-applications" class="nav-link" data-scroll-target="#practical-applications">Practical Applications</a></li>
-  <li><a href="#future-work" id="toc-future-work" class="nav-link" data-scroll-target="#future-work">Future Work</a></li>
-  <li><a href="#get-started" id="toc-get-started" class="nav-link" data-scroll-target="#get-started">Get Started</a></li>
+  <li><a href="#what-to-expect" id="toc-what-to-expect" class="nav-link" data-scroll-target="#what-to-expect">What to Expect</a></li>
+  <li><a href="#lets-connect" id="toc-lets-connect" class="nav-link" data-scroll-target="#lets-connect">Let’s Connect</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -188,18 +145,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">LLM Evaluation with W&amp;B Sweeps</h1>
+<h1 class="title">Welcome to My Blog</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">LLMs</div>
-    <div class="quarto-category">Evaluation</div>
-    <div class="quarto-category">MLOps</div>
-    <div class="quarto-category">Weights &amp; Biases</div>
+    <div class="quarto-category">welcome</div>
+    <div class="quarto-category">thoughts</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    A repository demonstrating systematic LLM evaluation strategies using Weights &amp; Biases
+    Welcome to my personal blog where I share thoughts on AI, ML, and engineering.
   </div>
 </div>
 
@@ -216,7 +171,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 5, 2023</p>
+      <p class="date">January 1, 2024</p>
     </div>
   </div>
   
@@ -226,114 +181,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="llm-evaluation-with-weights-biases-sweeps" class="level1">
-<h1>LLM Evaluation with Weights &amp; Biases Sweeps</h1>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://github.com/ayulockin/llm-eval-sweep"><img src="https://img.shields.io/badge/GitHub-Repository-181717?logo=github.png" class="img-fluid figure-img"></a></p>
-<figcaption class="figure-caption">GitHub Repository</figcaption>
-</figure>
-</div>
-<section id="project-overview" class="level2">
-<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
-<p>This project demonstrates systematic approaches to evaluating Large Language Models (LLMs) using Weights &amp; Biases Sweeps. It provides practical examples of how to set up comprehensive evaluation pipelines for different types of LLM tasks.</p>
-</section>
-<section id="key-features" class="level2">
-<h2 class="anchored" data-anchor-id="key-features">Key Features</h2>
-<ol type="1">
-<li><strong>QA Evaluation</strong>: Framework for evaluating question-answering performance</li>
-<li><strong>Mathematical Reasoning</strong>: Specialized evaluation for mathematical problem solving</li>
-<li><strong>Parameter Optimization</strong>: Using W&amp;B Sweeps to find optimal prompting strategies</li>
-<li><strong>Visualization</strong>: Rich visual analytics for interpreting results</li>
-</ol>
-</section>
-<section id="implementation-details" class="level2">
-<h2 class="anchored" data-anchor-id="implementation-details">Implementation Details</h2>
-<p>The repository implements several evaluation strategies:</p>
-<section id="llm-as-judge-evaluation" class="level3">
-<h3 class="anchored" data-anchor-id="llm-as-judge-evaluation">LLM-as-Judge Evaluation</h3>
-<p>One of the most powerful approaches is using another LLM (typically a more capable one) to evaluate the responses of the target LLM:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluate_with_llm_judge(question, reference_answer, model_response):</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Uses a judge LLM to evaluate the quality of a model response</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">    compared to a reference answer.</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    judge_prompt <span class="op">=</span> <span class="ss">f"""</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ss">    Question: </span><span class="sc">{</span>question<span class="sc">}</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ss">    Reference Answer: </span><span class="sc">{</span>reference_answer<span class="sc">}</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">    Model Response: </span><span class="sc">{</span>model_response<span class="sc">}</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">    </span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">    Evaluate the model response on the following criteria on a scale of 1-10:</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">    1. Accuracy: How factually correct is the response?</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">    2. Completeness: How complete is the response?</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">    3. Relevance: How relevant is the response to the question?</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">    </span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">    For each criterion, provide a score and a brief explanation.</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">    Finally, provide an overall score.</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">    """</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Call the judge LLM</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    evaluation <span class="op">=</span> judge_llm(judge_prompt)</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Parse the scores from the evaluation</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Implementation depends on the structure of the judge's response</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> parsed_scores</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="sweep-configuration" class="level3">
-<h3 class="anchored" data-anchor-id="sweep-configuration">Sweep Configuration</h3>
-<p>The project uses W&amp;B Sweeps to systematically explore different parameters:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>sweep_config <span class="op">=</span> {</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"method"</span>: <span class="st">"grid"</span>,</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"metric"</span>: {<span class="st">"name"</span>: <span class="st">"average_accuracy"</span>, <span class="st">"goal"</span>: <span class="st">"maximize"</span>},</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"parameters"</span>: {</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        <span class="st">"temperature"</span>: {<span class="st">"values"</span>: [<span class="fl">0.0</span>, <span class="fl">0.3</span>, <span class="fl">0.7</span>, <span class="fl">1.0</span>]},</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="st">"prompt_strategy"</span>: {<span class="st">"values"</span>: [<span class="st">"direct"</span>, <span class="st">"cot"</span>, <span class="st">"few_shot"</span>]},</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="st">"max_tokens"</span>: {<span class="st">"values"</span>: [<span class="dv">100</span>, <span class="dv">200</span>, <span class="dv">500</span>]},</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This allows exploration of how different combinations of temperature, prompting strategies, and token limits affect the model’s performance.</p>
-</section>
-</section>
-<section id="results-and-insights" class="level2">
-<h2 class="anchored" data-anchor-id="results-and-insights">Results and Insights</h2>
-<p>The repository includes visualizations of sweep results, demonstrating how different parameters affect various performance metrics:</p>
+<section id="welcome-to-my-blog" class="level1">
+<h1>Welcome to My Blog</h1>
+<p>Hello! Welcome to my personal blog. This is where I’ll be sharing my thoughts, learnings, and insights about:</p>
 <ul>
-<li><strong>Temperature Impact</strong>: Lower temperatures generally improved factual accuracy but sometimes at the cost of completeness</li>
-<li><strong>Prompt Strategies</strong>: Chain-of-Thought prompting significantly improved mathematical reasoning tasks</li>
-<li><strong>Parameter Interaction</strong>: Complex interactions between parameters highlighted the importance of systematic sweeps rather than one-at-a-time optimization</li>
+<li><strong>Machine Learning &amp; AI</strong>: Latest developments, techniques, and applications</li>
+<li><strong>Engineering</strong>: Problem-solving approaches and technical solutions</li>
+<li><strong>Career &amp; Growth</strong>: Lessons learned and experiences in tech</li>
+<li><strong>Life &amp; Learning</strong>: Personal reflections and continuous learning journey</li>
+</ul>
+<p>I believe in keeping things simple and focused. This blog is my digital notebook where I capture ideas, document learning, and share what I discover along the way.</p>
+<section id="what-to-expect" class="level2">
+<h2 class="anchored" data-anchor-id="what-to-expect">What to Expect</h2>
+<p>I’ll be writing about:</p>
+<ul>
+<li>Technical deep-dives into ML/AI topics</li>
+<li>Career insights and lessons learned</li>
+<li>Tools and techniques I find useful</li>
+<li>Thoughts on the future of technology</li>
 </ul>
 </section>
-<section id="practical-applications" class="level2">
-<h2 class="anchored" data-anchor-id="practical-applications">Practical Applications</h2>
-<p>This evaluation framework can be applied to:</p>
-<ol type="1">
-<li><strong>Model Selection</strong>: Comparing different LLMs for specific use cases</li>
-<li><strong>Prompt Engineering</strong>: Finding optimal prompting strategies</li>
-<li><strong>Fine-tuning Decisions</strong>: Determining whether fine-tuning would benefit specific tasks</li>
-<li><strong>Application Development</strong>: Building more robust LLM-powered applications</li>
-</ol>
-</section>
-<section id="future-work" class="level2">
-<h2 class="anchored" data-anchor-id="future-work">Future Work</h2>
-<p>Ongoing and planned improvements include:</p>
-<ul>
-<li>Adding support for more diverse evaluation tasks</li>
-<li>Implementing automated evaluation for creative and open-ended generation</li>
-<li>Integrating human feedback into the evaluation pipeline</li>
-<li>Exploring adaptive evaluation strategies that adjust to model strengths and weaknesses</li>
-</ul>
-</section>
-<section id="get-started" class="level2">
-<h2 class="anchored" data-anchor-id="get-started">Get Started</h2>
-<p>To use this framework for your own LLM evaluation:</p>
-<ol type="1">
-<li>Clone the repository: <code>git clone https://github.com/ayulockin/llm-eval-sweep.git</code></li>
-<li>Install dependencies: <code>pip install -r requirements.txt</code></li>
-<li>Configure your W&amp;B credentials</li>
-<li>Run example evaluations: <code>python qa_full_sweeps.py</code></li>
-</ol>
-<p>For more details, check out the <a href="https://github.com/ayulockin/llm-eval-sweep">GitHub repository</a>.</p>
+<section id="lets-connect" class="level2">
+<h2 class="anchored" data-anchor-id="lets-connect">Let’s Connect</h2>
+<p>Feel free to reach out to me on <a href="https://x.com/ayushthakur0">Twitter</a> or <a href="https://www.linkedin.com/in/ayush-thakur-731914149/">LinkedIn</a> if you’d like to discuss any of these topics!</p>
+<p>Happy reading! 🚀</p>
 
 
 </section>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ayush Thakur - Authoring</title>
+<title>Ayush Thakur - Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -61,7 +63,38 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -84,16 +117,16 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./authoring.html" rel="" target="" aria-current="page">
- <span class="menu-text">Work</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./projects.html" rel="" target="">
- <span class="menu-text">Projects</span></a>
+    <a class="nav-link active" href="./blog.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -125,30 +158,14 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#authoring" id="toc-authoring" class="nav-link active" data-scroll-target="#authoring">Authoring</a>
-  <ul class="collapse">
-  <li><a href="#weights-biases" id="toc-weights-biases" class="nav-link" data-scroll-target="#weights-biases">Weights &amp; Biases</a>
-  <ul class="collapse">
-  <li><a href="#featured-articles" id="toc-featured-articles" class="nav-link" data-scroll-target="#featured-articles">Featured Articles</a></li>
-  <li><a href="#reports-tutorials" id="toc-reports-tutorials" class="nav-link" data-scroll-target="#reports-tutorials">Reports &amp; Tutorials</a></li>
-  </ul></li>
-  <li><a href="#medium-articles" id="toc-medium-articles" class="nav-link" data-scroll-target="#medium-articles">Medium Articles</a></li>
-  <li><a href="#tutorials-guides" id="toc-tutorials-guides" class="nav-link" data-scroll-target="#tutorials-guides">Tutorials &amp; Guides</a></li>
-  <li><a href="#collaborative-work" id="toc-collaborative-work" class="nav-link" data-scroll-target="#collaborative-work">Collaborative Work</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="evaluation">evaluation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="llm">llm <span class="quarto-category-count">(2)</span></div><div class="category" data-category="machine-learning">machine-learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rag">rag <span class="quarto-category-count">(1)</span></div><div class="category" data-category="techniques">techniques <span class="quarto-category-count">(1)</span></div><div class="category" data-category="thoughts">thoughts <span class="quarto-category-count">(1)</span></div><div class="category" data-category="welcome">welcome <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Authoring</h1>
+<h1 class="title">Blog</h1>
 </div>
 
 
@@ -163,68 +180,138 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="authoring" class="level1">
-<h1>Authoring</h1>
-<p>Below are the blogs, articles, and tutorials I have written on Machine Learning, Deep Learning, and MLOps. I am fortunate to collaborate with many talented individuals globally and share my knowledge with the community.</p>
-<section id="weights-biases" class="level2">
-<h2 class="anchored" data-anchor-id="weights-biases">Weights &amp; Biases</h2>
-<section id="featured-articles" class="level3">
-<h3 class="anchored" data-anchor-id="featured-articles">Featured Articles</h3>
-<ul>
-<li><a href="https://wandb.ai/site/articles/Hyperparameter-Optimization" target="_blank">Hyperparameter Optimization with Weights &amp; Biases Sweeps</a></li>
-<li><a href="https://wandb.ai/wandb/frozen-language-models/reports/Multimodal-Few-Shot-Learning-with-Frozen-Language-Models--Vmlldzo5OTg3ODM" target="_blank">Multimodal Few-Shot Learning with Frozen Language Models</a></li>
-</ul>
-</section>
-<section id="reports-tutorials" class="level3">
-<h3 class="anchored" data-anchor-id="reports-tutorials">Reports &amp; Tutorials</h3>
-<ul>
-<li><a href="https://wandb.ai/ayush-thakur/image-inpainting/reports/Introduction-to-image-inpainting-with-deep-learning--Vmlldzo5MDU1MDQ" target="_blank">Introduction to Image Inpainting with Deep Learning</a> (joint work with Sayak Paul)</li>
-<li><a href="https://wandb.ai/ayush-thakur/Ensemble-Generalization-Gap/reports/Understanding-the-Effectiveness-of-Ensembles-in-Deep-Learning--Vmlldzo5MDI0MTc" target="_blank">Understanding the Effectiveness of Ensembles in Deep Learning</a> (joint work with Sayak Paul)</li>
-<li><a href="https://wandb.ai/ayush-thakur/SwAV/reports/Unsupervised-Visual-Representation-Learning-with-SwAV--Vmlldzo4Njk4OA" target="_blank">Unsupervised Visual Representation Learning with SwAV</a> (joint work with Sayak Paul)</li>
-<li><a href="https://wandb.ai/ayush-thakur/Benchmarking_Transformer_TF/reports/Benchmarking-the-Transformers-for-Tensorflow-2--Vmlldzo3NjQ3MA" target="_blank">Benchmarking the 🤗 Transformers for Tensorflow 2</a></li>
-<li><a href="https://wandb.ai/ayush-thakur/visualize-models-with-dtreeviz/reports/Visualize-Class-Activation-Maps-for-Image-Classification-Models--Vmlldzo3ODczMg" target="_blank">Visualize Class Activation Maps for Image Classification Models</a></li>
-<li><a href="https://wandb.ai/ayush-thakur/reproducible-models/reports/Reproducible-Models-with-W-B--Vmlldzo2Njg1Nw" target="_blank">Reproducible Models with W&amp;B</a></li>
-<li><a href="https://wandb.ai/ayush-thakur/keras-xla-benchmarks/reports/Keras-XLA-Benchmarks--Vmlldzo0MzE4ODk" target="_blank">Keras XLA Benchmarks</a> (in collaboration with Soumik Rakshit and Sayak Paul)</li>
-<li><a href="https://wandb.ai/ayush-thakur/visualize-models/reports/Visualize-Models-in-TensorBoard-with-Weights-Biases--Vmlldzo2NzY3OA" target="_blank">Visualize Models in TensorBoard with Weights &amp; Biases</a></li>
-<li><a href="https://wandb.ai/ayush-thakur/dl-question-bank/reports/Visualizing-Model-Performance-with-W-B--Vmlldzo0MDkwNA" target="_blank">Visualizing Model Performance with W&amp;B</a></li>
-<li><a href="https://wandb.ai/ayush-thakur/llm-eval-sweep/reports/Evaluating-LLMs--Vmlldzo1Mjk0NDA2" target="_blank">Building LLM Evaluation Frameworks</a></li>
-<li><a href="https://wandb.ai/ayush-thakur/cv-mlops/reports/MLOps-Pipeline-for-Computer-Vision--Vmlldzo0MzE4Nzc" target="_blank">MLOps for Computer Vision Systems</a></li>
-</ul>
-</section>
-</section>
-<section id="medium-articles" class="level2">
-<h2 class="anchored" data-anchor-id="medium-articles">Medium Articles</h2>
-<p>I regularly publish technical articles on Medium, covering various aspects of machine learning, deep learning, and MLOps:</p>
-<ul>
-<li><a href="https://medium.com/@ayulockin/building-robust-llm-applications-a-practical-guide-f79465f90538" target="_blank">Building Robust LLM Applications</a></li>
-<li><a href="https://medium.com/@ayulockin/the-state-of-llm-evaluation-where-we-are-and-where-were-heading-ab5e2824900" target="_blank">The State of LLM Evaluation</a></li>
-<li><a href="https://medium.com/@ayulockin/machine-learning-system-design-a-comprehensive-approach-c18880451ab4" target="_blank">Machine Learning System Design: A Comprehensive Approach</a></li>
-<li><a href="https://medium.com/weights-biases/gradient-amplification-attack-circumventing-defenses-against-backdoor-attacks-a28e0e910b3e" target="_blank">Gradient Amplification Attack: Circumventing Defenses Against Backdoor Attacks</a></li>
-<li><a href="https://medium.com/towards-data-science/training-with-mixed-precision-in-tensorflow-2-0-7a18a42f5eff" target="_blank">Training with Mixed Precision in TensorFlow 2.0</a></li>
-</ul>
-</section>
-<section id="tutorials-guides" class="level2">
-<h2 class="anchored" data-anchor-id="tutorials-guides">Tutorials &amp; Guides</h2>
-<p>I’ve created in-depth tutorials on various ML/DL topics:</p>
-<ul>
-<li><a href="https://github.com/ayulockin/SwAV-TF" target="_blank">TensorFlow Implementation of SwAV</a> - GitHub repository with detailed notebooks</li>
-<li><a href="https://github.com/ayulockin/llm-eval-sweep" target="_blank">LLM Evaluation Strategies</a> - Repository demonstrating systematic LLM evaluation approaches</li>
-<li><a href="https://github.com/ayulockin/e2e-mlops-pipeline-on-gcp-for-tensorflow" target="_blank">E2E MLOps Pipeline on GCP for Tensorflow</a> - End-to-end MLOps on Google Cloud Platform</li>
-</ul>
-</section>
-<section id="collaborative-work" class="level2">
-<h2 class="anchored" data-anchor-id="collaborative-work">Collaborative Work</h2>
-<p>I enjoy collaborating with other practitioners in the field:</p>
-<ul>
-<li><strong>Open Source Contributions</strong>: I build MLOps pipelines for popular repositories like Keras, OpenMMLab, and Meta</li>
-<li><strong>Technical Reviews</strong>: I provide technical reviews for ML/DL content published by various platforms</li>
-</ul>
+<p>This is where I share my thoughts, learnings, and insights on machine learning, AI, and engineering.</p>
 
 
-</section>
-</section>
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="welcome,thoughts" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1751566018995" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="./blog/posts/welcome/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="./blog/posts/welcome/index.html">
+<h3 class="no-anchor listing-title">
+Welcome to My Blog
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('welcome'); return false;">
+welcome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('thoughts'); return false;">
+thoughts
+</div>
+</div>
+<a href="./blog/posts/welcome/index.html">
+<div class="listing-description">
+<p>Welcome to my personal blog where I share thoughts on AI, ML, and engineering.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/posts/welcome/index.html">
+<div class="listing-date">
+Jan 1, 2024
+</div>
+<div class="listing-author">
+Ayush Thakur
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="llm,evaluation,machine-learning" data-listing-date-sort="1702339200000" data-listing-file-modified-sort="1751566018995" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="./blog/posts/llm-evaluation.html"> <img src="./blog/posts/images/llm-eval-cover.jpg" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./blog/posts/llm-evaluation.html">
+<h3 class="no-anchor listing-title">
+The State of LLM Evaluation
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('llm'); return false;">
+llm
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('evaluation'); return false;">
+evaluation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('machine-learning'); return false;">
+machine-learning
+</div>
+</div>
+<a href="./blog/posts/llm-evaluation.html">
+<div class="listing-description">
+<p>An overview of current approaches and challenges in LLM evaluation</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/posts/llm-evaluation.html">
+<div class="listing-date">
+Dec 12, 2023
+</div>
+<div class="listing-author">
+Ayush Thakur
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="llm,rag,techniques" data-listing-date-sort="1701129600000" data-listing-file-modified-sort="1751566018995" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="./blog/posts/rag-techniques-overview.html"> <img src="./blog/posts/images/rag-cover.jpg" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./blog/posts/rag-techniques-overview.html">
+<h3 class="no-anchor listing-title">
+RAG Techniques: From Naive to Advanced
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('llm'); return false;">
+llm
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('rag'); return false;">
+rag
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('techniques'); return false;">
+techniques
+</div>
+</div>
+<a href="./blog/posts/rag-techniques-overview.html">
+<div class="listing-description">
+<p>An overview of Retrieval Augmented Generation (RAG) techniques for enhancing LLM responses with external knowledge</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/posts/rag-techniques-overview.html">
+<div class="listing-date">
+Nov 28, 2023
+</div>
+<div class="listing-author">
+Ayush Thakur
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

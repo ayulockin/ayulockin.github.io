@@ -2,7 +2,7 @@
 
 /*-- scss:rules --*/
 
-/* Clean, minimal academic style like Sayak Paul's site */
+/* Clean, minimal style */
 .main-content {
   max-width: 900px;
   margin: 0 auto;
@@ -43,21 +43,10 @@
   flex: 1;
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--text-color);
 }
 
 .profile-text p {
   margin-bottom: 1rem;
-}
-
-.profile-text a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-.profile-text a:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
 }
 
 /* Social links styling */
@@ -74,20 +63,14 @@
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--surface-color);
-  border: 1px solid var(--border-color);
   border-radius: 8px;
-  color: var(--text-color);
   text-decoration: none;
   transition: all 0.2s ease;
   font-size: 1.2rem;
 }
 
 .social-links a:hover {
-  background-color: var(--primary-color);
-  color: white;
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
 }
 
 /* News section */
@@ -96,7 +79,6 @@
   font-weight: 600;
   margin-top: 2.5rem;
   margin-bottom: 1.5rem;
-  color: var(--text-color);
 }
 
 .main-content ul {
@@ -112,102 +94,10 @@
 
 .main-content ul li::before {
   content: "•";
-  color: var(--primary-color);
   font-weight: bold;
   position: absolute;
   left: 0;
 }
-
-.main-content ul li a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-.main-content ul li a:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
-}
-
-/* Bottom text sections */
-.main-content > p {
-  margin-top: 1.5rem;
-  line-height: 1.6;
-  color: var(--text-color);
-}
-
-.main-content > p a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-.main-content > p a:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
-}
-
-/* Dark mode adjustments */
-[data-bs-theme="dark"] .profile-image img {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
-
-[data-bs-theme="dark"] .profile-image img:hover {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
-}
-
-[data-bs-theme="dark"] .social-links a {
-  background-color: var(--surface-color);
-  border-color: var(--border-color);
-  color: var(--text-color);
-}
-
-[data-bs-theme="dark"] .social-links a:hover {
-  background-color: var(--primary-color);
-  color: white;
-}
-
-/* Additions for full dark mode support for Jolla template */
-[data-bs-theme="dark"] .quarto-about-jolla {
-  background-color: var(--background-color) !important;
-  color: var(--text-color) !important;
-}
-
-[data-bs-theme="dark"] .quarto-about-jolla .about-body h1,
-[data-bs-theme="dark"] .quarto-about-jolla .about-body h2,
-[data-bs-theme="dark"] .quarto-about-jolla .about-body h3,
-[data-bs-theme="dark"] .quarto-about-jolla .about-body p,
-[data-bs-theme="dark"] .quarto-about-jolla .about-body li,
-[data-bs-theme="dark"] .quarto-about-jolla .about-title /* For the main title if it's separate */ {
-  color: var(--text-color) !important;
-}
-
-[data-bs-theme="dark"] .quarto-about-jolla .about-body a,
-[data-bs-theme="dark"] .quarto-about-jolla .about-links a /* For icon links in jolla */ {
-  color: var(--primary-color) !important;
-}
-
-[data-bs-theme="dark"] .quarto-about-jolla .about-body a:hover,
-[data-bs-theme="dark"] .quarto-about-jolla .about-links a:hover {
-  color: var(--secondary-color) !important;
-}
-
-/* Ensure news section within jolla (if markdown for news is inside about-body) is themed */
-[data-bs-theme="dark"] .quarto-about-jolla .about-body h2 { /* This selector was too general before, now scoped */
-  color: var(--text-color) !important;
-}
-
-[data-bs-theme="dark"] .quarto-about-jolla .about-body ul li::before {
-  color: var(--primary-color) !important;
-}
-
-[data-bs-theme="dark"] .quarto-about-jolla .about-body ul li a {
-  color: var(--primary-color) !important;
-}
-
-[data-bs-theme="dark"] .quarto-about-jolla .about-body ul li a:hover {
-  color: var(--secondary-color) !important;
-}
-
-/* End of additions for Jolla */
 
 /* Responsive design */
 @media (max-width: 992px) {
