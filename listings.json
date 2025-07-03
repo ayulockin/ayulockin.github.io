@@ -1,13 +1,5 @@
 [
   {
-    "listing": "/blog.html",
-    "items": [
-      "/blog/posts/welcome/index.html",
-      "/blog/posts/llm-evaluation.html",
-      "/blog/posts/rag-techniques-overview.html"
-    ]
-  },
-  {
     "listing": "/blog/index.html",
     "items": [
       "/blog/posts/welcome/index.html",
