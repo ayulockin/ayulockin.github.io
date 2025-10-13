@@ -14,13 +14,13 @@ css: index.css
 </div>
 
 <div class="profile-text">
-Hello! I'm an engineer by choice and heart and I love solving problems. I am not married to any school of engineering and love learning about varying technologies. I am also an active learner of biology and physics.
+Hi, I’m Ayush — an engineer who loves building, learning, and solving complex problems. I’m driven by curiosity rather than allegiance to any single discipline, which has led me to explore everything from electronics to machine learning, biology, and physics.
 
-I have a **background in Electronics and Communication Engineering**. I haven't pursued electronics in a while now in pursuit of ML but in past life have actively built autonomous robots. I feel equipped now to merge both domains of engineering to solve "big" problems.
+I hold a degree in Electronics and Communication Engineering. While my focus has shifted from circuits to code, my early work on autonomous robots gave me a strong foundation in systems thinking — something I now bring to my work in AI. My goal is to bridge these domains to tackle problems that truly matter.
 
-Professionally, I am an **AI Engineer at Weights and Biases (by CoreWeave)**. I lead our open source integration efforts primarily. These integrations make it easy for you ML practitioners to get an MLOps stack. Currently I am specializing in building LLM applications and doing model evaluations. But over the span of 5 years at W&B, I have worn multiple hats -- like leading our Kaggle initiatives, building our most popular courses, and a ton loads of reports that SEO really well. Overall, the technical efforts have contributed to a successful merger of W&B with CoreWeave and I have big plans.
+I currently work as a **Manager, AI Engineer** at **Weights & Biases** (now part of CoreWeave), where I lead our open source integration efforts. These projects help machine learning practitioners easily build complete MLOps stacks. Over my 5 years at W&B, I’ve specialized in LLM application development and model evaluation, while also leading Kaggle initiatives, creating popular courses, and producing technical reports that drive visibility and growth.
 
-I am also a **Google Developer Expert** in Machine Learning and a **Kaggle Master** (notebook).
+I’m also a **Google Developer Expert in Machine Learning** and a **Kaggle Master** (Notebooks).
 
 When I'm not coding, I enjoy watching anime (Naruto is my all-time favorite!) and sharing knowledge through technical articles. I have started with 3D printing as well. Stay tuned!
 
@@ -45,4 +45,3 @@ To know more about my projects, please refer to [my GitHub profile](https://gith
 Apart from the work [here](authoring.html), I try to contribute to other platforms in the form of writing and open-source contributions. Please refer [here](authoring.html) for more details.
 
 </div>
-
