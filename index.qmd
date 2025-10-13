@@ -31,17 +31,3 @@ Know more about me from [here](about.html). My external articles and other work 
 </div>
 </div>
 </div>
-
-## News
-
-* New work on RAG evaluation: [RAG Techniques: From Naive to Advanced](https://wandb.ai/site/articles/rag-techniques/) - a comprehensive guide to Retrieval Augmented Generation techniques.
-* New work: [LLM Evaluation Framework](https://github.com/ayulockin/llm-eval-sweep) with systematic evaluation approaches using W&B Sweeps.
-* New work: [Building MLOps pipelines for Keras](https://keras.io/) integration with comprehensive monitoring and tracking capabilities.
-* Gave a course on **RAG++: From POC to Production** covering practical implementation strategies. Find the materials [here](authoring.html).
-* Open-sourced [SwAV-TF](https://github.com/ayulockin/SwAV-TF), a TensorFlow implementation of self-supervised visual representation learning.
-
-To know more about my projects, please refer to [my GitHub profile](https://github.com/ayulockin).
-
-Apart from the work [here](authoring.html), I try to contribute to other platforms in the form of writing and open-source contributions. Please refer [here](authoring.html) for more details.
-
-</div>
