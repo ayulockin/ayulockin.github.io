@@ -1,86 +1,65 @@
 ---
-title: "About Me"
-image: profile.jpg
-about:
-  template: trestles
-  links:
-    - icon: twitter
-      text: Twitter
-      href: https://x.com/ayushthakur0
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/ayush-thakur-731914149/
-    - icon: github
-      text: Github
-      href: https://github.com/ayulockin
-    - icon: globe
-      text: Kaggle
-      href: https://www.kaggle.com/ayuraj
-    - icon: globe
-      text: Weights & Biases
-      href: https://wandb.ai/ayush-thakur
+title: "About"
+toc: true
 ---
 
-## Hello, I'm Ayush Thakur 👋
+## Background
 
-I currently work as Manager, AI Engineering at [Weights & Biases](https://wandb.ai/) by CoreWeave, leading a small team of awesome AI Engineers. We focus on bringing down the entry of barrier to have an MLOps or LLMOps stack into a framework of your choice by building integrations, writing docs, creating educational content, and more. The crux of my work is to grow our usebase and have played a crucial role in doing so. As one of the earliest hire in the growth team, I have been involved with multiple key integrations, initiatives, projects, and more.
+I'm an engineer who loves building, learning, and solving complex problems. I'm driven by curiosity rather than allegiance to any single discipline—electronics, machine learning, biology, physics—whatever the problem demands.
 
-I have been in the field of AI for 5 years now and have worked with multiple frameworks, tools, and platforms. I have a strong background in Deep Learning, Computer Vision, and MLOps.
+I hold a degree in Electronics and Communication Engineering. My early work on autonomous robots gave me a foundation in systems thinking that I now bring to AI.
 
-### Professional Experience
+---
 
-**Manager, AI Engineering** | Weights & Biases  
-*February 2025 - Present*
+## Work
 
-- Lead a small team of AI Engineers focusing primarily on integrations today but plan to do a lot more amazing things in the future. Building a team to achieve the same.
-- Leading an effort to build our own algamation of benchmarks for for LLM/VLM evaluation and in turn build the framework for it.
+**Manager, AI Engineering** at Weights & Biases (CoreWeave)  
+*February 2025 – Present*
 
-**Machine Learning Engineer** | Weights & Biases  
-*August 2020 - January 2025*
+Leading a team of AI Engineers focused on integrations and building evaluation frameworks for LLMs/VLMs.
 
-- Developed MLOps pipelines for popular open-source repositories/frameworks/orgs like Keras, OpenMMLab, Meta, XGBoost, and more.
-- Developed LLMOps integrations with LLM providers like OpenAI, Cohere, CrewAI, and more.
-- Reproduced research papers and wrote about them. Check them out [here](/blog/){target="_blank"}.
-- Built and evaluated [wandbot](https://github.com/wandb/wandbot), a Q&A RAG based chatbot.
-- Created [courses](/blog/){target="_blank"} on LLM applications and MLOps.
-- Written multiple blog posts and tutorials on Deep Learning, MLOps, RAG, Evaluation and more. Check them out [here](/blog/){target="_blank"}.
-- Owned the OS integration efforts.
-- Created and built our Kaggle Ambassador program. Became a Kaggle Notebooks Master in the process.
+**Machine Learning Engineer** at Weights & Biases  
+*August 2020 – January 2025*
 
-**Technical Author** | Weights & Biases 
-*January 2020 - August 2020*
+- Built MLOps integrations for Keras, OpenMMLab, Meta, XGBoost, and others
+- Developed LLMOps integrations with OpenAI, Cohere, CrewAI
+- Created and maintained [wandbot](https://github.com/wandb/wandbot), a RAG-based Q&A system
+- Built the Kaggle Ambassador program; became a Notebooks Master
+- Owned open-source integration efforts
 
-- Wrote tehcnical reports (blog posts) on ML concepts. You can find them in my [W&B profile](https://wandb.ai/ayush-thakur).
-- Proud to have some of these reports featured in "Two Minute Papers"
+**Technical Author** at Weights & Biases  
+*January 2020 – August 2020*
 
-### Courses Created
+Wrote technical reports on ML concepts. Some were featured in "Two Minute Papers."
 
-- [**LLM apps: Evaluation**](https://wandb.ai/site/courses/evals/)
-- [**RAG++: From POC to Production**](https://wandb.ai/site/courses/rag/)
-- [**Training and Fine-tuning Large Language Models (LLMs)**](https://wandb.ai/site/courses/training-fine-tuning-llms/) (*featured in a module because of my ["Starter pack for NeurIPS LLM Efficiency Challenge 2023"](https://github.com/ayulockin/neurips-llm-efficiency-challenge).)
+---
 
-### Certifications & Recognition
+## Courses
 
-- **Google Developer Expert** in Machine Learning (TensorFlow Core) *(Aug 2022 - Present)*
-- **Kaggle Notebooks Master** - Created numerous popular notebooks for competitions. You can find them in my [Kaggle profile](https://www.kaggle.com/ayuraj).
+- [LLM apps: Evaluation](https://wandb.ai/site/courses/evals/)
+- [RAG++: From POC to Production](https://wandb.ai/site/courses/rag/)
+- [Training and Fine-tuning LLMs](https://wandb.ai/site/courses/training-fine-tuning-llms/)
 
+---
 
-### Education
+## Recognition
 
-**Bachelor of Engineering** in Electronics and Communication Engineering | Netaji Subhash Engineering College, Kolkata, WB.
-*2016 - 2020*
+- **Google Developer Expert** in Machine Learning (2022–present)
+- **Kaggle Notebooks Master**
 
-**Schooling** | Notre Dame Academy in Munger, Bihar.
+---
 
-### Community Involvement
+## Education
 
-- **Google Developer Group** - Volunteer *(Nov 2018 - Nov 2019)*
-- **Robonix 2018** - Assistant Head for Line Follower competition *(Feb 2018 - Mar 2018)*
+**B.E. in Electronics and Communication Engineering**  
+Netaji Subhash Engineering College, Kolkata (2016–2020)
 
-### Personal Interests
+---
 
-I love thinking about hard problems and up-skilling myself to solve some.
+## Elsewhere
 
-In my free time, I love watching anime (Naruto is my all-time favorite, One Piece is love, and Solo Leveling is 🔥).
-
-Feel free to reach out to me on [Twitter](https://x.com/ayushthakur0) or [LinkedIn](https://www.linkedin.com/in/ayush-thakur-731914149/) for collaborations or discussions! 
+- [GitHub](https://github.com/ayulockin)
+- [Twitter](https://x.com/ayushthakur0)
+- [LinkedIn](https://www.linkedin.com/in/ayush-thakur-731914149/)
+- [Kaggle](https://www.kaggle.com/ayuraj)
+- [Weights & Biases](https://wandb.ai/ayush-thakur)

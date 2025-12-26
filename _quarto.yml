@@ -4,32 +4,36 @@ project:
 website:
   title: "Ayush Thakur"
   site-url: "https://ayusht.dev"
-  description: "Machine Learning Engineer & Google Developer Expert"
+  description: "Engineer, writer, thinker."
   navbar:
-    background: primary
-    search: true
+    background: light
+    search: false
     left:
       - href: about.qmd
         text: About
-      - href: blog.qmd
-        text: Blog
+      - href: blog/index.qmd
+        text: Writing
     right:
-      - icon: twitter
-        href: https://x.com/ayushthakur0
       - icon: github
         href: https://github.com/ayulockin
+        aria-label: GitHub
+      - icon: twitter
+        href: https://x.com/ayushthakur0
+        aria-label: Twitter
       - icon: linkedin
         href: https://www.linkedin.com/in/ayush-thakur-731914149/
+        aria-label: LinkedIn
   page-footer:
     center: 
-      - text: "© 2025 Ayush Thakur. Built with [Quarto](https://quarto.org/)."
+      - text: "© 2025 Ayush Thakur"
 
 format:
   html:
     theme:
-      light: flatly
+      light: cosmo
       dark: darkly
     css: styles.css
-    toc: true
+    toc: false
     highlight-style: github
-    page-layout: full
+    fontsize: 18px
+    linestretch: 1.7

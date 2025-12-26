@@ -1,20 +1,16 @@
 ---
-title: "Blog"
-subtitle: "Thoughts, tutorials, and insights on machine learning, LLMs, and MLOps"
+title: "Writing"
+subtitle: "Thoughts on machine learning, LLMs, and building things that work."
 listing:
   contents: posts
   sort: "date desc"
   type: default
-  categories: true
-  sort-ui: true
-  filter-ui: true
-  fields: [image, date, title, description, reading-time, categories]
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, description]
   feed: true
-page-layout: full
+  date-format: "MMM D, YYYY"
+page-layout: article
+toc: false
 ---
-
-Welcome to my blog where I share my thoughts, experiences, and tutorials on machine learning, LLMs, and MLOps. I cover topics ranging from technical deep dives to practical implementation guides, with a focus on making complex concepts accessible.
-
-If you're interested in specific topics, use the filters above to narrow down the posts by category, or use the search function to find exactly what you're looking for.
-
-Feel free to share these posts and reach out with questions or feedback. I'm always happy to engage with the community! 
