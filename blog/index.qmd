@@ -1,16 +1,112 @@
 ---
 title: "Writing"
 subtitle: "Thoughts on machine learning, LLMs, and building things that work."
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: false
-  sort-ui: false
-  filter-ui: false
-  fields: [date, title, description]
-  feed: true
-  date-format: "MMM D, YYYY"
 page-layout: article
 toc: false
 ---
+
+## Weights & Biases Reports
+
+Technical articles and tutorials I've written on the W&B platform—covering deep learning, computer vision, LLMs, and practical ML engineering.
+
+::: {.wandb-reports}
+
+**LLMs & RLHF**
+
+- [Understanding Reinforcement Learning from Human Feedback (RLHF): Part 1](https://wandb.ai/ayush-thakur/RLHF/reports/Understanding-Reinforcement-Learning-from-Human-Feedback-RLHF-Part-1--VmlldzoyODk5MTIx)
+- [An Introduction to Training LLMs Using Reinforcement Learning From Human Feedback (RLHF)](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy)
+- [How to Evaluate, Compare, and Optimize LLM Systems](https://wandb.ai/ayush-thakur/llm-eval-sweep/reports/How-to-Evaluate-Compare-and-Optimize-LLM-Systems--Vmlldzo0NzgyMTQz)
+- [Building Advanced Query Engine and Evaluation with LlamaIndex and W&B](https://wandb.ai/ayush-thakur/llama-index-report/reports/Building-Advanced-Query-Engine-and-Evaluation-with-LlamaIndex-and-W-B--Vmlldzo0OTIzMjMy)
+- [Implementing RLHF: Learning to Summarize with trlX](https://wandb.ai/carperai/summarize_RLHF/reports/Implementing-RLHF-Learning-to-Summarize-with-trlX--VmlldzozMzAwODM2)
+- [RLHF: Hyperparameter Optimization for trlX](https://wandb.ai/ayut/trlx-ppo-sentiments-hyperopt/reports/RLHF-Hyperparameter-Optimization-for-trlX--VmlldzoyOTgxMTQ2)
+
+**Computer Vision & GANs**
+
+- [Towards Deep Generative Modeling With Weight & Biases](https://wandb.ai/ayush-thakur/keras-gan/reports/Towards-Deep-Generative-Modeling-With-Weight-Biases--Vmlldzo4MDI4Mw)
+- [How to Evaluate GANs using Frechet Inception Distance (FID)](https://wandb.ai/ayush-thakur/gan-evaluation/reports/How-to-Evaluate-GANs-using-Frechet-Inception-Distance-FID---Vmlldzo0MTAxOTI)
+- [Train Generative Adversarial Networks (GANs) With Limited Data](https://wandb.ai/ayush-thakur/ada/reports/Train-Generative-Adversarial-Networks-GANs-With-Limited-Data--Vmlldzo1NDYyMjA)
+- [In-Domain GAN Inversion for Real Image Editing](https://wandb.ai/wandb/in-domain-gan/reports/In-Domain-GAN-Inversion-for-Real-Image-Editing--VmlldzoyODE5Mzk)
+- [An Introduction to Adversarial Latent Autoencoders](https://wandb.ai/authors/alae/reports/An-Introduction-to-Adversarial-Latent-Autoencoders--VmlldzoxNDA2MDY)
+- [Interpretability in Deep Learning With Weights & Biases: CAM and Grad-CAM](https://wandb.ai/ayush-thakur/interpretability/reports/Interpretability-in-Deep-Learning-With-Weights-Biases-CAM-and-Grad-CAM--Vmlldzo5MTIyNw)
+- [An Overview of Instance Aware Image Colorization](https://wandb.ai/wandb/instacolorization/reports/An-Overview-of-Instance-Aware-Image-Colorization---VmlldzoyOTk3MDI)
+- [Image Segmentation Using Keras and Weights & Biases](https://wandb.ai/ayush-thakur/image-segmentation/reports/Image-Segmentation-Using-Keras-and-Weights-Biases--VmlldzoyNTE1Njc)
+- [Object Localization With Keras and Weights & Biases](https://wandb.ai/wandb/object_localization/reports/Object-Localization-With-Keras-and-Weights-Biases--VmlldzoyNzA2Mzk)
+- [Image Classification Using Vision Transformer and KerasCV](https://wandb.ai/ayush-thakur/keras_cv_vit/reports/Image-Classification-Using-Vision-Transformer-and-KerasCV--VmlldzozNTE4MzMz)
+
+**PyTorch & PyTorch Lightning**
+
+- [How To Use GPU with PyTorch](https://wandb.ai/wandb/common-ml-errors/reports/How-To-Use-GPU-with-PyTorch---VmlldzozMzAxMDk)
+- [How to save and load models in PyTorch](https://wandb.ai/wandb/common-ml-errors/reports/How-to-save-and-load-models-in-PyTorch--VmlldzozMjg0MTE)
+- [How To Check If PyTorch Is Using The GPU](https://wandb.ai/ayush-thakur/dl-question-bank/reports/How-To-Check-If-PyTorch-Is-Using-The-GPU--VmlldzoyMDQ0NTU)
+- [Image Classification Using PyTorch Lightning and Weights & Biases](https://wandb.ai/wandb/wandb-lightning/reports/Image-Classification-Using-PyTorch-Lightning-and-Weights-Biases--VmlldzoyODk1NzY)
+- [Transfer Learning Using PyTorch Lightning](https://wandb.ai/wandb/wandb-lightning/reports/Transfer-Learning-Using-PyTorch-Lightning--VmlldzoyODk2MjA)
+- [Multi-GPU Training Using PyTorch Lightning](https://wandb.ai/wandb/wandb-lightning/reports/Multi-GPU-Training-Using-PyTorch-Lightning--VmlldzozMTk3NTk)
+- [An Introduction To The PyTorch View Function](https://wandb.ai/ayush-thakur/dl-question-bank/reports/An-Introduction-To-The-PyTorch-View-Function--VmlldzoyMDM0Nzg)
+- [PyTorch Dropout for regularization - tutorial](https://wandb.ai/authors/ayusht/reports/PyTorch-Dropout-for-regularization-tutorial---VmlldzoxNTgwOTE)
+- [Implementing and Tracking the Performance of a CNN in PyTorch](https://wandb.ai/authors/ayusht/reports/Implementing-and-Tracking-the-Performance-of-a-CNN-in-PyTorch---VmlldzoxNjEyMDU)
+
+**Keras & TensorFlow**
+
+- [Keras Dense Layer: How to Use It Correctly](https://wandb.ai/ayush-thakur/keras-dense/reports/Keras-Dense-Layer-How-to-Use-It-Correctly--Vmlldzo0MjAzNDY1)
+- [Input Keras Layer Explanation With Code Samples](https://wandb.ai/ayush-thakur/dl-question-bank/reports/Input-Keras-Layer-Explanation-With-Code-Samples--VmlldzoyMDIzMDU)
+- [Batch Normalization in Keras - An Example](https://wandb.ai/authors/ayusht/reports/Batch-Normalization-in-Keras-An-Example--VmlldzoxNzI5NjQ)
+- [How to Use Cosine Decay Learning Rate Scheduler in Keras](https://wandb.ai/ayush-thakur/cosine_decay/reports/How-to-Use-Cosine-Decay-Learning-Rate-Scheduler-in-Keras--VmlldzozNTE4MDMy)
+- [Using GPUs With Keras: A Tutorial With Code](https://wandb.ai/authors/ayusht/reports/Using-GPUs-With-Keras-A-Tutorial-With-Code--VmlldzoxNjEyNjE)
+- [Integrating Keras with Weights & Biases](https://wandb.ai/ayush-thakur/medmnist-bloodmnist/reports/Integrating-Keras-with-Weights-Biases--VmlldzoxNDg1MDQy)
+- [How To Install TensorFlow With GPU Support on Windows](https://wandb.ai/wandb/common-ml-errors/reports/How-To-Install-TensorFlow-With-GPU-Support-on-Windows--VmlldzozMDYxMDQ)
+- [How to Prevent TensorFlow From Fully Allocating GPU Memory](https://wandb.ai/ayush-thakur/dl-question-bank/reports/How-to-Prevent-TensorFlow-From-Fully-Allocating-GPU-Memory--VmlldzoxOTk1ODE)
+- [LSTM RNN in Keras: Examples of One-to-Many, Many-to-One & Many-to-Many](https://wandb.ai/ayush-thakur/dl-question-bank/reports/LSTM-RNN-in-Keras-Examples-of-One-to-Many-Many-to-One-Many-to-Many---VmlldzoyMDIzOTM)
+- [A Guide to Multi-Label Classification on Keras](https://wandb.ai/ayush-thakur/dl-question-bank/reports/A-Guide-to-Multi-Label-Classification-on-Keras--VmlldzoyMDgyMDU)
+
+**HuggingFace & Transformers**
+
+- [How To Fine-Tune Hugging Face Transformers on a Custom Dataset](https://wandb.ai/ayush-thakur/huggingface/reports/How-To-Fine-Tune-Hugging-Face-Transformers-on-a-Custom-Dataset--Vmlldzo0MzQ2MDc)
+- [Examples of Early Stopping in HuggingFace Transformers](https://wandb.ai/ayush-thakur/huggingface/reports/Examples-of-Early-Stopping-in-HuggingFace-Transformers--Vmlldzo0MzE2MTM)
+- [SimpleTransformers: Transformers Made Easy](https://wandb.ai/wandb/gallery/reports/SimpleTransformers-Transformers-Made-Easy--VmlldzoyNDQzNTg)
+- [Taming Transformers for High-Resolution Image Synthesis](https://wandb.ai/ayush-thakur/taming-transformer/reports/Taming-Transformers-for-High-Resolution-Image-Synthesis---Vmlldzo0NjEyMTY)
+
+**Deep Learning Fundamentals**
+
+- [What's the Optimal Batch Size to Train a Neural Network?](https://wandb.ai/ayush-thakur/dl-question-bank/reports/What-s-the-Optimal-Batch-Size-to-Train-a-Neural-Network---VmlldzoyMDkyNDU)
+- [ReLU vs. Sigmoid Function in Deep Neural Networks](https://wandb.ai/ayush-thakur/dl-question-bank/reports/ReLU-vs-Sigmoid-Function-in-Deep-Neural-Networks--VmlldzoyMDk0MzI)
+- [How to Handle Images of Different Sizes in a Convolutional Neural Network](https://wandb.ai/ayush-thakur/dl-question-bank/reports/How-to-Handle-Images-of-Different-Sizes-in-a-Convolutional-Neural-Network--VmlldzoyMDk3NzQ)
+- [Intuitive understanding of 1D, 2D, and 3D convolutions in convolutional neural networks](https://wandb.ai/ayush-thakur/dl-question-bank/reports/Intuitive-understanding-of-1D-2D-and-3D-convolutions-in-convolutional-neural-networks---VmlldzoxOTk2MDA)
+- [What's the Difference Between Strided Convolution and Pooling?](https://wandb.ai/ayush-thakur/dl-question-bank/reports/What-s-the-Difference-Between-Strided-Convolution-and-Pooling---VmlldzoyMDE5Mjc)
+- [Comparing Sigmoid-MSE With Softmax Cross-Entropy for Image Classification](https://wandb.ai/ayush-thakur/dl-question-bank/reports/Comparing-Sigmoid-MSE-With-Softmax-Cross-Entropy-for-Image-Classification--VmlldzoyMDA3ODQ)
+- [How One-Hot Encoding Improves Machine Learning Performance](https://wandb.ai/ayush-thakur/dl-question-bank/reports/How-One-Hot-Encoding-Improves-Machine-Learning-Performance--VmlldzoxOTkzMDk)
+- [Understanding the Effectivity of Ensembles in Deep Learning](https://wandb.ai/authors/loss-landscape/reports/Understanding-the-Effectivity-of-Ensembles-in-Deep-Learning--VmlldzoxODAxNjA)
+
+**Data Augmentation & Training Techniques**
+
+- [Modern Data Augmentation Techniques for Computer Vision](https://wandb.ai/authors/tfaugmentation/reports/Modern-Data-Augmentation-Techniques-for-Computer-Vision--VmlldzoxODA3NTQ)
+- [Simple Ways to Tackle Class Imbalance](https://wandb.ai/authors/class-imbalance/reports/Simple-Ways-to-Tackle-Class-Imbalance--VmlldzoxODA3NTk)
+- [Exploring Adaptive Gradient Clipping and NFNets](https://wandb.ai/ayush-thakur/nfnet/reports/Exploring-Adaptive-Gradient-Clipping-and-NFNets--Vmlldzo1MDc0NTQ)
+- [Metric Learning for Image Search With Weights & Biases](https://wandb.ai/ayush-thakur/metric-learning/reports/Metric-Learning-for-Image-Search-With-Weights-Biases--VmlldzoyNTM0NDc)
+- [How to avoid checkerboard pattern in your generated images?](https://wandb.ai/wandb/common-ml-errors/reports/How-to-avoid-checkerboard-pattern-in-your-generated-images---VmlldzozNTEzNzk)
+
+**3D Vision & Novel View Synthesis**
+
+- [3D Image Inpainting With Weights & Biases](https://wandb.ai/authors/3D-Inpainting/reports/3D-Image-Inpainting-With-Weights-Biases--VmlldzoxNzIwNTY)
+- [Paper Summary: One Shot 3D Photography](https://wandb.ai/authors/One-Shot-3D-Photography/reports/Paper-Summary-One-Shot-3D-Photography--VmlldzozNjE2MjQ)
+- [X-Fields: Implicit Neural View-, Light- and Time-Image Interpolation](https://wandb.ai/wandb/xfields/reports/X-Fields-Implicit-Neural-View-Light-and-Time-Image-Interpolation--Vmlldzo0MTY0MzM)
+- [Overview: Neural Scene Flow Fields (NSFF) for Space-Time View Synthesis of Dynamic Scenes](https://wandb.ai/wandb/NSFF/reports/Overview-Neural-Scene-Flow-Fields-NSFF-for-Space-Time-View-Synthesis-of-Dynamic-Scenes--Vmlldzo1NzA1ODI)
+- [Dynamic Sky Replacement: The Sky Is Within Our Grasp!](https://wandb.ai/wandb/skyAR/reports/Dynamic-Sky-Replacement-The-Sky-Is-Within-Our-Grasp---VmlldzozMjY0NDI)
+
+**Video & Animation**
+
+- [One-Shot Free-View Neural Talking-Head Synthesis for Video Conferencing](https://wandb.ai/ayush-thakur/face-vid2vid/reports/One-Shot-Free-View-Neural-Talking-Head-Synthesis-for-Video-Conferencing--Vmlldzo1MzU4ODc)
+- [An Introduction to Egocentric Videoconferencing](https://wandb.ai/wandb/egocentric-video-conferencing/reports/An-Introduction-to-Egocentric-Videoconferencing--VmlldzozMTY1NTA)
+- [An Intro to Retiming Instances in a Video](https://wandb.ai/wandb/retiming-video/reports/An-Intro-to-Retiming-Instances-in-a-Video--VmlldzozMzUwNTk)
+- [Automating Animations with the Help of Robust In-Betweening](https://wandb.ai/wandb/in-between/reports/Automating-Animations-with-the-Help-of-Robust-In-Betweening--Vmlldzo0MzkzMzA)
+
+**Other**
+
+- [Self-Supervised Learning with SwAV](https://wandb.ai/authors/swav-tf/reports/Unsupervised-Visual-Representation-Learning-with-SwAV--VmlldzoyMjg3Mzg)
+- [How To Use Weights & Biases With MMDetection](https://wandb.ai/ayush-thakur/mmdetection/reports/How-To-Use-Weights-Biases-With-MMDetection--VmlldzoyMTM0MDE2)
+- [Generating Digital Painting Lighting Effects via RGB-space Geometry](https://wandb.ai/ayush-thakur/paintlight/reports/Generating-Digital-Painting-Lighting-Effects-via-RGB-space-Geometry--VmlldzoxMTA2Mjg)
+- [An Overview of DeepFaceDrawing](https://wandb.ai/authors/deepfacedrawing/reports/An-Overview-of-DeepFaceDrawing--VmlldzoyMjgxNzM)
+- [Rewriting a Deep Generative Model: An Overview](https://wandb.ai/authors/rewrite-gan/reports/Rewriting-a-Deep-Generative-Model-An-Overview--VmlldzoyMzgyNTU)
+- [From EMNIST to Wikisplit: Sentence Composition Using W&B](https://wandb.ai/wandb/emnist/reports/From-EMNIST-to-Wikisplit-Sentence-Composition-Using-W-B--VmlldzoyMjE3MjE)
+- [Modeling Drivable Areas for Autonomous Vehicles with Real and Synthetic Data](https://wandb.ai/av-team/drivable-segmentation/reports/Modeling-Drivable-Areas-for-Autonomous-Vehicles-with-Real-and-Synthetic-Data--VmlldzoyNjE0MjE2)
+
+:::

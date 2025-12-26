@@ -468,3 +468,52 @@ th {
   padding-left: 0;
   padding-right: 0;
 }
+
+/* ========================================
+   W&B REPORTS SECTION
+   ======================================== */
+
+.wandb-reports {
+  margin-top: 1rem;
+}
+
+.wandb-reports p strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.wandb-reports p:first-child strong {
+  margin-top: 0;
+}
+
+.wandb-reports ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.wandb-reports li {
+  margin-bottom: 0.4rem;
+  padding-left: 0;
+  line-height: 1.5;
+}
+
+.wandb-reports li::before {
+  content: none;
+}
+
+.wandb-reports a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.wandb-reports a:hover {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
