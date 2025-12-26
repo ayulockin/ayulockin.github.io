@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -63,41 +61,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
-<link rel="alternate" type="application/rss+xml" title="Ayush Thakur" href="index.xml"></head>
+</head>
 
 <body class="nav-fixed fullcontent">
 
@@ -175,83 +142,114 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="weights-biases-reports" class="level2">
+<h2 class="anchored" data-anchor-id="weights-biases-reports">Weights &amp; Biases Reports</h2>
+<p>Technical articles and tutorials I’ve written on the W&amp;B platform—covering deep learning, computer vision, LLMs, and practical ML engineering.</p>
+<div class="wandb-reports">
+<p><strong>LLMs &amp; RLHF</strong></p>
+<ul>
+<li><a href="https://wandb.ai/ayush-thakur/RLHF/reports/Understanding-Reinforcement-Learning-from-Human-Feedback-RLHF-Part-1--VmlldzoyODk5MTIx">Understanding Reinforcement Learning from Human Feedback (RLHF): Part 1</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy">An Introduction to Training LLMs Using Reinforcement Learning From Human Feedback (RLHF)</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/llm-eval-sweep/reports/How-to-Evaluate-Compare-and-Optimize-LLM-Systems--Vmlldzo0NzgyMTQz">How to Evaluate, Compare, and Optimize LLM Systems</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/llama-index-report/reports/Building-Advanced-Query-Engine-and-Evaluation-with-LlamaIndex-and-W-B--Vmlldzo0OTIzMjMy">Building Advanced Query Engine and Evaluation with LlamaIndex and W&amp;B</a></li>
+<li><a href="https://wandb.ai/carperai/summarize_RLHF/reports/Implementing-RLHF-Learning-to-Summarize-with-trlX--VmlldzozMzAwODM2">Implementing RLHF: Learning to Summarize with trlX</a></li>
+<li><a href="https://wandb.ai/ayut/trlx-ppo-sentiments-hyperopt/reports/RLHF-Hyperparameter-Optimization-for-trlX--VmlldzoyOTgxMTQ2">RLHF: Hyperparameter Optimization for trlX</a></li>
+</ul>
+<p><strong>Computer Vision &amp; GANs</strong></p>
+<ul>
+<li><a href="https://wandb.ai/ayush-thakur/keras-gan/reports/Towards-Deep-Generative-Modeling-With-Weight-Biases--Vmlldzo4MDI4Mw">Towards Deep Generative Modeling With Weight &amp; Biases</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/gan-evaluation/reports/How-to-Evaluate-GANs-using-Frechet-Inception-Distance-FID---Vmlldzo0MTAxOTI">How to Evaluate GANs using Frechet Inception Distance (FID)</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/ada/reports/Train-Generative-Adversarial-Networks-GANs-With-Limited-Data--Vmlldzo1NDYyMjA">Train Generative Adversarial Networks (GANs) With Limited Data</a></li>
+<li><a href="https://wandb.ai/wandb/in-domain-gan/reports/In-Domain-GAN-Inversion-for-Real-Image-Editing--VmlldzoyODE5Mzk">In-Domain GAN Inversion for Real Image Editing</a></li>
+<li><a href="https://wandb.ai/authors/alae/reports/An-Introduction-to-Adversarial-Latent-Autoencoders--VmlldzoxNDA2MDY">An Introduction to Adversarial Latent Autoencoders</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/interpretability/reports/Interpretability-in-Deep-Learning-With-Weights-Biases-CAM-and-Grad-CAM--Vmlldzo5MTIyNw">Interpretability in Deep Learning With Weights &amp; Biases: CAM and Grad-CAM</a></li>
+<li><a href="https://wandb.ai/wandb/instacolorization/reports/An-Overview-of-Instance-Aware-Image-Colorization---VmlldzoyOTk3MDI">An Overview of Instance Aware Image Colorization</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/image-segmentation/reports/Image-Segmentation-Using-Keras-and-Weights-Biases--VmlldzoyNTE1Njc">Image Segmentation Using Keras and Weights &amp; Biases</a></li>
+<li><a href="https://wandb.ai/wandb/object_localization/reports/Object-Localization-With-Keras-and-Weights-Biases--VmlldzoyNzA2Mzk">Object Localization With Keras and Weights &amp; Biases</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/keras_cv_vit/reports/Image-Classification-Using-Vision-Transformer-and-KerasCV--VmlldzozNTE4MzMz">Image Classification Using Vision Transformer and KerasCV</a></li>
+</ul>
+<p><strong>PyTorch &amp; PyTorch Lightning</strong></p>
+<ul>
+<li><a href="https://wandb.ai/wandb/common-ml-errors/reports/How-To-Use-GPU-with-PyTorch---VmlldzozMzAxMDk">How To Use GPU with PyTorch</a></li>
+<li><a href="https://wandb.ai/wandb/common-ml-errors/reports/How-to-save-and-load-models-in-PyTorch--VmlldzozMjg0MTE">How to save and load models in PyTorch</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/dl-question-bank/reports/How-To-Check-If-PyTorch-Is-Using-The-GPU--VmlldzoyMDQ0NTU">How To Check If PyTorch Is Using The GPU</a></li>
+<li><a href="https://wandb.ai/wandb/wandb-lightning/reports/Image-Classification-Using-PyTorch-Lightning-and-Weights-Biases--VmlldzoyODk1NzY">Image Classification Using PyTorch Lightning and Weights &amp; Biases</a></li>
+<li><a href="https://wandb.ai/wandb/wandb-lightning/reports/Transfer-Learning-Using-PyTorch-Lightning--VmlldzoyODk2MjA">Transfer Learning Using PyTorch Lightning</a></li>
+<li><a href="https://wandb.ai/wandb/wandb-lightning/reports/Multi-GPU-Training-Using-PyTorch-Lightning--VmlldzozMTk3NTk">Multi-GPU Training Using PyTorch Lightning</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/dl-question-bank/reports/An-Introduction-To-The-PyTorch-View-Function--VmlldzoyMDM0Nzg">An Introduction To The PyTorch View Function</a></li>
+<li><a href="https://wandb.ai/authors/ayusht/reports/PyTorch-Dropout-for-regularization-tutorial---VmlldzoxNTgwOTE">PyTorch Dropout for regularization - tutorial</a></li>
+<li><a href="https://wandb.ai/authors/ayusht/reports/Implementing-and-Tracking-the-Performance-of-a-CNN-in-PyTorch---VmlldzoxNjEyMDU">Implementing and Tracking the Performance of a CNN in PyTorch</a></li>
+</ul>
+<p><strong>Keras &amp; TensorFlow</strong></p>
+<ul>
+<li><a href="https://wandb.ai/ayush-thakur/keras-dense/reports/Keras-Dense-Layer-How-to-Use-It-Correctly--Vmlldzo0MjAzNDY1">Keras Dense Layer: How to Use It Correctly</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/dl-question-bank/reports/Input-Keras-Layer-Explanation-With-Code-Samples--VmlldzoyMDIzMDU">Input Keras Layer Explanation With Code Samples</a></li>
+<li><a href="https://wandb.ai/authors/ayusht/reports/Batch-Normalization-in-Keras-An-Example--VmlldzoxNzI5NjQ">Batch Normalization in Keras - An Example</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/cosine_decay/reports/How-to-Use-Cosine-Decay-Learning-Rate-Scheduler-in-Keras--VmlldzozNTE4MDMy">How to Use Cosine Decay Learning Rate Scheduler in Keras</a></li>
+<li><a href="https://wandb.ai/authors/ayusht/reports/Using-GPUs-With-Keras-A-Tutorial-With-Code--VmlldzoxNjEyNjE">Using GPUs With Keras: A Tutorial With Code</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/medmnist-bloodmnist/reports/Integrating-Keras-with-Weights-Biases--VmlldzoxNDg1MDQy">Integrating Keras with Weights &amp; Biases</a></li>
+<li><a href="https://wandb.ai/wandb/common-ml-errors/reports/How-To-Install-TensorFlow-With-GPU-Support-on-Windows--VmlldzozMDYxMDQ">How To Install TensorFlow With GPU Support on Windows</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/dl-question-bank/reports/How-to-Prevent-TensorFlow-From-Fully-Allocating-GPU-Memory--VmlldzoxOTk1ODE">How to Prevent TensorFlow From Fully Allocating GPU Memory</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/dl-question-bank/reports/LSTM-RNN-in-Keras-Examples-of-One-to-Many-Many-to-One-Many-to-Many---VmlldzoyMDIzOTM">LSTM RNN in Keras: Examples of One-to-Many, Many-to-One &amp; Many-to-Many</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/dl-question-bank/reports/A-Guide-to-Multi-Label-Classification-on-Keras--VmlldzoyMDgyMDU">A Guide to Multi-Label Classification on Keras</a></li>
+</ul>
+<p><strong>HuggingFace &amp; Transformers</strong></p>
+<ul>
+<li><a href="https://wandb.ai/ayush-thakur/huggingface/reports/How-To-Fine-Tune-Hugging-Face-Transformers-on-a-Custom-Dataset--Vmlldzo0MzQ2MDc">How To Fine-Tune Hugging Face Transformers on a Custom Dataset</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/huggingface/reports/Examples-of-Early-Stopping-in-HuggingFace-Transformers--Vmlldzo0MzE2MTM">Examples of Early Stopping in HuggingFace Transformers</a></li>
+<li><a href="https://wandb.ai/wandb/gallery/reports/SimpleTransformers-Transformers-Made-Easy--VmlldzoyNDQzNTg">SimpleTransformers: Transformers Made Easy</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/taming-transformer/reports/Taming-Transformers-for-High-Resolution-Image-Synthesis---Vmlldzo0NjEyMTY">Taming Transformers for High-Resolution Image Synthesis</a></li>
+</ul>
+<p><strong>Deep Learning Fundamentals</strong></p>
+<ul>
+<li><a href="https://wandb.ai/ayush-thakur/dl-question-bank/reports/What-s-the-Optimal-Batch-Size-to-Train-a-Neural-Network---VmlldzoyMDkyNDU">What’s the Optimal Batch Size to Train a Neural Network?</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/dl-question-bank/reports/ReLU-vs-Sigmoid-Function-in-Deep-Neural-Networks--VmlldzoyMDk0MzI">ReLU vs.&nbsp;Sigmoid Function in Deep Neural Networks</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/dl-question-bank/reports/How-to-Handle-Images-of-Different-Sizes-in-a-Convolutional-Neural-Network--VmlldzoyMDk3NzQ">How to Handle Images of Different Sizes in a Convolutional Neural Network</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/dl-question-bank/reports/Intuitive-understanding-of-1D-2D-and-3D-convolutions-in-convolutional-neural-networks---VmlldzoxOTk2MDA">Intuitive understanding of 1D, 2D, and 3D convolutions in convolutional neural networks</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/dl-question-bank/reports/What-s-the-Difference-Between-Strided-Convolution-and-Pooling---VmlldzoyMDE5Mjc">What’s the Difference Between Strided Convolution and Pooling?</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/dl-question-bank/reports/Comparing-Sigmoid-MSE-With-Softmax-Cross-Entropy-for-Image-Classification--VmlldzoyMDA3ODQ">Comparing Sigmoid-MSE With Softmax Cross-Entropy for Image Classification</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/dl-question-bank/reports/How-One-Hot-Encoding-Improves-Machine-Learning-Performance--VmlldzoxOTkzMDk">How One-Hot Encoding Improves Machine Learning Performance</a></li>
+<li><a href="https://wandb.ai/authors/loss-landscape/reports/Understanding-the-Effectivity-of-Ensembles-in-Deep-Learning--VmlldzoxODAxNjA">Understanding the Effectivity of Ensembles in Deep Learning</a></li>
+</ul>
+<p><strong>Data Augmentation &amp; Training Techniques</strong></p>
+<ul>
+<li><a href="https://wandb.ai/authors/tfaugmentation/reports/Modern-Data-Augmentation-Techniques-for-Computer-Vision--VmlldzoxODA3NTQ">Modern Data Augmentation Techniques for Computer Vision</a></li>
+<li><a href="https://wandb.ai/authors/class-imbalance/reports/Simple-Ways-to-Tackle-Class-Imbalance--VmlldzoxODA3NTk">Simple Ways to Tackle Class Imbalance</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/nfnet/reports/Exploring-Adaptive-Gradient-Clipping-and-NFNets--Vmlldzo1MDc0NTQ">Exploring Adaptive Gradient Clipping and NFNets</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/metric-learning/reports/Metric-Learning-for-Image-Search-With-Weights-Biases--VmlldzoyNTM0NDc">Metric Learning for Image Search With Weights &amp; Biases</a></li>
+<li><a href="https://wandb.ai/wandb/common-ml-errors/reports/How-to-avoid-checkerboard-pattern-in-your-generated-images---VmlldzozNTEzNzk">How to avoid checkerboard pattern in your generated images?</a></li>
+</ul>
+<p><strong>3D Vision &amp; Novel View Synthesis</strong></p>
+<ul>
+<li><a href="https://wandb.ai/authors/3D-Inpainting/reports/3D-Image-Inpainting-With-Weights-Biases--VmlldzoxNzIwNTY">3D Image Inpainting With Weights &amp; Biases</a></li>
+<li><a href="https://wandb.ai/authors/One-Shot-3D-Photography/reports/Paper-Summary-One-Shot-3D-Photography--VmlldzozNjE2MjQ">Paper Summary: One Shot 3D Photography</a></li>
+<li><a href="https://wandb.ai/wandb/xfields/reports/X-Fields-Implicit-Neural-View-Light-and-Time-Image-Interpolation--Vmlldzo0MTY0MzM">X-Fields: Implicit Neural View-, Light- and Time-Image Interpolation</a></li>
+<li><a href="https://wandb.ai/wandb/NSFF/reports/Overview-Neural-Scene-Flow-Fields-NSFF-for-Space-Time-View-Synthesis-of-Dynamic-Scenes--Vmlldzo1NzA1ODI">Overview: Neural Scene Flow Fields (NSFF) for Space-Time View Synthesis of Dynamic Scenes</a></li>
+<li><a href="https://wandb.ai/wandb/skyAR/reports/Dynamic-Sky-Replacement-The-Sky-Is-Within-Our-Grasp---VmlldzozMjY0NDI">Dynamic Sky Replacement: The Sky Is Within Our Grasp!</a></li>
+</ul>
+<p><strong>Video &amp; Animation</strong></p>
+<ul>
+<li><a href="https://wandb.ai/ayush-thakur/face-vid2vid/reports/One-Shot-Free-View-Neural-Talking-Head-Synthesis-for-Video-Conferencing--Vmlldzo1MzU4ODc">One-Shot Free-View Neural Talking-Head Synthesis for Video Conferencing</a></li>
+<li><a href="https://wandb.ai/wandb/egocentric-video-conferencing/reports/An-Introduction-to-Egocentric-Videoconferencing--VmlldzozMTY1NTA">An Introduction to Egocentric Videoconferencing</a></li>
+<li><a href="https://wandb.ai/wandb/retiming-video/reports/An-Intro-to-Retiming-Instances-in-a-Video--VmlldzozMzUwNTk">An Intro to Retiming Instances in a Video</a></li>
+<li><a href="https://wandb.ai/wandb/in-between/reports/Automating-Animations-with-the-Help-of-Robust-In-Betweening--Vmlldzo0MzkzMzA">Automating Animations with the Help of Robust In-Betweening</a></li>
+</ul>
+<p><strong>Other</strong></p>
+<ul>
+<li><a href="https://wandb.ai/authors/swav-tf/reports/Unsupervised-Visual-Representation-Learning-with-SwAV--VmlldzoyMjg3Mzg">Self-Supervised Learning with SwAV</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/mmdetection/reports/How-To-Use-Weights-Biases-With-MMDetection--VmlldzoyMTM0MDE2">How To Use Weights &amp; Biases With MMDetection</a></li>
+<li><a href="https://wandb.ai/ayush-thakur/paintlight/reports/Generating-Digital-Painting-Lighting-Effects-via-RGB-space-Geometry--VmlldzoxMTA2Mjg">Generating Digital Painting Lighting Effects via RGB-space Geometry</a></li>
+<li><a href="https://wandb.ai/authors/deepfacedrawing/reports/An-Overview-of-DeepFaceDrawing--VmlldzoyMjgxNzM">An Overview of DeepFaceDrawing</a></li>
+<li><a href="https://wandb.ai/authors/rewrite-gan/reports/Rewriting-a-Deep-Generative-Model-An-Overview--VmlldzoyMzgyNTU">Rewriting a Deep Generative Model: An Overview</a></li>
+<li><a href="https://wandb.ai/wandb/emnist/reports/From-EMNIST-to-Wikisplit-Sentence-Composition-Using-W-B--VmlldzoyMjE3MjE">From EMNIST to Wikisplit: Sentence Composition Using W&amp;B</a></li>
+<li><a href="https://wandb.ai/av-team/drivable-segmentation/reports/Modeling-Drivable-Areas-for-Autonomous-Vehicles-with-Real-and-Synthetic-Data--VmlldzoyNjE0MjE2">Modeling Drivable Areas for Autonomous Vehicles with Real and Synthetic Data</a></li>
+</ul>
+</div>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="welcome,thoughts" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1766737395637" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="body">
-<a href="../blog/posts/welcome/index.html">
-<h3 class="no-anchor listing-title">
-Welcome to My Blog
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>Welcome to my personal blog where I share thoughts on AI, ML, and engineering.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../blog/posts/welcome/index.html">
-<div class="listing-date">
-Jan 1, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="llm,evaluation,machine-learning" data-listing-date-sort="1702339200000" data-listing-file-modified-sort="1766737395637" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="body">
-<a href="../blog/posts/llm-evaluation.html">
-<h3 class="no-anchor listing-title">
-The State of LLM Evaluation
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>An overview of current approaches and challenges in LLM evaluation</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../blog/posts/llm-evaluation.html">
-<div class="listing-date">
-Dec 12, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="llm,rag,techniques" data-listing-date-sort="1701129600000" data-listing-file-modified-sort="1766737395637" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="body">
-<a href="../blog/posts/rag-techniques-overview.html">
-<h3 class="no-anchor listing-title">
-RAG Techniques: From Naive to Advanced
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>An overview of Retrieval Augmented Generation (RAG) techniques for enhancing LLM responses with external knowledge</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../blog/posts/rag-techniques-overview.html">
-<div class="listing-date">
-Nov 28, 2023
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
