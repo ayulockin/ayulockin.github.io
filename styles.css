@@ -508,12 +508,13 @@ th {
 
 .wandb-reports a {
   color: var(--text-secondary);
-  text-decoration: none;
-  transition: color 0.15s ease;
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
 }
 
 .wandb-reports a:hover {
   color: var(--link);
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  text-decoration-color: var(--link);
 }
