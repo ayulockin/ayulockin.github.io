@@ -110,3 +110,14 @@ Technical articles and tutorials I've written on the W&B platform—covering dee
 - [Modeling Drivable Areas for Autonomous Vehicles with Real and Synthetic Data](https://wandb.ai/av-team/drivable-segmentation/reports/Modeling-Drivable-Areas-for-Autonomous-Vehicles-with-Real-and-Synthetic-Data--VmlldzoyNjE0MjE2)
 
 :::
+
+---
+
+## Medium
+
+::: {.wandb-reports}
+
+- [Converting FC Layers to Conv Layers](https://medium.com/@mein2work/converting-fc-layers-to-conv-layers-8a43880a44ed)
+- [Using CNN to translate American Sign Language](https://medium.com/@mein2work/using-cnn-to-translate-american-sign-language-10d6443f7cd)
+
+:::
