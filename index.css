@@ -2,134 +2,118 @@
 
 /*-- scss:rules --*/
 
-/* Clean, minimal style */
+/* ========================================
+   HOMEPAGE - Simple, memorable intro
+   ======================================== */
+
+/* Remove the duplicate title */
+.quarto-title {
+  display: none;
+}
+
+/* Main content container */
 .main-content {
-  max-width: 900px;
+  max-width: 640px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
-  line-height: 1.6;
+  padding: 4rem 1.5rem;
 }
 
-/* Profile section - image and text side by side */
+/* Profile section - vertical, centered, elegant */
 .profile-container {
-  display: flex;
-  gap: 3rem;
-  margin-bottom: 3rem;
-  align-items: flex-start;
+  display: block;
 }
 
+/* Profile images - single, refined */
 .profile-image {
-  flex: 0 0 240px;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
 }
 
-.profile-image img {
-  width: 100%;
-  height: auto;
-  max-height: 320px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.profile-image img:first-child {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border, #e8e4df);
+  box-shadow: none;
+  transition: none;
 }
 
-.profile-image img:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+.profile-image img:first-child:hover {
+  transform: none;
+  box-shadow: none;
 }
 
+/* Hide the second image (robot) */
+.profile-image img:nth-child(2) {
+  display: none;
+}
+
+/* Profile text - the heart of the page */
 .profile-text {
-  flex: 1;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: var(--text-primary, #1a1a1a);
 }
 
 .profile-text p {
-  margin-bottom: 1rem;
-}
-
-/* Social links styling */
-.social-links {
-  margin-top: 1.5rem;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-.social-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  font-size: 1.2rem;
-}
-
-.social-links a:hover {
-  transform: translateY(-2px);
-}
-
-/* News section */
-.main-content h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-top: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
-.main-content ul {
-  list-style: none;
-  padding-left: 0;
+/* First paragraph - slightly larger as intro */
+.profile-text p:first-of-type {
+  font-size: 1.2rem;
 }
 
-.main-content ul li {
-  margin-bottom: 1rem;
-  padding-left: 1rem;
-  position: relative;
+/* Social links - understated */
+.social-links {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border, #e8e4df);
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
 }
 
-.main-content ul li::before {
-  content: "•";
-  font-weight: bold;
-  position: absolute;
-  left: 0;
+.social-links a {
+  color: var(--text-muted, #6b6b6b);
+  font-size: 1.25rem;
+  transition: color 0.15s ease;
 }
 
-/* Responsive design */
-@media (max-width: 992px) {
-  .profile-container {
-    gap: 2rem;
-  }
-  .profile-image {
-    flex: 0 0 200px;
-  }
+.social-links a:hover {
+  color: var(--text-primary, #1a1a1a);
+  transform: none;
 }
+
+/* Remove icon backgrounds */
+.social-links a .bi {
+  vertical-align: middle;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
 
 @media (max-width: 768px) {
   .main-content {
-    padding: 1.5rem 1rem;
+    padding: 2.5rem 1rem;
   }
   
-  .profile-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 2rem;
-  }
-  
-  .profile-image {
-    flex: 0 0 180px;
+  .profile-image img:first-child {
+    width: 150px;
+    height: 150px;
   }
   
   .profile-text {
-    text-align: left;
+    font-size: 1rem;
+  }
+  
+  .profile-text p:first-of-type {
+    font-size: 1.1rem;
   }
   
   .social-links {
     justify-content: center;
   }
-} 
+}

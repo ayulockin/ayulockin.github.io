@@ -2,63 +2,469 @@
 
 /*-- scss:rules --*/
 
-/* Base styles */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  line-height: 1.6;
+/* ========================================
+   MINIMAL ACADEMIC THEME
+   Inspired by great thinkers' websites
+   ======================================== */
+
+/* Import elegant fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Warm, scholarly palette */
+  --bg-primary: #fdfcfa;
+  --bg-secondary: #f7f5f2;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-muted: #6b6b6b;
+  --accent: #8b4513;
+  --accent-hover: #a0522d;
+  --border: #e8e4df;
+  --link: #2c5282;
+  --link-hover: #1a365d;
 }
 
-/* Improved headings */
+/* Dark mode overrides */
+[data-bs-theme="dark"] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #242424;
+  --text-primary: #e8e4df;
+  --text-secondary: #b8b4af;
+  --text-muted: #8a8680;
+  --accent: #d4a574;
+  --accent-hover: #e8c4a0;
+  --border: #333;
+  --link: #7eb8da;
+  --link-hover: #a8d4f0;
+}
+
+/* Base document */
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography hierarchy */
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Crimson Pro', Georgia, serif;
   font-weight: 600;
   line-height: 1.3;
+  color: var(--text-primary);
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-/* Cards for content */
-.card {
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: all 0.2s ease;
-}
-
-.card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
-}
-
-/* Button styling */
-.btn {
+h1 {
+  font-size: 2.2rem;
   font-weight: 500;
-  border-radius: 6px;
-  padding: 0.75rem 1.5rem;
-  transition: all 0.2s ease;
-  text-decoration: none !important;
+  letter-spacing: -0.01em;
 }
 
-.btn:hover {
-  transform: translateY(-1px);
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border);
 }
 
-/* Social links */
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--text-primary);
+}
+
+/* Links - subtle but clear */
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Strong emphasis */
+strong, b {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+em, i {
+  font-style: italic;
+}
+
+/* Blockquotes - for insights */
+blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 3px solid var(--accent);
+  background: var(--bg-secondary);
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Code - monospace elegance */
+code {
+  font-family: 'JetBrains Mono', 'Consolas', monospace;
+  font-size: 0.85em;
+  background: var(--bg-secondary);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  color: var(--text-primary);
+}
+
+pre {
+  font-family: 'JetBrains Mono', 'Consolas', monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding: 1.25rem;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Lists */
+ul, ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Horizontal rule */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+/* ========================================
+   NAVIGATION - Minimal, unobtrusive
+   ======================================== */
+
+.navbar {
+  background-color: var(--bg-primary) !important;
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+}
+
+.navbar > .container-fluid {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-brand {
+  font-weight: 500;
+  color: var(--text-primary) !important;
+  letter-spacing: -0.01em;
+  margin-right: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 400;
+  color: var(--text-secondary) !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  transition: color 0.15s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--text-primary) !important;
+}
+
+/* Hide search styling to be minimal */
+#quarto-search {
+  display: none;
+}
+
+/* ========================================
+   MAIN CONTENT - Readable, focused
+   ======================================== */
+
+.page-layout-full .content {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+main.content {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+#quarto-content {
+  background-color: var(--bg-primary);
+}
+
+/* ========================================
+   BLOG LISTING - Clean, scannable
+   ======================================== */
+
+.quarto-listing {
+  margin-top: 2rem;
+}
+
+.quarto-listing-default .list {
+  border: none;
+}
+
+.quarto-listing-default .listing-item {
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 0;
+}
+
+.quarto-listing-default .listing-item:last-child {
+  border-bottom: none;
+}
+
+.listing-title {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.listing-title a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.listing-title a:hover {
+  color: var(--link);
+}
+
+.listing-description {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.listing-date {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.listing-categories {
+  margin-top: 0.5rem;
+}
+
+.listing-category {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  margin-right: 0.4rem;
+  text-decoration: none;
+}
+
+/* Hide thumbnails for cleaner listing */
+.listing-image {
+  display: none;
+}
+
+/* ========================================
+   ARTICLE/POST STYLES
+   ======================================== */
+
+.quarto-title {
+  margin-bottom: 2rem;
+}
+
+.quarto-title h1.title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.quarto-title .quarto-title-meta {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+
+/* Article date and author */
+.article-date, .article-author {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* ========================================
+   FOOTER - Unobtrusive
+   ======================================== */
+
+.page-footer {
+  background: transparent;
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.page-footer p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 0;
+}
+
+/* ========================================
+   SOCIAL LINKS - Subtle
+   ======================================== */
+
+.social-links {
+  margin-top: 1.5rem;
+}
+
 .social-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 6px;
-  margin-right: 0.5rem;
-  transition: all 0.2s ease;
+  display: inline-block;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  transition: color 0.15s ease;
 }
 
 .social-links a:hover {
-  transform: translateY(-2px);
+  color: var(--text-primary);
+  text-decoration: none;
 }
 
-/* Responsive design */
+/* Navbar social icons */
+.navbar .bi {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.navbar a:hover .bi {
+  color: var(--text-primary);
+}
+
+/* ========================================
+   TABLES - Clean academic style
+   ======================================== */
+
+table {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  font-weight: 600;
+  border-bottom: 2px solid var(--border);
+}
+
+/* ========================================
+   TOC - Minimal sidebar
+   ======================================== */
+
+#TOC {
+  font-size: 0.9rem;
+}
+
+#TOC a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+#TOC a:hover {
+  color: var(--text-primary);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
 @media (max-width: 768px) {
-  .main-content {
-    padding: 1rem;
+  html {
+    font-size: 16px;
   }
+  
+  .page-layout-full .content,
+  main.content {
+    padding: 2rem 1rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* ========================================
+   REMOVE QUARTO DEFAULTS WE DON'T WANT
+   ======================================== */
+
+/* Remove card styling */
+.card {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+/* Remove button styling we don't need */
+.btn-primary {
+  background: var(--accent);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+}
+
+/* Clean up any remaining bootstrap noise */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }

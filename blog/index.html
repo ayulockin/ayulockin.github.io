@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ayush Thakur - Blog</title>
+<title>Ayush Thakur - Writing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,9 +73,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-description','listing-reading-time','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 <link rel="alternate" type="application/rss+xml" title="Ayush Thakur" href="index.xml"></head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -121,23 +121,23 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link active" href="../blog/index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Writing</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://x.com/ayushthakur0" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://github.com/ayulockin" rel="" target=""><i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/ayulockin" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://x.com/ayushthakur0" rel="" target=""><i class="bi bi-twitter" role="img" aria-label="Twitter">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/ayush-thakur-731914149/" rel="" target=""><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/ayush-thakur-731914149/" rel="" target=""><i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -150,19 +150,17 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="evaluation">evaluation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="llm">llm <span class="quarto-category-count">(2)</span></div><div class="category" data-category="machine-learning">machine-learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rag">rag <span class="quarto-category-count">(1)</span></div><div class="category" data-category="techniques">techniques <span class="quarto-category-count">(1)</span></div><div class="category" data-category="thoughts">thoughts <span class="quarto-category-count">(1)</span></div><div class="category" data-category="welcome">welcome <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
-<p class="subtitle lead">Thoughts, tutorials, and insights on machine learning, LLMs, and MLOps</p>
+<h1 class="title">Writing</h1>
+<p class="subtitle lead">Thoughts on machine learning, LLMs, and building things that work.</p>
 </div>
 
 
@@ -177,41 +175,13 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Welcome to my blog where I share my thoughts, experiences, and tutorials on machine learning, LLMs, and MLOps. I cover topics ranging from technical deep dives to practical implementation guides, with a focus on making complex concepts accessible.</p>
-<p>If you’re interested in specific topics, use the filters above to narrow down the posts by category, or use the search function to find exactly what you’re looking for.</p>
-<p>Feel free to share these posts and reach out with questions or feedback. I’m always happy to engage with the community!</p>
 
 
 
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="welcome,thoughts" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1760326386247" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/posts/welcome/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
-</div>
+<div class="quarto-post image-right" data-index="0" data-categories="welcome,thoughts" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1766737395637" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="body">
 <a href="../blog/posts/welcome/index.html">
 <h3 class="no-anchor listing-title">
@@ -220,16 +190,6 @@ Welcome to My Blog
 <div class="listing-subtitle">
 
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('welcome'); return false;">
-welcome
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('thoughts'); return false;">
-thoughts
-</div>
-</div>
-<a href="../blog/posts/welcome/index.html">
 <div class="listing-description">
 <p>Welcome to my personal blog where I share thoughts on AI, ML, and engineering.</p>
 </div>
@@ -240,16 +200,10 @@ thoughts
 <div class="listing-date">
 Jan 1, 2024
 </div>
-<div class="listing-reading-time">
-1 min
-</div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="llm,evaluation,machine-learning" data-listing-date-sort="1702339200000" data-listing-file-modified-sort="1760326386247" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/posts/llm-evaluation.html"> <img src="../blog/posts/images/llm-eval-cover.jpg" class="thumbnail-image"> </a></p>
-</div>
+<div class="quarto-post image-right" data-index="1" data-categories="llm,evaluation,machine-learning" data-listing-date-sort="1702339200000" data-listing-file-modified-sort="1766737395637" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="body">
 <a href="../blog/posts/llm-evaluation.html">
 <h3 class="no-anchor listing-title">
@@ -258,19 +212,6 @@ The State of LLM Evaluation
 <div class="listing-subtitle">
 
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('llm'); return false;">
-llm
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('evaluation'); return false;">
-evaluation
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('machine-learning'); return false;">
-machine-learning
-</div>
-</div>
-<a href="../blog/posts/llm-evaluation.html">
 <div class="listing-description">
 <p>An overview of current approaches and challenges in LLM evaluation</p>
 </div>
@@ -281,16 +222,10 @@ machine-learning
 <div class="listing-date">
 Dec 12, 2023
 </div>
-<div class="listing-reading-time">
-1 min
-</div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="llm,rag,techniques" data-listing-date-sort="1701129600000" data-listing-file-modified-sort="1760326386247" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../blog/posts/rag-techniques-overview.html"> <img src="../blog/posts/images/rag-cover.jpg" class="thumbnail-image"> </a></p>
-</div>
+<div class="quarto-post image-right" data-index="2" data-categories="llm,rag,techniques" data-listing-date-sort="1701129600000" data-listing-file-modified-sort="1766737395637" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="body">
 <a href="../blog/posts/rag-techniques-overview.html">
 <h3 class="no-anchor listing-title">
@@ -299,19 +234,6 @@ RAG Techniques: From Naive to Advanced
 <div class="listing-subtitle">
 
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('llm'); return false;">
-llm
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('rag'); return false;">
-rag
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('techniques'); return false;">
-techniques
-</div>
-</div>
-<a href="../blog/posts/rag-techniques-overview.html">
 <div class="listing-description">
 <p>An overview of Retrieval Augmented Generation (RAG) techniques for enhancing LLM responses with external knowledge</p>
 </div>
@@ -321,9 +243,6 @@ techniques
 <a href="../blog/posts/rag-techniques-overview.html">
 <div class="listing-date">
 Nov 28, 2023
-</div>
-<div class="listing-reading-time">
-1 min
 </div>
 </a>
 </div>
@@ -690,7 +609,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- © 2025 Ayush Thakur. Built with [Quarto](https://quarto.org/).
+ © 2025 Ayush Thakur
   </li>  
 </ul>
     </div>

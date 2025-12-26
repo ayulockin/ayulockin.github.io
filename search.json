@@ -30,37 +30,65 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About Me",
+    "title": "About",
     "section": "",
-    "text": "I currently work as Manager, AI Engineering at Weights & Biases by CoreWeave, leading a small team of awesome AI Engineers. We focus on bringing down the entry of barrier to have an MLOps or LLMOps stack into a framework of your choice by building integrations, writing docs, creating educational content, and more. The crux of my work is to grow our usebase and have played a crucial role in doing so. As one of the earliest hire in the growth team, I have been involved with multiple key integrations, initiatives, projects, and more.\nI have been in the field of AI for 5 years now and have worked with multiple frameworks, tools, and platforms. I have a strong background in Deep Learning, Computer Vision, and MLOps.\n\n\nManager, AI Engineering | Weights & Biases\nFebruary 2025 - Present\n\nLead a small team of AI Engineers focusing primarily on integrations today but plan to do a lot more amazing things in the future. Building a team to achieve the same.\nLeading an effort to build our own algamation of benchmarks for for LLM/VLM evaluation and in turn build the framework for it.\n\nMachine Learning Engineer | Weights & Biases\nAugust 2020 - January 2025\n\nDeveloped MLOps pipelines for popular open-source repositories/frameworks/orgs like Keras, OpenMMLab, Meta, XGBoost, and more.\nDeveloped LLMOps integrations with LLM providers like OpenAI, Cohere, CrewAI, and more.\nReproduced research papers and wrote about them. Check them out here.\nBuilt and evaluated wandbot, a Q&A RAG based chatbot.\nCreated courses on LLM applications and MLOps.\nWritten multiple blog posts and tutorials on Deep Learning, MLOps, RAG, Evaluation and more. Check them out here.\nOwned the OS integration efforts.\nCreated and built our Kaggle Ambassador program. Became a Kaggle Notebooks Master in the process.\n\nTechnical Author | Weights & Biases January 2020 - August 2020\n\nWrote tehcnical reports (blog posts) on ML concepts. You can find them in my W&B profile.\nProud to have some of these reports featured in “Two Minute Papers”\n\n\n\n\n\nLLM apps: Evaluation\nRAG++: From POC to Production\nTraining and Fine-tuning Large Language Models (LLMs) (*featured in a module because of my “Starter pack for NeurIPS LLM Efficiency Challenge 2023”.)\n\n\n\n\n\nGoogle Developer Expert in Machine Learning (TensorFlow Core) (Aug 2022 - Present)\nKaggle Notebooks Master - Created numerous popular notebooks for competitions. You can find them in my Kaggle profile.\n\n\n\n\nBachelor of Engineering in Electronics and Communication Engineering | Netaji Subhash Engineering College, Kolkata, WB. 2016 - 2020\nSchooling | Notre Dame Academy in Munger, Bihar.\n\n\n\n\nGoogle Developer Group - Volunteer (Nov 2018 - Nov 2019)\nRobonix 2018 - Assistant Head for Line Follower competition (Feb 2018 - Mar 2018)\n\n\n\n\nI love thinking about hard problems and up-skilling myself to solve some.\nIn my free time, I love watching anime (Naruto is my all-time favorite, One Piece is love, and Solo Leveling is 🔥).\nFeel free to reach out to me on Twitter or LinkedIn for collaborations or discussions!"
+    "text": "I’m an engineer who loves building, learning, and solving complex problems. I’m driven by curiosity rather than allegiance to any single discipline—electronics, machine learning, biology, physics—whatever the problem demands.\nI hold a degree in Electronics and Communication Engineering. My early work on autonomous robots gave me a foundation in systems thinking that I now bring to AI."
   },
   {
-    "objectID": "about.html#hello-im-ayush-thakur",
-    "href": "about.html#hello-im-ayush-thakur",
-    "title": "About Me",
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
     "section": "",
-    "text": "I currently work as Manager, AI Engineering at Weights & Biases by CoreWeave, leading a small team of awesome AI Engineers. We focus on bringing down the entry of barrier to have an MLOps or LLMOps stack into a framework of your choice by building integrations, writing docs, creating educational content, and more. The crux of my work is to grow our usebase and have played a crucial role in doing so. As one of the earliest hire in the growth team, I have been involved with multiple key integrations, initiatives, projects, and more.\nI have been in the field of AI for 5 years now and have worked with multiple frameworks, tools, and platforms. I have a strong background in Deep Learning, Computer Vision, and MLOps.\n\n\nManager, AI Engineering | Weights & Biases\nFebruary 2025 - Present\n\nLead a small team of AI Engineers focusing primarily on integrations today but plan to do a lot more amazing things in the future. Building a team to achieve the same.\nLeading an effort to build our own algamation of benchmarks for for LLM/VLM evaluation and in turn build the framework for it.\n\nMachine Learning Engineer | Weights & Biases\nAugust 2020 - January 2025\n\nDeveloped MLOps pipelines for popular open-source repositories/frameworks/orgs like Keras, OpenMMLab, Meta, XGBoost, and more.\nDeveloped LLMOps integrations with LLM providers like OpenAI, Cohere, CrewAI, and more.\nReproduced research papers and wrote about them. Check them out here.\nBuilt and evaluated wandbot, a Q&A RAG based chatbot.\nCreated courses on LLM applications and MLOps.\nWritten multiple blog posts and tutorials on Deep Learning, MLOps, RAG, Evaluation and more. Check them out here.\nOwned the OS integration efforts.\nCreated and built our Kaggle Ambassador program. Became a Kaggle Notebooks Master in the process.\n\nTechnical Author | Weights & Biases January 2020 - August 2020\n\nWrote tehcnical reports (blog posts) on ML concepts. You can find them in my W&B profile.\nProud to have some of these reports featured in “Two Minute Papers”\n\n\n\n\n\nLLM apps: Evaluation\nRAG++: From POC to Production\nTraining and Fine-tuning Large Language Models (LLMs) (*featured in a module because of my “Starter pack for NeurIPS LLM Efficiency Challenge 2023”.)\n\n\n\n\n\nGoogle Developer Expert in Machine Learning (TensorFlow Core) (Aug 2022 - Present)\nKaggle Notebooks Master - Created numerous popular notebooks for competitions. You can find them in my Kaggle profile.\n\n\n\n\nBachelor of Engineering in Electronics and Communication Engineering | Netaji Subhash Engineering College, Kolkata, WB. 2016 - 2020\nSchooling | Notre Dame Academy in Munger, Bihar.\n\n\n\n\nGoogle Developer Group - Volunteer (Nov 2018 - Nov 2019)\nRobonix 2018 - Assistant Head for Line Follower competition (Feb 2018 - Mar 2018)\n\n\n\n\nI love thinking about hard problems and up-skilling myself to solve some.\nIn my free time, I love watching anime (Naruto is my all-time favorite, One Piece is love, and Solo Leveling is 🔥).\nFeel free to reach out to me on Twitter or LinkedIn for collaborations or discussions!"
+    "text": "I’m an engineer who loves building, learning, and solving complex problems. I’m driven by curiosity rather than allegiance to any single discipline—electronics, machine learning, biology, physics—whatever the problem demands.\nI hold a degree in Electronics and Communication Engineering. My early work on autonomous robots gave me a foundation in systems thinking that I now bring to AI."
+  },
+  {
+    "objectID": "about.html#work",
+    "href": "about.html#work",
+    "title": "About",
+    "section": "Work",
+    "text": "Work\nManager, AI Engineering at Weights & Biases (CoreWeave)\nFebruary 2025 – Present\nLeading a team of AI Engineers focused on integrations and building evaluation frameworks for LLMs/VLMs.\nMachine Learning Engineer at Weights & Biases\nAugust 2020 – January 2025\n\nBuilt MLOps integrations for Keras, OpenMMLab, Meta, XGBoost, and others\nDeveloped LLMOps integrations with OpenAI, Cohere, CrewAI\nCreated and maintained wandbot, a RAG-based Q&A system\nBuilt the Kaggle Ambassador program; became a Notebooks Master\nOwned open-source integration efforts\n\nTechnical Author at Weights & Biases\nJanuary 2020 – August 2020\nWrote technical reports on ML concepts. Some were featured in “Two Minute Papers.”"
+  },
+  {
+    "objectID": "about.html#courses",
+    "href": "about.html#courses",
+    "title": "About",
+    "section": "Courses",
+    "text": "Courses\n\nLLM apps: Evaluation\nRAG++: From POC to Production\nTraining and Fine-tuning LLMs"
+  },
+  {
+    "objectID": "about.html#recognition",
+    "href": "about.html#recognition",
+    "title": "About",
+    "section": "Recognition",
+    "text": "Recognition\n\nGoogle Developer Expert in Machine Learning (2022–present)\nKaggle Notebooks Master"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\nB.E. in Electronics and Communication Engineering\nNetaji Subhash Engineering College, Kolkata (2016–2020)"
+  },
+  {
+    "objectID": "about.html#elsewhere",
+    "href": "about.html#elsewhere",
+    "title": "About",
+    "section": "Elsewhere",
+    "text": "Elsewhere\n\nGitHub\nTwitter\nLinkedIn\nKaggle\nWeights & Biases"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Ayush Thakur",
     "section": "",
-    "text": "Hi, I’m Ayush — an engineer who loves building, learning, and solving complex problems. I’m driven by curiosity rather than allegiance to any single discipline, which has led me to explore everything from electronics to machine learning, biology, and physics.\nI hold a degree in Electronics and Communication Engineering. While my focus has shifted from circuits to code, my early work on autonomous robots gave me a strong foundation in systems thinking — something I now bring to my work in AI. My goal is to bridge these domains to tackle problems that truly matter.\nI currently work as a Manager, AI Engineer at Weights & Biases (now part of CoreWeave), where I lead our open source integration efforts. These projects help machine learning practitioners easily build complete MLOps stacks. Over my 5 years at W&B, I’ve specialized in LLM application development and model evaluation, while also leading Kaggle initiatives, creating popular courses, and producing technical reports that drive visibility and growth.\nI’m also a Google Developer Expert in Machine Learning and a Kaggle Master (Notebooks).\nWhen I’m not coding, I enjoy watching anime (Naruto is my all-time favorite!) and sharing knowledge through technical articles. I have started with 3D printing as well. Stay tuned!\nKnow more about me from here."
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Coming soon! This is where I’ll share my thoughts, learnings, and insights on machine learning, AI, and engineering.\nStay tuned for posts on: - Technical deep-dives into ML/AI topics - Career insights and lessons learned - Tools and techniques I find useful - Thoughts on the future of technology"
+    "text": "I’m an engineer driven by curiosity—exploring machine learning, AI systems, and the hard problems that sit at their intersection.\nI work as Manager, AI Engineer at Weights & Biases (now part of CoreWeave), leading open-source integrations that help ML practitioners build complete MLOps stacks. Over five years at W&B, I’ve specialized in LLM applications and evaluation, created courses, and written extensively about what I’ve learned.\nI’m a Google Developer Expert in Machine Learning and a Kaggle Notebooks Master.\nWhen I’m not working, I watch anime, think about hard problems, and occasionally 3D print things."
   },
   {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
-    "title": "Blog",
+    "title": "Writing",
     "section": "",
-    "text": "Welcome to my blog where I share my thoughts, experiences, and tutorials on machine learning, LLMs, and MLOps. I cover topics ranging from technical deep dives to practical implementation guides, with a focus on making complex concepts accessible.\nIf you’re interested in specific topics, use the filters above to narrow down the posts by category, or use the search function to find exactly what you’re looking for.\nFeel free to share these posts and reach out with questions or feedback. I’m always happy to engage with the community!\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nWelcome to My Blog\n\n\n\n\n\n\n\nwelcome\n\n\nthoughts\n\n\n\n\nWelcome to my personal blog where I share thoughts on AI, ML, and engineering.\n\n\n\n\n\n\nJan 1, 2024\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nThe State of LLM Evaluation\n\n\n\n\n\n\n\nllm\n\n\nevaluation\n\n\nmachine-learning\n\n\n\n\nAn overview of current approaches and challenges in LLM evaluation\n\n\n\n\n\n\nDec 12, 2023\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\nRAG Techniques: From Naive to Advanced\n\n\n\n\n\n\n\nllm\n\n\nrag\n\n\ntechniques\n\n\n\n\nAn overview of Retrieval Augmented Generation (RAG) techniques for enhancing LLM responses with external knowledge\n\n\n\n\n\n\nNov 28, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Welcome to My Blog\n\n\n\n\n\nWelcome to my personal blog where I share thoughts on AI, ML, and engineering.\n\n\n\n\n\n\nJan 1, 2024\n\n\n\n\n\n\n\n\nThe State of LLM Evaluation\n\n\n\n\n\nAn overview of current approaches and challenges in LLM evaluation\n\n\n\n\n\n\nDec 12, 2023\n\n\n\n\n\n\n\n\nRAG Techniques: From Naive to Advanced\n\n\n\n\n\nAn overview of Retrieval Augmented Generation (RAG) techniques for enhancing LLM responses with external knowledge\n\n\n\n\n\n\nNov 28, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/posts/llm-evaluation.html",
