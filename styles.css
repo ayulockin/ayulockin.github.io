@@ -25,7 +25,7 @@
 }
 
 /* Dark mode overrides */
-[data-bs-theme="dark"] {
+body.quarto-dark {
   --bg-primary: #1a1a1a;
   --bg-secondary: #242424;
   --text-primary: #e8e4df;

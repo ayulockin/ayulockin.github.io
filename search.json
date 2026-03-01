@@ -1,33 +1,5 @@
 [
   {
-    "objectID": "blog/posts/welcome/index.html",
-    "href": "blog/posts/welcome/index.html",
-    "title": "Welcome to My Blog",
-    "section": "",
-    "text": "Hello! Welcome to my personal blog. This is where I’ll be sharing my thoughts, learnings, and insights about:\n\nMachine Learning & AI: Latest developments, techniques, and applications\nEngineering: Problem-solving approaches and technical solutions\nCareer & Growth: Lessons learned and experiences in tech\nLife & Learning: Personal reflections and continuous learning journey\n\nI believe in keeping things simple and focused. This blog is my digital notebook where I capture ideas, document learning, and share what I discover along the way.\n\n\nI’ll be writing about:\n\nTechnical deep-dives into ML/AI topics\nCareer insights and lessons learned\nTools and techniques I find useful\nThoughts on the future of technology\n\n\n\n\nFeel free to reach out to me on Twitter or LinkedIn if you’d like to discuss any of these topics!\nHappy reading! 🚀"
-  },
-  {
-    "objectID": "blog/posts/welcome/index.html#what-to-expect",
-    "href": "blog/posts/welcome/index.html#what-to-expect",
-    "title": "Welcome to My Blog",
-    "section": "",
-    "text": "I’ll be writing about:\n\nTechnical deep-dives into ML/AI topics\nCareer insights and lessons learned\nTools and techniques I find useful\nThoughts on the future of technology"
-  },
-  {
-    "objectID": "blog/posts/welcome/index.html#lets-connect",
-    "href": "blog/posts/welcome/index.html#lets-connect",
-    "title": "Welcome to My Blog",
-    "section": "",
-    "text": "Feel free to reach out to me on Twitter or LinkedIn if you’d like to discuss any of these topics!\nHappy reading! 🚀"
-  },
-  {
-    "objectID": "blog/posts/rag-techniques-overview.html",
-    "href": "blog/posts/rag-techniques-overview.html",
-    "title": "RAG Techniques: From Naive to Advanced",
-    "section": "",
-    "text": "RAG Techniques: From Naive to Advanced\nContent coming soon!"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -77,6 +49,34 @@
     "text": "Elsewhere\n\nGitHub\nTwitter\nLinkedIn\nKaggle\nWeights & Biases"
   },
   {
+    "objectID": "blog/posts/welcome/index.html",
+    "href": "blog/posts/welcome/index.html",
+    "title": "Welcome to My Blog",
+    "section": "",
+    "text": "Hello! Welcome to my personal blog. This is where I’ll be sharing my thoughts, learnings, and insights about:\n\nMachine Learning & AI: Latest developments, techniques, and applications\nEngineering: Problem-solving approaches and technical solutions\nCareer & Growth: Lessons learned and experiences in tech\nLife & Learning: Personal reflections and continuous learning journey\n\nI believe in keeping things simple and focused. This blog is my digital notebook where I capture ideas, document learning, and share what I discover along the way.\n\n\nI’ll be writing about:\n\nTechnical deep-dives into ML/AI topics\nCareer insights and lessons learned\nTools and techniques I find useful\nThoughts on the future of technology\n\n\n\n\nFeel free to reach out to me on Twitter or LinkedIn if you’d like to discuss any of these topics!\nHappy reading! 🚀"
+  },
+  {
+    "objectID": "blog/posts/welcome/index.html#what-to-expect",
+    "href": "blog/posts/welcome/index.html#what-to-expect",
+    "title": "Welcome to My Blog",
+    "section": "",
+    "text": "I’ll be writing about:\n\nTechnical deep-dives into ML/AI topics\nCareer insights and lessons learned\nTools and techniques I find useful\nThoughts on the future of technology"
+  },
+  {
+    "objectID": "blog/posts/welcome/index.html#lets-connect",
+    "href": "blog/posts/welcome/index.html#lets-connect",
+    "title": "Welcome to My Blog",
+    "section": "",
+    "text": "Feel free to reach out to me on Twitter or LinkedIn if you’d like to discuss any of these topics!\nHappy reading! 🚀"
+  },
+  {
+    "objectID": "blog/posts/rag-techniques-overview.html",
+    "href": "blog/posts/rag-techniques-overview.html",
+    "title": "RAG Techniques: From Naive to Advanced",
+    "section": "",
+    "text": "RAG Techniques: From Naive to Advanced\nContent coming soon!"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Ayush Thakur",
@@ -103,6 +103,13 @@
     "title": "Writing",
     "section": "Medium",
     "text": "Medium\n\n\nConverting FC Layers to Conv Layers\nUsing CNN to translate American Sign Language"
+  },
+  {
+    "objectID": "blog/index.html#kaggle-notebooks",
+    "href": "blog/index.html#kaggle-notebooks",
+    "title": "Writing",
+    "section": "Kaggle Notebooks",
+    "text": "Kaggle Notebooks\n\n\n[Train] COVID-19 Detection using YOLOv5 (800 upvotes)\nExperiment Tracking with Weights and Biases (420 upvotes)\n[Train] Brain Tumor as Video Classification + W&B (175 upvotes)\n[Train] NFL Extra Images YOLOv5 with W&B (174 upvotes)\nBrain Tumor EDA and Interactive Viz with W&B (158 upvotes)\nTrain YOLOv5 + Cross Validation + Ensemble + W&B (155 upvotes)\nTPS June [Weights and Biases] (148 upvotes)\nSubmission Covid19 (132 upvotes)\n[G2Net] Understand the Data (129 upvotes)\nSD 2.0: Download Dataset from W&B Artifacts (111 upvotes)\nVisualize Bounding Boxes Interactively (111 upvotes)\n[V2] Self-Supervised Pretraining with SwAV (103 upvotes)\nEfficientNet+Mixup+K-Fold using TF and wandb (63 upvotes)\nHPA: Segmentation Mask Visualization with W&B (62 upvotes)\nComparative Study: SETI Experiments (61 upvotes)\nCreate Constant Q Transformed Dataset (51 upvotes)\nHPA: Multi-Label Classification with TF and W&B (50 upvotes)\nEasy PCA TSNE and UMAP (49 upvotes)\n[Train] Study Level Classifier + W&B (49 upvotes)\n[Train] COTS Detection using YOLOv5 and W&B (49 upvotes)\nQuick Data EDA+ Segmentation Viz using W&B (49 upvotes)\n[Train][PyTorch] FineTune ConvNeXt (44 upvotes)\n[Train] TensorFlow+EfficientNet+Kfold+W&B (42 upvotes)\nUse PyTorch Lightning With Weights and Biases (41 upvotes)\nVisualize the COTS interactively with W&B (36 upvotes)\n[MLOps Tutorial] XGBoost with W&B (36 upvotes)\nTensorFlow Inference [No-TTA] (28 upvotes)\nBirdCLEF: Quick EDA with W&B (26 upvotes)\nAPTOS Blindness Detection - EDA and Keras ResNet50 (25 upvotes)\nInteractive EDA using W&B Tables (23 upvotes)\nCassava 2019+2020 Dataset Prep+Versioning w/ W&B (23 upvotes)\nGradCAM: Implementation+Visualization in TF & W&B (22 upvotes)\nXGBoost Hyperparameter Tuning with W&B Sweeps (22 upvotes)\nTrain EfficientNetv2 with TF and W&B (20 upvotes)\n[HappyWhale] EDA - IDs to Images using W&B Tables (19 upvotes)\nUbiquant EDA (18 upvotes)\nTransformer Baseline with TF/Keras and W&B (18 upvotes)\nGet the most out of LightGBM using W&B (17 upvotes)\nSartorius: Instance Mask Viz with W&B (16 upvotes)\n[TensorFlow] Working with TIFF (15 upvotes)\nRainforest Create Image Dataset with W&B (14 upvotes)\nResampled Voxel Dataset - with KaggleRecipes (W&B) (14 upvotes)\nAutoEncoders implementation (13 upvotes)\nG2Net: Quick EDA and CQT + W&B (13 upvotes)\nStyle Transfer using CycleGAN with TF and W&B (13 upvotes)\nBMS: EDA and Dataset Visualization w/ W&B (12 upvotes)\nSingle Label Cell Label Dataset Creation w/ W&B (12 upvotes)\nComparing Different Modeling Methods w/ W&B (11 upvotes)\nBetter Data Understanding with W&B Tables (10 upvotes)\nHPA: Inference (10 upvotes)\nInvestigate Imgur5k dataset (10 upvotes)\nImages to TFRecord (10 upvotes)\nExperiment Tracking w/ Weights and Biases [Russia] (10 upvotes)\nRainforest Train Baseline Model with W&B (9 upvotes)\nAll in one MLB Quick EDA with W&B Tables (8 upvotes)\nRGB 512x512 Dataset Creation+Versioning with W&B (7 upvotes)\nSave the Dataset as W&B Artifacts (7 upvotes)\nVisualize Dataset Interactively using W&B Tables (6 upvotes)\nDataset Versioning for Single Label Dataset (6 upvotes)\nTesting W&B Offline Flow (6 upvotes)\nBatch Normalization ft Batch Size with W&B (6 upvotes)\nJigsaw BERT Model (5 upvotes)\nRainforest: Which model is better? (5 upvotes)\nAdaptive Gradient Clipping: Ablation Study w/ W&B (5 upvotes)\nUsing W&B DSViz for Cell Level Dataset Creation (5 upvotes)\nKaggle Survey 2020: W&B vs All (5 upvotes)\nKaggle Survey 2021: W&B vs All (5 upvotes)\nCell Level Extra Data Download (5 upvotes)\nTest wandbcode (4 upvotes)\nMultiprocessing 5 Second Audio Clips (4 upvotes)\nHuBMAP: TF with TPU EfficientUNetB7 512x512 [Train] (4 upvotes)\nCommonLit Readability Prize: EDA + Baseline (3 upvotes)\nVisualize the Dataset using W&B Tables (3 upvotes)"
   },
   {
     "objectID": "blog/posts/llm-evaluation.html",
