@@ -11,11 +11,12 @@
   display: none;
 }
 
-/* Main content container */
+/* Main content container.
+   Quarto's `main.content` wrapper already sets the max-width, centering, and
+   horizontal padding, so here we only add vertical spacing to avoid double
+   padding (which would misalign the body text from the navbar brand). */
 .main-content {
-  max-width: 660px;
-  margin: 0 auto;
-  padding: 3.5rem 1.5rem 4rem;
+  padding: 0.5rem 0 3rem;
 }
 
 /* ----------------------------------------
@@ -168,10 +169,6 @@
    ======================================== */
 
 @media (max-width: 600px) {
-  .main-content {
-    padding: 2.5rem 1rem 3rem;
-  }
-
   .hero {
     flex-direction: column;
     text-align: center;
