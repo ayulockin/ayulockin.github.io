@@ -3,117 +3,195 @@
 /*-- scss:rules --*/
 
 /* ========================================
-   HOMEPAGE - Simple, memorable intro
+   HOMEPAGE
    ======================================== */
 
-/* Remove the duplicate title */
+/* Hide Quarto's auto-generated page title (we render our own hero) */
 .quarto-title {
   display: none;
 }
 
 /* Main content container */
 .main-content {
-  max-width: 640px;
+  max-width: 660px;
   margin: 0 auto;
-  padding: 4rem 1.5rem;
+  padding: 3.5rem 1.5rem 4rem;
 }
 
-/* Profile section - vertical, centered, elegant */
-.profile-container {
-  display: block;
-}
-
-/* Profile images - single, refined */
-.profile-image {
-  text-align: center;
+/* ----------------------------------------
+   Hero: photo + name + tagline + social
+   ---------------------------------------- */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
   margin-bottom: 2.5rem;
 }
 
-.profile-image img:first-child {
-  width: 180px;
-  height: 180px;
+.hero-photo {
+  flex: 0 0 auto;
+}
+
+.hero-photo img {
+  width: 128px;
+  height: 128px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--border, #e8e4df);
-  box-shadow: none;
-  transition: none;
 }
 
-.profile-image img:first-child:hover {
-  transform: none;
-  box-shadow: none;
+.hero-head {
+  flex: 1 1 auto;
 }
 
-/* Hide the second image (robot) */
-.profile-image img:nth-child(2) {
-  display: none;
+.hero-head h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
-/* Profile text - the heart of the page */
-.profile-text {
-  font-size: 1.1rem;
-  line-height: 1.75;
-  color: var(--text-primary, #1a1a1a);
+.hero-head > p {
+  margin: 0;
+  color: var(--text-muted, #6b6b6b);
+  font-size: 1.05rem;
 }
 
-.profile-text p {
-  margin-bottom: 1.5rem;
+/* Info icon next to the "Enginear" tagline */
+.enginear-note-link {
+  margin-left: 0.3rem;
+  color: var(--text-muted, #6b6b6b);
+  font-size: 0.8em;
+  vertical-align: super;
+  text-decoration: none;
 }
 
-/* First paragraph - slightly larger as intro */
-.profile-text p:first-of-type {
-  font-size: 1.2rem;
+.enginear-note-link:hover {
+  color: var(--link, #2c5282);
+  text-decoration: none;
 }
 
-/* Social links - understated */
+/* Social links */
 .social-links {
-  margin-top: 2.5rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border, #e8e4df);
   display: flex;
-  gap: 1.5rem;
-  justify-content: flex-start;
+  gap: 1.25rem;
+  margin-top: 0.9rem;
 }
 
 .social-links a {
   color: var(--text-muted, #6b6b6b);
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   transition: color 0.15s ease;
 }
 
 .social-links a:hover {
   color: var(--text-primary, #1a1a1a);
-  transform: none;
+  text-decoration: none;
 }
 
-/* Remove icon backgrounds */
 .social-links a .bi {
   vertical-align: middle;
+}
+
+/* ----------------------------------------
+   Bio / intro paragraphs
+   ---------------------------------------- */
+.bio {
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: var(--text-primary, #1a1a1a);
+}
+
+.bio p {
+  margin-bottom: 1.25rem;
+}
+
+.bio p:first-of-type {
+  font-size: 1.18rem;
+}
+
+/* ----------------------------------------
+   Sections (News, Experience, ...)
+   ---------------------------------------- */
+.main-content h2 {
+  margin-top: 3rem;
+}
+
+.main-content h2 + p,
+.main-content h2 + ul {
+  margin-top: 0.75rem;
+}
+
+/* News - highlights list with a leading date */
+.news ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.news li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+  padding-left: 3.75rem;
+  text-indent: -3.75rem;
+}
+
+.news li strong:first-child {
+  display: inline-block;
+  width: 3.75rem;
+  color: var(--text-muted, #6b6b6b);
+  font-variant-numeric: tabular-nums;
+  text-indent: 0;
+}
+
+/* "Enginear" story note at the bottom of the page */
+.enginear-note {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border, #e8e4df);
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text-muted, #6b6b6b);
+}
+
+.enginear-note p {
+  margin-bottom: 0;
+}
+
+/* Soft highlight when navigated to via the info icon */
+.enginear-note:target {
+  border-top-color: var(--link, #2c5282);
 }
 
 /* ========================================
    RESPONSIVE
    ======================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .main-content {
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 1rem 3rem;
   }
-  
-  .profile-image img:first-child {
-    width: 150px;
-    height: 150px;
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
   }
-  
-  .profile-text {
-    font-size: 1rem;
+
+  .hero-photo img {
+    width: 120px;
+    height: 120px;
   }
-  
-  .profile-text p:first-of-type {
-    font-size: 1.1rem;
-  }
-  
+
   .social-links {
     justify-content: center;
+  }
+
+  .bio {
+    font-size: 1rem;
+  }
+
+  .bio p:first-of-type {
+    font-size: 1.08rem;
   }
 }
