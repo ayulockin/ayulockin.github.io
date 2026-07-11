@@ -1,4 +1,19 @@
+# Quarto
 /.quarto/
 /_site/
-
 **/*.quarto_ipynb
+
+# Local scraping tooling and its outputs (not part of the published site)
+/scripts/
+/data/scrape/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# OS / editor cruft
+.DS_Store
+**/.DS_Store

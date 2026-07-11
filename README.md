@@ -1,34 +1,55 @@
-# Ayush Thakur - Personal Website
+# Ayush Thakur — Personal Website
 
-This is the repository for my personal website and blog, available at [ayusht.dev](https://ayusht.dev).
+Source for my personal website and blog, live at [ayusht.dev](https://ayusht.dev).
 
-## About
+Built with [Quarto](https://quarto.org/) and published to GitHub Pages via the
+workflow in `.github/workflows/publish.yml` on every push to `main`.
 
-This website is built using [Quarto](https://quarto.org/), a scientific and technical publishing system that makes it easy to create beautiful content with plain text, code, and data.
+## Project structure
 
-## Features
+```
+.
+├── index.qmd            # Home page
+├── about.qmd            # About page
+├── blog/                # Writing (index + posts)
+├── styles.css           # Site-wide theme
+├── index.css            # Home page styles
+├── _quarto.yml          # Quarto site config
+├── scripts/             # Local scraping tooling (git-ignored)
+└── data/scrape/         # Scraped CSV outputs (git-ignored)
+```
 
-- **Portfolio**: Showcasing my projects, publications, and contributions
-- **Blog**: Technical articles and tutorials on machine learning, LLMs, and MLOps
-- **Responsive Design**: Optimized for viewing on various devices
+`scripts/` and `data/scrape/` are local-only helpers used to gather the report,
+notebook, and post links that populate `blog/index.qmd`. They are intentionally
+git-ignored and not part of the published site.
 
-## Local Development
+## Local development
 
-To run this website locally:
+1. Install [Quarto](https://quarto.org/docs/get-started/).
+2. Clone this repository.
+3. Run `quarto preview` in the root directory and open the URL it prints.
 
-1. Install [Quarto](https://quarto.org/docs/get-started/)
-2. Clone this repository
-3. Run `quarto preview` in the root directory
-4. The site will be available at http://localhost:4000
+## Refreshing the content lists (optional)
+
+The links in `blog/index.qmd` are curated from scraped data. To regenerate the
+underlying CSVs:
+
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -r scripts/requirements.txt
+playwright install chromium
+
+python scripts/scrape_reports.py   # -> data/scrape/blogs.csv
+python scripts/scrape_kaggle.py    # -> data/scrape/kaggle.csv
+python scripts/scrape_medium.py    # -> data/scrape/medium.csv
+```
 
 ## License
 
-The content of this website is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/), and the source code used to format and display that content is licensed under the [MIT License](LICENSE).
-
-## Contributing
-
-If you find a typo or would like to suggest improvements, please feel free to open an issue or submit a pull request.
+Website content is licensed under the
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/);
+the source code that formats and displays it is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any questions or feedback, please reach out to me on [Twitter](https://x.com/ayushthakur0).
+Questions or feedback? Reach out on [Twitter](https://x.com/ayushthakur0).
