@@ -8,9 +8,8 @@ website:
   navbar:
     background: light
     search: false
+    collapse-below: sm
     left:
-      - href: about.qmd
-        text: About
       - href: blog/index.qmd
         text: Writing
     right:
@@ -25,7 +24,7 @@ website:
         aria-label: LinkedIn
   page-footer:
     center: 
-      - text: "© 2025 Ayush Thakur"
+      - text: "© 2026 Ayush Thakur"
 
 format:
   html:

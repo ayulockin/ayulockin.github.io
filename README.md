@@ -9,8 +9,7 @@ workflow in `.github/workflows/publish.yml` on every push to `main`.
 
 ```
 .
-├── index.qmd            # Home page
-├── about.qmd            # About page
+├── index.qmd            # Home page (intro, news, about)
 ├── blog/                # Writing (index + posts)
 ├── styles.css           # Site-wide theme
 ├── index.css            # Home page styles
