@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Ayush Thakur">
-<meta name="dcterms.date" content="2023-11-28">
-<meta name="description" content="An overview of Retrieval Augmented Generation (RAG) techniques for enhancing LLM responses with external knowledge">
 
-<title>Ayush Thakur - RAG Techniques: From Naive to Advanced</title>
+<title>Ayush Thakur - About</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,17 +63,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-sm navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Ayush Thakur</span>
     </a>
   </div>
@@ -87,19 +84,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../work.html" rel="" target="">
+    <a class="nav-link" href="./work.html" rel="" target="">
  <span class="menu-text">Work</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blog/index.html" rel="" target="">
+    <a class="nav-link" href="./blog/index.html" rel="" target="">
  <span class="menu-text">Writing</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../talks.html" rel="" target="">
+    <a class="nav-link" href="./talks.html" rel="" target="">
  <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html" rel="" target="">
+    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
  <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -131,42 +128,33 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#path" id="toc-path" class="nav-link active" data-scroll-target="#path">Path</a></li>
+  <li><a href="#how-i-work" id="toc-how-i-work" class="nav-link" data-scroll-target="#how-i-work">How I work</a></li>
+  <li><a href="#recognition" id="toc-recognition" class="nav-link" data-scroll-target="#recognition">Recognition</a></li>
+  <li><a href="#the-enginear-story" id="toc-the-enginear-story" class="nav-link" data-scroll-target="#the-enginear-story">The “Enginear” story</a></li>
+  <li><a href="#elsewhere" id="toc-elsewhere" class="nav-link" data-scroll-target="#elsewhere">Elsewhere</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">RAG Techniques: From Naive to Advanced</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">llm</div>
-    <div class="quarto-category">rag</div>
-    <div class="quarto-category">techniques</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    An overview of Retrieval Augmented Generation (RAG) techniques for enhancing LLM responses with external knowledge
-  </div>
+<h1 class="title">About</h1>
+<p class="subtitle lead">From small robots to systems that evaluate AI systems.</p>
 </div>
+
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Ayush Thakur </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">November 28, 2023</p>
-    </div>
-  </div>
   
     
   </div>
@@ -174,9 +162,67 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="rag-techniques-from-naive-to-advanced" class="level1">
-<h1>RAG Techniques: From Naive to Advanced</h1>
-<p><em>Content coming soon!</em></p>
+<p>I am an AI engineer and technical educator based in India. I currently lead AI engineering work at <a href="https://wandb.ai/">Weights &amp; Biases</a> (part of CoreWeave), focused on coding agents, evaluation harnesses, memory, and improvement loops for agentic systems.</p>
+<p>The short version of my work is: <strong>build the system, measure it honestly, and teach what survives contact with reality.</strong></p>
+<section id="path" class="level2">
+<h2 class="anchored" data-anchor-id="path">Path</h2>
+<div class="dense-list">
+<div class="dense-item">
+<div class="item-meta">
+2025–now
+</div>
+<div class="item-body">
+<strong>Agent engineering and leadership</strong><br>Leading a team working on coding agents, internal benchmarks, memory, and applied research at W&amp;B / CoreWeave.
+</div>
+</div>
+<div class="dense-item">
+<div class="item-meta">
+2023–2025
+</div>
+<div class="item-body">
+<strong>LLM systems and evaluation</strong><br>Built production RAG evaluation, LLM and agent integrations, courses, talks, and the evaluation-driven refactor of Wandbot.
+</div>
+</div>
+<div class="dense-item">
+<div class="item-meta">
+2020–2023
+</div>
+<div class="item-body">
+<strong>ML infrastructure and education</strong><br>Created open-source integrations, technical reports, Kaggle programs, and practical material across deep learning and MLOps.
+</div>
+</div>
+<div class="dense-item">
+<div class="item-meta">
+2016–2020
+</div>
+<div class="item-body">
+<strong>Robotics and computer vision</strong><br>Studied Electronics and Communication Engineering at Netaji Subhash Engineering College, Kolkata; built autonomous robots and early applied-ML projects.
+</div>
+</div>
+</div>
+</section>
+<section id="how-i-work" class="level2">
+<h2 class="anchored" data-anchor-id="how-i-work">How I work</h2>
+<p>I am drawn to the part of AI engineering that is difficult to see in a demo: instrumentation, datasets, failure analysis, evaluation criteria, and the feedback loops that make a system improve. I enjoy moving between implementation and explanation—building a tool, stress-testing it, and then writing or teaching the reusable idea behind it.</p>
+<p>That pattern connects most of my work: integrations that expose what a model is doing, evaluations that replace intuition with evidence, and courses that turn months of engineering lessons into a path someone else can follow.</p>
+</section>
+<section id="recognition" class="level2">
+<h2 class="anchored" data-anchor-id="recognition">Recognition</h2>
+<ul>
+<li>Google Developer Expert in Machine Learning, 2022–2025</li>
+<li><a href="https://www.kaggle.com/ayuraj">Kaggle Notebooks Master</a></li>
+<li>Solo silver medal in Kaggle’s 2026 <a href="https://www.kaggle.com/competitions/orbit-wars/overview">Orbit Wars</a>, placing 132nd among 4,729 teams</li>
+<li>Third place in EngiNX 2018, from more than 19,000 participating teams</li>
+</ul>
+</section>
+<section id="the-enginear-story" class="level2">
+<h2 class="anchored" data-anchor-id="the-enginear-story">The “Enginear” story</h2>
+<p>When I was ten, a teacher asked what I wanted to become. I said “engineer.” Asked to spell it, I got it wrong, and was told that someone who could not spell the word could not become one.</p>
+<p>I kept the misspelling—<strong>Enginear</strong>—as a reminder that an early mistake is not a verdict. Curiosity, practice, and the willingness to keep building matter much more.</p>
+</section>
+<section id="elsewhere" class="level2">
+<h2 class="anchored" data-anchor-id="elsewhere">Elsewhere</h2>
+<p><a href="https://github.com/ayulockin">GitHub</a> · <a href="https://www.linkedin.com/in/ayush-thakur-731914149/">LinkedIn</a> · <a href="https://www.kaggle.com/ayuraj">Kaggle</a> · <a href="./blog/index.html">Writing</a> · <a href="./talks.html">Talks</a></p>
 
 
 </section>

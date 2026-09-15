@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Ayush Thakur">
-<meta name="dcterms.date" content="2023-11-28">
-<meta name="description" content="An overview of Retrieval Augmented Generation (RAG) techniques for enhancing LLM responses with external knowledge">
 
-<title>Ayush Thakur - RAG Techniques: From Naive to Advanced</title>
+<title>Ayush Thakur - Talks &amp; workshops</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,17 +63,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-sm navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Ayush Thakur</span>
     </a>
   </div>
@@ -87,19 +84,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../work.html" rel="" target="">
+    <a class="nav-link" href="./work.html" rel="" target="">
  <span class="menu-text">Work</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blog/index.html" rel="" target="">
+    <a class="nav-link" href="./blog/index.html" rel="" target="">
  <span class="menu-text">Writing</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../talks.html" rel="" target="">
+    <a class="nav-link active" href="./talks.html" rel="" target="" aria-current="page">
  <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html" rel="" target="">
+    <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -131,42 +128,30 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#selected-talks-and-workshops" id="toc-selected-talks-and-workshops" class="nav-link active" data-scroll-target="#selected-talks-and-workshops">Selected talks and workshops</a></li>
+  <li><a href="#community" id="toc-community" class="nav-link" data-scroll-target="#community">Community</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">RAG Techniques: From Naive to Advanced</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">llm</div>
-    <div class="quarto-category">rag</div>
-    <div class="quarto-category">techniques</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    An overview of Retrieval Augmented Generation (RAG) techniques for enhancing LLM responses with external knowledge
-  </div>
+<h1 class="title">Talks &amp; workshops</h1>
+<p class="subtitle lead">Conference sessions, webinars, workshops, and community talks.</p>
 </div>
+
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Ayush Thakur </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">November 28, 2023</p>
-    </div>
-  </div>
   
     
   </div>
@@ -174,9 +159,94 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="rag-techniques-from-naive-to-advanced" class="level1">
-<h1>RAG Techniques: From Naive to Advanced</h1>
-<p><em>Content coming soon!</em></p>
+<p>I like teaching through systems I have actually built. My sessions tend to combine a working implementation, the evaluation loop around it, and the mistakes that shaped the final approach. My longer-form courses are documented on the <a href="./work.html#courses">Work page</a>.</p>
+<section id="selected-talks-and-workshops" class="level2">
+<h2 class="anchored" data-anchor-id="selected-talks-and-workshops">Selected talks and workshops</h2>
+<div class="talk">
+<div class="item-meta">
+2025<br>W&amp;B webinar
+</div>
+<div class="item-body">
+<strong><a href="https://wandb.ai/site/resources/events/agent-evals-with-crewai-wb-weave/">Agent evaluations with CrewAI and W&amp;B Weave</a></strong><br>With Tony Kipkemboi and João Moura. A practical blueprint for tracing, evaluating, and iterating on agentic applications.
+</div>
+</div>
+<div class="talk">
+<div class="item-meta">
+2025<br>DataHack Summit
+</div>
+<div class="item-body">
+<strong><a href="https://www.analyticsvidhya.com/datahacksummit-2025/speakers/ayush-thakur-2">The Missing Piece of AI Apps: Evaluation</a></strong><br>How evaluation changes the way teams build LLM applications—from one-off demos to systems that can improve reliably.
+</div>
+</div>
+<div class="talk">
+<div class="item-meta">
+2025<br>ML Kolkata
+</div>
+<div class="item-body">
+<strong><a href="https://www.commudle.com/communities/machine-learning-kolkata/events/ml-workshop-with-weights-biases">GenAI Workshop: RAG Zero to Hero</a></strong><br>Two sessions on the modern GenAI landscape and building RAG systems, delivered as a hands-on community workshop.
+</div>
+</div>
+<div class="talk">
+<div class="item-meta">
+2024<br>DataHack Summit
+</div>
+<div class="item-body">
+<strong><a href="https://www.analyticsvidhya.com/datahacksummit-2024/speakers/ayush-thakur">Enhancing LLMs with Structured Outputs and Function Calling</a></strong><br>Practical patterns for making language-model outputs dependable enough to participate in larger software systems.
+</div>
+</div>
+<div class="talk">
+<div class="item-meta">
+2024<br>W&amp;B webinar
+</div>
+<div class="item-body">
+<strong><a href="https://wandb.ai/site/resources/events/fine-tune-command-r-r-using-cohere-and-weights-biases/">Fine-tune Command R/R+ using Cohere and W&amp;B</a></strong><br>With Komal Teru. Establishing baselines, tracking fine-tuning, and evaluating results for Cohere’s Command models.
+</div>
+</div>
+<div class="talk">
+<div class="item-meta">
+2024<br>W&amp;B webinar
+</div>
+<div class="item-body">
+<strong><a href="https://wandb.ai/site/resources/events/optimizing-llm-apps-at-scale/">Optimizing LLM apps at scale</a></strong><br>With Bharat Ramanathan. Lessons from evaluating Wandbot and building multilingual leaderboards for real RAG systems.
+</div>
+</div>
+<div class="talk">
+<div class="item-meta">
+2024<br>W&amp;B × Cohere
+</div>
+<div class="item-body">
+<strong><a href="https://wandb.ai/site/resources/events/cohere-webinar-august/">Building flexible, evaluation-driven RAG</a></strong><br>With Maxime Voisin. Designing RAG systems as measurable pipelines rather than fixed demos.
+</div>
+</div>
+<div class="talk">
+<div class="item-meta">
+2023<br>W&amp;B
+</div>
+<div class="item-body">
+<strong><a href="https://wandb.ai/site/resources/events/llms-for-mass-market/">LLMs for the mass market</a></strong><br>With Bharat Ramanathan and Ian Webster. Evaluation and internal-productivity lessons from deploying LLM-powered tools.
+</div>
+</div>
+<div class="talk">
+<div class="item-meta">
+MLOps<br>ODSC
+</div>
+<div class="item-body">
+<strong><a href="https://staging6.odsc.com/speakers/deep-dive-into-end-to-end-mlops-using-weights-and-biases/">Deep dive into end-to-end MLOps using W&amp;B</a></strong><br>A complete workflow for tracking experiments and moving from model iteration toward reproducible ML systems.
+</div>
+</div>
+<div class="talk">
+<div class="item-meta">
+2019<br>GDG Kolkata
+</div>
+<div class="item-body">
+<strong><a href="https://gdg.community.dev/events/details/google-gdg-kolkata-presents-ml-with-the-experts-gdg-kolkata-meetup/">Deep Learning for Detection and Segmentation</a></strong><br>An early community talk on practical computer-vision pipelines for object detection and semantic segmentation.
+</div>
+</div>
+</section>
+<section id="community" class="level2">
+<h2 class="anchored" data-anchor-id="community">Community</h2>
+<p>I was a <strong>Google Developer Expert in Machine Learning</strong> from 2022 to 2025. I have also taught through GDG communities, Kaggle, W&amp;B events, and local ML groups. This page is a curated record rather than a complete calendar; I will keep adding older sessions as recordings and event pages resurface.</p>
+<p>For a session, workshop, or collaboration, the best way to reach me is <a href="https://www.linkedin.com/in/ayush-thakur-731914149/">LinkedIn</a>.</p>
 
 
 </section>

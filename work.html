@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Ayush Thakur">
-<meta name="dcterms.date" content="2023-11-28">
-<meta name="description" content="An overview of Retrieval Augmented Generation (RAG) techniques for enhancing LLM responses with external knowledge">
 
-<title>Ayush Thakur - RAG Techniques: From Naive to Advanced</title>
+<title>Ayush Thakur - Work</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,17 +63,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-sm navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Ayush Thakur</span>
     </a>
   </div>
@@ -87,19 +84,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../work.html" rel="" target="">
+    <a class="nav-link active" href="./work.html" rel="" target="" aria-current="page">
  <span class="menu-text">Work</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blog/index.html" rel="" target="">
+    <a class="nav-link" href="./blog/index.html" rel="" target="">
  <span class="menu-text">Writing</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../talks.html" rel="" target="">
+    <a class="nav-link" href="./talks.html" rel="" target="">
  <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html" rel="" target="">
+    <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -131,42 +128,34 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#current-work" id="toc-current-work" class="nav-link active" data-scroll-target="#current-work">Current work</a></li>
+  <li><a href="#llm-systems-and-evaluation" id="toc-llm-systems-and-evaluation" class="nav-link" data-scroll-target="#llm-systems-and-evaluation">LLM systems and evaluation</a></li>
+  <li><a href="#tools-and-integrations" id="toc-tools-and-integrations" class="nav-link" data-scroll-target="#tools-and-integrations">Tools and integrations</a></li>
+  <li><a href="#research-publication" id="toc-research-publication" class="nav-link" data-scroll-target="#research-publication">Research publication</a></li>
+  <li><a href="#courses" id="toc-courses" class="nav-link" data-scroll-target="#courses">Courses</a></li>
+  <li><a href="#earlier-work" id="toc-earlier-work" class="nav-link" data-scroll-target="#earlier-work">Earlier work</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">RAG Techniques: From Naive to Advanced</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">llm</div>
-    <div class="quarto-category">rag</div>
-    <div class="quarto-category">techniques</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    An overview of Retrieval Augmented Generation (RAG) techniques for enhancing LLM responses with external knowledge
-  </div>
+<h1 class="title">Work</h1>
+<p class="subtitle lead">Selected systems, integrations, and educational work.</p>
 </div>
+
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Ayush Thakur </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">November 28, 2023</p>
-    </div>
-  </div>
   
     
   </div>
@@ -174,9 +163,163 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="rag-techniques-from-naive-to-advanced" class="level1">
-<h1>RAG Techniques: From Naive to Advanced</h1>
-<p><em>Content coming soon!</em></p>
+<p>I work where applied AI meets developer infrastructure: building systems, defining how to evaluate them, and turning what works into tools and explanations other people can use.</p>
+<section id="current-work" class="level2">
+<h2 class="anchored" data-anchor-id="current-work">Current work</h2>
+<div class="project">
+<div class="item-meta">
+2025–now<br>W&amp;B / CoreWeave
+</div>
+<div class="item-body">
+<strong>Agent engineering</strong><br>Leading work on a background coding agent and the infrastructure around it: internal harness benchmarks, memory, and systems that help agents learn from prior experience. The work combines product engineering with empirical evaluation—making progress measurable rather than anecdotal.<span class="tag">Agents</span><span class="tag">Evaluation</span><span class="tag">Leadership</span>
+</div>
+</div>
+<div class="project">
+<div class="item-meta">
+2025<br>Open ecosystem
+</div>
+<div class="item-body">
+<strong>NVIDIA NeMo Agent Toolkit × W&amp;B Weave</strong><br>Worked on evaluation and observability support for agentic workflows built with NVIDIA’s framework-agnostic toolkit, making it easier to trace, compare, and improve multi-agent systems.<span class="item-links"><a href="https://wandb.ai/wandb_fc/nvidia-nat-ata/reports/Tracking-and-optimizing-agentic-workflows-using-W-B-Weave-and-NVIDIA-NeMo-Agent-Toolkit---VmlldzoxNDQ4NjgyNg">Technical report</a></span><span class="tag">Agents</span><span class="tag">Observability</span>
+</div>
+</div>
+</section>
+<section id="llm-systems-and-evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="llm-systems-and-evaluation">LLM systems and evaluation</h2>
+<div class="project">
+<div class="item-meta">
+2024<br>Production RAG
+</div>
+<div class="item-body">
+<strong>Wandbot: an evaluation-driven refactor</strong><br>Reworked W&amp;B’s open-source documentation assistant around systematic evaluation. Answer accuracy rose from 72% to 81%, latency fell by 84%, and a full evaluation run went from roughly two hours to under ten minutes. Nearly 50 experiments made the trade-offs between quality, speed, and cost visible.<span class="item-links"><a href="http://wandb.me/wandbot-refactor">Read the case study</a> · <a href="https://github.com/wandb/wandbot">Source</a></span><span class="tag">RAG</span><span class="tag">Evaluation</span><span class="tag">Production</span>
+</div>
+</div>
+<div class="project">
+<div class="item-meta">
+2023<br>LLM evaluation
+</div>
+<div class="item-body">
+<strong>Evaluating, comparing, and optimizing LLM systems</strong><br>Built a practical workflow for comparing system configurations with human labels, LLM judges, retrieval metrics, and parameter search. This work became a foundation for later production systems and courses.<span class="item-links"><a href="https://wandb.ai/ayush-thakur/llm-eval-sweep/reports/How-to-Evaluate-Compare-and-Optimize-LLM-Systems--Vmlldzo0NzgyMTQz">Technical report</a></span><span class="tag">LLMOps</span><span class="tag">Evals</span>
+</div>
+</div>
+<div class="project">
+<div class="item-meta">
+2023<br>Open source
+</div>
+<div class="item-body">
+<strong>LlamaIndex × W&amp;B</strong><br>Built an integration for inspecting retrieval and LLM traces, debugging complex query pipelines, and versioning indexes and embeddings. The accompanying walkthrough showed how those primitives support evaluation-driven RAG development.<span class="item-links"><a href="https://wandb.ai/ayush-thakur/llama-index-report/reports/Building-Advanced-Query-Engine-and-Evaluation-with-LlamaIndex-and-W-B--Vmlldzo0OTIzMjMy">Walkthrough</a></span><span class="tag">LlamaIndex</span><span class="tag">Tracing</span>
+</div>
+</div>
+</section>
+<section id="tools-and-integrations" class="level2">
+<h2 class="anchored" data-anchor-id="tools-and-integrations">Tools and integrations</h2>
+<p>My public GitHub history includes 200 merged pull requests. Much of that work made experiment tracking, model evaluation, and application tracing feel native inside the tools developers already used.</p>
+<div class="project">
+<div class="item-meta">
+2022–2023<br>Keras
+</div>
+<div class="item-body">
+<strong>A new generation of W&amp;B callbacks for Keras</strong><br>Added dedicated callbacks for metrics logging, model checkpointing, and rich model-prediction tables, alongside fixes for SavedModel and distributed-training workflows.<span class="item-links"><a href="https://github.com/wandb/wandb/pull/4244">Metrics logger</a> · <a href="https://github.com/wandb/wandb/pull/4245">Model checkpointing</a> · <a href="https://github.com/wandb/wandb/pull/4302">Evaluation tables</a> · <a href="https://github.com/wandb/wandb/pull/4310">Distributed training</a></span><span class="tag">Keras</span><span class="tag">TensorFlow</span>
+</div>
+</div>
+<div class="project">
+<div class="item-meta">
+2022<br>OpenMMLab
+</div>
+<div class="item-body">
+<strong>Native experiment-tracking hooks across the OpenMMLab stack</strong><br>Built dedicated W&amp;B integrations for object detection, image classification, and semantic segmentation, then followed them with maintenance fixes and runnable examples.<span class="item-links"><a href="https://github.com/open-mmlab/mmdetection/pull/7459">MMDetection</a> · <a href="https://github.com/open-mmlab/mmpretrain/pull/764">MMClassification</a> · <a href="https://github.com/open-mmlab/mmsegmentation/pull/1603">MMSegmentation</a></span><span class="tag">Computer vision</span><span class="tag">OpenMMLab</span>
+</div>
+</div>
+<div class="project">
+<div class="item-meta">
+2021–2022<br>Training
+</div>
+<div class="item-body">
+<strong>Integrations for widely used ML libraries</strong><br>Improved experiment tracking for XGBoost and LightGBM, added CatBoost support, and contributed integrations to RecBole, ConvNeXt, DALL·E Mini, and image-super-resolution projects.<span class="item-links"><a href="https://github.com/wandb/wandb/pull/2929">XGBoost</a> · <a href="https://github.com/wandb/wandb/pull/2945">LightGBM</a> · <a href="https://github.com/wandb/wandb/pull/2975">CatBoost</a> · <a href="https://github.com/facebookresearch/ConvNeXt/pull/24">ConvNeXt</a></span><span class="tag">Boosting</span><span class="tag">Deep learning</span>
+</div>
+</div>
+<div class="project">
+<div class="item-meta">
+2023–2024<br>LLM systems
+</div>
+<div class="item-body">
+<strong>Instrumentation and evaluation for emerging LLM stacks</strong><br>Added W&amp;B instrumentation to LlamaIndex and integration support to EleutherAI’s LM Evaluation Harness; updated OpenAI fine-tuning, Cohere v2, and Wandbot evaluation workflows as their underlying APIs evolved.<span class="item-links"><a href="https://github.com/run-llama/llama_index/pull/3377">LlamaIndex</a> · <a href="https://github.com/EleutherAI/lm-evaluation-harness/pull/1339">LM Evaluation Harness</a> · <a href="https://github.com/wandb/wandb/pull/6498">OpenAI</a> · <a href="https://github.com/wandb/weave/pull/2174">Cohere</a> · <a href="https://github.com/wandb/wandbot/pull/80">Wandbot</a></span><span class="tag">LLMOps</span><span class="tag">Evaluation</span>
+</div>
+</div>
+<div class="project">
+<div class="item-meta">
+2025–2026<br>Agents
+</div>
+<div class="item-body">
+<strong>Tracing and evaluation across agent frameworks</strong><br>Extended support for DSPy, MCP, LlamaIndex, CrewAI, Verifiers, and NVIDIA NeMo Agent Toolkit, including fine-grained tracing and evaluation inside external framework repositories.<span class="item-links"><a href="https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/170">NeMo tracing</a> · <a href="https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/264">NeMo evaluation</a> · <a href="https://github.com/wandb/weave/pull/4030">MCP</a> · <a href="https://github.com/wandb/wandb/pull/10327">DSPy</a> · <a href="https://github.com/wandb/weave/pull/5462">Verifiers</a> · <a href="https://github.com/crewAIInc/crewAI/pull/2463">CrewAI</a></span><span class="tag">Agents</span><span class="tag">Tracing</span><span class="tag">Evals</span>
+</div>
+</div>
+<p>I also helped build W&amp;B’s Kaggle Ambassador program, connecting practitioners, reusable notebooks, and experiment-tracking education. Along the way I became a <a href="https://www.kaggle.com/ayuraj">Kaggle Notebooks Master</a>, with notebooks spanning object detection, medical imaging, reproducibility, and interactive visualization.</p>
+</section>
+<section id="research-publication" class="level2">
+<h2 class="anchored" data-anchor-id="research-publication">Research publication</h2>
+<div class="project">
+<div class="item-meta">
+2020<br>IEEE ICCE<br>pp.&nbsp;275–279
+</div>
+<div class="item-body">
+<strong>Feature extraction and classification of phonocardiograms using convolutional neural networks</strong><br>With Devjyoti Chakraborty, Snehangshu Bhattacharya, Aritra Roy Gosthipaty, and Chira Datta. We studied an automated approach to classifying normal and abnormal heart sounds: transforming phonocardiogram recordings into spectrograms, addressing class imbalance, and using deep convolutional neural networks for feature extraction and classification.<span class="item-links"><a href="https://ieeexplore.ieee.org/abstract/document/9290565/">Read on IEEE Xplore</a> · <a href="https://scholar.google.com/citations?hl=en&amp;user=KYYiO60AAAAJ">Google Scholar profile</a></span><span class="tag">Medical ML</span><span class="tag">Signal processing</span><span class="tag">CNN</span>
+</div>
+</div>
+</section>
+<section id="courses" class="level2">
+<h2 class="anchored" data-anchor-id="courses">Courses</h2>
+<div class="course">
+<div class="item-meta">
+2025<br>2 hours
+</div>
+<div class="item-body">
+<strong>LLM apps: Evaluation</strong><br>Created with Anish Shah, with case studies from Paige Bailey and Graham Neubig. Covers programmatic evaluators, LLM judges, evaluator alignment, and real-world evaluation workflows.<span class="item-links"><a href="https://wandb.ai/site/courses/evals/">Take the course</a></span>
+</div>
+</div>
+<div class="course">
+<div class="item-meta">
+2024<br>2 hours
+</div>
+<div class="item-body">
+<strong>RAG++: From POC to Production</strong><br>Created with Bharat Ramanathan, with contributions from Meor Amer and Charles Pierse. Distills nearly two years of production RAG work into evaluation, data ingestion, query enhancement, hybrid retrieval, reranking, agentic RAG, and response synthesis.<span class="item-links"><a href="https://wandb.ai/site/courses/rag/">Take the course</a></span>
+</div>
+</div>
+<div class="course">
+<div class="item-meta">
+2023<br>37 lessons
+</div>
+<div class="item-body">
+<strong>Training and Fine-tuning LLMs</strong><br>Co-taught with Darek Kłeczek and guest instructors Jonathan Frankle, Weiwei Yang, and Mark Saroufim. Covers model foundations, evaluation, data preparation, training, and fine-tuning.<span class="item-links"><a href="https://www.wandb.courses/courses/training-fine-tuning-LLMs">Take the course</a></span>
+</div>
+</div>
+<p><a href="./talks.html">See talks and workshops →</a></p>
+</section>
+<section id="earlier-work" class="level2">
+<h2 class="anchored" data-anchor-id="earlier-work">Earlier work</h2>
+<div class="project">
+<div class="item-meta">
+2020<br>Computer vision
+</div>
+<div class="item-body">
+<strong>Faceless</strong><br>Built a multitask face-analysis pipeline with TensorFlow and OpenCV for face detection and attribute prediction. It was an early bridge between independent ML projects, technical writing, and my work at W&amp;B.<span class="tag">TensorFlow</span><span class="tag">OpenCV</span>
+</div>
+</div>
+<div class="project">
+<div class="item-meta">
+2019<br>Applied ML
+</div>
+<div class="item-body">
+<strong>American Sign Language classifier</strong><br>Built and documented an end-to-end CNN project for recognizing ASL letters—one of my first attempts to explain a complete computer-vision system in public.<span class="item-links"><a href="https://medium.com/@mein2work/using-cnn-to-translate-american-sign-language-10d6443f7cd">Read the article</a></span><span class="tag">CNN</span><span class="tag">Writing</span>
+</div>
+</div>
+<div class="project">
+<div class="item-meta">
+2016–2019<br>Robotics
+</div>
+<div class="item-body">
+<strong>Autonomous robots</strong><br>Built a progression of line-following, maze-solving, object-detection, and grid-navigation robots. One system avoided obstacles, explored a grid, and retraced the shortest route. These projects gave me the systems instinct I later brought to ML infrastructure and agent engineering.<span class="tag">Embedded systems</span><span class="tag">Navigation</span>
+</div>
+</div>
 
 
 </section>

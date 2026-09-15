@@ -1,23 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ayusht.dev/index.html</loc>
-    <lastmod>2026-07-11T18:40:19.087Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ayusht.dev/blog/index.html</loc>
-    <lastmod>2026-07-11T18:40:18.415Z</lastmod>
-  </url>
-  <url>
     <loc>https://ayusht.dev/blog/posts/welcome/index.html</loc>
-    <lastmod>2026-07-11T18:40:17.444Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ayusht.dev/blog/posts/rag-techniques-overview.html</loc>
-    <lastmod>2026-07-11T18:40:16.532Z</lastmod>
+    <lastmod>2026-09-15T20:21:23.234Z</lastmod>
   </url>
   <url>
     <loc>https://ayusht.dev/blog/posts/llm-evaluation.html</loc>
-    <lastmod>2026-07-11T18:40:17.726Z</lastmod>
+    <lastmod>2026-09-15T20:21:22.589Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ayusht.dev/talks.html</loc>
+    <lastmod>2026-09-15T20:21:21.480Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ayusht.dev/index.html</loc>
+    <lastmod>2026-09-15T20:21:19.959Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ayusht.dev/work.html</loc>
+    <lastmod>2026-09-15T20:21:21.087Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ayusht.dev/blog/index.html</loc>
+    <lastmod>2026-09-15T20:21:22.250Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ayusht.dev/blog/posts/rag-techniques-overview.html</loc>
+    <lastmod>2026-09-15T20:21:22.902Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ayusht.dev/about.html</loc>
+    <lastmod>2026-09-15T20:21:23.597Z</lastmod>
   </url>
 </urlset>
