@@ -2,193 +2,106 @@
 
 /*-- scss:rules --*/
 
-/* ========================================
-   HOMEPAGE
-   ======================================== */
+.quarto-title { display: none; }
 
-/* Hide Quarto's auto-generated page title (we render our own hero) */
-.quarto-title {
-  display: none;
-}
+.main-content { padding: .35rem 0 2.5rem; }
 
-/* Main content container.
-   Quarto's `main.content` wrapper already sets the max-width, centering, and
-   horizontal padding, so here we only add vertical spacing to avoid double
-   padding (which would misalign the body text from the navbar brand). */
-.main-content {
-  padding: 0.5rem 0 3rem;
-}
-
-/* ----------------------------------------
-   Hero: photo + name + tagline + social
-   ---------------------------------------- */
 .hero {
-  display: flex;
-  align-items: center;
-  gap: 1.75rem;
-  margin-bottom: 2.5rem;
-}
-
-.hero-photo {
-  flex: 0 0 auto;
+  display: grid;
+  grid-template-columns: 152px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  margin: .4rem 0 2.2rem;
 }
 
 .hero-photo img {
-  width: 128px;
-  height: 128px;
-  border-radius: 50%;
+  width: 152px;
+  height: 196px;
   object-fit: cover;
-  border: 3px solid var(--border, #e8e4df);
+  border-radius: 3px;
+  border: 1px solid var(--border);
 }
 
-.hero-head {
-  flex: 1 1 auto;
+.hero-copy h1 {
+  margin: -.18rem 0 .3rem;
+  font-size: 2rem;
+  letter-spacing: -.025em;
 }
 
-.hero-head h1 {
-  margin: 0 0 0.25rem;
-  font-size: 1.9rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-}
-
-.hero-head > p {
-  margin: 0;
-  color: var(--text-muted, #6b6b6b);
+.hero-copy > p:first-of-type {
+  margin: 0 0 .9rem;
+  color: var(--text-muted);
   font-size: 1.05rem;
+  font-weight: 600;
 }
 
-/* Info icon next to the "Enginear" tagline */
-.enginear-note-link {
-  margin-left: 0.3rem;
-  color: var(--text-muted, #6b6b6b);
-  font-size: 0.8em;
-  vertical-align: super;
-  text-decoration: none;
+.hero-copy p { margin-bottom: .8rem; }
+
+.hero-links {
+  margin-top: 1rem;
+  font-family: var(--font-sans);
+  font-size: .88rem;
 }
 
-.enginear-note-link:hover {
-  color: var(--link, #2c5282);
-  text-decoration: none;
+.work-list { margin: .9rem 0 .8rem; }
+
+.work-item,
+.experience-item {
+  display: grid;
+  grid-template-columns: 5.3rem minmax(0, 1fr);
+  gap: .8rem;
+  padding: .72rem 0;
+  border-top: 1px solid var(--border);
 }
 
-/* Social links */
-.social-links {
-  display: flex;
-  gap: 1.25rem;
-  margin-top: 0.9rem;
-}
+.work-item:last-child,
+.experience-item:last-child { border-bottom: 1px solid var(--border); }
 
-.social-links a {
-  color: var(--text-muted, #6b6b6b);
-  font-size: 1.2rem;
-  transition: color 0.15s ease;
-}
+.work-item p,
+.experience-item p { margin: 0; }
 
-.social-links a:hover {
-  color: var(--text-primary, #1a1a1a);
-  text-decoration: none;
-}
-
-.social-links a .bi {
-  vertical-align: middle;
-}
-
-/* ----------------------------------------
-   Bio / intro paragraphs
-   ---------------------------------------- */
-.bio {
-  font-size: 1.08rem;
-  line-height: 1.75;
-  color: var(--text-primary, #1a1a1a);
-}
-
-.bio p {
-  margin-bottom: 1.25rem;
-}
-
-.bio p:first-of-type {
-  font-size: 1.18rem;
-}
-
-/* ----------------------------------------
-   Sections (News, Experience, ...)
-   ---------------------------------------- */
-.main-content h2 {
-  margin-top: 3rem;
-}
-
-.main-content h2 + p,
-.main-content h2 + ul {
-  margin-top: 0.75rem;
-}
-
-/* News - highlights list with a leading date */
-.news ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-.news li {
-  margin-bottom: 0.6rem;
-  line-height: 1.6;
-  padding-left: 3.75rem;
-  text-indent: -3.75rem;
-}
-
-.news li strong:first-child {
-  display: inline-block;
-  width: 3.75rem;
-  color: var(--text-muted, #6b6b6b);
+.work-year,
+.experience-item > span {
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  font-size: .78rem;
   font-variant-numeric: tabular-nums;
-  text-indent: 0;
+  padding-top: .15rem;
 }
 
-/* "Enginear" story note at the bottom of the page */
-.enginear-note {
-  margin-top: 3.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border, #e8e4df);
-  font-size: 0.92rem;
-  line-height: 1.65;
-  color: var(--text-muted, #6b6b6b);
+.work-item div span,
+.experience-item div {
+  color: var(--text-secondary);
+  font-size: .93rem;
+  line-height: 1.45;
 }
 
-.enginear-note p {
-  margin-bottom: 0;
+.news { margin: .55rem 0 1rem; }
+
+.news-item {
+  display: grid;
+  grid-template-columns: 4rem minmax(0, 1fr);
+  gap: .55rem;
+  padding: .38rem 0;
+  line-height: 1.42;
 }
 
-/* Soft highlight when navigated to via the info icon */
-.enginear-note:target {
-  border-top-color: var(--link, #2c5282);
+.news-year {
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  font-size: .78rem;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+  padding-top: .15rem;
 }
 
-/* ========================================
-   RESPONSIVE
-   ======================================== */
+.news-item > div { min-width: 0; }
+.news-item p { margin: 0; }
 
-@media (max-width: 600px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    gap: 1.25rem;
-  }
-
-  .hero-photo img {
-    width: 120px;
-    height: 120px;
-  }
-
-  .social-links {
-    justify-content: center;
-  }
-
-  .bio {
-    font-size: 1rem;
-  }
-
-  .bio p:first-of-type {
-    font-size: 1.08rem;
-  }
+@media (max-width: 640px) {
+  .hero { grid-template-columns: 1fr; gap: 1rem; }
+  .hero-photo img { width: 108px; height: 140px; }
+  .hero-copy h1 { font-size: 1.65rem; }
+  .work-item, .experience-item { grid-template-columns: 4.25rem minmax(0, 1fr); }
+  .news-item { grid-template-columns: 3.5rem minmax(0, 1fr); }
 }

@@ -4,14 +4,20 @@ project:
 website:
   title: "Ayush Thakur"
   site-url: "https://ayusht.dev"
-  description: "Engineer, writer, thinker."
+  description: "Ayush Thakur builds and evaluates AI systems, developer tools, and open-source integrations."
   navbar:
     background: light
     search: false
     collapse-below: sm
     left:
+      - href: work.qmd
+        text: Work
       - href: blog/index.qmd
         text: Writing
+      - href: talks.qmd
+        text: Talks
+      - href: about.qmd
+        text: About
     right:
       - icon: github
         href: https://github.com/ayulockin
@@ -34,5 +40,5 @@ format:
     css: styles.css
     toc: false
     highlight-style: github
-    fontsize: 18px
-    linestretch: 1.7
+    fontsize: 16px
+    linestretch: 1.55

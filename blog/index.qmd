@@ -1,9 +1,47 @@
 ---
 title: "Writing"
-subtitle: "Thoughts on machine learning, LLMs, and building things that work."
+subtitle: "Selected essays, technical reports, and practical notebooks."
 page-layout: article
 toc: false
 ---
+
+I write to make complex systems inspectable. The archive spans production LLM evaluation, RAG, deep learning, computer vision, framework integrations, and the experiments behind them.
+
+## Start here
+
+::: {.dense-list}
+::: {.dense-item}
+<div class="item-meta">LLM systems</div>
+<div class="item-body"><strong>[How to Evaluate, Compare, and Optimize LLM Systems](https://wandb.ai/ayush-thakur/llm-eval-sweep/reports/How-to-Evaluate-Compare-and-Optimize-LLM-Systems--Vmlldzo0NzgyMTQz)</strong><br>A practical evaluation workflow using human labels, LLM judges, retrieval metrics, and configuration search.</div>
+:::
+
+::: {.dense-item}
+<div class="item-meta">RAG</div>
+<div class="item-body"><strong>[Building Advanced Query Engine and Evaluation with LlamaIndex and W&B](https://wandb.ai/ayush-thakur/llama-index-report/reports/Building-Advanced-Query-Engine-and-Evaluation-with-LlamaIndex-and-W-B--Vmlldzo0OTIzMjMy)</strong><br>Tracing, versioning, and evaluating a multi-stage retrieval pipeline.</div>
+:::
+
+::: {.dense-item}
+<div class="item-meta">RLHF</div>
+<div class="item-body"><strong>[Understanding Reinforcement Learning from Human Feedback](https://wandb.ai/ayush-thakur/RLHF/reports/Understanding-Reinforcement-Learning-from-Human-Feedback-RLHF-Part-1--VmlldzoyODk5MTIx)</strong><br>An intuitive route through reward modeling and learning from preference data.</div>
+:::
+
+::: {.dense-item}
+<div class="item-meta">Generative AI</div>
+<div class="item-body"><strong>[Towards Deep Generative Modeling with W&B](https://wandb.ai/ayush-thakur/keras-gan/reports/Towards-Deep-Generative-Modeling-With-Weight-Biases--Vmlldzo4MDI4Mw)</strong><br>A hands-on guide to building and inspecting generative models.</div>
+:::
+
+::: {.dense-item}
+<div class="item-meta">Computer vision</div>
+<div class="item-body"><strong>[Interpretability with CAM and Grad-CAM](https://wandb.ai/ayush-thakur/interpretability/reports/Interpretability-in-Deep-Learning-With-Weights-Biases-CAM-and-Grad-CAM--Vmlldzo5MTIyNw)</strong><br>Understanding what image classifiers attend to and where their reasoning fails.</div>
+:::
+
+::: {.dense-item}
+<div class="item-meta">Kaggle</div>
+<div class="item-body"><strong>[COVID-19 detection with YOLOv5](https://www.kaggle.com/code/ayuraj/train-covid-19-detection-using-yolov5)</strong><br>An end-to-end training notebook and my most-upvoted Kaggle contribution.</div>
+:::
+:::
+
+The complete archive follows. You can also browse my [selected work](../work.qmd), [courses and talks](../talks.qmd), or the newer essays published directly on this site below.
 
 ## Weights & Biases Reports
 

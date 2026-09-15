@@ -11,82 +11,74 @@ css: index.css
 <div class="hero-photo">
 ![](profile.jpg)
 </div>
-<div class="hero-head">
+<div class="hero-copy">
 
 # Ayush Thakur
 
-Enginear<a class="enginear-note-link" href="#enginear-note" title="Why &quot;Enginear&quot;?" aria-label="Why Enginear? See note below."><i class="bi bi-info-circle"></i></a>
+I build and evaluate AI systems.
 
-<div class="social-links">
-[<i class="bi bi-github"></i>](https://github.com/ayulockin)
-[<i class="bi bi-twitter"></i>](https://x.com/ayushthakur0)
-[<i class="bi bi-linkedin"></i>](https://www.linkedin.com/in/ayush-thakur-731914149/)
-[<i class="bi bi-bar-chart"></i>](https://www.kaggle.com/ayuraj)
+I am a **Manager, AI Engineering** at [Weights & Biases](https://wandb.ai/) by CoreWeave. I am currently working on internal coding agents, evaluation harnesses, memory, and systems that improve through their own experience.
+
+Previously, I was a growth MLE at W&B. I built [open-source MLOps and LLMOps integrations](work.qmd), production RAG systems such as [Wandbot](http://wandb.me/wandbot-refactor), [technical courses](talks.qmd), and a large body of [practical ML writing](blog/index.qmd). My work helped grow W&B's brand and made its tools more useful and accessible to the ML community.
+
+I began working on autonomous robots and computer vision early in my career, and that experience shaped how I approach engineering: move with urgency, stay close to real problems, learn by building, and take ownership from an idea through to a working outcome. I am always interested in collaborating with researchers and engineers who want to turn ambitious questions into useful systems and share what we learn along the way.
+
+<div class="hero-links">
+[GitHub](https://github.com/ayulockin) · [LinkedIn](https://www.linkedin.com/in/ayush-thakur-731914149/) · [Kaggle](https://www.kaggle.com/ayuraj) · [Writing](blog/index.qmd)
 </div>
 
 </div>
 </header>
 
-<div class="bio">
-
-I'm an ML/AI Engineer with 6+ years of industry experience.
-
-Currently I work as **Manager, AI Engineer** at **Weights & Biases** (now part of CoreWeave), where I'm building an agentic ecosystem for internal productivity. Earlier at W&B, I led open-source integrations that help ML practitioners build complete MLOps stacks, specialized in LLM applications and evaluation, created courses, and wrote extensively about what I've learned.
-
-At the center of that is **fixit**, a background coding agent. The hard part isn't creating a code diff—it's getting an agent to single-shot bug fixes on our own private codebases, and figuring out what recursive self-improvement for agents actually looks like.
-
-Alongside fixit, I'm building an internal benchmark to evaluate and optimize agent harnesses. SWE-bench and similar benchmarks aren't indicative of real harness success, so I'm working toward an evolving benchmark that is.
-
-Over the coming two quarters, I'm focusing on ML/AI research and actively thinking deeply about research ideas to work on.
-
-</div>
-
 ## News
 
 ::: {.news}
-- **2026** Won a solo **Silver medal** (rank 132/4729 teams) in the Kaggle [*Orbit Wars*](https://www.kaggle.com/competitions/orbit-wars/overview) competition.
+<div class="news-item"><span class="news-year">2026</span><div>Won a solo <strong>silver medal</strong>, ranking 132nd of 4,729 teams, in Kaggle [*Orbit Wars*](https://www.kaggle.com/competitions/orbit-wars/overview).</div></div>
+<div class="news-item"><span class="news-year">2025</span><div>Started leading AI engineering work at W&B.</div></div>
+<div class="news-item"><span class="news-year">2025</span><div>Shipped evaluation and observability support for the [NVIDIA NeMo Agent Toolkit](https://wandb.ai/wandb_fc/nvidia-nat-ata/reports/Tracking-and-optimizing-agentic-workflows-using-W-B-Weave-and-NVIDIA-NeMo-Agent-Toolkit---VmlldzoxNDQ4NjgyNg).</div></div>
+<div class="news-item"><span class="news-year">2025</span><div>Released [LLM apps: Evaluation](https://wandb.ai/site/courses/evals/), created with Anish Shah and guest instructors from Google and All Hands AI.</div></div>
+<div class="news-item"><span class="news-year">2024</span><div>Released [RAG++](https://wandb.ai/site/courses/rag/) and published the results of the Wandbot refactor.</div></div>
 :::
 
-## Experience
+## Experience in brief
 
-**Manager, AI Engineering** at Weights & Biases (CoreWeave)  
-*February 2025 – Present*
-
-Leading a team building an internal coding agent and internal harness-evaluation benchmarks, and researching agent memory and self-improvement.
-
-**Machine Learning Engineer** at Weights & Biases  
-*August 2020 – January 2025*
-
-- Built MLOps integrations for Keras, OpenMMLab, Meta, XGBoost, and others
-- Developed LLMOps integrations with OpenAI, Cohere, CrewAI
-- Invested heavily in building evaluation for our RAG system, [wandbot](https://github.com/wandb/wandbot), and systematically improving it
-- Built the Kaggle Ambassador program; became a Notebooks Master
-- Authored multiple courses: [LLM apps: Evaluation](https://wandb.ai/site/courses/evals/), [RAG++: From POC to Production](https://wandb.ai/site/courses/rag/), and [Training and Fine-tuning LLMs](https://wandb.ai/site/courses/training-fine-tuning-llms/)
-
-**Technical Author** at Weights & Biases  
-*January 2020 – August 2020*
-
-Wrote technical reports on ML concepts. Some were featured in [Two Minute Papers](https://www.youtube.com/channel/UCbfYPyITQ-7l4upoX8nvctg).
-
-## Recognition
-
-- **Google Developer Expert** in Machine Learning (2022–2025)
-- **Kaggle Notebooks Master**
-
-## Education
-
-**B.Tech in Electronics and Communication Engineering**  
-Netaji Subhash Engineering College, Kolkata (2016–2020)
-
-Failed to crack JEE. Secured 91.56% in 12th boards and 10 CGPA in 10th board. Did my schooling from Notre Dame Academy.
-
-## Interests
-
-- **Robotics** — My early work was on autonomous robots, which gave me a foundation in systems thinking that I still bring to AI. I like tinkering with hardware and 3D printing.
-- **Kaggle** — I compete and share notebooks as a [Kaggle Notebooks Master](https://www.kaggle.com/ayuraj).
-
-::: {#enginear-note .enginear-note}
-**Why "Enginear"?** When I was 10, my class teacher asked what I wanted to become when I grew up. I said "Engineer." She asked me to spell it—I spelled it wrong, and she said, "You can't even spell engineer, how will you become one?" Well, I am one now, and in a very high percentile category at that. Don't let your teachers define what and who you can be.
+::: {.experience-list}
+::: {.experience-item}
+<span>2025–now</span>
+<div><strong>Manager, AI Engineering · W&B / CoreWeave</strong><br>Agent engineering, internal productivity, evaluation harnesses, and applied research.</div>
 :::
+
+::: {.experience-item}
+<span>2020–2025</span>
+<div><strong>Machine Learning Engineer · Weights & Biases</strong><br>Open-source integrations, LLM evaluation, Wandbot, courses, Kaggle programs, and technical education.</div>
+:::
+
+::: {.experience-item}
+<span>2020</span>
+<div><strong>Technical Author · Weights & Biases</strong><br>Technical reports on deep learning, computer vision, and practical ML engineering.</div>
+:::
+:::
+
+[More about my work →](work.qmd)
+
+## Writing and teaching
+
+I have written extensively about LLM evaluation, RLHF, RAG, computer vision, Keras, PyTorch, and practical ML engineering. I have also helped create three free technical courses and spoken at W&B events, DataHack Summit, GDG communities, and local ML workshops.
+
+- [Browse the writing archive →](blog/index.qmd)
+- [Talks and workshops →](talks.qmd)
+
+## Publication
+
+::: {.project}
+<div class="item-meta">2020<br>IEEE ICCE</div>
+<div class="item-body"><strong>[Feature extraction and classification of phonocardiograms using convolutional neural networks](https://ieeexplore.ieee.org/abstract/document/9290565/)</strong><br>With Devjyoti Chakraborty, Snehangshu Bhattacharya, Aritra Roy Gosthipaty, and Chira Datta. We transformed heart-sound recordings into spectrograms and used convolutional neural networks to classify normal and abnormal phonocardiograms.<span class="item-links">[IEEE](https://ieeexplore.ieee.org/abstract/document/9290565/) · [Google Scholar](https://scholar.google.com/citations?hl=en&user=KYYiO60AAAAJ)</span></div>
+:::
+
+## Earlier
+
+I studied Electronics and Communication Engineering at Netaji Subhash Engineering College, Kolkata. College began with autonomous robots: line followers, maze solvers, and a grid-navigation robot that could avoid obstacles and retrace the shortest route. That work taught me the systems instinct I still rely on when debugging ML and agentic systems.
+
+[Read the longer background →](about.qmd)
 
 </div>

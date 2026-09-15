@@ -1,0 +1,111 @@
+---
+title: "Work"
+subtitle: "Selected systems, integrations, and educational work."
+page-layout: article
+toc: true
+---
+
+I work where applied AI meets developer infrastructure: building systems, defining how to evaluate them, and turning what works into tools and explanations other people can use.
+
+## Current work
+
+::: {.project}
+<div class="item-meta">2025–now<br>W&B / CoreWeave</div>
+<div class="item-body"><strong>Agent engineering</strong><br>Leading work on a background coding agent and the infrastructure around it: internal harness benchmarks, memory, and systems that help agents learn from prior experience. The work combines product engineering with empirical evaluation—making progress measurable rather than anecdotal.<span class="tag">Agents</span><span class="tag">Evaluation</span><span class="tag">Leadership</span></div>
+:::
+
+::: {.project}
+<div class="item-meta">2025<br>Open ecosystem</div>
+<div class="item-body"><strong>NVIDIA NeMo Agent Toolkit × W&B Weave</strong><br>Worked on evaluation and observability support for agentic workflows built with NVIDIA's framework-agnostic toolkit, making it easier to trace, compare, and improve multi-agent systems.<span class="item-links">[Technical report](https://wandb.ai/wandb_fc/nvidia-nat-ata/reports/Tracking-and-optimizing-agentic-workflows-using-W-B-Weave-and-NVIDIA-NeMo-Agent-Toolkit---VmlldzoxNDQ4NjgyNg)</span><span class="tag">Agents</span><span class="tag">Observability</span></div>
+:::
+
+## LLM systems and evaluation
+
+::: {.project}
+<div class="item-meta">2024<br>Production RAG</div>
+<div class="item-body"><strong>Wandbot: an evaluation-driven refactor</strong><br>Reworked W&B's open-source documentation assistant around systematic evaluation. Answer accuracy rose from 72% to 81%, latency fell by 84%, and a full evaluation run went from roughly two hours to under ten minutes. Nearly 50 experiments made the trade-offs between quality, speed, and cost visible.<span class="item-links">[Read the case study](http://wandb.me/wandbot-refactor) · [Source](https://github.com/wandb/wandbot)</span><span class="tag">RAG</span><span class="tag">Evaluation</span><span class="tag">Production</span></div>
+:::
+
+::: {.project}
+<div class="item-meta">2023<br>LLM evaluation</div>
+<div class="item-body"><strong>Evaluating, comparing, and optimizing LLM systems</strong><br>Built a practical workflow for comparing system configurations with human labels, LLM judges, retrieval metrics, and parameter search. This work became a foundation for later production systems and courses.<span class="item-links">[Technical report](https://wandb.ai/ayush-thakur/llm-eval-sweep/reports/How-to-Evaluate-Compare-and-Optimize-LLM-Systems--Vmlldzo0NzgyMTQz)</span><span class="tag">LLMOps</span><span class="tag">Evals</span></div>
+:::
+
+::: {.project}
+<div class="item-meta">2023<br>Open source</div>
+<div class="item-body"><strong>LlamaIndex × W&B</strong><br>Built an integration for inspecting retrieval and LLM traces, debugging complex query pipelines, and versioning indexes and embeddings. The accompanying walkthrough showed how those primitives support evaluation-driven RAG development.<span class="item-links">[Walkthrough](https://wandb.ai/ayush-thakur/llama-index-report/reports/Building-Advanced-Query-Engine-and-Evaluation-with-LlamaIndex-and-W-B--Vmlldzo0OTIzMjMy)</span><span class="tag">LlamaIndex</span><span class="tag">Tracing</span></div>
+:::
+
+## Tools and integrations
+
+My public GitHub history includes 200 merged pull requests. Much of that work made experiment tracking, model evaluation, and application tracing feel native inside the tools developers already used.
+
+::: {.project}
+<div class="item-meta">2022–2023<br>Keras</div>
+<div class="item-body"><strong>A new generation of W&B callbacks for Keras</strong><br>Added dedicated callbacks for metrics logging, model checkpointing, and rich model-prediction tables, alongside fixes for SavedModel and distributed-training workflows.<span class="item-links">[Metrics logger](https://github.com/wandb/wandb/pull/4244) · [Model checkpointing](https://github.com/wandb/wandb/pull/4245) · [Evaluation tables](https://github.com/wandb/wandb/pull/4302) · [Distributed training](https://github.com/wandb/wandb/pull/4310)</span><span class="tag">Keras</span><span class="tag">TensorFlow</span></div>
+:::
+
+::: {.project}
+<div class="item-meta">2022<br>OpenMMLab</div>
+<div class="item-body"><strong>Native experiment-tracking hooks across the OpenMMLab stack</strong><br>Built dedicated W&B integrations for object detection, image classification, and semantic segmentation, then followed them with maintenance fixes and runnable examples.<span class="item-links">[MMDetection](https://github.com/open-mmlab/mmdetection/pull/7459) · [MMClassification](https://github.com/open-mmlab/mmpretrain/pull/764) · [MMSegmentation](https://github.com/open-mmlab/mmsegmentation/pull/1603)</span><span class="tag">Computer vision</span><span class="tag">OpenMMLab</span></div>
+:::
+
+::: {.project}
+<div class="item-meta">2021–2022<br>Training</div>
+<div class="item-body"><strong>Integrations for widely used ML libraries</strong><br>Improved experiment tracking for XGBoost and LightGBM, added CatBoost support, and contributed integrations to RecBole, ConvNeXt, DALL·E Mini, and image-super-resolution projects.<span class="item-links">[XGBoost](https://github.com/wandb/wandb/pull/2929) · [LightGBM](https://github.com/wandb/wandb/pull/2945) · [CatBoost](https://github.com/wandb/wandb/pull/2975) · [ConvNeXt](https://github.com/facebookresearch/ConvNeXt/pull/24)</span><span class="tag">Boosting</span><span class="tag">Deep learning</span></div>
+:::
+
+::: {.project}
+<div class="item-meta">2023–2024<br>LLM systems</div>
+<div class="item-body"><strong>Instrumentation and evaluation for emerging LLM stacks</strong><br>Added W&B instrumentation to LlamaIndex and integration support to EleutherAI's LM Evaluation Harness; updated OpenAI fine-tuning, Cohere v2, and Wandbot evaluation workflows as their underlying APIs evolved.<span class="item-links">[LlamaIndex](https://github.com/run-llama/llama_index/pull/3377) · [LM Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness/pull/1339) · [OpenAI](https://github.com/wandb/wandb/pull/6498) · [Cohere](https://github.com/wandb/weave/pull/2174) · [Wandbot](https://github.com/wandb/wandbot/pull/80)</span><span class="tag">LLMOps</span><span class="tag">Evaluation</span></div>
+:::
+
+::: {.project}
+<div class="item-meta">2025–2026<br>Agents</div>
+<div class="item-body"><strong>Tracing and evaluation across agent frameworks</strong><br>Extended support for DSPy, MCP, LlamaIndex, CrewAI, Verifiers, and NVIDIA NeMo Agent Toolkit, including fine-grained tracing and evaluation inside external framework repositories.<span class="item-links">[NeMo tracing](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/170) · [NeMo evaluation](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/264) · [MCP](https://github.com/wandb/weave/pull/4030) · [DSPy](https://github.com/wandb/wandb/pull/10327) · [Verifiers](https://github.com/wandb/weave/pull/5462) · [CrewAI](https://github.com/crewAIInc/crewAI/pull/2463)</span><span class="tag">Agents</span><span class="tag">Tracing</span><span class="tag">Evals</span></div>
+:::
+
+I also helped build W&B's Kaggle Ambassador program, connecting practitioners, reusable notebooks, and experiment-tracking education. Along the way I became a [Kaggle Notebooks Master](https://www.kaggle.com/ayuraj), with notebooks spanning object detection, medical imaging, reproducibility, and interactive visualization.
+
+## Research publication
+
+::: {.project}
+<div class="item-meta">2020<br>IEEE ICCE<br>pp. 275–279</div>
+<div class="item-body"><strong>Feature extraction and classification of phonocardiograms using convolutional neural networks</strong><br>With Devjyoti Chakraborty, Snehangshu Bhattacharya, Aritra Roy Gosthipaty, and Chira Datta. We studied an automated approach to classifying normal and abnormal heart sounds: transforming phonocardiogram recordings into spectrograms, addressing class imbalance, and using deep convolutional neural networks for feature extraction and classification.<span class="item-links">[Read on IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9290565/) · [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=KYYiO60AAAAJ)</span><span class="tag">Medical ML</span><span class="tag">Signal processing</span><span class="tag">CNN</span></div>
+:::
+
+## Courses
+
+::: {.course}
+<div class="item-meta">2025<br>2 hours</div>
+<div class="item-body"><strong>LLM apps: Evaluation</strong><br>Created with Anish Shah, with case studies from Paige Bailey and Graham Neubig. Covers programmatic evaluators, LLM judges, evaluator alignment, and real-world evaluation workflows.<span class="item-links">[Take the course](https://wandb.ai/site/courses/evals/)</span></div>
+:::
+
+::: {.course}
+<div class="item-meta">2024<br>2 hours</div>
+<div class="item-body"><strong>RAG++: From POC to Production</strong><br>Created with Bharat Ramanathan, with contributions from Meor Amer and Charles Pierse. Distills nearly two years of production RAG work into evaluation, data ingestion, query enhancement, hybrid retrieval, reranking, agentic RAG, and response synthesis.<span class="item-links">[Take the course](https://wandb.ai/site/courses/rag/)</span></div>
+:::
+
+::: {.course}
+<div class="item-meta">2023<br>37 lessons</div>
+<div class="item-body"><strong>Training and Fine-tuning LLMs</strong><br>Co-taught with Darek Kłeczek and guest instructors Jonathan Frankle, Weiwei Yang, and Mark Saroufim. Covers model foundations, evaluation, data preparation, training, and fine-tuning.<span class="item-links">[Take the course](https://www.wandb.courses/courses/training-fine-tuning-LLMs)</span></div>
+:::
+
+[See talks and workshops →](talks.qmd)
+
+## Earlier work
+
+::: {.project}
+<div class="item-meta">2020<br>Computer vision</div>
+<div class="item-body"><strong>Faceless</strong><br>Built a multitask face-analysis pipeline with TensorFlow and OpenCV for face detection and attribute prediction. It was an early bridge between independent ML projects, technical writing, and my work at W&B.<span class="tag">TensorFlow</span><span class="tag">OpenCV</span></div>
+:::
+
+::: {.project}
+<div class="item-meta">2019<br>Applied ML</div>
+<div class="item-body"><strong>American Sign Language classifier</strong><br>Built and documented an end-to-end CNN project for recognizing ASL letters—one of my first attempts to explain a complete computer-vision system in public.<span class="item-links">[Read the article](https://medium.com/@mein2work/using-cnn-to-translate-american-sign-language-10d6443f7cd)</span><span class="tag">CNN</span><span class="tag">Writing</span></div>
+:::
+
+::: {.project}
+<div class="item-meta">2016–2019<br>Robotics</div>
+<div class="item-body"><strong>Autonomous robots</strong><br>Built a progression of line-following, maze-solving, object-detection, and grid-navigation robots. One system avoided obstacles, explored a grid, and retraced the shortest route. These projects gave me the systems instinct I later brought to ML infrastructure and agent engineering.<span class="tag">Embedded systems</span><span class="tag">Navigation</span></div>
+:::
