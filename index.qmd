@@ -63,9 +63,10 @@ I began working on autonomous robots and computer vision early in my career, and
 
 ## Writing and teaching
 
-I have written extensively about LLM evaluation, RLHF, RAG, computer vision, Keras, PyTorch, and practical ML engineering. I have also helped create three free technical courses and spoken at W&B events, DataHack Summit, GDG communities, and local ML workshops.
+I have published **70 technical reports** and **73 public notebooks** across LLM systems, RAG, deep learning, computer vision, generative modeling, training infrastructure, and applied ML. I have also helped create three free technical courses and spoken at W&B events, DataHack Summit, GDG communities, and local ML workshops.
 
-- [Browse the writing archive →](blog/index.qmd)
+- [Explore the bodies of work →](blog/index.qmd#bodies-of-work)
+- [Browse the complete writing archive →](blog/index.qmd#complete-archive)
 - [Talks and workshops →](talks.qmd)
 
 ## Publication

@@ -5,43 +5,150 @@ page-layout: article
 toc: false
 ---
 
-I write to make complex systems inspectable. The archive spans production LLM evaluation, RAG, deep learning, computer vision, framework integrations, and the experiments behind them.
+I have published **70 technical reports** and **73 public notebooks** across LLM systems, RAG, deep learning, computer vision, generative modeling, training infrastructure, and applied ML. Much of this work began by reproducing research, testing ideas in code, and explaining what survived contact with an implementation.
 
-## Start here
+::: {.writing-stats}
+<span><strong>70</strong> technical reports</span>
+<span><strong>73</strong> public notebooks</span>
+<span><strong>3</strong> technical courses</span>
+:::
+
+## Bodies of work
+
+::: {.writing-map}
+::: {.writing-area}
+### LLM systems, RLHF, and RAG
+From preference modeling and RLHF implementations to retrieval pipelines and systematic LLM evaluation.
+
+[Explore 6 reports ↓](#llms)
+:::
+
+::: {.writing-area}
+### Computer vision and generative imaging
+Detection, segmentation, interpretability, GAN evaluation, limited-data training, colorization, and image editing.
+
+[Explore 11 reports ↓](#vision)
+:::
+
+::: {.writing-area}
+### Framework practice
+Practical work across PyTorch, Lightning, Keras, TensorFlow, Hugging Face, and Transformers.
+
+[Explore 24 reports ↓](#frameworks)
+:::
+
+::: {.writing-area}
+### Training mechanics
+Optimization, augmentation, class imbalance, metric learning, convolutions, and the small decisions that shape model quality.
+
+[Explore 13 reports ↓](#training)
+:::
+
+::: {.writing-area}
+### 3D vision and video
+Novel-view synthesis, neural scene flow, inpainting, talking heads, video retiming, and animation.
+
+[Explore 9 reports ↓](#3d-video)
+:::
+
+::: {.writing-area}
+### Applied experimentation
+Research reproductions and end-to-end notebooks across medical imaging, object detection, audio, tabular ML, and competitions.
+
+[Explore 7 reports ↓](#applied) · [Browse 73 notebooks ↓](#kaggle-notebooks)
+:::
+:::
+
+## Selected writing
 
 ::: {.dense-list}
 ::: {.dense-item}
-<div class="item-meta">LLM systems</div>
+<div class="item-meta">2023<br>Technical report</div>
 <div class="item-body"><strong>[How to Evaluate, Compare, and Optimize LLM Systems](https://wandb.ai/ayush-thakur/llm-eval-sweep/reports/How-to-Evaluate-Compare-and-Optimize-LLM-Systems--Vmlldzo0NzgyMTQz)</strong><br>A practical evaluation workflow using human labels, LLM judges, retrieval metrics, and configuration search.</div>
 :::
 
 ::: {.dense-item}
-<div class="item-meta">RAG</div>
+<div class="item-meta">2023<br>Technical report</div>
 <div class="item-body"><strong>[Building Advanced Query Engine and Evaluation with LlamaIndex and W&B](https://wandb.ai/ayush-thakur/llama-index-report/reports/Building-Advanced-Query-Engine-and-Evaluation-with-LlamaIndex-and-W-B--Vmlldzo0OTIzMjMy)</strong><br>Tracing, versioning, and evaluating a multi-stage retrieval pipeline.</div>
 :::
 
 ::: {.dense-item}
-<div class="item-meta">RLHF</div>
+<div class="item-meta">2022<br>Technical report</div>
 <div class="item-body"><strong>[Understanding Reinforcement Learning from Human Feedback](https://wandb.ai/ayush-thakur/RLHF/reports/Understanding-Reinforcement-Learning-from-Human-Feedback-RLHF-Part-1--VmlldzoyODk5MTIx)</strong><br>An intuitive route through reward modeling and learning from preference data.</div>
 :::
 
 ::: {.dense-item}
-<div class="item-meta">Generative AI</div>
+<div class="item-meta">2020<br>Technical report</div>
 <div class="item-body"><strong>[Towards Deep Generative Modeling with W&B](https://wandb.ai/ayush-thakur/keras-gan/reports/Towards-Deep-Generative-Modeling-With-Weight-Biases--Vmlldzo4MDI4Mw)</strong><br>A hands-on guide to building and inspecting generative models.</div>
 :::
 
 ::: {.dense-item}
-<div class="item-meta">Computer vision</div>
+<div class="item-meta">2020<br>Technical report</div>
 <div class="item-body"><strong>[Interpretability with CAM and Grad-CAM](https://wandb.ai/ayush-thakur/interpretability/reports/Interpretability-in-Deep-Learning-With-Weights-Biases-CAM-and-Grad-CAM--Vmlldzo5MTIyNw)</strong><br>Understanding what image classifiers attend to and where their reasoning fails.</div>
 :::
 
 ::: {.dense-item}
-<div class="item-meta">Kaggle</div>
+<div class="item-meta">2021<br>Notebook</div>
 <div class="item-body"><strong>[COVID-19 detection with YOLOv5](https://www.kaggle.com/code/ayuraj/train-covid-19-detection-using-yolov5)</strong><br>An end-to-end training notebook and my most-upvoted Kaggle contribution.</div>
 :::
 :::
 
-The complete archive follows. You can also browse my [selected work](../work.qmd), [courses and talks](../talks.qmd), or the newer essays published directly on this site below.
+## How the work evolved
+
+::: {.dense-list}
+::: {.dense-item}
+<div class="item-meta">2019–2020</div>
+<div class="item-body"><strong>Applied computer vision and technical writing</strong><br>Early projects in sign-language recognition, face analysis, image inpainting, interpretability, and generative modeling established a habit of building and explaining complete systems.</div>
+:::
+
+::: {.dense-item}
+<div class="item-meta">2020–2022</div>
+<div class="item-body"><strong>Deep learning systems and research reproduction</strong><br>Worked across PyTorch, TensorFlow, GANs, self-supervised learning, 3D vision, medical imaging, and the mechanics of reliable model training.</div>
+:::
+
+::: {.dense-item}
+<div class="item-meta">2022–2023</div>
+<div class="item-body"><strong>LLM training and open-source infrastructure</strong><br>Moved into RLHF, Transformers, framework integrations, reproducibility, and the tooling required to inspect increasingly complex training workflows.</div>
+:::
+
+::: {.dense-item}
+<div class="item-meta">2023–now</div>
+<div class="item-body"><strong>Production RAG, evaluation, and agents</strong><br>Focused on retrieval systems, LLM application evaluation, observability, and the feedback loops needed to improve agentic systems.</div>
+:::
+:::
+
+## Selected collaborations
+
+::: {.dense-list}
+::: {.dense-item}
+<div class="item-meta">2020<br>Report</div>
+<div class="item-body"><strong>[Introduction to image inpainting with deep learning](https://wandb.ai/ayush-thakur/image-inpainting/reports/Introduction-to-image-inpainting-with-deep-learning--Vmlldzo5MDU1MDQ)</strong><br>With Sayak Paul · traditional methods, autoencoders, and partial convolutions.</div>
+:::
+
+::: {.dense-item}
+<div class="item-meta">2020<br>Report</div>
+<div class="item-body"><strong>[Understanding the effectiveness of ensembles in deep learning](https://wandb.ai/ayush-thakur/Ensemble-Generalization-Gap/reports/Understanding-the-Effectiveness-of-Ensembles-in-Deep-Learning--Vmlldzo5MDI0MTc)</strong><br>With Sayak Paul · loss landscapes, generalization, and why ensembles work.</div>
+:::
+
+::: {.dense-item}
+<div class="item-meta">2020<br>Report</div>
+<div class="item-body"><strong>[Unsupervised visual representation learning with SwAV](https://wandb.ai/ayush-thakur/SwAV/reports/Unsupervised-Visual-Representation-Learning-with-SwAV--Vmlldzo4Njk4OA)</strong><br>With Sayak Paul · reproducing self-supervised representation learning in TensorFlow.</div>
+:::
+
+::: {.dense-item}
+<div class="item-meta">2020<br>Report</div>
+<div class="item-body"><strong>[An introduction to adversarial latent autoencoders](https://wandb.ai/authors/alae/reports/An-Introduction-to-Adversarial-Latent-Autoencoders--VmlldzoxNDA2MDY)</strong><br>With Sairam Sundaresan · disentangled latent representations and high-quality image generation.</div>
+:::
+
+::: {.dense-item}
+<div class="item-meta">2021<br>Benchmark</div>
+<div class="item-body"><strong>[Keras XLA benchmarks](https://wandb.ai/ayush-thakur/keras-xla-benchmarks/reports/Keras-XLA-Benchmarks--Vmlldzo0MzE4ODk)</strong><br>With Soumik Rakshit and Sayak Paul · measuring XLA performance across Keras training workloads.</div>
+:::
+:::
+
+## Complete archive
+
+The complete grouped list follows—no filters or hidden results. You can also browse my [selected work](../work.qmd) and [talks and workshops](../talks.qmd).
 
 ## Weights & Biases Reports
 
@@ -49,7 +156,7 @@ Technical articles and tutorials I've written on the W&B platform—covering dee
 
 ::: {.wandb-reports}
 
-**LLMs & RLHF**
+### LLMs & RLHF {#llms}
 
 - [Understanding Reinforcement Learning from Human Feedback (RLHF): Part 1](https://wandb.ai/ayush-thakur/RLHF/reports/Understanding-Reinforcement-Learning-from-Human-Feedback-RLHF-Part-1--VmlldzoyODk5MTIx)
 - [An Introduction to Training LLMs Using Reinforcement Learning From Human Feedback (RLHF)](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy)
@@ -58,20 +165,23 @@ Technical articles and tutorials I've written on the W&B platform—covering dee
 - [Implementing RLHF: Learning to Summarize with trlX](https://wandb.ai/carperai/summarize_RLHF/reports/Implementing-RLHF-Learning-to-Summarize-with-trlX--VmlldzozMzAwODM2)
 - [RLHF: Hyperparameter Optimization for trlX](https://wandb.ai/ayut/trlx-ppo-sentiments-hyperopt/reports/RLHF-Hyperparameter-Optimization-for-trlX--VmlldzoyOTgxMTQ2)
 
-**Computer Vision & GANs**
+### Computer Vision & GANs {#vision}
 
 - [Towards Deep Generative Modeling With Weight & Biases](https://wandb.ai/ayush-thakur/keras-gan/reports/Towards-Deep-Generative-Modeling-With-Weight-Biases--Vmlldzo4MDI4Mw)
 - [How to Evaluate GANs using Frechet Inception Distance (FID)](https://wandb.ai/ayush-thakur/gan-evaluation/reports/How-to-Evaluate-GANs-using-Frechet-Inception-Distance-FID---Vmlldzo0MTAxOTI)
 - [Train Generative Adversarial Networks (GANs) With Limited Data](https://wandb.ai/ayush-thakur/ada/reports/Train-Generative-Adversarial-Networks-GANs-With-Limited-Data--Vmlldzo1NDYyMjA)
 - [In-Domain GAN Inversion for Real Image Editing](https://wandb.ai/wandb/in-domain-gan/reports/In-Domain-GAN-Inversion-for-Real-Image-Editing--VmlldzoyODE5Mzk)
 - [An Introduction to Adversarial Latent Autoencoders](https://wandb.ai/authors/alae/reports/An-Introduction-to-Adversarial-Latent-Autoencoders--VmlldzoxNDA2MDY)
+- [Introduction to Image Inpainting with Deep Learning](https://wandb.ai/ayush-thakur/image-inpainting/reports/Introduction-to-image-inpainting-with-deep-learning--Vmlldzo5MDU1MDQ) <span class="archive-meta">2020 · with Sayak Paul</span>
 - [Interpretability in Deep Learning With Weights & Biases: CAM and Grad-CAM](https://wandb.ai/ayush-thakur/interpretability/reports/Interpretability-in-Deep-Learning-With-Weights-Biases-CAM-and-Grad-CAM--Vmlldzo5MTIyNw)
 - [An Overview of Instance Aware Image Colorization](https://wandb.ai/wandb/instacolorization/reports/An-Overview-of-Instance-Aware-Image-Colorization---VmlldzoyOTk3MDI)
 - [Image Segmentation Using Keras and Weights & Biases](https://wandb.ai/ayush-thakur/image-segmentation/reports/Image-Segmentation-Using-Keras-and-Weights-Biases--VmlldzoyNTE1Njc)
 - [Object Localization With Keras and Weights & Biases](https://wandb.ai/wandb/object_localization/reports/Object-Localization-With-Keras-and-Weights-Biases--VmlldzoyNzA2Mzk)
 - [Image Classification Using Vision Transformer and KerasCV](https://wandb.ai/ayush-thakur/keras_cv_vit/reports/Image-Classification-Using-Vision-Transformer-and-KerasCV--VmlldzozNTE4MzMz)
 
-**PyTorch & PyTorch Lightning**
+### Framework practice {#frameworks}
+
+#### PyTorch & PyTorch Lightning {#pytorch}
 
 - [How To Use GPU with PyTorch](https://wandb.ai/wandb/common-ml-errors/reports/How-To-Use-GPU-with-PyTorch---VmlldzozMzAxMDk)
 - [How to save and load models in PyTorch](https://wandb.ai/wandb/common-ml-errors/reports/How-to-save-and-load-models-in-PyTorch--VmlldzozMjg0MTE)
@@ -83,7 +193,7 @@ Technical articles and tutorials I've written on the W&B platform—covering dee
 - [PyTorch Dropout for regularization - tutorial](https://wandb.ai/authors/ayusht/reports/PyTorch-Dropout-for-regularization-tutorial---VmlldzoxNTgwOTE)
 - [Implementing and Tracking the Performance of a CNN in PyTorch](https://wandb.ai/authors/ayusht/reports/Implementing-and-Tracking-the-Performance-of-a-CNN-in-PyTorch---VmlldzoxNjEyMDU)
 
-**Keras & TensorFlow**
+#### Keras & TensorFlow {#keras}
 
 - [Keras Dense Layer: How to Use It Correctly](https://wandb.ai/ayush-thakur/keras-dense/reports/Keras-Dense-Layer-How-to-Use-It-Correctly--Vmlldzo0MjAzNDY1)
 - [Input Keras Layer Explanation With Code Samples](https://wandb.ai/ayush-thakur/dl-question-bank/reports/Input-Keras-Layer-Explanation-With-Code-Samples--VmlldzoyMDIzMDU)
@@ -95,15 +205,18 @@ Technical articles and tutorials I've written on the W&B platform—covering dee
 - [How to Prevent TensorFlow From Fully Allocating GPU Memory](https://wandb.ai/ayush-thakur/dl-question-bank/reports/How-to-Prevent-TensorFlow-From-Fully-Allocating-GPU-Memory--VmlldzoxOTk1ODE)
 - [LSTM RNN in Keras: Examples of One-to-Many, Many-to-One & Many-to-Many](https://wandb.ai/ayush-thakur/dl-question-bank/reports/LSTM-RNN-in-Keras-Examples-of-One-to-Many-Many-to-One-Many-to-Many---VmlldzoyMDIzOTM)
 - [A Guide to Multi-Label Classification on Keras](https://wandb.ai/ayush-thakur/dl-question-bank/reports/A-Guide-to-Multi-Label-Classification-on-Keras--VmlldzoyMDgyMDU)
+- [Keras XLA Benchmarks](https://wandb.ai/ayush-thakur/keras-xla-benchmarks/reports/Keras-XLA-Benchmarks--Vmlldzo0MzE4ODk) <span class="archive-meta">2021 · with Soumik Rakshit and Sayak Paul</span>
 
-**HuggingFace & Transformers**
+#### Hugging Face & Transformers {#transformers}
 
 - [How To Fine-Tune Hugging Face Transformers on a Custom Dataset](https://wandb.ai/ayush-thakur/huggingface/reports/How-To-Fine-Tune-Hugging-Face-Transformers-on-a-Custom-Dataset--Vmlldzo0MzQ2MDc)
 - [Examples of Early Stopping in HuggingFace Transformers](https://wandb.ai/ayush-thakur/huggingface/reports/Examples-of-Early-Stopping-in-HuggingFace-Transformers--Vmlldzo0MzE2MTM)
 - [SimpleTransformers: Transformers Made Easy](https://wandb.ai/wandb/gallery/reports/SimpleTransformers-Transformers-Made-Easy--VmlldzoyNDQzNTg)
 - [Taming Transformers for High-Resolution Image Synthesis](https://wandb.ai/ayush-thakur/taming-transformer/reports/Taming-Transformers-for-High-Resolution-Image-Synthesis---Vmlldzo0NjEyMTY)
 
-**Deep Learning Fundamentals**
+### Training mechanics {#training}
+
+#### Deep Learning Fundamentals {#fundamentals}
 
 - [What's the Optimal Batch Size to Train a Neural Network?](https://wandb.ai/ayush-thakur/dl-question-bank/reports/What-s-the-Optimal-Batch-Size-to-Train-a-Neural-Network---VmlldzoyMDkyNDU)
 - [ReLU vs. Sigmoid Function in Deep Neural Networks](https://wandb.ai/ayush-thakur/dl-question-bank/reports/ReLU-vs-Sigmoid-Function-in-Deep-Neural-Networks--VmlldzoyMDk0MzI)
@@ -112,9 +225,9 @@ Technical articles and tutorials I've written on the W&B platform—covering dee
 - [What's the Difference Between Strided Convolution and Pooling?](https://wandb.ai/ayush-thakur/dl-question-bank/reports/What-s-the-Difference-Between-Strided-Convolution-and-Pooling---VmlldzoyMDE5Mjc)
 - [Comparing Sigmoid-MSE With Softmax Cross-Entropy for Image Classification](https://wandb.ai/ayush-thakur/dl-question-bank/reports/Comparing-Sigmoid-MSE-With-Softmax-Cross-Entropy-for-Image-Classification--VmlldzoyMDA3ODQ)
 - [How One-Hot Encoding Improves Machine Learning Performance](https://wandb.ai/ayush-thakur/dl-question-bank/reports/How-One-Hot-Encoding-Improves-Machine-Learning-Performance--VmlldzoxOTkzMDk)
-- [Understanding the Effectivity of Ensembles in Deep Learning](https://wandb.ai/authors/loss-landscape/reports/Understanding-the-Effectivity-of-Ensembles-in-Deep-Learning--VmlldzoxODAxNjA)
+- [Understanding the Effectivity of Ensembles in Deep Learning](https://wandb.ai/authors/loss-landscape/reports/Understanding-the-Effectivity-of-Ensembles-in-Deep-Learning--VmlldzoxODAxNjA) <span class="archive-meta">2020 · with Sayak Paul</span>
 
-**Data Augmentation & Training Techniques**
+#### Data Augmentation & Training Techniques {#augmentation}
 
 - [Modern Data Augmentation Techniques for Computer Vision](https://wandb.ai/authors/tfaugmentation/reports/Modern-Data-Augmentation-Techniques-for-Computer-Vision--VmlldzoxODA3NTQ)
 - [Simple Ways to Tackle Class Imbalance](https://wandb.ai/authors/class-imbalance/reports/Simple-Ways-to-Tackle-Class-Imbalance--VmlldzoxODA3NTk)
@@ -122,7 +235,9 @@ Technical articles and tutorials I've written on the W&B platform—covering dee
 - [Metric Learning for Image Search With Weights & Biases](https://wandb.ai/ayush-thakur/metric-learning/reports/Metric-Learning-for-Image-Search-With-Weights-Biases--VmlldzoyNTM0NDc)
 - [How to avoid checkerboard pattern in your generated images?](https://wandb.ai/wandb/common-ml-errors/reports/How-to-avoid-checkerboard-pattern-in-your-generated-images---VmlldzozNTEzNzk)
 
-**3D Vision & Novel View Synthesis**
+### 3D vision and video {#3d-video}
+
+#### 3D Vision & Novel View Synthesis {#3d-vision}
 
 - [3D Image Inpainting With Weights & Biases](https://wandb.ai/authors/3D-Inpainting/reports/3D-Image-Inpainting-With-Weights-Biases--VmlldzoxNzIwNTY)
 - [Paper Summary: One Shot 3D Photography](https://wandb.ai/authors/One-Shot-3D-Photography/reports/Paper-Summary-One-Shot-3D-Photography--VmlldzozNjE2MjQ)
@@ -130,16 +245,16 @@ Technical articles and tutorials I've written on the W&B platform—covering dee
 - [Overview: Neural Scene Flow Fields (NSFF) for Space-Time View Synthesis of Dynamic Scenes](https://wandb.ai/wandb/NSFF/reports/Overview-Neural-Scene-Flow-Fields-NSFF-for-Space-Time-View-Synthesis-of-Dynamic-Scenes--Vmlldzo1NzA1ODI)
 - [Dynamic Sky Replacement: The Sky Is Within Our Grasp!](https://wandb.ai/wandb/skyAR/reports/Dynamic-Sky-Replacement-The-Sky-Is-Within-Our-Grasp---VmlldzozMjY0NDI)
 
-**Video & Animation**
+#### Video & Animation {#video}
 
 - [One-Shot Free-View Neural Talking-Head Synthesis for Video Conferencing](https://wandb.ai/ayush-thakur/face-vid2vid/reports/One-Shot-Free-View-Neural-Talking-Head-Synthesis-for-Video-Conferencing--Vmlldzo1MzU4ODc)
 - [An Introduction to Egocentric Videoconferencing](https://wandb.ai/wandb/egocentric-video-conferencing/reports/An-Introduction-to-Egocentric-Videoconferencing--VmlldzozMTY1NTA)
 - [An Intro to Retiming Instances in a Video](https://wandb.ai/wandb/retiming-video/reports/An-Intro-to-Retiming-Instances-in-a-Video--VmlldzozMzUwNTk)
 - [Automating Animations with the Help of Robust In-Betweening](https://wandb.ai/wandb/in-between/reports/Automating-Animations-with-the-Help-of-Robust-In-Betweening--Vmlldzo0MzkzMzA)
 
-**Other**
+### Applied and exploratory work {#applied}
 
-- [Self-Supervised Learning with SwAV](https://wandb.ai/authors/swav-tf/reports/Unsupervised-Visual-Representation-Learning-with-SwAV--VmlldzoyMjg3Mzg)
+- [Self-Supervised Learning with SwAV](https://wandb.ai/authors/swav-tf/reports/Unsupervised-Visual-Representation-Learning-with-SwAV--VmlldzoyMjg3Mzg) <span class="archive-meta">2020 · with Sayak Paul</span>
 - [How To Use Weights & Biases With MMDetection](https://wandb.ai/ayush-thakur/mmdetection/reports/How-To-Use-Weights-Biases-With-MMDetection--VmlldzoyMTM0MDE2)
 - [Generating Digital Painting Lighting Effects via RGB-space Geometry](https://wandb.ai/ayush-thakur/paintlight/reports/Generating-Digital-Painting-Lighting-Effects-via-RGB-space-Geometry--VmlldzoxMTA2Mjg)
 - [An Overview of DeepFaceDrawing](https://wandb.ai/authors/deepfacedrawing/reports/An-Overview-of-DeepFaceDrawing--VmlldzoyMjgxNzM)
@@ -157,12 +272,14 @@ Technical articles and tutorials I've written on the W&B platform—covering dee
 
 - [Converting FC Layers to Conv Layers](https://medium.com/@mein2work/converting-fc-layers-to-conv-layers-8a43880a44ed)
 - [Using CNN to translate American Sign Language](https://medium.com/@mein2work/using-cnn-to-translate-american-sign-language-10d6443f7cd)
+- [Gradient Amplification Attack: Circumventing Defenses Against Backdoor Attacks](https://medium.com/weights-biases/gradient-amplification-attack-circumventing-defenses-against-backdoor-attacks-a28e0e910b3e)
+- [Training with Mixed Precision in TensorFlow 2.0](https://medium.com/towards-data-science/training-with-mixed-precision-in-tensorflow-2-0-7a18a42f5eff)
 
 :::
 
 ---
 
-## Kaggle Notebooks
+## Kaggle Notebooks {#kaggle-notebooks}
 
 ::: {.wandb-reports}
 
