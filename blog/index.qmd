@@ -5,7 +5,7 @@ page-layout: article
 toc: false
 ---
 
-I have published **70 technical reports** and **73 public notebooks** across LLM systems, RAG, deep learning, computer vision, generative modeling, training infrastructure, and applied ML. Much of this work began by reproducing research, testing ideas in code, and explaining what survived contact with an implementation.
+I have published **70 technical reports** and **73 public notebooks** across LLM systems, RAG, deep learning, computer vision, generative modeling, training infrastructure, and applied ML. The archive includes tutorials, research reproductions, implementation notes, and competition notebooks.
 
 ::: {.writing-stats}
 <span><strong>70</strong> technical reports</span>
@@ -39,7 +39,7 @@ Practical work across PyTorch, Lightning, Keras, TensorFlow, Hugging Face, and T
 
 ::: {.writing-area}
 ### Training mechanics
-Optimization, augmentation, class imbalance, metric learning, convolutions, and the small decisions that shape model quality.
+Optimization, augmentation, class imbalance, metric learning, and convolution mechanics.
 
 [Explore 13 reports ↓](#training)
 :::
@@ -98,22 +98,22 @@ Research reproductions and end-to-end notebooks across medical imaging, object d
 ::: {.dense-list}
 ::: {.dense-item}
 <div class="item-meta">2019–2020</div>
-<div class="item-body"><strong>Applied computer vision and technical writing</strong><br>Early projects in sign-language recognition, face analysis, image inpainting, interpretability, and generative modeling established a habit of building and explaining complete systems.</div>
+<div class="item-body"><strong>Applied computer vision and technical writing</strong><br>Built and documented sign-language recognition, face analysis, image inpainting, interpretability, and generative-modeling projects.</div>
 :::
 
 ::: {.dense-item}
 <div class="item-meta">2020–2022</div>
-<div class="item-body"><strong>Deep learning systems and research reproduction</strong><br>Worked across PyTorch, TensorFlow, GANs, self-supervised learning, 3D vision, medical imaging, and the mechanics of reliable model training.</div>
+<div class="item-body"><strong>Deep learning systems and research reproduction</strong><br>Implemented and benchmarked work across PyTorch, TensorFlow, GANs, self-supervised learning, 3D vision, and medical imaging.</div>
 :::
 
 ::: {.dense-item}
 <div class="item-meta">2022–2023</div>
-<div class="item-body"><strong>LLM training and open-source infrastructure</strong><br>Moved into RLHF, Transformers, framework integrations, reproducibility, and the tooling required to inspect increasingly complex training workflows.</div>
+<div class="item-body"><strong>LLM training and open-source infrastructure</strong><br>Worked on RLHF, Transformers, framework integrations, and reproducible training.</div>
 :::
 
 ::: {.dense-item}
 <div class="item-meta">2023–now</div>
-<div class="item-body"><strong>Production RAG, evaluation, and agents</strong><br>Focused on retrieval systems, LLM application evaluation, observability, and the feedback loops needed to improve agentic systems.</div>
+<div class="item-body"><strong>Production RAG, evaluation, and agents</strong><br>Wrote about production RAG, LLM evaluation, observability, and agents.</div>
 :::
 :::
 
@@ -148,7 +148,7 @@ Research reproductions and end-to-end notebooks across medical imaging, object d
 
 ## Complete archive
 
-The complete grouped list follows—no filters or hidden results. You can also browse my [selected work](../work.qmd) and [talks and workshops](../talks.qmd).
+Reports and notebooks are grouped below by topic and publication venue. You can also browse my [work](../work.qmd) and [talks and workshops](../talks.qmd).
 
 ## Weights & Biases Reports
 

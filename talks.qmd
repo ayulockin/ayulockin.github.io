@@ -5,28 +5,28 @@ page-layout: article
 toc: true
 ---
 
-I like teaching through systems I have actually built. My sessions tend to combine a working implementation, the evaluation loop around it, and the mistakes that shaped the final approach. My longer-form courses are documented on the [Work page](work.qmd#courses).
+I give talks and workshops about systems I have built: agent evaluation, production RAG, LLM application design, and MLOps. Courses are listed on the [Work page](work.qmd#courses).
 
 ## Selected talks and workshops
 
 ::: {.talk}
 <div class="item-meta">2025<br>W&B webinar</div>
-<div class="item-body"><strong>[Agent evaluations with CrewAI and W&B Weave](https://wandb.ai/site/resources/events/agent-evals-with-crewai-wb-weave/)</strong><br>With Tony Kipkemboi and João Moura. A practical blueprint for tracing, evaluating, and iterating on agentic applications.</div>
+<div class="item-body"><strong>[Agent evaluations with CrewAI and W&B Weave](https://wandb.ai/site/resources/events/agent-evals-with-crewai-wb-weave/)</strong><br>With Tony Kipkemboi and João Moura. Tracing, evaluating, and iterating on agentic applications.</div>
 :::
 
 ::: {.talk}
 <div class="item-meta">2025<br>DataHack Summit</div>
-<div class="item-body"><strong>[The Missing Piece of AI Apps: Evaluation](https://www.analyticsvidhya.com/datahacksummit-2025/speakers/ayush-thakur-2)</strong><br>How evaluation changes the way teams build LLM applications—from one-off demos to systems that can improve reliably.</div>
+<div class="item-body"><strong>[The Missing Piece of AI Apps: Evaluation](https://www.analyticsvidhya.com/datahacksummit-2025/speakers/ayush-thakur-2)</strong><br>How to define datasets, scorers, and iteration loops for LLM applications.</div>
 :::
 
 ::: {.talk}
 <div class="item-meta">2025<br>ML Kolkata</div>
-<div class="item-body"><strong>[GenAI Workshop: RAG Zero to Hero](https://www.commudle.com/communities/machine-learning-kolkata/events/ml-workshop-with-weights-biases)</strong><br>Two sessions on the modern GenAI landscape and building RAG systems, delivered as a hands-on community workshop.</div>
+<div class="item-body"><strong>[GenAI Workshop: RAG Zero to Hero](https://www.commudle.com/communities/machine-learning-kolkata/events/ml-workshop-with-weights-biases)</strong><br>Two hands-on sessions: an overview of current GenAI systems and a RAG implementation workshop.</div>
 :::
 
 ::: {.talk}
 <div class="item-meta">2024<br>DataHack Summit</div>
-<div class="item-body"><strong>[Enhancing LLMs with Structured Outputs and Function Calling](https://www.analyticsvidhya.com/datahacksummit-2024/speakers/ayush-thakur)</strong><br>Practical patterns for making language-model outputs dependable enough to participate in larger software systems.</div>
+<div class="item-body"><strong>[Enhancing LLMs with Structured Outputs and Function Calling](https://www.analyticsvidhya.com/datahacksummit-2024/speakers/ayush-thakur)</strong><br>Structured outputs and function calling for connecting language models to software.</div>
 :::
 
 ::: {.talk}
@@ -41,7 +41,7 @@ I like teaching through systems I have actually built. My sessions tend to combi
 
 ::: {.talk}
 <div class="item-meta">2024<br>W&B × Cohere</div>
-<div class="item-body"><strong>[Building flexible, evaluation-driven RAG](https://wandb.ai/site/resources/events/cohere-webinar-august/)</strong><br>With Maxime Voisin. Designing RAG systems as measurable pipelines rather than fixed demos.</div>
+<div class="item-body"><strong>[Building flexible, evaluation-driven RAG](https://wandb.ai/site/resources/events/cohere-webinar-august/)</strong><br>With Maxime Voisin. Retrieval design and evaluation for production RAG.</div>
 :::
 
 ::: {.talk}
@@ -51,7 +51,7 @@ I like teaching through systems I have actually built. My sessions tend to combi
 
 ::: {.talk}
 <div class="item-meta">MLOps<br>ODSC</div>
-<div class="item-body"><strong>[Deep dive into end-to-end MLOps using W&B](https://staging6.odsc.com/speakers/deep-dive-into-end-to-end-mlops-using-weights-and-biases/)</strong><br>A complete workflow for tracking experiments and moving from model iteration toward reproducible ML systems.</div>
+<div class="item-body"><strong>[Deep dive into end-to-end MLOps using W&B](https://staging6.odsc.com/speakers/deep-dive-into-end-to-end-mlops-using-weights-and-biases/)</strong><br>Experiment tracking, dataset and model versioning, and reproducible training with W&B.</div>
 :::
 
 ::: {.talk}
@@ -61,6 +61,6 @@ I like teaching through systems I have actually built. My sessions tend to combi
 
 ## Community
 
-I was a **Google Developer Expert in Machine Learning** from 2022 to 2025. I have also taught through GDG communities, Kaggle, W&B events, and local ML groups. This page is a curated record rather than a complete calendar; I will keep adding older sessions as recordings and event pages resurface.
+I was a **Google Developer Expert in Machine Learning** from 2022 to 2025. I have also taught through GDG communities, Kaggle, W&B events, and local ML groups.
 
 For a session, workshop, or collaboration, the best way to reach me is [LinkedIn](https://www.linkedin.com/in/ayush-thakur-731914149/).

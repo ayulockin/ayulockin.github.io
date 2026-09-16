@@ -5,8 +5,9 @@ date: "2023-11-28"
 categories: [llm, rag, techniques]
 image: "images/rag-cover.jpg"
 description: "An overview of Retrieval Augmented Generation (RAG) techniques for enhancing LLM responses with external knowledge"
+draft: true
 ---
 
 # RAG Techniques: From Naive to Advanced
 
-*Content coming soon!* 
+This unpublished placeholder has been superseded by the [RAG++ course](https://wandb.ai/site/courses/rag/).

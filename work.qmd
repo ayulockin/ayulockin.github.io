@@ -1,22 +1,22 @@
 ---
 title: "Work"
-subtitle: "Selected systems, integrations, and educational work."
+subtitle: "AI systems, open-source integrations, courses, and earlier projects."
 page-layout: article
 toc: true
 ---
 
-I work where applied AI meets developer infrastructure: building systems, defining how to evaluate them, and turning what works into tools and explanations other people can use.
+I have worked on internal coding agents, production RAG, LLM evaluation, open-source ML integrations, and technical education.
 
 ## Current work
 
 ::: {.project}
-<div class="item-meta">2025–now<br>W&B / CoreWeave</div>
-<div class="item-body"><strong>Agent engineering</strong><br>Leading work on a background coding agent and the infrastructure around it: internal harness benchmarks, memory, and systems that help agents learn from prior experience. The work combines product engineering with empirical evaluation—making progress measurable rather than anecdotal.<span class="tag">Agents</span><span class="tag">Evaluation</span><span class="tag">Leadership</span></div>
+<div class="item-meta">2025–now<br>W&B by CoreWeave</div>
+<div class="item-body"><strong>Agent engineering</strong><br>Leading a team building an internal coding agent, harness benchmarks, memory, and methods for reusing successful prior runs.<span class="tag">Agents</span><span class="tag">Evaluation</span><span class="tag">Leadership</span></div>
 :::
 
 ::: {.project}
 <div class="item-meta">2025<br>Open ecosystem</div>
-<div class="item-body"><strong>NVIDIA NeMo Agent Toolkit × W&B Weave</strong><br>Worked on evaluation and observability support for agentic workflows built with NVIDIA's framework-agnostic toolkit, making it easier to trace, compare, and improve multi-agent systems.<span class="item-links">[Technical report](https://wandb.ai/wandb_fc/nvidia-nat-ata/reports/Tracking-and-optimizing-agentic-workflows-using-W-B-Weave-and-NVIDIA-NeMo-Agent-Toolkit---VmlldzoxNDQ4NjgyNg)</span><span class="tag">Agents</span><span class="tag">Observability</span></div>
+<div class="item-body"><strong>NVIDIA NeMo Agent Toolkit × W&B Weave</strong><br>Added fine-grained tracing and evaluation support for workflows built with NVIDIA NeMo Agent Toolkit.<span class="item-links">[Technical report](https://wandb.ai/wandb_fc/nvidia-nat-ata/reports/Tracking-and-optimizing-agentic-workflows-using-W-B-Weave-and-NVIDIA-NeMo-Agent-Toolkit---VmlldzoxNDQ4NjgyNg) · [Tracing PR](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/170) · [Evaluation PR](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/264)</span><span class="tag">Agents</span><span class="tag">Observability</span></div>
 :::
 
 ## LLM systems and evaluation
@@ -28,17 +28,17 @@ I work where applied AI meets developer infrastructure: building systems, defini
 
 ::: {.project}
 <div class="item-meta">2023<br>LLM evaluation</div>
-<div class="item-body"><strong>Evaluating, comparing, and optimizing LLM systems</strong><br>Built a practical workflow for comparing system configurations with human labels, LLM judges, retrieval metrics, and parameter search. This work became a foundation for later production systems and courses.<span class="item-links">[Technical report](https://wandb.ai/ayush-thakur/llm-eval-sweep/reports/How-to-Evaluate-Compare-and-Optimize-LLM-Systems--Vmlldzo0NzgyMTQz)</span><span class="tag">LLMOps</span><span class="tag">Evals</span></div>
+<div class="item-body"><strong>Evaluating, comparing, and optimizing LLM systems</strong><br>Built a workflow for comparing system configurations with human labels, LLM judges, retrieval metrics, and parameter search.<span class="item-links">[Technical report](https://wandb.ai/ayush-thakur/llm-eval-sweep/reports/How-to-Evaluate-Compare-and-Optimize-LLM-Systems--Vmlldzo0NzgyMTQz)</span><span class="tag">LLMOps</span><span class="tag">Evals</span></div>
 :::
 
 ::: {.project}
 <div class="item-meta">2023<br>Open source</div>
-<div class="item-body"><strong>LlamaIndex × W&B</strong><br>Built an integration for inspecting retrieval and LLM traces, debugging complex query pipelines, and versioning indexes and embeddings. The accompanying walkthrough showed how those primitives support evaluation-driven RAG development.<span class="item-links">[Walkthrough](https://wandb.ai/ayush-thakur/llama-index-report/reports/Building-Advanced-Query-Engine-and-Evaluation-with-LlamaIndex-and-W-B--Vmlldzo0OTIzMjMy)</span><span class="tag">LlamaIndex</span><span class="tag">Tracing</span></div>
+<div class="item-body"><strong>LlamaIndex × W&B</strong><br>Built W&B instrumentation for retrieval and LLM traces, debugging query pipelines, and versioning indexes and embeddings.<span class="item-links">[Walkthrough](https://wandb.ai/ayush-thakur/llama-index-report/reports/Building-Advanced-Query-Engine-and-Evaluation-with-LlamaIndex-and-W-B--Vmlldzo0OTIzMjMy)</span><span class="tag">LlamaIndex</span><span class="tag">Tracing</span></div>
 :::
 
 ## Tools and integrations
 
-My public GitHub history includes 200 merged pull requests. Much of that work made experiment tracking, model evaluation, and application tracing feel native inside the tools developers already used.
+My public GitHub history includes 200 merged pull requests. The groups below cover the largest integration projects.
 
 ::: {.project}
 <div class="item-meta">2022–2023<br>Keras</div>
@@ -65,7 +65,7 @@ My public GitHub history includes 200 merged pull requests. Much of that work ma
 <div class="item-body"><strong>Tracing and evaluation across agent frameworks</strong><br>Extended support for DSPy, MCP, LlamaIndex, CrewAI, Verifiers, and NVIDIA NeMo Agent Toolkit, including fine-grained tracing and evaluation inside external framework repositories.<span class="item-links">[NeMo tracing](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/170) · [NeMo evaluation](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/264) · [MCP](https://github.com/wandb/weave/pull/4030) · [DSPy](https://github.com/wandb/wandb/pull/10327) · [Verifiers](https://github.com/wandb/weave/pull/5462) · [CrewAI](https://github.com/crewAIInc/crewAI/pull/2463)</span><span class="tag">Agents</span><span class="tag">Tracing</span><span class="tag">Evals</span></div>
 :::
 
-I also helped build W&B's Kaggle Ambassador program, connecting practitioners, reusable notebooks, and experiment-tracking education. Along the way I became a [Kaggle Notebooks Master](https://www.kaggle.com/ayuraj), with notebooks spanning object detection, medical imaging, reproducibility, and interactive visualization.
+I also helped build W&B's Kaggle Ambassador program and became a [Kaggle Notebooks Master](https://www.kaggle.com/ayuraj). My notebooks span object detection, medical imaging, reproducibility, and interactive visualization.
 
 ## Research publication
 
@@ -97,15 +97,15 @@ I also helped build W&B's Kaggle Ambassador program, connecting practitioners, r
 
 ::: {.project}
 <div class="item-meta">2020<br>Computer vision</div>
-<div class="item-body"><strong>Faceless</strong><br>Built a multitask face-analysis pipeline with TensorFlow and OpenCV for face detection and attribute prediction. It was an early bridge between independent ML projects, technical writing, and my work at W&B.<span class="tag">TensorFlow</span><span class="tag">OpenCV</span></div>
+<div class="item-body"><strong>Faceless</strong><br>Built a multitask face-analysis pipeline with TensorFlow and OpenCV for face detection and attribute prediction.<span class="tag">TensorFlow</span><span class="tag">OpenCV</span></div>
 :::
 
 ::: {.project}
 <div class="item-meta">2019<br>Applied ML</div>
-<div class="item-body"><strong>American Sign Language classifier</strong><br>Built and documented an end-to-end CNN project for recognizing ASL letters—one of my first attempts to explain a complete computer-vision system in public.<span class="item-links">[Read the article](https://medium.com/@mein2work/using-cnn-to-translate-american-sign-language-10d6443f7cd)</span><span class="tag">CNN</span><span class="tag">Writing</span></div>
+<div class="item-body"><strong>American Sign Language classifier</strong><br>Built and documented an end-to-end CNN project for recognizing ASL letters.<span class="item-links">[Read the article](https://medium.com/@mein2work/using-cnn-to-translate-american-sign-language-10d6443f7cd)</span><span class="tag">CNN</span><span class="tag">Writing</span></div>
 :::
 
 ::: {.project}
 <div class="item-meta">2016–2019<br>Robotics</div>
-<div class="item-body"><strong>Autonomous robots</strong><br>Built a progression of line-following, maze-solving, object-detection, and grid-navigation robots. One system avoided obstacles, explored a grid, and retraced the shortest route. These projects gave me the systems instinct I later brought to ML infrastructure and agent engineering.<span class="tag">Embedded systems</span><span class="tag">Navigation</span></div>
+<div class="item-body"><strong>Autonomous robots</strong><br>Built line-following, maze-solving, object-detection, and grid-navigation robots. One system avoided obstacles, explored a grid, and retraced the shortest route.<span class="tag">Embedded systems</span><span class="tag">Navigation</span></div>
 :::

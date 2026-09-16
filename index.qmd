@@ -17,11 +17,11 @@ css: index.css
 
 I build and evaluate AI systems.
 
-I am a **Manager, AI Engineering** at [Weights & Biases](https://wandb.ai/) by CoreWeave. I am currently working on internal coding agents, evaluation harnesses, memory, and systems that improve through their own experience.
+I am a **Manager, AI Engineering** at [Weights & Biases](https://wandb.ai/) by CoreWeave. I work on internal coding agents, harness benchmarks, memory, and methods for learning from previous runs.
 
-Previously, I was a growth MLE at W&B. I built [open-source MLOps and LLMOps integrations](work.qmd), production RAG systems such as [Wandbot](http://wandb.me/wandbot-refactor), [technical courses](talks.qmd), and a large body of [practical ML writing](blog/index.qmd). My work helped grow W&B's brand and made its tools more useful and accessible to the ML community.
+Previously, I was a growth MLE at W&B. I built [open-source integrations](work.qmd#tools-and-integrations), production RAG systems such as [Wandbot](http://wandb.me/wandbot-refactor), [technical courses](work.qmd#courses), and [practical ML writing](blog/index.qmd). This work helped developers adopt W&B across training, evaluation, and LLM application workflows.
 
-I began working on autonomous robots and computer vision early in my career, and that experience shaped how I approach engineering: move with urgency, stay close to real problems, learn by building, and take ownership from an idea through to a working outcome. I am always interested in collaborating with researchers and engineers who want to turn ambitious questions into useful systems and share what we learn along the way.
+I started with autonomous robots and computer vision. Those projects taught me to work quickly, test ideas in hardware and code, and own the result. I am looking for research collaborators working on agents, memory, and learning from experience.
 
 <div class="hero-links">
 [GitHub](https://github.com/ayulockin) · [LinkedIn](https://www.linkedin.com/in/ayush-thakur-731914149/) · [Kaggle](https://www.kaggle.com/ayuraj) · [Writing](blog/index.qmd)
@@ -45,7 +45,7 @@ I began working on autonomous robots and computer vision early in my career, and
 ::: {.experience-list}
 ::: {.experience-item}
 <span>2025–now</span>
-<div><strong>Manager, AI Engineering · W&B / CoreWeave</strong><br>Agent engineering, internal productivity, evaluation harnesses, and applied research.</div>
+<div><strong>Manager, AI Engineering · W&B by CoreWeave</strong><br>Agent engineering, internal productivity, evaluation harnesses, and applied research.</div>
 :::
 
 ::: {.experience-item}
@@ -78,7 +78,7 @@ I have published **70 technical reports** and **73 public notebooks** across LLM
 
 ## Earlier
 
-I studied Electronics and Communication Engineering at Netaji Subhash Engineering College, Kolkata. College began with autonomous robots: line followers, maze solvers, and a grid-navigation robot that could avoid obstacles and retrace the shortest route. That work taught me the systems instinct I still rely on when debugging ML and agentic systems.
+I studied Electronics and Communication Engineering at Netaji Subhash Engineering College, Kolkata. During college I built line followers, maze solvers, and a grid-navigation robot that avoided obstacles and retraced the shortest route.
 
 [Read the longer background →](about.qmd)
 

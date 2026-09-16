@@ -1,20 +1,18 @@
 ---
 title: "About"
-subtitle: "From small robots to systems that evaluate AI systems."
+subtitle: "AI engineering, technical education, and the path from robotics to agents."
 page-layout: article
 toc: true
 ---
 
-I am an AI engineer and technical educator based in India. I currently lead AI engineering work at [Weights & Biases](https://wandb.ai/) (part of CoreWeave), focused on coding agents, evaluation harnesses, memory, and improvement loops for agentic systems.
+I am an AI engineer and technical educator based in India. I lead AI engineering work at [Weights & Biases](https://wandb.ai/) by CoreWeave on internal coding agents, harness benchmarks, and memory.
 
-The short version of my work is: **build the system, measure it honestly, and teach what survives contact with reality.**
-
-## Path
+## Timeline
 
 ::: {.dense-list}
 ::: {.dense-item}
 <div class="item-meta">2025–now</div>
-<div class="item-body"><strong>Agent engineering and leadership</strong><br>Leading a team working on coding agents, internal benchmarks, memory, and applied research at W&B / CoreWeave.</div>
+<div class="item-body"><strong>Agent engineering and leadership</strong><br>Leading a team working on coding agents, internal benchmarks, memory, and applied research at W&B by CoreWeave.</div>
 :::
 
 ::: {.dense-item}
@@ -35,9 +33,7 @@ The short version of my work is: **build the system, measure it honestly, and te
 
 ## How I work
 
-I am drawn to the part of AI engineering that is difficult to see in a demo: instrumentation, datasets, failure analysis, evaluation criteria, and the feedback loops that make a system improve. I enjoy moving between implementation and explanation—building a tool, stress-testing it, and then writing or teaching the reusable idea behind it.
-
-That pattern connects most of my work: integrations that expose what a model is doing, evaluations that replace intuition with evidence, and courses that turn months of engineering lessons into a path someone else can follow.
+I prefer work with a short path from question to evidence. I build an initial version, instrument it, inspect failures, and decide what to change. Writing is part of that process: it forces me to state what I observed and makes the result reusable.
 
 ## Recognition
 
@@ -50,9 +46,8 @@ That pattern connects most of my work: integrations that expose what a model is 
 
 When I was ten, a teacher asked what I wanted to become. I said “engineer.” Asked to spell it, I got it wrong, and was told that someone who could not spell the word could not become one.
 
-I kept the misspelling—**Enginear**—as a reminder that an early mistake is not a verdict. Curiosity, practice, and the willingness to keep building matter much more.
+I kept the misspelling—**Enginear**—as the name of this site.
 
 ## Elsewhere
 
 [GitHub](https://github.com/ayulockin) · [LinkedIn](https://www.linkedin.com/in/ayush-thakur-731914149/) · [Kaggle](https://www.kaggle.com/ayuraj) · [Writing](blog/index.qmd) · [Talks](talks.qmd)
-
