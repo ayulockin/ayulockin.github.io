@@ -1,59 +1,31 @@
 [
   {
-    "objectID": "blog/posts/welcome/index.html",
-    "href": "blog/posts/welcome/index.html",
-    "title": "Welcome to My Blog",
-    "section": "",
-    "text": "Hello! Welcome to my personal blog. This is where I’ll be sharing my thoughts, learnings, and insights about:\n\nMachine Learning & AI: Latest developments, techniques, and applications\nEngineering: Problem-solving approaches and technical solutions\nCareer & Growth: Lessons learned and experiences in tech\nLife & Learning: Personal reflections and continuous learning journey\n\nI believe in keeping things simple and focused. This blog is my digital notebook where I capture ideas, document learning, and share what I discover along the way.\n\n\nI’ll be writing about:\n\nTechnical deep-dives into ML/AI topics\nCareer insights and lessons learned\nTools and techniques I find useful\nThoughts on the future of technology\n\n\n\n\nFeel free to reach out to me on Twitter or LinkedIn if you’d like to discuss any of these topics!\nHappy reading! 🚀"
-  },
-  {
-    "objectID": "blog/posts/welcome/index.html#what-to-expect",
-    "href": "blog/posts/welcome/index.html#what-to-expect",
-    "title": "Welcome to My Blog",
-    "section": "",
-    "text": "I’ll be writing about:\n\nTechnical deep-dives into ML/AI topics\nCareer insights and lessons learned\nTools and techniques I find useful\nThoughts on the future of technology"
-  },
-  {
-    "objectID": "blog/posts/welcome/index.html#lets-connect",
-    "href": "blog/posts/welcome/index.html#lets-connect",
-    "title": "Welcome to My Blog",
-    "section": "",
-    "text": "Feel free to reach out to me on Twitter or LinkedIn if you’d like to discuss any of these topics!\nHappy reading! 🚀"
-  },
-  {
-    "objectID": "blog/posts/llm-evaluation.html",
-    "href": "blog/posts/llm-evaluation.html",
-    "title": "The State of LLM Evaluation",
-    "section": "",
-    "text": "The State of LLM Evaluation\nContent coming soon!\nCheck out my repository for more information on LLM evaluation approaches: LLM Evaluation Strategies"
-  },
-  {
     "objectID": "talks.html",
     "href": "talks.html",
     "title": "Talks & workshops",
     "section": "",
-    "text": "I like teaching through systems I have actually built. My sessions tend to combine a working implementation, the evaluation loop around it, and the mistakes that shaped the final approach. My longer-form courses are documented on the Work page."
+    "text": "I give talks and workshops about systems I have built: agent evaluation, production RAG, LLM application design, and MLOps. Courses are listed on the Work page."
   },
   {
     "objectID": "talks.html#selected-talks-and-workshops",
     "href": "talks.html#selected-talks-and-workshops",
     "title": "Talks & workshops",
     "section": "Selected talks and workshops",
-    "text": "Selected talks and workshops\n\n\n2025W&B webinar\n\n\nAgent evaluations with CrewAI and W&B WeaveWith Tony Kipkemboi and João Moura. A practical blueprint for tracing, evaluating, and iterating on agentic applications.\n\n\n\n\n2025DataHack Summit\n\n\nThe Missing Piece of AI Apps: EvaluationHow evaluation changes the way teams build LLM applications—from one-off demos to systems that can improve reliably.\n\n\n\n\n2025ML Kolkata\n\n\nGenAI Workshop: RAG Zero to HeroTwo sessions on the modern GenAI landscape and building RAG systems, delivered as a hands-on community workshop.\n\n\n\n\n2024DataHack Summit\n\n\nEnhancing LLMs with Structured Outputs and Function CallingPractical patterns for making language-model outputs dependable enough to participate in larger software systems.\n\n\n\n\n2024W&B webinar\n\n\nFine-tune Command R/R+ using Cohere and W&BWith Komal Teru. Establishing baselines, tracking fine-tuning, and evaluating results for Cohere’s Command models.\n\n\n\n\n2024W&B webinar\n\n\nOptimizing LLM apps at scaleWith Bharat Ramanathan. Lessons from evaluating Wandbot and building multilingual leaderboards for real RAG systems.\n\n\n\n\n2024W&B × Cohere\n\n\nBuilding flexible, evaluation-driven RAGWith Maxime Voisin. Designing RAG systems as measurable pipelines rather than fixed demos.\n\n\n\n\n2023W&B\n\n\nLLMs for the mass marketWith Bharat Ramanathan and Ian Webster. Evaluation and internal-productivity lessons from deploying LLM-powered tools.\n\n\n\n\nMLOpsODSC\n\n\nDeep dive into end-to-end MLOps using W&BA complete workflow for tracking experiments and moving from model iteration toward reproducible ML systems.\n\n\n\n\n2019GDG Kolkata\n\n\nDeep Learning for Detection and SegmentationAn early community talk on practical computer-vision pipelines for object detection and semantic segmentation."
+    "text": "Selected talks and workshops\n\n\n2025W&B webinar\n\n\nAgent evaluations with CrewAI and W&B WeaveWith Tony Kipkemboi and João Moura. Tracing, evaluating, and iterating on agentic applications.\n\n\n\n\n2025DataHack Summit\n\n\nThe Missing Piece of AI Apps: EvaluationHow to define datasets, scorers, and iteration loops for LLM applications.\n\n\n\n\n2025ML Kolkata\n\n\nGenAI Workshop: RAG Zero to HeroTwo hands-on sessions: an overview of current GenAI systems and a RAG implementation workshop.\n\n\n\n\n2024DataHack Summit\n\n\nEnhancing LLMs with Structured Outputs and Function CallingStructured outputs and function calling for connecting language models to software.\n\n\n\n\n2024W&B webinar\n\n\nFine-tune Command R/R+ using Cohere and W&BWith Komal Teru. Establishing baselines, tracking fine-tuning, and evaluating results for Cohere’s Command models.\n\n\n\n\n2024W&B webinar\n\n\nOptimizing LLM apps at scaleWith Bharat Ramanathan. Lessons from evaluating Wandbot and building multilingual leaderboards for real RAG systems.\n\n\n\n\n2024W&B × Cohere\n\n\nBuilding flexible, evaluation-driven RAGWith Maxime Voisin. Retrieval design and evaluation for production RAG.\n\n\n\n\n2023W&B\n\n\nLLMs for the mass marketWith Bharat Ramanathan and Ian Webster. Evaluation and internal-productivity lessons from deploying LLM-powered tools.\n\n\n\n\nMLOpsODSC\n\n\nDeep dive into end-to-end MLOps using W&BExperiment tracking, dataset and model versioning, and reproducible training with W&B.\n\n\n\n\n2019GDG Kolkata\n\n\nDeep Learning for Detection and SegmentationAn early community talk on practical computer-vision pipelines for object detection and semantic segmentation."
   },
   {
     "objectID": "talks.html#community",
     "href": "talks.html#community",
     "title": "Talks & workshops",
     "section": "Community",
-    "text": "Community\nI was a Google Developer Expert in Machine Learning from 2022 to 2025. I have also taught through GDG communities, Kaggle, W&B events, and local ML groups. This page is a curated record rather than a complete calendar; I will keep adding older sessions as recordings and event pages resurface.\nFor a session, workshop, or collaboration, the best way to reach me is LinkedIn."
+    "text": "Community\nI was a Google Developer Expert in Machine Learning from 2022 to 2025. I have also taught through GDG communities, Kaggle, W&B events, and local ML groups.\nFor a session, workshop, or collaboration, the best way to reach me is LinkedIn."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Ayush Thakur",
     "section": "",
-    "text": "I build and evaluate AI systems.\nI am a Manager, AI Engineering at Weights & Biases by CoreWeave. I am currently working on internal coding agents, evaluation harnesses, memory, and systems that improve through their own experience.\nPreviously, I was a growth MLE at W&B. I built open-source MLOps and LLMOps integrations, production RAG systems such as Wandbot, technical courses, and a large body of practical ML writing. My work helped grow W&B’s brand and made its tools more useful and accessible to the ML community.\nI began working on autonomous robots and computer vision early in my career, and that experience shaped how I approach engineering: move with urgency, stay close to real problems, learn by building, and take ownership from an idea through to a working outcome. I am always interested in collaborating with researchers and engineers who want to turn ambitious questions into useful systems and share what we learn along the way.\n\nGitHub · LinkedIn · Kaggle · Writing\n\n\n\n\n\n\n\n2026\n\nWon a solo silver medal, ranking 132nd of 4,729 teams, in Kaggle Orbit Wars.\n\n\n\n2025\n\nStarted leading AI engineering work at W&B.\n\n\n\n2025\n\nShipped evaluation and observability support for the NVIDIA NeMo Agent Toolkit.\n\n\n\n2025\n\nReleased LLM apps: Evaluation, created with Anish Shah and guest instructors from Google and All Hands AI.\n\n\n\n2024\n\nReleased RAG++ and published the results of the Wandbot refactor.\n\n\n\n\n\n\n\n\n2025–now\n\nManager, AI Engineering · W&B / CoreWeaveAgent engineering, internal productivity, evaluation harnesses, and applied research.\n\n\n\n2020–2025\n\nMachine Learning Engineer · Weights & BiasesOpen-source integrations, LLM evaluation, Wandbot, courses, Kaggle programs, and technical education.\n\n\n\n2020\n\nTechnical Author · Weights & BiasesTechnical reports on deep learning, computer vision, and practical ML engineering.\n\n\n\nMore about my work →\n\n\n\nI have published 70 technical reports and 73 public notebooks across LLM systems, RAG, deep learning, computer vision, generative modeling, training infrastructure, and applied ML. I have also helped create three free technical courses and spoken at W&B events, DataHack Summit, GDG communities, and local ML workshops.\n\nExplore the bodies of work →\nBrowse the complete writing archive →\nTalks and workshops →\n\n\n\n\n\n\n2020IEEE ICCE\n\n\nFeature extraction and classification of phonocardiograms using convolutional neural networksWith Devjyoti Chakraborty, Snehangshu Bhattacharya, Aritra Roy Gosthipaty, and Chira Datta. We transformed heart-sound recordings into spectrograms and used convolutional neural networks to classify normal and abnormal phonocardiograms.IEEE · Google Scholar\n\n\n\n\n\nI studied Electronics and Communication Engineering at Netaji Subhash Engineering College, Kolkata. College began with autonomous robots: line followers, maze solvers, and a grid-navigation robot that could avoid obstacles and retrace the shortest route. That work taught me the systems instinct I still rely on when debugging ML and agentic systems.\nRead the longer background →"
+    "text": "I build and evaluate AI systems.\nI am a Manager, AI Engineering at Weights & Biases by CoreWeave. I work on internal coding agents, harness benchmarks, memory, and methods for learning from previous runs.\nPreviously, I was a growth MLE at W&B. I built open-source integrations, production RAG systems such as Wandbot, technical courses, and practical ML writing. This work helped developers adopt W&B across training, evaluation, and LLM application workflows.\nI started with autonomous robots and computer vision. Those projects taught me to work quickly, test ideas in hardware and code, and own the result. I am looking for research collaborators working on agents, memory, and learning from experience.\n\nGitHub · LinkedIn · Kaggle · Writing\n\n\n\n\n\n\n\n2026\n\nWon a solo silver medal, ranking 132nd of 4,729 teams, in Kaggle Orbit Wars.\n\n\n\n2025\n\nStarted leading AI engineering work at W&B.\n\n\n\n2025\n\nShipped evaluation and observability support for the NVIDIA NeMo Agent Toolkit.\n\n\n\n2025\n\nReleased LLM apps: Evaluation, created with Anish Shah and guest instructors from Google and All Hands AI.\n\n\n\n2024\n\nReleased RAG++ and published the results of the Wandbot refactor.\n\n\n\n\n\n\n\n\n2025–now\n\nManager, AI Engineering · W&B by CoreWeaveAgent engineering, internal productivity, evaluation harnesses, and applied research.\n\n\n\n2020–2025\n\nMachine Learning Engineer · Weights & BiasesOpen-source integrations, LLM evaluation, Wandbot, courses, Kaggle programs, and technical education.\n\n\n\n2020\n\nTechnical Author · Weights & BiasesTechnical reports on deep learning, computer vision, and practical ML engineering.\n\n\n\nMore about my work →\n\n\n\nI have published 70 technical reports and 73 public notebooks across LLM systems, RAG, deep learning, computer vision, generative modeling, training infrastructure, and applied ML. I have also helped create three free technical courses and spoken at W&B events, DataHack Summit, GDG communities, and local ML workshops.\n\nExplore the bodies of work →\nBrowse the complete writing archive →\nTalks and workshops →\n\n\n\n\n\n\n2020IEEE ICCE\n\n\nFeature extraction and classification of phonocardiograms using convolutional neural networksWith Devjyoti Chakraborty, Snehangshu Bhattacharya, Aritra Roy Gosthipaty, and Chira Datta. We transformed heart-sound recordings into spectrograms and used convolutional neural networks to classify normal and abnormal phonocardiograms.IEEE · Google Scholar\n\n\n\n\n\nI studied Electronics and Communication Engineering at Netaji Subhash Engineering College, Kolkata. During college I built line followers, maze solvers, and a grid-navigation robot that avoided obstacles and retraced the shortest route.\nRead the longer background →"
   },
   {
     "objectID": "index.html#news",
@@ -67,7 +39,7 @@
     "href": "index.html#experience-in-brief",
     "title": "Ayush Thakur",
     "section": "",
-    "text": "2025–now\n\nManager, AI Engineering · W&B / CoreWeaveAgent engineering, internal productivity, evaluation harnesses, and applied research.\n\n\n\n2020–2025\n\nMachine Learning Engineer · Weights & BiasesOpen-source integrations, LLM evaluation, Wandbot, courses, Kaggle programs, and technical education.\n\n\n\n2020\n\nTechnical Author · Weights & BiasesTechnical reports on deep learning, computer vision, and practical ML engineering.\n\n\n\nMore about my work →"
+    "text": "2025–now\n\nManager, AI Engineering · W&B by CoreWeaveAgent engineering, internal productivity, evaluation harnesses, and applied research.\n\n\n\n2020–2025\n\nMachine Learning Engineer · Weights & BiasesOpen-source integrations, LLM evaluation, Wandbot, courses, Kaggle programs, and technical education.\n\n\n\n2020\n\nTechnical Author · Weights & BiasesTechnical reports on deep learning, computer vision, and practical ML engineering.\n\n\n\nMore about my work →"
   },
   {
     "objectID": "index.html#writing-and-teaching",
@@ -88,35 +60,35 @@
     "href": "index.html#earlier",
     "title": "Ayush Thakur",
     "section": "",
-    "text": "I studied Electronics and Communication Engineering at Netaji Subhash Engineering College, Kolkata. College began with autonomous robots: line followers, maze solvers, and a grid-navigation robot that could avoid obstacles and retrace the shortest route. That work taught me the systems instinct I still rely on when debugging ML and agentic systems.\nRead the longer background →"
+    "text": "I studied Electronics and Communication Engineering at Netaji Subhash Engineering College, Kolkata. During college I built line followers, maze solvers, and a grid-navigation robot that avoided obstacles and retraced the shortest route.\nRead the longer background →"
   },
   {
     "objectID": "work.html",
     "href": "work.html",
     "title": "Work",
     "section": "",
-    "text": "I work where applied AI meets developer infrastructure: building systems, defining how to evaluate them, and turning what works into tools and explanations other people can use."
+    "text": "I have worked on internal coding agents, production RAG, LLM evaluation, open-source ML integrations, and technical education."
   },
   {
     "objectID": "work.html#current-work",
     "href": "work.html#current-work",
     "title": "Work",
     "section": "Current work",
-    "text": "Current work\n\n\n2025–nowW&B / CoreWeave\n\n\nAgent engineeringLeading work on a background coding agent and the infrastructure around it: internal harness benchmarks, memory, and systems that help agents learn from prior experience. The work combines product engineering with empirical evaluation—making progress measurable rather than anecdotal.AgentsEvaluationLeadership\n\n\n\n\n2025Open ecosystem\n\n\nNVIDIA NeMo Agent Toolkit × W&B WeaveWorked on evaluation and observability support for agentic workflows built with NVIDIA’s framework-agnostic toolkit, making it easier to trace, compare, and improve multi-agent systems.Technical reportAgentsObservability"
+    "text": "Current work\n\n\n2025–nowW&B by CoreWeave\n\n\nAgent engineeringLeading a team building an internal coding agent, harness benchmarks, memory, and methods for reusing successful prior runs.AgentsEvaluationLeadership\n\n\n\n\n2025Open ecosystem\n\n\nNVIDIA NeMo Agent Toolkit × W&B WeaveAdded fine-grained tracing and evaluation support for workflows built with NVIDIA NeMo Agent Toolkit.Technical report · Tracing PR · Evaluation PRAgentsObservability"
   },
   {
     "objectID": "work.html#llm-systems-and-evaluation",
     "href": "work.html#llm-systems-and-evaluation",
     "title": "Work",
     "section": "LLM systems and evaluation",
-    "text": "LLM systems and evaluation\n\n\n2024Production RAG\n\n\nWandbot: an evaluation-driven refactorReworked W&B’s open-source documentation assistant around systematic evaluation. Answer accuracy rose from 72% to 81%, latency fell by 84%, and a full evaluation run went from roughly two hours to under ten minutes. Nearly 50 experiments made the trade-offs between quality, speed, and cost visible.Read the case study · SourceRAGEvaluationProduction\n\n\n\n\n2023LLM evaluation\n\n\nEvaluating, comparing, and optimizing LLM systemsBuilt a practical workflow for comparing system configurations with human labels, LLM judges, retrieval metrics, and parameter search. This work became a foundation for later production systems and courses.Technical reportLLMOpsEvals\n\n\n\n\n2023Open source\n\n\nLlamaIndex × W&BBuilt an integration for inspecting retrieval and LLM traces, debugging complex query pipelines, and versioning indexes and embeddings. The accompanying walkthrough showed how those primitives support evaluation-driven RAG development.WalkthroughLlamaIndexTracing"
+    "text": "LLM systems and evaluation\n\n\n2024Production RAG\n\n\nWandbot: an evaluation-driven refactorReworked W&B’s open-source documentation assistant around systematic evaluation. Answer accuracy rose from 72% to 81%, latency fell by 84%, and a full evaluation run went from roughly two hours to under ten minutes. Nearly 50 experiments made the trade-offs between quality, speed, and cost visible.Read the case study · SourceRAGEvaluationProduction\n\n\n\n\n2023LLM evaluation\n\n\nEvaluating, comparing, and optimizing LLM systemsBuilt a workflow for comparing system configurations with human labels, LLM judges, retrieval metrics, and parameter search.Technical reportLLMOpsEvals\n\n\n\n\n2023Open source\n\n\nLlamaIndex × W&BBuilt W&B instrumentation for retrieval and LLM traces, debugging query pipelines, and versioning indexes and embeddings.WalkthroughLlamaIndexTracing"
   },
   {
     "objectID": "work.html#tools-and-integrations",
     "href": "work.html#tools-and-integrations",
     "title": "Work",
     "section": "Tools and integrations",
-    "text": "Tools and integrations\nMy public GitHub history includes 200 merged pull requests. Much of that work made experiment tracking, model evaluation, and application tracing feel native inside the tools developers already used.\n\n\n2022–2023Keras\n\n\nA new generation of W&B callbacks for KerasAdded dedicated callbacks for metrics logging, model checkpointing, and rich model-prediction tables, alongside fixes for SavedModel and distributed-training workflows.Metrics logger · Model checkpointing · Evaluation tables · Distributed trainingKerasTensorFlow\n\n\n\n\n2022OpenMMLab\n\n\nNative experiment-tracking hooks across the OpenMMLab stackBuilt dedicated W&B integrations for object detection, image classification, and semantic segmentation, then followed them with maintenance fixes and runnable examples.MMDetection · MMClassification · MMSegmentationComputer visionOpenMMLab\n\n\n\n\n2021–2022Training\n\n\nIntegrations for widely used ML librariesImproved experiment tracking for XGBoost and LightGBM, added CatBoost support, and contributed integrations to RecBole, ConvNeXt, DALL·E Mini, and image-super-resolution projects.XGBoost · LightGBM · CatBoost · ConvNeXtBoostingDeep learning\n\n\n\n\n2023–2024LLM systems\n\n\nInstrumentation and evaluation for emerging LLM stacksAdded W&B instrumentation to LlamaIndex and integration support to EleutherAI’s LM Evaluation Harness; updated OpenAI fine-tuning, Cohere v2, and Wandbot evaluation workflows as their underlying APIs evolved.LlamaIndex · LM Evaluation Harness · OpenAI · Cohere · WandbotLLMOpsEvaluation\n\n\n\n\n2025–2026Agents\n\n\nTracing and evaluation across agent frameworksExtended support for DSPy, MCP, LlamaIndex, CrewAI, Verifiers, and NVIDIA NeMo Agent Toolkit, including fine-grained tracing and evaluation inside external framework repositories.NeMo tracing · NeMo evaluation · MCP · DSPy · Verifiers · CrewAIAgentsTracingEvals\n\n\nI also helped build W&B’s Kaggle Ambassador program, connecting practitioners, reusable notebooks, and experiment-tracking education. Along the way I became a Kaggle Notebooks Master, with notebooks spanning object detection, medical imaging, reproducibility, and interactive visualization."
+    "text": "Tools and integrations\nMy public GitHub history includes 200 merged pull requests. The groups below cover the largest integration projects.\n\n\n2022–2023Keras\n\n\nA new generation of W&B callbacks for KerasAdded dedicated callbacks for metrics logging, model checkpointing, and rich model-prediction tables, alongside fixes for SavedModel and distributed-training workflows.Metrics logger · Model checkpointing · Evaluation tables · Distributed trainingKerasTensorFlow\n\n\n\n\n2022OpenMMLab\n\n\nNative experiment-tracking hooks across the OpenMMLab stackBuilt dedicated W&B integrations for object detection, image classification, and semantic segmentation, then followed them with maintenance fixes and runnable examples.MMDetection · MMClassification · MMSegmentationComputer visionOpenMMLab\n\n\n\n\n2021–2022Training\n\n\nIntegrations for widely used ML librariesImproved experiment tracking for XGBoost and LightGBM, added CatBoost support, and contributed integrations to RecBole, ConvNeXt, DALL·E Mini, and image-super-resolution projects.XGBoost · LightGBM · CatBoost · ConvNeXtBoostingDeep learning\n\n\n\n\n2023–2024LLM systems\n\n\nInstrumentation and evaluation for emerging LLM stacksAdded W&B instrumentation to LlamaIndex and integration support to EleutherAI’s LM Evaluation Harness; updated OpenAI fine-tuning, Cohere v2, and Wandbot evaluation workflows as their underlying APIs evolved.LlamaIndex · LM Evaluation Harness · OpenAI · Cohere · WandbotLLMOpsEvaluation\n\n\n\n\n2025–2026Agents\n\n\nTracing and evaluation across agent frameworksExtended support for DSPy, MCP, LlamaIndex, CrewAI, Verifiers, and NVIDIA NeMo Agent Toolkit, including fine-grained tracing and evaluation inside external framework repositories.NeMo tracing · NeMo evaluation · MCP · DSPy · Verifiers · CrewAIAgentsTracingEvals\n\n\nI also helped build W&B’s Kaggle Ambassador program and became a Kaggle Notebooks Master. My notebooks span object detection, medical imaging, reproducibility, and interactive visualization."
   },
   {
     "objectID": "work.html#research-publication",
@@ -137,21 +109,21 @@
     "href": "work.html#earlier-work",
     "title": "Work",
     "section": "Earlier work",
-    "text": "Earlier work\n\n\n2020Computer vision\n\n\nFacelessBuilt a multitask face-analysis pipeline with TensorFlow and OpenCV for face detection and attribute prediction. It was an early bridge between independent ML projects, technical writing, and my work at W&B.TensorFlowOpenCV\n\n\n\n\n2019Applied ML\n\n\nAmerican Sign Language classifierBuilt and documented an end-to-end CNN project for recognizing ASL letters—one of my first attempts to explain a complete computer-vision system in public.Read the articleCNNWriting\n\n\n\n\n2016–2019Robotics\n\n\nAutonomous robotsBuilt a progression of line-following, maze-solving, object-detection, and grid-navigation robots. One system avoided obstacles, explored a grid, and retraced the shortest route. These projects gave me the systems instinct I later brought to ML infrastructure and agent engineering.Embedded systemsNavigation"
+    "text": "Earlier work\n\n\n2020Computer vision\n\n\nFacelessBuilt a multitask face-analysis pipeline with TensorFlow and OpenCV for face detection and attribute prediction.TensorFlowOpenCV\n\n\n\n\n2019Applied ML\n\n\nAmerican Sign Language classifierBuilt and documented an end-to-end CNN project for recognizing ASL letters.Read the articleCNNWriting\n\n\n\n\n2016–2019Robotics\n\n\nAutonomous robotsBuilt line-following, maze-solving, object-detection, and grid-navigation robots. One system avoided obstacles, explored a grid, and retraced the shortest route.Embedded systemsNavigation"
   },
   {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
     "title": "Writing",
     "section": "",
-    "text": "I have published 70 technical reports and 73 public notebooks across LLM systems, RAG, deep learning, computer vision, generative modeling, training infrastructure, and applied ML. Much of this work began by reproducing research, testing ideas in code, and explaining what survived contact with an implementation."
+    "text": "I have published 70 technical reports and 73 public notebooks across LLM systems, RAG, deep learning, computer vision, generative modeling, training infrastructure, and applied ML. The archive includes tutorials, research reproductions, implementation notes, and competition notebooks."
   },
   {
     "objectID": "blog/index.html#bodies-of-work",
     "href": "blog/index.html#bodies-of-work",
     "title": "Writing",
     "section": "Bodies of work",
-    "text": "Bodies of work\n\n\nLLM systems, RLHF, and RAG\nFrom preference modeling and RLHF implementations to retrieval pipelines and systematic LLM evaluation.\nExplore 6 reports ↓\n\n\nComputer vision and generative imaging\nDetection, segmentation, interpretability, GAN evaluation, limited-data training, colorization, and image editing.\nExplore 11 reports ↓\n\n\nFramework practice\nPractical work across PyTorch, Lightning, Keras, TensorFlow, Hugging Face, and Transformers.\nExplore 24 reports ↓\n\n\nTraining mechanics\nOptimization, augmentation, class imbalance, metric learning, convolutions, and the small decisions that shape model quality.\nExplore 13 reports ↓\n\n\n3D vision and video\nNovel-view synthesis, neural scene flow, inpainting, talking heads, video retiming, and animation.\nExplore 9 reports ↓\n\n\nApplied experimentation\nResearch reproductions and end-to-end notebooks across medical imaging, object detection, audio, tabular ML, and competitions.\nExplore 7 reports ↓ · Browse 73 notebooks ↓"
+    "text": "Bodies of work\n\n\nLLM systems, RLHF, and RAG\nFrom preference modeling and RLHF implementations to retrieval pipelines and systematic LLM evaluation.\nExplore 6 reports ↓\n\n\nComputer vision and generative imaging\nDetection, segmentation, interpretability, GAN evaluation, limited-data training, colorization, and image editing.\nExplore 11 reports ↓\n\n\nFramework practice\nPractical work across PyTorch, Lightning, Keras, TensorFlow, Hugging Face, and Transformers.\nExplore 24 reports ↓\n\n\nTraining mechanics\nOptimization, augmentation, class imbalance, metric learning, and convolution mechanics.\nExplore 13 reports ↓\n\n\n3D vision and video\nNovel-view synthesis, neural scene flow, inpainting, talking heads, video retiming, and animation.\nExplore 9 reports ↓\n\n\nApplied experimentation\nResearch reproductions and end-to-end notebooks across medical imaging, object detection, audio, tabular ML, and competitions.\nExplore 7 reports ↓ · Browse 73 notebooks ↓"
   },
   {
     "objectID": "blog/index.html#selected-writing",
@@ -165,7 +137,7 @@
     "href": "blog/index.html#how-the-work-evolved",
     "title": "Writing",
     "section": "How the work evolved",
-    "text": "How the work evolved\n\n\n\n2019–2020\n\n\nApplied computer vision and technical writingEarly projects in sign-language recognition, face analysis, image inpainting, interpretability, and generative modeling established a habit of building and explaining complete systems.\n\n\n\n\n2020–2022\n\n\nDeep learning systems and research reproductionWorked across PyTorch, TensorFlow, GANs, self-supervised learning, 3D vision, medical imaging, and the mechanics of reliable model training.\n\n\n\n\n2022–2023\n\n\nLLM training and open-source infrastructureMoved into RLHF, Transformers, framework integrations, reproducibility, and the tooling required to inspect increasingly complex training workflows.\n\n\n\n\n2023–now\n\n\nProduction RAG, evaluation, and agentsFocused on retrieval systems, LLM application evaluation, observability, and the feedback loops needed to improve agentic systems."
+    "text": "How the work evolved\n\n\n\n2019–2020\n\n\nApplied computer vision and technical writingBuilt and documented sign-language recognition, face analysis, image inpainting, interpretability, and generative-modeling projects.\n\n\n\n\n2020–2022\n\n\nDeep learning systems and research reproductionImplemented and benchmarked work across PyTorch, TensorFlow, GANs, self-supervised learning, 3D vision, and medical imaging.\n\n\n\n\n2022–2023\n\n\nLLM training and open-source infrastructureWorked on RLHF, Transformers, framework integrations, and reproducible training.\n\n\n\n\n2023–now\n\n\nProduction RAG, evaluation, and agentsWrote about production RAG, LLM evaluation, observability, and agents."
   },
   {
     "objectID": "blog/index.html#selected-collaborations",
@@ -179,7 +151,7 @@
     "href": "blog/index.html#complete-archive",
     "title": "Writing",
     "section": "Complete archive",
-    "text": "Complete archive\nThe complete grouped list follows—no filters or hidden results. You can also browse my selected work and talks and workshops."
+    "text": "Complete archive\nReports and notebooks are grouped below by topic and publication venue. You can also browse my work and talks and workshops."
   },
   {
     "objectID": "blog/index.html#weights-biases-reports",
@@ -203,32 +175,25 @@
     "text": "Kaggle Notebooks\n\n\n[Train] COVID-19 Detection using YOLOv5 (800 upvotes)\nExperiment Tracking with Weights and Biases (420 upvotes)\n[Train] Brain Tumor as Video Classification + W&B (175 upvotes)\n[Train] NFL Extra Images YOLOv5 with W&B (174 upvotes)\nBrain Tumor EDA and Interactive Viz with W&B (158 upvotes)\nTrain YOLOv5 + Cross Validation + Ensemble + W&B (155 upvotes)\nTPS June [Weights and Biases] (148 upvotes)\nSubmission Covid19 (132 upvotes)\n[G2Net] Understand the Data (129 upvotes)\nSD 2.0: Download Dataset from W&B Artifacts (111 upvotes)\nVisualize Bounding Boxes Interactively (111 upvotes)\n[V2] Self-Supervised Pretraining with SwAV (103 upvotes)\nEfficientNet+Mixup+K-Fold using TF and wandb (63 upvotes)\nHPA: Segmentation Mask Visualization with W&B (62 upvotes)\nComparative Study: SETI Experiments (61 upvotes)\nCreate Constant Q Transformed Dataset (51 upvotes)\nHPA: Multi-Label Classification with TF and W&B (50 upvotes)\nEasy PCA TSNE and UMAP (49 upvotes)\n[Train] Study Level Classifier + W&B (49 upvotes)\n[Train] COTS Detection using YOLOv5 and W&B (49 upvotes)\nQuick Data EDA+ Segmentation Viz using W&B (49 upvotes)\n[Train][PyTorch] FineTune ConvNeXt (44 upvotes)\n[Train] TensorFlow+EfficientNet+Kfold+W&B (42 upvotes)\nUse PyTorch Lightning With Weights and Biases (41 upvotes)\nVisualize the COTS interactively with W&B (36 upvotes)\n[MLOps Tutorial] XGBoost with W&B (36 upvotes)\nTensorFlow Inference [No-TTA] (28 upvotes)\nBirdCLEF: Quick EDA with W&B (26 upvotes)\nAPTOS Blindness Detection - EDA and Keras ResNet50 (25 upvotes)\nInteractive EDA using W&B Tables (23 upvotes)\nCassava 2019+2020 Dataset Prep+Versioning w/ W&B (23 upvotes)\nGradCAM: Implementation+Visualization in TF & W&B (22 upvotes)\nXGBoost Hyperparameter Tuning with W&B Sweeps (22 upvotes)\nTrain EfficientNetv2 with TF and W&B (20 upvotes)\n[HappyWhale] EDA - IDs to Images using W&B Tables (19 upvotes)\nUbiquant EDA (18 upvotes)\nTransformer Baseline with TF/Keras and W&B (18 upvotes)\nGet the most out of LightGBM using W&B (17 upvotes)\nSartorius: Instance Mask Viz with W&B (16 upvotes)\n[TensorFlow] Working with TIFF (15 upvotes)\nRainforest Create Image Dataset with W&B (14 upvotes)\nResampled Voxel Dataset - with KaggleRecipes (W&B) (14 upvotes)\nAutoEncoders implementation (13 upvotes)\nG2Net: Quick EDA and CQT + W&B (13 upvotes)\nStyle Transfer using CycleGAN with TF and W&B (13 upvotes)\nBMS: EDA and Dataset Visualization w/ W&B (12 upvotes)\nSingle Label Cell Label Dataset Creation w/ W&B (12 upvotes)\nComparing Different Modeling Methods w/ W&B (11 upvotes)\nBetter Data Understanding with W&B Tables (10 upvotes)\nHPA: Inference (10 upvotes)\nInvestigate Imgur5k dataset (10 upvotes)\nImages to TFRecord (10 upvotes)\nExperiment Tracking w/ Weights and Biases [Russia] (10 upvotes)\nRainforest Train Baseline Model with W&B (9 upvotes)\nAll in one MLB Quick EDA with W&B Tables (8 upvotes)\nRGB 512x512 Dataset Creation+Versioning with W&B (7 upvotes)\nSave the Dataset as W&B Artifacts (7 upvotes)\nVisualize Dataset Interactively using W&B Tables (6 upvotes)\nDataset Versioning for Single Label Dataset (6 upvotes)\nTesting W&B Offline Flow (6 upvotes)\nBatch Normalization ft Batch Size with W&B (6 upvotes)\nJigsaw BERT Model (5 upvotes)\nRainforest: Which model is better? (5 upvotes)\nAdaptive Gradient Clipping: Ablation Study w/ W&B (5 upvotes)\nUsing W&B DSViz for Cell Level Dataset Creation (5 upvotes)\nKaggle Survey 2020: W&B vs All (5 upvotes)\nKaggle Survey 2021: W&B vs All (5 upvotes)\nCell Level Extra Data Download (5 upvotes)\nTest wandbcode (4 upvotes)\nMultiprocessing 5 Second Audio Clips (4 upvotes)\nHuBMAP: TF with TPU EfficientUNetB7 512x512 [Train] (4 upvotes)\nCommonLit Readability Prize: EDA + Baseline (3 upvotes)\nVisualize the Dataset using W&B Tables (3 upvotes)"
   },
   {
-    "objectID": "blog/posts/rag-techniques-overview.html",
-    "href": "blog/posts/rag-techniques-overview.html",
-    "title": "RAG Techniques: From Naive to Advanced",
-    "section": "",
-    "text": "RAG Techniques: From Naive to Advanced\nContent coming soon!"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "I am an AI engineer and technical educator based in India. I currently lead AI engineering work at Weights & Biases (part of CoreWeave), focused on coding agents, evaluation harnesses, memory, and improvement loops for agentic systems.\nThe short version of my work is: build the system, measure it honestly, and teach what survives contact with reality."
+    "text": "I am an AI engineer and technical educator based in India. I lead AI engineering work at Weights & Biases by CoreWeave on internal coding agents, harness benchmarks, and memory."
   },
   {
-    "objectID": "about.html#path",
-    "href": "about.html#path",
+    "objectID": "about.html#timeline",
+    "href": "about.html#timeline",
     "title": "About",
-    "section": "Path",
-    "text": "Path\n\n\n\n2025–now\n\n\nAgent engineering and leadershipLeading a team working on coding agents, internal benchmarks, memory, and applied research at W&B / CoreWeave.\n\n\n\n\n2023–2025\n\n\nLLM systems and evaluationBuilt production RAG evaluation, LLM and agent integrations, courses, talks, and the evaluation-driven refactor of Wandbot.\n\n\n\n\n2020–2023\n\n\nML infrastructure and educationCreated open-source integrations, technical reports, Kaggle programs, and practical material across deep learning and MLOps.\n\n\n\n\n2016–2020\n\n\nRobotics and computer visionStudied Electronics and Communication Engineering at Netaji Subhash Engineering College, Kolkata; built autonomous robots and early applied-ML projects."
+    "section": "Timeline",
+    "text": "Timeline\n\n\n\n2025–now\n\n\nAgent engineering and leadershipLeading a team working on coding agents, internal benchmarks, memory, and applied research at W&B by CoreWeave.\n\n\n\n\n2023–2025\n\n\nLLM systems and evaluationBuilt production RAG evaluation, LLM and agent integrations, courses, talks, and the evaluation-driven refactor of Wandbot.\n\n\n\n\n2020–2023\n\n\nML infrastructure and educationCreated open-source integrations, technical reports, Kaggle programs, and practical material across deep learning and MLOps.\n\n\n\n\n2016–2020\n\n\nRobotics and computer visionStudied Electronics and Communication Engineering at Netaji Subhash Engineering College, Kolkata; built autonomous robots and early applied-ML projects."
   },
   {
     "objectID": "about.html#how-i-work",
     "href": "about.html#how-i-work",
     "title": "About",
     "section": "How I work",
-    "text": "How I work\nI am drawn to the part of AI engineering that is difficult to see in a demo: instrumentation, datasets, failure analysis, evaluation criteria, and the feedback loops that make a system improve. I enjoy moving between implementation and explanation—building a tool, stress-testing it, and then writing or teaching the reusable idea behind it.\nThat pattern connects most of my work: integrations that expose what a model is doing, evaluations that replace intuition with evidence, and courses that turn months of engineering lessons into a path someone else can follow."
+    "text": "How I work\nI prefer work with a short path from question to evidence. I build an initial version, instrument it, inspect failures, and decide what to change. Writing is part of that process: it forces me to state what I observed and makes the result reusable."
   },
   {
     "objectID": "about.html#recognition",
@@ -242,7 +207,7 @@
     "href": "about.html#the-enginear-story",
     "title": "About",
     "section": "The “Enginear” story",
-    "text": "The “Enginear” story\nWhen I was ten, a teacher asked what I wanted to become. I said “engineer.” Asked to spell it, I got it wrong, and was told that someone who could not spell the word could not become one.\nI kept the misspelling—Enginear—as a reminder that an early mistake is not a verdict. Curiosity, practice, and the willingness to keep building matter much more."
+    "text": "The “Enginear” story\nWhen I was ten, a teacher asked what I wanted to become. I said “engineer.” Asked to spell it, I got it wrong, and was told that someone who could not spell the word could not become one.\nI kept the misspelling—Enginear—as the name of this site."
   },
   {
     "objectID": "about.html#elsewhere",

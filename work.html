@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Work</h1>
-<p class="subtitle lead">Selected systems, integrations, and educational work.</p>
+<p class="subtitle lead">AI systems, open-source integrations, courses, and earlier projects.</p>
 </div>
 
 
@@ -163,15 +163,15 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>I work where applied AI meets developer infrastructure: building systems, defining how to evaluate them, and turning what works into tools and explanations other people can use.</p>
+<p>I have worked on internal coding agents, production RAG, LLM evaluation, open-source ML integrations, and technical education.</p>
 <section id="current-work" class="level2">
 <h2 class="anchored" data-anchor-id="current-work">Current work</h2>
 <div class="project">
 <div class="item-meta">
-2025–now<br>W&amp;B / CoreWeave
+2025–now<br>W&amp;B by CoreWeave
 </div>
 <div class="item-body">
-<strong>Agent engineering</strong><br>Leading work on a background coding agent and the infrastructure around it: internal harness benchmarks, memory, and systems that help agents learn from prior experience. The work combines product engineering with empirical evaluation—making progress measurable rather than anecdotal.<span class="tag">Agents</span><span class="tag">Evaluation</span><span class="tag">Leadership</span>
+<strong>Agent engineering</strong><br>Leading a team building an internal coding agent, harness benchmarks, memory, and methods for reusing successful prior runs.<span class="tag">Agents</span><span class="tag">Evaluation</span><span class="tag">Leadership</span>
 </div>
 </div>
 <div class="project">
@@ -179,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
 2025<br>Open ecosystem
 </div>
 <div class="item-body">
-<strong>NVIDIA NeMo Agent Toolkit × W&amp;B Weave</strong><br>Worked on evaluation and observability support for agentic workflows built with NVIDIA’s framework-agnostic toolkit, making it easier to trace, compare, and improve multi-agent systems.<span class="item-links"><a href="https://wandb.ai/wandb_fc/nvidia-nat-ata/reports/Tracking-and-optimizing-agentic-workflows-using-W-B-Weave-and-NVIDIA-NeMo-Agent-Toolkit---VmlldzoxNDQ4NjgyNg">Technical report</a></span><span class="tag">Agents</span><span class="tag">Observability</span>
+<strong>NVIDIA NeMo Agent Toolkit × W&amp;B Weave</strong><br>Added fine-grained tracing and evaluation support for workflows built with NVIDIA NeMo Agent Toolkit.<span class="item-links"><a href="https://wandb.ai/wandb_fc/nvidia-nat-ata/reports/Tracking-and-optimizing-agentic-workflows-using-W-B-Weave-and-NVIDIA-NeMo-Agent-Toolkit---VmlldzoxNDQ4NjgyNg">Technical report</a> · <a href="https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/170">Tracing PR</a> · <a href="https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/264">Evaluation PR</a></span><span class="tag">Agents</span><span class="tag">Observability</span>
 </div>
 </div>
 </section>
@@ -198,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
 2023<br>LLM evaluation
 </div>
 <div class="item-body">
-<strong>Evaluating, comparing, and optimizing LLM systems</strong><br>Built a practical workflow for comparing system configurations with human labels, LLM judges, retrieval metrics, and parameter search. This work became a foundation for later production systems and courses.<span class="item-links"><a href="https://wandb.ai/ayush-thakur/llm-eval-sweep/reports/How-to-Evaluate-Compare-and-Optimize-LLM-Systems--Vmlldzo0NzgyMTQz">Technical report</a></span><span class="tag">LLMOps</span><span class="tag">Evals</span>
+<strong>Evaluating, comparing, and optimizing LLM systems</strong><br>Built a workflow for comparing system configurations with human labels, LLM judges, retrieval metrics, and parameter search.<span class="item-links"><a href="https://wandb.ai/ayush-thakur/llm-eval-sweep/reports/How-to-Evaluate-Compare-and-Optimize-LLM-Systems--Vmlldzo0NzgyMTQz">Technical report</a></span><span class="tag">LLMOps</span><span class="tag">Evals</span>
 </div>
 </div>
 <div class="project">
@@ -206,13 +206,13 @@ ul.task-list li input[type="checkbox"] {
 2023<br>Open source
 </div>
 <div class="item-body">
-<strong>LlamaIndex × W&amp;B</strong><br>Built an integration for inspecting retrieval and LLM traces, debugging complex query pipelines, and versioning indexes and embeddings. The accompanying walkthrough showed how those primitives support evaluation-driven RAG development.<span class="item-links"><a href="https://wandb.ai/ayush-thakur/llama-index-report/reports/Building-Advanced-Query-Engine-and-Evaluation-with-LlamaIndex-and-W-B--Vmlldzo0OTIzMjMy">Walkthrough</a></span><span class="tag">LlamaIndex</span><span class="tag">Tracing</span>
+<strong>LlamaIndex × W&amp;B</strong><br>Built W&amp;B instrumentation for retrieval and LLM traces, debugging query pipelines, and versioning indexes and embeddings.<span class="item-links"><a href="https://wandb.ai/ayush-thakur/llama-index-report/reports/Building-Advanced-Query-Engine-and-Evaluation-with-LlamaIndex-and-W-B--Vmlldzo0OTIzMjMy">Walkthrough</a></span><span class="tag">LlamaIndex</span><span class="tag">Tracing</span>
 </div>
 </div>
 </section>
 <section id="tools-and-integrations" class="level2">
 <h2 class="anchored" data-anchor-id="tools-and-integrations">Tools and integrations</h2>
-<p>My public GitHub history includes 200 merged pull requests. Much of that work made experiment tracking, model evaluation, and application tracing feel native inside the tools developers already used.</p>
+<p>My public GitHub history includes 200 merged pull requests. The groups below cover the largest integration projects.</p>
 <div class="project">
 <div class="item-meta">
 2022–2023<br>Keras
@@ -253,7 +253,7 @@ ul.task-list li input[type="checkbox"] {
 <strong>Tracing and evaluation across agent frameworks</strong><br>Extended support for DSPy, MCP, LlamaIndex, CrewAI, Verifiers, and NVIDIA NeMo Agent Toolkit, including fine-grained tracing and evaluation inside external framework repositories.<span class="item-links"><a href="https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/170">NeMo tracing</a> · <a href="https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/264">NeMo evaluation</a> · <a href="https://github.com/wandb/weave/pull/4030">MCP</a> · <a href="https://github.com/wandb/wandb/pull/10327">DSPy</a> · <a href="https://github.com/wandb/weave/pull/5462">Verifiers</a> · <a href="https://github.com/crewAIInc/crewAI/pull/2463">CrewAI</a></span><span class="tag">Agents</span><span class="tag">Tracing</span><span class="tag">Evals</span>
 </div>
 </div>
-<p>I also helped build W&amp;B’s Kaggle Ambassador program, connecting practitioners, reusable notebooks, and experiment-tracking education. Along the way I became a <a href="https://www.kaggle.com/ayuraj">Kaggle Notebooks Master</a>, with notebooks spanning object detection, medical imaging, reproducibility, and interactive visualization.</p>
+<p>I also helped build W&amp;B’s Kaggle Ambassador program and became a <a href="https://www.kaggle.com/ayuraj">Kaggle Notebooks Master</a>. My notebooks span object detection, medical imaging, reproducibility, and interactive visualization.</p>
 </section>
 <section id="research-publication" class="level2">
 <h2 class="anchored" data-anchor-id="research-publication">Research publication</h2>
@@ -301,7 +301,7 @@ ul.task-list li input[type="checkbox"] {
 2020<br>Computer vision
 </div>
 <div class="item-body">
-<strong>Faceless</strong><br>Built a multitask face-analysis pipeline with TensorFlow and OpenCV for face detection and attribute prediction. It was an early bridge between independent ML projects, technical writing, and my work at W&amp;B.<span class="tag">TensorFlow</span><span class="tag">OpenCV</span>
+<strong>Faceless</strong><br>Built a multitask face-analysis pipeline with TensorFlow and OpenCV for face detection and attribute prediction.<span class="tag">TensorFlow</span><span class="tag">OpenCV</span>
 </div>
 </div>
 <div class="project">
@@ -309,7 +309,7 @@ ul.task-list li input[type="checkbox"] {
 2019<br>Applied ML
 </div>
 <div class="item-body">
-<strong>American Sign Language classifier</strong><br>Built and documented an end-to-end CNN project for recognizing ASL letters—one of my first attempts to explain a complete computer-vision system in public.<span class="item-links"><a href="https://medium.com/@mein2work/using-cnn-to-translate-american-sign-language-10d6443f7cd">Read the article</a></span><span class="tag">CNN</span><span class="tag">Writing</span>
+<strong>American Sign Language classifier</strong><br>Built and documented an end-to-end CNN project for recognizing ASL letters.<span class="item-links"><a href="https://medium.com/@mein2work/using-cnn-to-translate-american-sign-language-10d6443f7cd">Read the article</a></span><span class="tag">CNN</span><span class="tag">Writing</span>
 </div>
 </div>
 <div class="project">
@@ -317,7 +317,7 @@ ul.task-list li input[type="checkbox"] {
 2016–2019<br>Robotics
 </div>
 <div class="item-body">
-<strong>Autonomous robots</strong><br>Built a progression of line-following, maze-solving, object-detection, and grid-navigation robots. One system avoided obstacles, explored a grid, and retraced the shortest route. These projects gave me the systems instinct I later brought to ML infrastructure and agent engineering.<span class="tag">Embedded systems</span><span class="tag">Navigation</span>
+<strong>Autonomous robots</strong><br>Built line-following, maze-solving, object-detection, and grid-navigation robots. One system avoided obstacles, explored a grid, and retraced the shortest route.<span class="tag">Embedded systems</span><span class="tag">Navigation</span>
 </div>
 </div>
 
